@@ -1,0 +1,1 @@
+rename one of the mini_dev_{}.json files to dev.json depending on which DBMS you want
