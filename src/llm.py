@@ -37,6 +37,8 @@ def collect_response(prompt, max_tokens = 800, stop = None):
                     frequency_penalty=0,
                     presence_penalty=0,
                     stop = stop)
+                # store response to .json
+                # track: model, queries, responses
                 response = response['choices'][0]['message']['content']
                 flag = 1
                 

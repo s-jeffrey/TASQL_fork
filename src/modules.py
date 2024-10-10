@@ -22,9 +22,13 @@ class BaseModule():
         for i in tqdm.tqdm(range(len(self.table_json))):
             table_info = self.table_json[i]
             db_id = table_info['db_id']
+
+            # sqlite3
             db_path = os.path.join(self.db_root_path, db_id, f'{db_id}.sqlite')
             conn = sqlite3.connect(db_path)
             cursor = conn.cursor()
+            # endsqlite3
+
             csv_dir = os.path.join(self.db_root_path,db_id,'database_description')
             otn_list = table_info['table_names_original']
             for otn in otn_list:
@@ -91,26 +95,43 @@ class TASL(BaseModule):
         self.mode = mode
         self.schema_item_dic = self._reconstruct_schema()
         
+    # Create dict to map table names to column descriptions
     def _reconstruct_schema(self):
         schema_item_dic = {}
+
+        # Get db ids from table_json. Store ids in list.
         db_id_list = [content['db_id'] for content in self.table_json]
         
+        # ?? why?
         schema_item_dic = {}
+
         for db_id in db_id_list:
+            # Get db info corresponding to current db_id. Store info in dict.
             content = [content for content in self.table_json if content['db_id'] == db_id][0]
+            # Get list of original table names.
             otn_list = content['table_names_original']
+            # Map each table name to an empty dict to be filled with columns. Store in dict.
             schema_for_db = dict(zip(otn_list, [{} for _ in range(len(otn_list))]))
+            # Store schema in schema_item_dic{}.
             schema_item_dic[db_id] = schema_for_db
-        
+
+        # key = "<db_id> | <otn> | <ocn>"
+        # value = column description
         for key, value in self.column_meanings.items():
             db_id, otn, ocn = key.split('|')
+            # Formatting
             value = value.replace('#', '')
             value = value.replace('\n', ',  ')
+            # Creates nested dict
             schema_item_dic[db_id][otn][ocn] = value
         return schema_item_dic
     
+    # Reformats schema dict into json
+    # Note: schema_for_db is schema_item_dic[db_id]
     def _generate_database_schema(self, schema_for_db):
         schema_prompt = '{\n '
+        # table_name = otn
+        # cn_prompt = ocn
         for table_name, cn_prompt in schema_for_db.items():
             schema_prompt += f'{table_name}:\n  ' + '{\n\t'
             for cn, prompt in cn_prompt.items():
@@ -120,16 +141,24 @@ class TASL(BaseModule):
         schema_prompt += '}'
         return schema_prompt
     
+    # Creates llm prompt based on question and reformatted schema
     def generate_dummy_sql(self, question_id):
+        # Get question from json. Store in dict.
         question = self.question_json[question_id]
         db_id = question['db_id']
         q = question['question']
         evidence = question['evidence']
         pk_dict, fk_dict = self.generate_pk_fk(question_id)
+        # Get dict that maps table names to column descriptions
         db_prompt_dic = self._reconstruct_schema()
+        # Select the db wanted
         db_prompt = db_prompt_dic[db_id]
+        # Get json representation of schema
         database_schema = self._generate_database_schema(db_prompt)
+        # Fit llm prompt format
         prompt = dummy_sql_prompt.format(database_schema = database_schema, primary_key_dic = pk_dict, foreign_key_dic = fk_dict, question_prompt = q, evidence = evidence)
+        
+        # Calls llm
         dummy_sql = collect_response(prompt, stop = 'return SQL')
         return prompt, dummy_sql
         
@@ -164,6 +193,7 @@ class TALOG(BaseModule):
         super().__init__(db_root_path, mode)
         self.csv_info, self.value_prompts = self._get_info_from_csv()
     
+    # Creates a prompt from the schema
     def generate_schema_prompt(self, question_id, sl_schemas):
         question_info = self.question_json[question_id]
         db_id = question_info['db_id']
@@ -192,6 +222,7 @@ class TALOG(BaseModule):
         schema_prompt += '}'
         return schema_prompt
     
+    # Creates pandas-like SR to be converted to SQL
     def generate_sr(self, question_id, sl_schemas):
         question = self.question_json[question_id]
         q = question['question']
@@ -208,10 +239,13 @@ class TALOG(BaseModule):
         sr_prompt = generate_sr.format(sr_example = sr_examples, question = q, schema = processed_schema, column_description = database_schema,
                                        evidence = e)
         sr_prompt = sr_prompt.strip('\n')
+
+        # Call llm
         sr = collect_response(sr_prompt, max_tokens=800)
         # print(sr)
         return sr_prompt, sr
     
+    # SR to SQL
     def sr2sql(self, question_id, sl_schemas):
         question = self.question_json[question_id]
         q = question['question']
@@ -223,6 +257,8 @@ class TALOG(BaseModule):
         _, fk = self.generate_pk_fk(question_id)
         sr2sql_prompt = sr2sql.format(question = q, schema = schema, evidence = e, column_description = database_schema, SR = sr, foreign_key_dic = fk)
         sr2sql_prompt = sr2sql_prompt.strip('\n')
+
+        # Call llm
         tmp_sql = collect_response(sr2sql_prompt)
         #postprocess the tmp_sql to valid sql
         sql = 'SELECT ' + tmp_sql.replace('\"','')
