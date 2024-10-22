@@ -9,10 +9,11 @@ import openai
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
+# Can't seem to figure out where this is called
 def connect_gpt4(message, prompt):
     response = openai.ChatCompletion.create(
                     model="gpt-4o-mini", 
-                    messages = [{"role":"system","content":f"{message}"}, #"You are a helpful assisant. Help the user to complete SQL and no explaination is needed."
+                    messages = [{"role":"system","content":f"{message}"}, #"You are a helpful assisant. Help the user to complete SQL and no explanation is needed."
                                 {"role":"user", "content":f"{prompt}"}],
                     temperature=0,
                     max_tokens=800, #800
@@ -29,7 +30,7 @@ def collect_response(prompt, max_tokens = 800, stop = None):
             try:
                 response = openai.ChatCompletion.create(
                     model="gpt-4o-mini", 
-                    messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}, #"You are a helpful assisant. Help the user to complete SQL and no explaination is needed."
+                    messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}, #"You are a helpful assisant. Help the user to complete SQL and no explanation is needed."
                                 {"role":"user", "content":f"{prompt}"}],
                     temperature=0,
                     max_tokens=max_tokens, #800
