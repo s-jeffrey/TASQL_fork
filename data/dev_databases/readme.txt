@@ -1,1 +1,1 @@
-rename one of the mini_dev_{}.json files to dev.json depending on which DBMS you want
+change diff_json_path='./data/dev_databases/mini_dev_[desired DBMS].json' in run_evaluation.sh

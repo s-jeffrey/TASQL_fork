@@ -1,5 +1,5 @@
 db_root_path='./data/dev_databases'
-mode='dev'
+mode='mini_dev_sqlite'
 meaning_output_path='./outputs/column_meaning.json' 
 sql_output_path='./outputs/predict_dev.json'
 

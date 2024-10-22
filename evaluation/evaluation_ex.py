@@ -70,6 +70,7 @@ def compute_acc_by_diff(exec_results, diff_json_path):
     num_queries = len(exec_results)
     results = [res["res"] for res in exec_results]
     contents = load_json(diff_json_path)
+    print(contents)
     simple_results, moderate_results, challenging_results = [], [], []
 
     for i, content in enumerate(contents):
@@ -144,6 +145,8 @@ if __name__ == "__main__":
     )
 
     query_pairs = list(zip(pred_queries, gt_queries))
+    print(query_pairs)
+
 
     run_sqls_parallel(
         query_pairs,
@@ -154,6 +157,7 @@ if __name__ == "__main__":
     )
     exec_result = sort_results(exec_result)
     print("start calculate")
+    print(exec_result)
     simple_acc, moderate_acc, challenging_acc, acc, count_lists = compute_acc_by_diff(
         exec_result, args.diff_json_path
     )
