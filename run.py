@@ -32,7 +32,7 @@ def parser():
     parser.add_argument('--db_root_path', type=str, default="./data/dev_databases")
     parser.add_argument('--column_meaning_path', type=str, default="./outputs/column_meaning.json")
     parser.add_argument('--mode', type=str, default='dev')
-    parser.add_argument('--output_path', type=str, default=f"./outputs/prect_dev.json")
+    parser.add_argument('--output_path', type=str, default=f"./outputs/predict_dev.json")
     opt = parser.parse_args()
     return opt
 
