@@ -11,7 +11,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 
 def connect_gpt4(message, prompt):
     response = openai.ChatCompletion.create(
-                    model="gpt-3.5-turbo-0125", 
+                    model="gpt-4o-mini", 
                     messages = [{"role":"system","content":f"{message}"}, #"You are a helpful assisant. Help the user to complete SQL and no explaination is needed."
                                 {"role":"user", "content":f"{prompt}"}],
                     temperature=0,
@@ -28,7 +28,7 @@ def collect_response(prompt, max_tokens = 800, stop = None):
             flag = 0
             try:
                 response = openai.ChatCompletion.create(
-                    model="gpt-3.5-turbo-0125", 
+                    model="gpt-4o-mini", 
                     messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}, #"You are a helpful assisant. Help the user to complete SQL and no explaination is needed."
                                 {"role":"user", "content":f"{prompt}"}],
                     temperature=0,
