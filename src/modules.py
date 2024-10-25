@@ -164,7 +164,8 @@ class TASL(BaseModule):
         prompt = dummy_sql_prompt.format(database_schema = database_schema, primary_key_dic = pk_dict, foreign_key_dic = fk_dict, question_prompt = q, evidence = evidence)
         
         # Calls llm
-        dummy_sql = collect_response(prompt, stop = 'return SQL')
+        query = question['question_id']
+        dummy_sql = collect_response(prompt, stop = 'return SQL', db_id=db_id, query=query, step="dummy_sql")
         return prompt, dummy_sql
         
     def get_schema(self, question_id):
@@ -246,7 +247,9 @@ class TALOG(BaseModule):
         sr_prompt = sr_prompt.strip('\n')
 
         # Call llm
-        sr = collect_response(sr_prompt, max_tokens=800)
+        query = question['question_id']
+        db_id = question['db_id']
+        sr = collect_response(sr_prompt, max_tokens=800, db_id=db_id, query=query, step="sr")
         # print(sr)
         return sr_prompt, sr
     
@@ -264,7 +267,9 @@ class TALOG(BaseModule):
         sr2sql_prompt = sr2sql_prompt.strip('\n')
 
         # Call llm
-        tmp_sql = collect_response(sr2sql_prompt)
+        query = question['question_id']
+        db_id = question['db_id']
+        tmp_sql = collect_response(sr2sql_prompt, db_id=db_id, query=query, step="tmp_sql")
         #postprocess the tmp_sql to valid sql
         sql = 'SELECT ' + tmp_sql.replace('\"','')
         return sr, sql
