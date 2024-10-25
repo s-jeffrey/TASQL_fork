@@ -6,6 +6,11 @@ import csv
 from src.prompt_bank import dummy_sql_prompt, sr_examples, generate_sr, sr2sql
 from src.llm import collect_response
 
+
+# Note that "question_id" in this file as passed from run.py refers to the index of the dictionary question,
+# not the actual "question_id" found in (mini_)dev(_sqlite).json
+
+
 class BaseModule():
     def __init__(self, db_root_path, mode):
         self.db_root_path = db_root_path
