@@ -257,6 +257,9 @@ class TALOG(BaseModule):
         # Remove single quotes
         processed_schema = processed_schema.replace("'",'')
         
+        # Sort the schema list for deterministic prompt
+        processed_schema = sorted(processed_schema)
+
         database_schema = self.generate_schema_prompt(question_id, sl_schemas)
         # Format sr_prompt using generate_sr template from src/prompt_bank
         sr_prompt = generate_sr.format(sr_example = sr_examples, question = q, schema = processed_schema, column_description = database_schema,
