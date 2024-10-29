@@ -59,13 +59,13 @@ class BaseModule():
                     column_info[ocn] = [column_name, column_description, column_type, value_description]
 
                     if column_type in ['text', 'date', 'datetime']:
-                        sql = f'''SELECT DISTINCT "{ocn}" FROM `{otn}` where "{ocn}" IS NOT NULL ORDER BY RANDOM()'''
+                        sql = f'''SELECT DISTINCT "{ocn}" FROM `{otn}` where "{ocn}" IS NOT NULL''' # ORDER BY RANDOM()'''
                         cursor.execute(sql)
                         # Store results of SQL query in values list
                         values = cursor.fetchall()
                         if len(values) > 0 and len(values[0][0]) < 50:
                             if len(values) <= 10:
-                                # Retrieves ocns for each v in values and stores in example_values list
+                                # Retrieves values for the column
                                 example_values = [v[0] for v in values]
                                 value_prompt[f"{db_id}|{otn}|{ocn}"] = f"all possible values are {example_values}"
                                 # value_prompt[f"{db_id}|{otn}|{ocn}"] = f"all possible values of the column are {', '.join(example_values)}."
