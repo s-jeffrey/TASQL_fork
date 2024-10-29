@@ -231,6 +231,9 @@ class TALOG(BaseModule):
             if ' ' in ocn: ocn = f"`{ocn}`"
             schema_item_dic[f"{otn}.{ocn}"] = tmp_prompt
         
+        # Sort the dict first for deterministic prompt
+        schema_item_dic = {key: schema_item_dic[key] for key in sorted(schema_item_dic)}
+
         schema_prompt = '{\n\t'
         for otn_ocn, cn_prompt in schema_item_dic.items():
             schema_prompt += f'{otn_ocn}: {cn_prompt}\n'
