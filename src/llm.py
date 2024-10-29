@@ -31,11 +31,14 @@ def connect_gpt4(message, prompt):
 
 def collect_response(prompt, max_tokens = 800, stop = None, cache_dir="./cache", db_id=None, query=None, step=""):
 
+    model = "gpt-4o-mini"
+    top_p = 1
+
     # Make the cache folder
     os.makedirs(cache_dir, exist_ok=True)
 
     # Hash based on API parameters
-    hash_params = json.dumps({"prompt": prompt, "max_tokens": max_tokens, "stop": stop}, sort_keys=True)
+    hash_params = json.dumps({"prompt": prompt, "max_tokens": max_tokens, "model": model, "top_p": top_p}, sort_keys=True)
     hash_key = hashlib.sha256(hash_params.encode('utf-8')).hexdigest()
     print(hash_key)
     cache_filename = os.path.join(cache_dir, f"{db_id}_{query}_{step}_{hash_key}.json")
@@ -49,12 +52,12 @@ def collect_response(prompt, max_tokens = 800, stop = None, cache_dir="./cache",
             flag = 0
             try:
                 response = openai.ChatCompletion.create(
-                    model="gpt-4o-mini", 
+                    model=model, 
                     messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}, #"You are a helpful assisant. Help the user to complete SQL and no explanation is needed."
                                 {"role":"user", "content":f"{prompt}"}],
                     temperature=0,
                     max_tokens=max_tokens, #800
-                    top_p=1,
+                    top_p=top_p,
                     frequency_penalty=0,
                     presence_penalty=0,
                     stop = stop)
