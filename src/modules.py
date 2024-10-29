@@ -6,6 +6,11 @@ import csv
 from src.prompt_bank import dummy_sql_prompt, sr_examples, generate_sr, sr2sql
 from src.llm import collect_response
 
+
+# Note that "question_id" in this file as passed from run.py refers to the index of the dictionary question,
+# not the actual "question_id" found in (mini_)dev(_sqlite).json
+
+
 class BaseModule():
     def __init__(self, db_root_path, mode):
         self.db_root_path = db_root_path
@@ -19,6 +24,7 @@ class BaseModule():
     def _get_info_from_csv(self):
         csv_info = {}
         value_prompt = {}
+        # Loop over generated json with all tables info
         for i in tqdm.tqdm(range(len(self.table_json))):
             table_info = self.table_json[i]
             db_id = table_info['db_id']
@@ -37,21 +43,29 @@ class BaseModule():
                 column_info = {}
                 
                 for row in csv_dict:
+                    # Get header names from row
                     headers = list(row.keys())
+                    # Find 'original_column_name' and selects 0 indexed header
                     ocn_header = [h for h in headers if 'original_column_name' in h][0]  # remove BOM
+                    # Remove whitespace
                     ocn, cn = row[ocn_header].strip(), row['column_name']
                     column_description = row['column_description'].strip()
                     column_type = row['data_format'].strip()
+                    # Use column_name unless empty
                     column_name = cn if cn not in ['', ' '] else ocn
+                    # Remove whitespace
                     value_description = row['value_description'].strip()
+                    # Store column info as value in dict with original column name as key
                     column_info[ocn] = [column_name, column_description, column_type, value_description]
 
                     if column_type in ['text', 'date', 'datetime']:
-                        sql = f'''SELECT DISTINCT "{ocn}" FROM `{otn}` where "{ocn}" IS NOT NULL ORDER BY RANDOM()'''
+                        sql = f'''SELECT DISTINCT "{ocn}" FROM `{otn}` where "{ocn}" IS NOT NULL''' # ORDER BY RANDOM()'''
                         cursor.execute(sql)
+                        # Store results of SQL query in values list
                         values = cursor.fetchall()
                         if len(values) > 0 and len(values[0][0]) < 50:
                             if len(values) <= 10:
+                                # Retrieves values for the column
                                 example_values = [v[0] for v in values]
                                 value_prompt[f"{db_id}|{otn}|{ocn}"] = f"all possible values are {example_values}"
                                 # value_prompt[f"{db_id}|{otn}|{ocn}"] = f"all possible values of the column are {', '.join(example_values)}."
@@ -159,7 +173,8 @@ class TASL(BaseModule):
         prompt = dummy_sql_prompt.format(database_schema = database_schema, primary_key_dic = pk_dict, foreign_key_dic = fk_dict, question_prompt = q, evidence = evidence)
         
         # Calls llm
-        dummy_sql = collect_response(prompt, stop = 'return SQL')
+        query = question['question_id']
+        dummy_sql = collect_response(prompt, stop = 'return SQL', db_id=db_id, query=query, step="dummy_sql")
         return prompt, dummy_sql
         
     def get_schema(self, question_id):
@@ -200,6 +215,7 @@ class TALOG(BaseModule):
         schema_item_dic = {}
         
         for otn, ocn in sl_schemas:
+            # Access csv column and store info
             column_name, column_description, column_type, value_description = self.csv_info[f"{db_id}|{otn}"][ocn]
             value_prompt = self.value_prompts.get(f"{db_id}|{otn}|{ocn}")
             tmp_prompt = f"{column_type}, the full column name is {column_name}"
@@ -215,6 +231,9 @@ class TALOG(BaseModule):
             if ' ' in ocn: ocn = f"`{ocn}`"
             schema_item_dic[f"{otn}.{ocn}"] = tmp_prompt
         
+        # Sort the dict first for deterministic prompt
+        schema_item_dic = {key: schema_item_dic[key] for key in sorted(schema_item_dic)}
+
         schema_prompt = '{\n\t'
         for otn_ocn, cn_prompt in schema_item_dic.items():
             schema_prompt += f'{otn_ocn}: {cn_prompt}\n'
@@ -228,20 +247,30 @@ class TALOG(BaseModule):
         q = question['question']
         e = question['evidence']
         processed_schema = []
+        # If spaces in table/column names, use backticks for SQL query
         for table, column in sl_schemas:
             if ' ' in table: table = f"`{table}`"
             if ' ' in column: column = f"`{column}`"
             processed_schema.append(f"{table}.{column}")
+        # Make schema into list
         processed_schema = f"[{', '.join(processed_schema)}]"
+        # Remove single quotes
         processed_schema = processed_schema.replace("'",'')
         
+        # Sort the schema list for deterministic prompt
+        processed_schema = sorted(processed_schema)
+
         database_schema = self.generate_schema_prompt(question_id, sl_schemas)
+        # Format sr_prompt using generate_sr template from src/prompt_bank
         sr_prompt = generate_sr.format(sr_example = sr_examples, question = q, schema = processed_schema, column_description = database_schema,
                                        evidence = e)
+        # Removes leading and trailing whitespace
         sr_prompt = sr_prompt.strip('\n')
 
         # Call llm
-        sr = collect_response(sr_prompt, max_tokens=800)
+        query = question['question_id']
+        db_id = question['db_id']
+        sr = collect_response(sr_prompt, max_tokens=800, db_id=db_id, query=query, step="sr")
         # print(sr)
         return sr_prompt, sr
     
@@ -251,6 +280,8 @@ class TALOG(BaseModule):
         q = question['question']
         e = question['evidence']
         schema = ['.'.join(t) for t in sl_schemas] if sl_schemas else []
+        # Sort schema for deterministic prompt
+        schema.sort()
         _, sr = self.generate_sr(question_id, sl_schemas)
         sr = sr.replace('\"', '')
         database_schema = self.generate_schema_prompt(question_id, sl_schemas)
@@ -259,7 +290,9 @@ class TALOG(BaseModule):
         sr2sql_prompt = sr2sql_prompt.strip('\n')
 
         # Call llm
-        tmp_sql = collect_response(sr2sql_prompt)
+        query = question['question_id']
+        db_id = question['db_id']
+        tmp_sql = collect_response(sr2sql_prompt, db_id=db_id, query=query, step="tmp_sql")
         #postprocess the tmp_sql to valid sql
         sql = 'SELECT ' + tmp_sql.replace('\"','')
         return sr, sql
