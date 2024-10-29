@@ -280,6 +280,8 @@ class TALOG(BaseModule):
         q = question['question']
         e = question['evidence']
         schema = ['.'.join(t) for t in sl_schemas] if sl_schemas else []
+        # Sort schema for deterministic prompt
+        schema.sort()
         _, sr = self.generate_sr(question_id, sl_schemas)
         sr = sr.replace('\"', '')
         database_schema = self.generate_schema_prompt(question_id, sl_schemas)
