@@ -1,2 +1,5 @@
 tasql/
 outputs/predict_dev.json
+src/__pycache__/
+*.py[cod]
+*$py.class
