@@ -6,6 +6,8 @@ import csv
 from src.prompt_bank import dummy_sql_prompt, sr_examples, generate_sr, sr2sql
 from src.llm import collect_response
 
+import random
+
 
 # Note that "question_id" in this file as passed from run.py refers to the index of the dictionary question,
 # not the actual "question_id" found in (mini_)dev(_sqlite).json
@@ -63,6 +65,11 @@ class BaseModule():
                         cursor.execute(sql)
                         # Store results of SQL query in values list
                         values = cursor.fetchall()
+
+                        # Randomize values
+                        random.seed(20241030)
+                        random.shuffle(values)
+                        
                         if len(values) > 0 and len(values[0][0]) < 50:
                             if len(values) <= 10:
                                 # Retrieves values for the column
