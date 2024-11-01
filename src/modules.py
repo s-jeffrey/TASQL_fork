@@ -182,24 +182,37 @@ class TASL(BaseModule):
         db_id = question_info['db_id']
         _, dummy_sql = self.generate_dummy_sql(question_id)
     
-        #extract schema from dummy_sql
+        # Get entry in tables.json that matches the db_id
         table_info = [content for content in self.table_json if content['db_id'] == db_id][0]
+        # Get otns
         table_names_list = table_info["table_names_original"]
+        # Pair otns and ocns and put in list
+        # e.g.,
+        # column_names_list = [["customers", "CustomerID"], ["customers", Segment], ... , ["yearmonth", "Consumption"]]
         column_names_list = [[table_names_list[int(content[0])], content[1]] for content in table_info['column_names_original'][1:]]
+        # Get ocns only
         pure_column_name_list = [i[1] for i in column_names_list]
+        # Init lists
         filtered_tables, filtered_columns, schemas = [], [], []
+        # Find otn in dummy_sql and add to list
         for table in table_names_list:
             if table in dummy_sql:
                 filtered_tables.append(table)
+        # Find ocn in dummy_sql and add to list
         for column in pure_column_name_list:
             if column in dummy_sql:
                 filtered_columns.append(column)
+        # Delete duplicates
+        # Note: set() may change order of items
         filtered_tables = list(set(filtered_tables))
         filtered_columns = list(set(filtered_columns))
+        # Check for valid otn, ocn pairs and add to schemas list
         for columns in filtered_columns:
             for table_column in column_names_list:
                 if table_column[1] == columns and table_column[0] in filtered_tables:
                     schemas.append(table_column)
+        
+        schemas.sort()
         return schemas
                 
         
@@ -232,7 +245,7 @@ class TALOG(BaseModule):
             schema_item_dic[f"{otn}.{ocn}"] = tmp_prompt
         
         # Sort the dict first for deterministic prompt
-        schema_item_dic = {key: schema_item_dic[key] for key in sorted(schema_item_dic)}
+        # schema_item_dic = {key: schema_item_dic[key] for key in sorted(schema_item_dic)}
 
         schema_prompt = '{\n\t'
         for otn_ocn, cn_prompt in schema_item_dic.items():
@@ -258,7 +271,7 @@ class TALOG(BaseModule):
         processed_schema = processed_schema.replace("'",'')
         
         # Sort the schema list for deterministic prompt
-        processed_schema = sorted(processed_schema)
+        # processed_schema = sorted(processed_schema)
 
         database_schema = self.generate_schema_prompt(question_id, sl_schemas)
         # Format sr_prompt using generate_sr template from src/prompt_bank
@@ -281,7 +294,7 @@ class TALOG(BaseModule):
         e = question['evidence']
         schema = ['.'.join(t) for t in sl_schemas] if sl_schemas else []
         # Sort schema for deterministic prompt
-        schema.sort()
+        # schema.sort()
         _, sr = self.generate_sr(question_id, sl_schemas)
         sr = sr.replace('\"', '')
         database_schema = self.generate_schema_prompt(question_id, sl_schemas)
@@ -294,7 +307,11 @@ class TALOG(BaseModule):
         db_id = question['db_id']
         tmp_sql = collect_response(sr2sql_prompt, db_id=db_id, query=query, step="tmp_sql")
         #postprocess the tmp_sql to valid sql
-        sql = 'SELECT ' + tmp_sql.replace('\"','')
+        # But why?
+        # sql = 'SELECT ' + tmp_sql.replace('\"','')
+
+        # Fixed??
+        sql = tmp_sql.replace('\"','').replace("sql", "").replace("```", "").strip()
         return sr, sql
           
         
