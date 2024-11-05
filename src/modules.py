@@ -181,7 +181,7 @@ class TASL(BaseModule):
         
         # Calls llm
         query = question['question_id']
-        dummy_sql = collect_response(prompt, stop = 'return SQL', db_id=db_id, query=query, step="dummy_sql")
+        dummy_sql = collect_response(prompt, stop = 'return SQL', question_id=question_id, db_id=db_id, query=query, step="dummy_sql")
         return prompt, dummy_sql
         
     def get_schema(self, question_id):
@@ -290,7 +290,7 @@ class TALOG(BaseModule):
         # Call llm
         query = question['question_id']
         db_id = question['db_id']
-        sr = collect_response(sr_prompt, max_tokens=800, db_id=db_id, query=query, step="sr")
+        sr = collect_response(sr_prompt, max_tokens=800, question_id=question_id, db_id=db_id, query=query, step="sr")
         # print(sr)
         return sr_prompt, sr
     
@@ -312,7 +312,7 @@ class TALOG(BaseModule):
         # Call llm
         query = question['question_id']
         db_id = question['db_id']
-        tmp_sql = collect_response(sr2sql_prompt, db_id=db_id, query=query, step="tmp_sql")
+        tmp_sql = collect_response(sr2sql_prompt, question_id=question_id, db_id=db_id, query=query, step="tmp_sql")
         #postprocess the tmp_sql to valid sql
         # But why?
         # sql = 'SELECT ' + tmp_sql.replace('\"','')

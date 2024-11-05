@@ -29,7 +29,7 @@ def connect_gpt4(message, prompt):
     return response['choices'][0]['message']['content']
 
 
-def collect_response(prompt, max_tokens = 800, stop = None, cache_dir="./cache", db_id=None, query=None, step=""):
+def collect_response(prompt, max_tokens = 800, stop = None, cache_dir="./cache", question_id=None, db_id=None, query=None, step=""):
 
     model = "gpt-4o-mini"
     top_p = 1
@@ -40,8 +40,8 @@ def collect_response(prompt, max_tokens = 800, stop = None, cache_dir="./cache",
     # Hash based on API parameters
     hash_params = json.dumps({"prompt": prompt, "max_tokens": max_tokens, "model": model, "top_p": top_p}, sort_keys=True)
     hash_key = hashlib.sha256(hash_params.encode('utf-8')).hexdigest()
-    print(hash_key)
-    cache_filename = os.path.join(cache_dir, f"{db_id}_{query}_{step}_{hash_key}.json")
+    # print(hash_key)
+    cache_filename = os.path.join(cache_dir, f"{question_id}_{db_id}_{query}_{step}_{hash_key}.json")
 
     if os.path.isfile(cache_filename):
         print("<--------- cached response ----------------->")
