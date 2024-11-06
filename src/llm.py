@@ -31,10 +31,11 @@ def connect_gpt4(message, prompt):
 
 def collect_response(prompt, max_tokens = 800, stop = None, cache_dir="./cache", question_id=None, db_id=None, query=None, step=""):
 
-    model = "gpt-4o-mini"
+    model = "gpt-4o"
     top_p = 1
 
     # Make the cache folder
+    cache_dir += f"_{model}"
     os.makedirs(cache_dir, exist_ok=True)
 
     # Hash based on API parameters
