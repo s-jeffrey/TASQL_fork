@@ -34,7 +34,7 @@ def connect_mysql():
 
 
 def connect_db(sql_dialect, db_path):
-    if sql_dialect == "SQLite":
+    if sql_dialect == "sqlite":
         conn = sqlite3.connect(db_path)
     elif sql_dialect == "MySQL":
         conn = connect_mysql()
