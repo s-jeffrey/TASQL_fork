@@ -22,10 +22,9 @@ def calculate_ex(predicted_res, ground_truth_res):
     return res
 
 
-def execute_model(
-    predicted_sql, ground_truth, db_place, idx, meta_time_out, sql_dialect
-):
+def execute_model(predicted_sql, ground_truth, db_place, idx, meta_time_out, sql_dialect):
     try:
+        # Use evaluation utility to run SQLs and score with calculate_ex(). Store in res.
         res = func_timeout(
             meta_time_out,
             execute_sql,
@@ -38,14 +37,13 @@ def execute_model(
         res = 0
     except Exception as e:
         result = [(f"error",)]  # possibly len(query) > 512 or not executable
+        print(e)
         res = 0
     result = {"sql_idx": idx, "res": res}
     return result
 
 
-def run_sqls_parallel(
-    sqls, db_places, num_cpus=1, meta_time_out=30.0, sql_dialect="SQLite"
-):
+def run_sqls_parallel(sqls, db_places, num_cpus=1, meta_time_out=30.0, sql_dialect="sqlite"):
     pool = mp.Pool(processes=num_cpus)
     for i, sql_pair in enumerate(sqls):
 
@@ -70,7 +68,6 @@ def compute_acc_by_diff(exec_results, diff_json_path):
     num_queries = len(exec_results)
     results = [res["res"] for res in exec_results]
     contents = load_json(diff_json_path)
-    print(contents)
     simple_results, moderate_results, challenging_results = [], [], []
 
     for i, content in enumerate(contents):
@@ -109,9 +106,7 @@ def compute_acc_by_diff(exec_results, diff_json_path):
 
 if __name__ == "__main__":
     args_parser = argparse.ArgumentParser()
-    args_parser.add_argument(
-        "--predicted_sql_path", type=str, required=True, default=""
-    )
+    args_parser.add_argument("--predicted_sql_path", type=str, required=True, default="")
     args_parser.add_argument("--ground_truth_path", type=str, required=True, default="")
     args_parser.add_argument("--data_mode", type=str, required=True, default="dev")
     args_parser.add_argument("--db_root_path", type=str, required=True, default="")
@@ -122,7 +117,7 @@ if __name__ == "__main__":
     args_parser.add_argument("--difficulty", type=str, default="simple")
     args_parser.add_argument("--diff_json_path", type=str, default="")
     args_parser.add_argument("--engine", type=str, default="")
-    args_parser.add_argument("--sql_dialect", type=str, default="SQLite")
+    args_parser.add_argument("--sql_dialect", type=str, default="sqlite")
     args = args_parser.parse_args()
     exec_result = []
 
@@ -145,7 +140,6 @@ if __name__ == "__main__":
     )
 
     query_pairs = list(zip(pred_queries, gt_queries))
-    print(query_pairs)
 
 
     run_sqls_parallel(
@@ -157,7 +151,6 @@ if __name__ == "__main__":
     )
     exec_result = sort_results(exec_result)
     print("start calculate")
-    print(exec_result)
     simple_acc, moderate_acc, challenging_acc, acc, count_lists = compute_acc_by_diff(
         exec_result, args.diff_json_path
     )
