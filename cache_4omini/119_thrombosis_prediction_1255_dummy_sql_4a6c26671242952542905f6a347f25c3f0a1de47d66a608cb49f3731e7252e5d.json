@@ -1,0 +1,1 @@
+"```sql\nSELECT Diagnosis\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.IGM <= 40 OR Laboratory.IGM >= 400\nGROUP BY Diagnosis\nORDER BY COUNT(Diagnosis) DESC\nLIMIT 1;\n```"

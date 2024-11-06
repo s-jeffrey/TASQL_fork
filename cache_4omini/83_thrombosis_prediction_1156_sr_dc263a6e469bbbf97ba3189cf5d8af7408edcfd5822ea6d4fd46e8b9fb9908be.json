@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.RVVT, filter = '+')\ndf2 = df1.select(Patient.ID, SUBTRACT(year(current_timestamp), year(Patient.Birthday)))\nres = df2\n```"

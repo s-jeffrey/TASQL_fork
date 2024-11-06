@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(t.Amount) AS TotalSpent\nFROM transactions_1k t\nJOIN yearmonth y ON t.CustomerID = y.CustomerID\nWHERE t.GasStationID IS NOT NULL\nAND t.CustomerID = 38508\nAND y.Date = '201201';\n```"

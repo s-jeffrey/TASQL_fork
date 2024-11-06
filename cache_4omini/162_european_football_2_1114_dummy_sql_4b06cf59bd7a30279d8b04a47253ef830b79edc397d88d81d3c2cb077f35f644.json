@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(pa.overall_rating) AS average_overall_rating\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nWHERE p.player_name = 'Marko Arnautovic'\nAND pa.date BETWEEN '2007-02-22' AND '2016-04-21';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Currency, filter = 'EUR')\ndf2 = df1.where(element = yearmonth.Consumption, filter = '> 1000')\nres = df2.count()\n```"

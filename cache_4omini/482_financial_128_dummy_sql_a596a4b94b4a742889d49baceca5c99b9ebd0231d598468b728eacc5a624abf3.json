@@ -1,0 +1,1 @@
+"```sql\nSELECT d.district_id, COUNT(DISTINCT c.client_id) AS female_account_holders\nFROM district d\nJOIN client c ON c.district_id = d.district_id\nJOIN disp di ON di.client_id = c.client_id\nJOIN account a ON a.account_id = di.account_id\nWHERE c.gender = 'F'\nGROUP BY d.district_id\nORDER BY female_account_holders DESC\nLIMIT 9;\n```"

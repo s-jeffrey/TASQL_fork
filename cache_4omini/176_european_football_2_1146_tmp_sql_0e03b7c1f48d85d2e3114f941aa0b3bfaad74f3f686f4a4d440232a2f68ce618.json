@@ -1,0 +1,1 @@
+"```sql\nSELECT Team.team_long_name\nFROM Match\nINNER JOIN Team ON Match.away_team_api_id = Team.team_api_id\nGROUP BY Match.away_team_api_id\nHAVING MAX(Match.away_team_goal) = (\n    SELECT MAX(away_team_goal)\n    FROM Match\n);\n```"

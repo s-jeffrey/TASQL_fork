@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.OwnerDisplayName, filter = 'Harvey Motulsky')\ndf2 = df.where(element = posts.OwnerDisplayName, filter = 'Noah Snyder')\nres = df.select(max(df1.ViewCount), max(df2.ViewCount))\n```"

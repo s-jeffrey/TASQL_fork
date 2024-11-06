@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.height, filter = '> 170')\ndf2 = df1.where(element = Player_Attributes.date, filter = \"strftime('%Y', date) >= '2010' AND strftime('%Y', date) <= '2015'\")\nres = df2.select(avg(Player_Attributes.overall_rating))\n```"

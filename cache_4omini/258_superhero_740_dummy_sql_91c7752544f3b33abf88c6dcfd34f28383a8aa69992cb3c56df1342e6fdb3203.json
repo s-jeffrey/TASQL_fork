@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT sh.id) \nFROM superhero sh\nJOIN hero_attribute ha ON sh.id = ha.hero_id\nJOIN attribute a ON ha.attribute_id = a.id\nJOIN gender g ON sh.gender_id = g.id\nWHERE g.gender = 'Female' \nAND a.attribute_name = 'Strength' \nAND ha.attribute_value = 100;\n```"

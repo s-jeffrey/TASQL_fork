@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT account.account_id\nFROM account\nJOIN disp ON account.account_id = disp.account_id\nJOIN client ON disp.client_id = client.client_id\nJOIN district ON client.district_id = district.district_id\nWHERE disp.type != 'OWNER' \nAND district.A11 > 8000 \nAND district.A11 <= 9000;\n```"

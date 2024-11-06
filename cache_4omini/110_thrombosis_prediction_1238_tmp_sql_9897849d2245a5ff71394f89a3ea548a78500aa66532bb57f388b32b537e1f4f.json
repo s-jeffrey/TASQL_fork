@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, Patient.SEX\nFROM Patient\nINNER JOIN Examination ON Patient.ID = Examination.ID\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Examination.Diagnosis = 'SLE'\nAND Laboratory.HGB > 10 AND Laboratory.HGB < 17\nORDER BY Patient.Birthday ASC\nLIMIT 1;\n```"

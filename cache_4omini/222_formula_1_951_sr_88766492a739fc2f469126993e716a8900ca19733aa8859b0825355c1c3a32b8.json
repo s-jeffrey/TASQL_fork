@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = constructors.nationality, filter = 'Japanese')\ndf2 = df1.groupby(results.constructorId).having(element = count(results.raceId), filter = '2').where(element = results.points, filter = '0')\nres = df2.count()\n```"

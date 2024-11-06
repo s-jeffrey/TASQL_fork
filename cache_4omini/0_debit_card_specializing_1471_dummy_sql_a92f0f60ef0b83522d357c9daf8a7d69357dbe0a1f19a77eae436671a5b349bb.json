@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(CASE WHEN Currency = 'EUR' THEN 1 END) * 1.0 / \n    COUNT(CASE WHEN Currency = 'CZK' THEN 1 END) AS EUR_to_CZK_Ratio\nFROM \n    customers\nWHERE \n    Currency IN ('EUR', 'CZK';\n```"

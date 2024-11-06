@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(attendance.link_to_member) \nFROM attendance \nINNER JOIN event ON attendance.link_to_event = event.event_id \nWHERE event.event_name = 'Women''s Soccer';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT DisplayName, Reputation \nFROM users \nWHERE DisplayName IN ('Harlan', 'Jarrod Dixon') \nORDER BY Reputation DESC \nLIMIT 1;\n```"

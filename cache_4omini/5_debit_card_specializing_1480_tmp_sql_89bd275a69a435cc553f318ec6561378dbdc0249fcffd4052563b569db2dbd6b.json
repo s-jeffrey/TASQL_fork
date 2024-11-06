@@ -1,0 +1,1 @@
+"```sql\nSELECT yearmonth.Date, MAX(yearmonth.Consumption) AS PeakConsumption\nFROM yearmonth\nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Segment = 'SME' AND yearmonth.Date BETWEEN '201301' AND '201312'\nGROUP BY yearmonth.Date\nORDER BY PeakConsumption DESC\nLIMIT 1;\n```"

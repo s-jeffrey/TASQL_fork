@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = publisher.publisher_name, filter = 'Marvel Comics')\ndf2 = df1.where(element = superhero.eye_colour_id, filter = colour.id).where(element = colour.colour, filter = 'Gold')\nres = df2.count()\n```"

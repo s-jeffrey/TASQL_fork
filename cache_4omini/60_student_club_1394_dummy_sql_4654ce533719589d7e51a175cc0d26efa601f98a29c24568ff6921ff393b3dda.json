@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM member \nWHERE link_to_major IN (\n    SELECT major_id \n    FROM major \n    WHERE major_name = 'Physics Teaching'\n);\n```"

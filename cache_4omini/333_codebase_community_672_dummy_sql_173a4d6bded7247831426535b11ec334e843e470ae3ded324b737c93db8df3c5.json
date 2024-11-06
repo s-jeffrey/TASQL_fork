@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT u.Id) \nFROM users u \nJOIN posts p ON u.Id = p.OwnerUserId \nWHERE u.Location = 'United Kingdom' \nAND p.FavoriteCount >= 4;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT account.account_id \nFROM account \nINNER JOIN loan ON account.account_id = loan.account_id \nWHERE loan.date LIKE '1997%' \nAND account.frequency = 'POPLATEK TYDNE' \nORDER BY loan.amount ASC \nLIMIT 1;\n```"

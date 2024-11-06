@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.operation, filter = 'VYBER')\nres = df1.where(element = disp.client_id, filter = 3356).select(trans.account)\n```"

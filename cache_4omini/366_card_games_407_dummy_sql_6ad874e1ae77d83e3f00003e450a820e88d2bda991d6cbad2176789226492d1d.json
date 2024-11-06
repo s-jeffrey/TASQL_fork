@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT types \nFROM cards \nJOIN set_translations ON cards.setCode = set_translations.setCode \nWHERE set_translations.language = 'German' \nAND (subtypes IS NOT NULL OR supertypes IS NOT NULL);\n```"

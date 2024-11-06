@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(bond_count) AS average_bonds\nFROM (\n    SELECT COUNT(connected.bond_id) AS bond_count\n    FROM atom\n    LEFT JOIN connected ON atom.atom_id = connected.atom_id\n    WHERE atom.element = 'i'\n    GROUP BY atom.atom_id\n) AS bond_counts;\n```"

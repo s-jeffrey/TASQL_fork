@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(posts.Score) AS average_score\nFROM posts\nJOIN users ON posts.OwnerUserId = users.Id\nWHERE users.DisplayName = 'csgillespie';\n```"

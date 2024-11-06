@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, \n       CONCAT(schools.Street, ', ', schools.City, ', ', schools.State, ' ', schools.Zip) AS full_address\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE schools.County = 'Monterey' \n  AND frpm.CDSCode > 800;\n```"

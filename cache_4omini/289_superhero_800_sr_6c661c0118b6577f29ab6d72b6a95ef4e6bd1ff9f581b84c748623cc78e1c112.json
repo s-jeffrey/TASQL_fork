@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Blue')\nres = df.select(MULTIPLY(DIVIDE(df1.count(), df.count()), 100.0))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(votes.CreationDate) AS FirstVoteDate\nFROM votes\nJOIN users ON votes.UserId = users.Id\nWHERE users.DisplayName = 'chl';\n```"

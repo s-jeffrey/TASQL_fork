@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT type \nFROM event \nWHERE location = 'MU 215';\n```"

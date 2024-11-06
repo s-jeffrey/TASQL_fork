@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.AnswerCount, filter = '<= 2').where(element = postLinks.CreationDate, filter = 'YEAR(CreationDate) = 2010')\nres = df1.count() / 12\n```"

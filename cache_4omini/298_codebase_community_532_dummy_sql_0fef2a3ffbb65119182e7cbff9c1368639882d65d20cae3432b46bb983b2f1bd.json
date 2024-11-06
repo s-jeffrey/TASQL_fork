@@ -1,0 +1,1 @@
+"```sql\nSELECT DisplayName \nFROM users \nWHERE YEAR(CreationDate) = 2011;\n```"

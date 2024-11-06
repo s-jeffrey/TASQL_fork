@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN a.element = 'cl' THEN 1 ELSE 0 END) * 100.0 / COUNT(m.molecule_id)) AS percentage\nFROM \n    atom a\nINNER JOIN \n    molecule m ON a.molecule_id = m.molecule_id\nWHERE \n    m.label = '+';\n```"

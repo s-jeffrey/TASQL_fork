@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Laboratory \nINNER JOIN Patient ON Laboratory.ID = Patient.ID \nWHERE Laboratory.TG >= 200 \nAND (YEAR(CURDATE()) - YEAR(Patient.Birthday)) > 50;\n```"

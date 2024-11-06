@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(sch.AdmFName1, ' ', sch.AdmLName1) AS FullName\nFROM satscores sat\nJOIN schools sch ON sat.cds = sch.CDSCode\nWHERE sat.NumGE1500 = (\n    SELECT MAX(NumGE1500)\n    FROM satscores\n)\n```\n"

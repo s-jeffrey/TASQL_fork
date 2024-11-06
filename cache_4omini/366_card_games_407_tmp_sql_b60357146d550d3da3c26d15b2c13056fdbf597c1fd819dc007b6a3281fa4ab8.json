@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT cards.subtypes, cards.supertypes\nFROM cards\nINNER JOIN set_translations ON cards.uuid = set_translations.setCode\nWHERE set_translations.language = 'German'\nAND cards.subtypes IS NOT NULL\nAND cards.supertypes IS NOT NULL;\n```"

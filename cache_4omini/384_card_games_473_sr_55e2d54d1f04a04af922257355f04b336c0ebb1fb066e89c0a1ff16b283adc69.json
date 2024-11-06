@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.name, filter = 'Adarkar Valkyrie')\nres = df1.select(sets.isForeignOnly)\n```"

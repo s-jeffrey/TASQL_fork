@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, s.Street, s.StreetAbr\nFROM schools s\nJOIN frpm f ON s.CDSCode = f.CDSCode\nWHERE ABS(f.Enrollment (K-12) - f.Enrollment (Ages 5-17)) > 30;\n```"

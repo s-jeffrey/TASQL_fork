@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Understanding what Dassault iSight is doing?')\ndf2 = df1.select(posts.OwnerUserId)\nres = df.where(element = users.Id, filter = df2).select(users.Reputation)\n```"

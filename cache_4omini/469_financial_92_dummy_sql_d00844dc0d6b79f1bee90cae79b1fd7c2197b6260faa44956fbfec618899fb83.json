@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(district.district_id) AS number_of_districts\nFROM district\nJOIN client ON district.district_id = client.district_id\nWHERE client.gender = 'F'\nGROUP BY district.district_id\nHAVING AVG(district.A11) > 6000 AND AVG(district.A11) < 10000;\n```"

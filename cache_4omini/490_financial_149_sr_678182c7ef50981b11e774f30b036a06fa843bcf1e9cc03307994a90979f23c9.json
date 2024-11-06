@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = disp.type, filter = 'DISPONENT')\ndf2 = df.where(element = district.A11, filter = '> 8000').where(element = district.A11, filter = '<= 9000')\nres = df1.select(disp.type).intersect(df2.select(disp.type))\n```"

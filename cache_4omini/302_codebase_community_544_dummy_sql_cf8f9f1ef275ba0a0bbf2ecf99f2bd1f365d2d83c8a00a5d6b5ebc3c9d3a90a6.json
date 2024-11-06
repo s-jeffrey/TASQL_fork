@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName \nFROM posts \nJOIN users ON posts.LastEditorUserId = users.Id \nWHERE posts.Title = 'Examples for teaching: Correlation does not mean causation';\n```"

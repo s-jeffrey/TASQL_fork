@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(results.driverId) * 100.0 / COUNT(DISTINCT lapTimes.driverId)) AS race_completion_rate\nFROM \n    results\nJOIN \n    races ON results.raceId = races.raceId\nLEFT JOIN \n    lapTimes ON results.raceId = lapTimes.raceId AND results.driverId = lapTimes.driverId\nWHERE \n    races.date = '1983-07-16' AND results.time IS NOT NULL;\n```"

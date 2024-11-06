@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.Admission = '-'\nAND Laboratory.Date LIKE '1991-10%'\nAND Laboratory.T-BIL < 2.0;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.FavoriteCount \nFROM comments \nJOIN posts ON comments.PostId = posts.Id \nWHERE comments.UserId = 3025 \nAND comments.CreationDate = '2014-04-23 20:29:39.0';\n```"

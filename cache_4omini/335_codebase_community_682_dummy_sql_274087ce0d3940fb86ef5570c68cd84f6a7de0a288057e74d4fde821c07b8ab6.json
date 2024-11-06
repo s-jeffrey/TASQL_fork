@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Id, users.DisplayName \nFROM posts \nJOIN users ON posts.OwnerUserId = users.Id \nWHERE YEAR(posts.CreationDate) = 2010 \nORDER BY posts.FavoriteCount DESC \nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(transactions_1k.Amount) AS total_spent\nFROM transactions_1k\nWHERE transactions_1k.CustomerID = 38508;\n\nSELECT SUM(transactions_1k.Amount) AS total_spent_january_2012\nFROM transactions_1k\nINNER JOIN yearmonth ON transactions_1k.CustomerID = yearmonth.CustomerID\nWHERE yearmonth.CustomerID = 38508 AND yearmonth.Date = '201201';\n```"

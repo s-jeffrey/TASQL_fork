@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Patient \nJOIN Laboratory ON Patient.ID = Laboratory.ID \nWHERE Patient.Birthday BETWEEN '1936-01-01' AND '1956-12-31' \nAND Patient.SEX = 'M' \nAND Laboratory.CPK >= 250;\n```"

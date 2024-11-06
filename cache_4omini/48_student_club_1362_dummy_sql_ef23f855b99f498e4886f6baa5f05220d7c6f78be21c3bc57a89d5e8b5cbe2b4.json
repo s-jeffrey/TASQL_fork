@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT city) \nFROM zip_code \nWHERE county = 'Orange County' AND state = 'Virginia';\n```"

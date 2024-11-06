@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(district.A15) AS average_crimes_1995\nFROM district\nJOIN account ON district.district_id = account.district_id\nWHERE district.A15 > 4000\nAND account.date >= '1997-01-01';\n```"

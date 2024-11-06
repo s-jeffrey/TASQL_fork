@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.CDSCode\nFROM schools\nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE frpm.FreeMealCountK12 / frpm.TotalEnrollmentK12 > 0.1\nAND satscores.NumGE1500 > 0;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT yearmonth.CustomerID) * 100.0 / (SELECT COUNT(DISTINCT CustomerID) FROM yearmonth WHERE Date = '201202') AS percentage\nFROM yearmonth\nWHERE Date = '201202' AND Consumption > 528.3;\n```"

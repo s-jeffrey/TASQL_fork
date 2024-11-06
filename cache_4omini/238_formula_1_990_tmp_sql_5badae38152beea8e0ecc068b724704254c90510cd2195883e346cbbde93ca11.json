@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.constructorRef, constructors.url\nFROM results\nINNER JOIN races ON results.raceId = races.raceId\nINNER JOIN constructors ON results.constructorId = constructors.constructorId\nWHERE races.name = 'Singapore Grand Prix' AND races.year = 2009\nAND results.time = (SELECT MIN(results.time) FROM results WHERE results.raceId = races.raceId);\n```"

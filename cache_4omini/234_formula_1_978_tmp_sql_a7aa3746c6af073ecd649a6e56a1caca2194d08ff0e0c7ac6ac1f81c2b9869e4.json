@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.location, circuits.lat, circuits.lng, COUNT(races.circuitId) AS circuit_count\nFROM circuits\nINNER JOIN races ON circuits.circuitId = races.circuitId\nWHERE circuits.country = 'Austria'\nGROUP BY circuits.location, circuits.lat, circuits.lng;\n```"

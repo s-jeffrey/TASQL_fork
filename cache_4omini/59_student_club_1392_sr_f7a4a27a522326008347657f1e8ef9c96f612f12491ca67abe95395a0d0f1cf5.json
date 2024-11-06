@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = income.date_received, filter = \"BETWEEN '2019-09-01' AND '2019-09-30'\")\nres = df1.orderby(by = income.amount, desc).limit(1).select(income.source)\n```"

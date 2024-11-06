@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.manaCost \nFROM cards \nWHERE cards.layout = 'normal' \nAND cards.frameVersion = '2003' \nAND cards.borderColor = 'black' \nAND cards.availability = 'mtgo,paper';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT cs.points, c.name, c.nationality\nFROM constructorStandings cs\nINNER JOIN races r ON cs.raceId = r.raceId\nINNER JOIN constructors c ON cs.constructorId = c.constructorId\nWHERE r.name = 'Monaco Grand Prix' AND r.year BETWEEN 1980 AND 2010\nORDER BY cs.points DESC\nLIMIT 1;\n```"

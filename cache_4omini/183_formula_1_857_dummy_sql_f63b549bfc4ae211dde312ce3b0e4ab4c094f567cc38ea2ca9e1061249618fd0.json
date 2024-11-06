@@ -1,0 +1,1 @@
+"```sql\nSELECT c.lat, c.lng \nFROM races r \nJOIN circuits c ON r.circuitId = c.circuitId \nWHERE r.name = 'Abu Dhabi Grand Prix';\n```"

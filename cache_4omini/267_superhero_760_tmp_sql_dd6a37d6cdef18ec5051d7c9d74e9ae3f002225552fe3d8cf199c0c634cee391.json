@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM superhero WHERE height_cm BETWEEN 150 AND 180) AS percentage\nFROM superhero\nINNER JOIN publisher ON superhero.publisher_id = publisher.id\nWHERE superhero.height_cm BETWEEN 150 AND 180 AND publisher.publisher_name = 'Marvel Comics';\n```"

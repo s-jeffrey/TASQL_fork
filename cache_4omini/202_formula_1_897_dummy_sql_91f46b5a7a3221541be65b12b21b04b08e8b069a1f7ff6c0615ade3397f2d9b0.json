@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname, d.nationality, MAX(ds.points) AS max_points\nFROM drivers d\nJOIN driverStandings ds ON d.driverId = ds.driverId\nGROUP BY d.driverId\nORDER BY SUM(ds.wins) DESC\nLIMIT 1;\n```"

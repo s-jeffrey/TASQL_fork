@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(CAST(SUBSTR(races.time, 1, 2) AS REAL) * 60 + \n            CAST(SUBSTR(races.time, 4, 2) AS REAL) + \n            CAST(SUBSTR(races.time, 7, 3) AS REAL) / 1000) AS average_time_seconds\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nWHERE races.year < 1975 AND results.position = 1;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Abdou Diallo')\n    avg_abdou = df1.select(avg(Player_Attributes.ball_control))\n\ndf2 = df.where(element = Player.player_name, filter = 'Aaron Appindangoye')\n    avg_aaron = df2.select(avg(Player_Attributes.ball_control))\n\nres = df.select(SUBTRACT(avg_abdou, avg_aaron))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(SUM(CASE WHEN g.gender = 'Male' THEN 1 ELSE 0 END) AS FLOAT) / \n    NULLIF(SUM(CASE WHEN g.gender = 'Female' THEN 1 ELSE 0 END), 0) AS ratio\nFROM \n    superhero s\nINNER JOIN \n    gender g ON s.gender_id = g.id;\n```"

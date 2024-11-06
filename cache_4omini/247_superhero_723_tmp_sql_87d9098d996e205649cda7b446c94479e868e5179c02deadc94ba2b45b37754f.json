@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT superhero.id) \nFROM superhero \nINNER JOIN colour ON superhero.eye_colour_id = colour.id \nINNER JOIN hero_power ON superhero.id = hero_power.hero_id \nINNER JOIN superpower ON hero_power.power_id = superpower.id \nWHERE colour.colour = 'Blue' AND superpower.power_name = 'Agility';\n```"

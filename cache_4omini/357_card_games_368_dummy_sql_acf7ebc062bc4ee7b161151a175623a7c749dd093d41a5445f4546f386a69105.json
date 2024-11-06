@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(id) * 100.0 / (SELECT COUNT(id) FROM cards)) AS percentage\nFROM cards\nWHERE borderColor = 'borderless';\n```"

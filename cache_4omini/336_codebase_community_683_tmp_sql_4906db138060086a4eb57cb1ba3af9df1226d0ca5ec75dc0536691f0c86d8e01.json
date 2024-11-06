@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(posts.Id) * 100.0 / (SELECT COUNT(*) FROM posts)) AS percentage\nFROM \n    posts\nINNER JOIN \n    users ON posts.OwnerUserId = users.Id\nWHERE \n    users.Reputation > 1000 \n    AND YEAR(users.CreationDate) = 2011;\n```"

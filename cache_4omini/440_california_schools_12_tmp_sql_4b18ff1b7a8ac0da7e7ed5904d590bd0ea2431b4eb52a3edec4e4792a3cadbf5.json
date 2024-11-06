@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(`Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)`) AS Eligible_Free_Rate\nFROM frpm\nINNER JOIN satscores ON frpm.CDSCode = satscores.cds\nWHERE (satscores.NumGE1500 / satscores.NumTstTakr) > 0.3;\n```"

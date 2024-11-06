@@ -1,0 +1,1 @@
+"```sql\nSELECT comments.Text \nFROM comments \nWHERE comments.Score = 17;\n```"

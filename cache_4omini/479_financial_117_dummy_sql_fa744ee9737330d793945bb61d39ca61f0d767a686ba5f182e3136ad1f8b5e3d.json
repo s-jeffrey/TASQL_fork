@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(l.amount) / (SELECT SUM(amount) FROM loan)) * 100 AS percentage_paid\nFROM loan l\nWHERE l.status = 'A';\n```"

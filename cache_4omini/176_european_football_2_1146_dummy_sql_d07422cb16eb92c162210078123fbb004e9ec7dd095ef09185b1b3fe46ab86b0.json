@@ -1,0 +1,1 @@
+"```sql\nSELECT T.team_long_name \nFROM Match M \nJOIN Team T ON M.away_team_api_id = T.team_api_id \nWHERE M.away_team_goal = (SELECT MAX(away_team_goal) FROM Match);\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.operation, filter = 'VYBER KARTOU').where(element = trans.date, filter = '1998')\navg_amount = df1.select(avg(trans.amount))\ndf2 = df1.where(element = trans.amount, filter = '< avg_amount')\nres = df2.select(disp.account_id)\n```"

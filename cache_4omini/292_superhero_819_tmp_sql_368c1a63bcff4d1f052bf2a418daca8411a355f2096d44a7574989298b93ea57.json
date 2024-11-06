@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) FROM superhero WHERE weight_kg IS NULL OR weight_kg = 0 AND eye_colour_id = 7) - \n    (SELECT COUNT(*) FROM superhero WHERE weight_kg IS NULL OR weight_kg = 0 AND eye_colour_id = 1) AS difference\n```"

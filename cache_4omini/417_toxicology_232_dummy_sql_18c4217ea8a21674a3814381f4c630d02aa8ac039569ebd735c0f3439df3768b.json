@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT m.molecule_id \nFROM molecule m \nJOIN bond b ON m.molecule_id = b.molecule_id \nJOIN connected c ON b.bond_id = c.bond_id \nWHERE m.label = '-' AND b.bond_type = '-' \nORDER BY m.molecule_id \nLIMIT 3;\n```"

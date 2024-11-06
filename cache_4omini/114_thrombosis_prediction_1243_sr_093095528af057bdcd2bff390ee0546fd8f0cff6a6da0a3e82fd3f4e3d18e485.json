@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.Birthday, filter = 'SUBTRACT(year(current_timestamp), year(Birthday)) > 55')\ndf2 = df1.where(element = Laboratory.PT, filter = '>= 14')\nres = df.select(DIVIDE(SUM(df2.where(element = Patient.SEX, filter = 'F').count()), SUM(df2.count())) * 100)\n```"

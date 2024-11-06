@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (strftime('%Y', 'now') - strftime('%Y', Player.birthday)) AS age\nFROM \n    Player \nINNER JOIN \n    Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE \n    Player_Attributes.sprint_speed >= 97 \n    AND strftime('%Y', Player_Attributes.date) >= '2013' \n    AND strftime('%Y', Player_Attributes.date) <= '2015';\n```"

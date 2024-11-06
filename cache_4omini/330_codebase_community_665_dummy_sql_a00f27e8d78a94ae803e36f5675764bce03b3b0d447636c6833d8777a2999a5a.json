@@ -1,0 +1,1 @@
+"```sql\nSELECT DIVIDE(COUNT(Id), 12) AS AverageMonthlyLinks\nFROM postLinks\nWHERE YEAR(CreationDate) = 2010\nAND PostId IN (\n    SELECT Id\n    FROM posts\n    WHERE AnswerCount <= 2\n);\n```"

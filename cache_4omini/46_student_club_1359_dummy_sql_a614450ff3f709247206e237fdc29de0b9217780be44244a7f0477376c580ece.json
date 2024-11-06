@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN e.event_name = 'Yearly Kickoff' THEN b.amount ELSE 0 END) / \n     NULLIF(SUM(CASE WHEN e.event_name = 'October Meeting' THEN b.amount ELSE 0 END), 0)) AS budget_ratio\nFROM \n    budget b\nJOIN \n    event e ON b.link_to_event = e.event_id\nWHERE \n    b.category = 'Advertisement';\n```"

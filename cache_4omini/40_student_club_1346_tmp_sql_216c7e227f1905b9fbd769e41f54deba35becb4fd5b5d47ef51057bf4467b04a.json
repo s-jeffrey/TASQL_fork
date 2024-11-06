@@ -1,0 +1,1 @@
+"```sql\nSELECT member.phone \nFROM member \nWHERE member.first_name = 'Carlo' AND member.last_name = 'Jacobs';\n```"

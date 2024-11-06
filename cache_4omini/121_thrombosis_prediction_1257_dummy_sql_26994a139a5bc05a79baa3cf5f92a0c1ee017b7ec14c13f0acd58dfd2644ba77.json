@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Patient \nJOIN Laboratory ON Patient.ID = Laboratory.ID \nWHERE Laboratory.CRE >= 1.5 \nAND (YEAR(CURDATE()) - YEAR(Patient.Birthday)) < 70;\n```"

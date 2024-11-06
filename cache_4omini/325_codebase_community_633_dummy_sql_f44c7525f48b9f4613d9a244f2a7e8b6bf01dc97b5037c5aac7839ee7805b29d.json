@@ -1,0 +1,1 @@
+"```sql\nSELECT Id \nFROM posts \nWHERE OwnerDisplayName = 'slashnick' \nORDER BY AnswerCount DESC \nLIMIT 1;\n```"

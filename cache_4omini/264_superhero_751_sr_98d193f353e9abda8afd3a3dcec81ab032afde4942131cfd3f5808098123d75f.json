@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = gender.gender, filter = 'Male')\ndf2 = df1.select(hero_power.power_id)\nres = df2.select(superpower.power_name).distinct().limit(5)\n```"

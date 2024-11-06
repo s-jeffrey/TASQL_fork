@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN hasContentWarning = 0 THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM \n    foreign_data \nINNER JOIN \n    legalities ON foreign_data.uuid = legalities.uuid\nWHERE \n    legalities.format = 'commander' \n    AND legalities.status = 'Legal';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.hair_colour_id \nFROM superhero \nWHERE superhero.height_cm = 185 AND superhero.race_id = (SELECT id FROM race WHERE race = 'human');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN posts.Score > 50 THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM \n    posts\nINNER JOIN \n    users ON posts.OwnerUserId = users.Id\nWHERE \n    users.Reputation = (SELECT MAX(Reputation) FROM users);\n```"

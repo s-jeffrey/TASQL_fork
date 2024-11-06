@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, AVG(satscores.writing_score) AS average_writing_score, schools.Phone\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.OpenDate > '1991-01-01' OR schools.ClosedDate < '2000-01-01'\nGROUP BY schools.School, schools.Phone;\n```"

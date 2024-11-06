@@ -1,0 +1,1 @@
+"```sql\nSELECT date \nFROM Player_Attributes \nWHERE player_api_id = (SELECT player_api_id FROM Player WHERE player_name = 'Kevin Constant') \nAND crossing = (SELECT MAX(crossing) FROM Player_Attributes WHERE player_api_id = (SELECT player_api_id FROM Player WHERE player_name = 'Kevin Constant'));\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname, r.name\nFROM lapTimes lt\nINNER JOIN drivers d ON lt.driverId = d.driverId\nINNER JOIN races r ON lt.raceId = r.raceId\nWHERE lt.milliseconds = (SELECT MIN(milliseconds) FROM lapTimes);\n```"

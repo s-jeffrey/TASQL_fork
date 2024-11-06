@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM loan WHERE amount < 100000) AS percentage\nFROM loan\nWHERE amount < 100000 AND status = 'C';\n```"

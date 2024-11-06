@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.id, foreign_data.language, foreign_data.flavorText\nFROM cards\nJOIN foreign_data ON cards.uuid = foreign_data.uuid\nWHERE cards.originalType = 'Artifact' \nAND cards.colors LIKE '%B%';\n```"

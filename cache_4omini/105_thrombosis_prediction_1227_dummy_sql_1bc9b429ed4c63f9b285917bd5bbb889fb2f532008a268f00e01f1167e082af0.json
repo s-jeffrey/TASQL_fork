@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(YEAR(CURDATE()) - YEAR(P.Birthday)) AS average_age\nFROM Patient P\nJOIN Laboratory L ON P.ID = L.ID\nWHERE P.SEX = 'M' AND L.T_CHO >= 250;\n```"

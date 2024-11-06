@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Laboratory \nINNER JOIN Patient ON Laboratory.ID = Patient.ID \nWHERE (Laboratory.RNP = 'negative' OR Laboratory.RNP = '0') \nAND Patient.Admission = '+';\n```"

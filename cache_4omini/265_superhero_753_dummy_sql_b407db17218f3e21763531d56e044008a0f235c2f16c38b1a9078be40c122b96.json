@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero_name \nFROM superhero \nWHERE height_cm BETWEEN 170 AND 190 \nAND eye_colour_id IS NULL;\n```"

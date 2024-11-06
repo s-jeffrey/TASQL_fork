@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT tags.TagName\nFROM posts\nJOIN users ON posts.OwnerUserId = users.Id\nJOIN postLinks ON posts.Id = postLinks.PostId\nJOIN tags ON postLinks.PostId = tags.ExcerptPostId\nWHERE users.DisplayName = 'Mark Meckes' AND posts.CommentCount = 0;\n```"

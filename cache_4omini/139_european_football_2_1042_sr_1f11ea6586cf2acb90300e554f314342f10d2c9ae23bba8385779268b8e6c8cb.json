@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Match.season, filter = '2009/2010')\ndf2 = df1.groupby(Match.league_id).having(element = avg(Match.home_team_goal), filter = '> avg(Match.away_team_goal)')\nres = df2.select(League.name)\n```"

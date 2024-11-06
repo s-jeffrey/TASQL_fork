@@ -1,0 +1,1 @@
+"```sql\nSELECT foreign_data.language \nFROM foreign_data \nJOIN cards ON foreign_data.uuid = cards.uuid \nWHERE cards.name = 'A Pedra Fellwar';\n```"

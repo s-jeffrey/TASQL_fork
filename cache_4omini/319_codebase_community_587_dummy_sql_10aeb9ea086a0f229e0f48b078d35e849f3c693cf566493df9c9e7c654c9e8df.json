@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Title, comments.Text, AVG(posts.ViewCount) AS AverageViewCount\nFROM posts\nJOIN postLinks ON posts.Id = postLinks.PostId\nJOIN tags ON postLinks.RelatedPostId = tags.Id\nJOIN comments ON posts.Id = comments.PostId\nWHERE tags.TagName = '<humor>'\nGROUP BY posts.Title, comments.Text;\n```"

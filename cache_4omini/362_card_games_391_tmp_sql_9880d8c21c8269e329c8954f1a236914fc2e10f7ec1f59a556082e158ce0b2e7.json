@@ -1,0 +1,1 @@
+"```sql\nSELECT foreign_data.flavorText\nFROM cards\nINNER JOIN foreign_data ON cards.uuid = foreign_data.uuid\nWHERE cards.originalType = 'Artifact' AND cards.colors LIKE '%B%'\n```"

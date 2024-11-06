@@ -1,0 +1,1 @@
+"```sql\nSELECT customers.Segment\nFROM customers\nINNER JOIN transactions_1k ON customers.CustomerID = transactions_1k.CustomerID\nWHERE transactions_1k.Date = '2012-08-23' AND transactions_1k.Time = '21:20:00';\n```"

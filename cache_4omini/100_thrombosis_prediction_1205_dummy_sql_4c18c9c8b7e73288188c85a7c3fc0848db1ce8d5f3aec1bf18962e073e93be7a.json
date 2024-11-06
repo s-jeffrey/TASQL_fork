@@ -1,0 +1,1 @@
+"```sql\nSELECT UA \nFROM Laboratory \nJOIN Patient ON Laboratory.ID = Patient.ID \nWHERE Patient.ID = 57266 \nAND ((Patient.SEX = 'M' AND UA > 8.0) OR (Patient.SEX = 'F' AND UA > 6.5));\n```"

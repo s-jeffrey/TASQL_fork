@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM Patient p\nJOIN Examination e ON p.ID = e.ID\nJOIN Laboratory l ON p.ID = l.ID\nWHERE l.SM IN ('-', '+-') \nAND e.Thrombosis = 0;\n```"

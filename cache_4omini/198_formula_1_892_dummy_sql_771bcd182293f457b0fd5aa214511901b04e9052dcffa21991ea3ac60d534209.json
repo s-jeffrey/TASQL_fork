@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(d.forename, ' ', d.surname) AS full_name, MAX(ds.points) AS max_points\nFROM driverStandings ds\nJOIN drivers d ON ds.driverId = d.driverId\nGROUP BY ds.driverId\nORDER BY max_points DESC\nLIMIT 1;\n```"

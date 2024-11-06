@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = account.date, filter = '>= 1997-01-01')\ndf2 = df.where(element = district.A15, filter = '> 4000')\nres = df.select(avg(district.A15))\n```"

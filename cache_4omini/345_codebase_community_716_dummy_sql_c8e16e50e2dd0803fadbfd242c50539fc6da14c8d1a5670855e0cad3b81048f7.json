@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(UserId) * 100.0 / NULLIF(COUNT(*), 0)) AS percentage\nFROM \n    comments\nJOIN \n    users ON comments.UserId = users.Id\nWHERE \n    users.UpVotes = 0 \n    AND comments.Score BETWEEN 5 AND 10;\n```"

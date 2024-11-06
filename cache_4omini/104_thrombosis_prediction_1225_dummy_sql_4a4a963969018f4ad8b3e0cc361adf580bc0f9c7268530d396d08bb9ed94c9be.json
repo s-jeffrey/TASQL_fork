@@ -1,0 +1,1 @@
+"```sql\nSELECT SEX, GROUP_CONCAT(DISTINCT Patient.ID) AS Patient_IDs\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.T_BIL >= 2.0\nGROUP BY SEX;\n```"

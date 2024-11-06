@@ -1,0 +1,1 @@
+"```sql\nSELECT s.superhero_name \nFROM superhero s \nJOIN hero_power hp ON s.id = hp.hero_id \nJOIN superpower sp ON hp.power_id = sp.id \nWHERE sp.power_name = 'Wind Control' \nORDER BY s.superhero_name ASC;\n```"

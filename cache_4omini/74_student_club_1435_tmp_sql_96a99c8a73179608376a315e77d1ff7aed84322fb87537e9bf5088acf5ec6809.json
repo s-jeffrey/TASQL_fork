@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name \nFROM event \nWHERE event.type = 'Game' \nAND event.status = 'Closed' \nAND event.event_date BETWEEN '2019-03-15' AND '2020-03-20';\n```"

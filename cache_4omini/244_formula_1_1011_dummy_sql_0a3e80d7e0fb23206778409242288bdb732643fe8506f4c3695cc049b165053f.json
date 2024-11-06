@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(d.forename, ' ', d.surname) AS full_name\nFROM lapTimes lt\nJOIN drivers d ON lt.driverId = d.driverId\nWHERE lt.time = (\n    SELECT MIN(time)\n    FROM lapTimes\n)\nLIMIT 20;\n```"

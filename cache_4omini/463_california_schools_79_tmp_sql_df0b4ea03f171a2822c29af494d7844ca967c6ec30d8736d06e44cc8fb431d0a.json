@@ -1,0 +1,1 @@
+"```sql\nSELECT County, COUNT(School) AS number_of_schools\nFROM schools\nWHERE Virtual = 'F' AND County IN ('San Diego', 'Santa Barbara')\nGROUP BY County\nORDER BY number_of_schools DESC\nLIMIT 1;\n```"

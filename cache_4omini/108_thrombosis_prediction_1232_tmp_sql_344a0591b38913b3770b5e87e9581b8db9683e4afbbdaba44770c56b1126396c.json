@@ -1,0 +1,1 @@
+"```sql\nSELECT Laboratory.ID, Patient.SEX, (YEAR(CURRENT_TIMESTAMP) - YEAR(Patient.Birthday)) AS age\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.GLU >= 180 AND Laboratory.T_CHO < 250;\n```"

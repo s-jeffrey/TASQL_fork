@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = results.raceId, filter = '> 50').where(element = results.raceId, filter = '< 100')\ndf2 = df1.where(element = results.time, filter = '!= null').where(element = results.statusId, filter = 2)\nres = df2.count()\n```"

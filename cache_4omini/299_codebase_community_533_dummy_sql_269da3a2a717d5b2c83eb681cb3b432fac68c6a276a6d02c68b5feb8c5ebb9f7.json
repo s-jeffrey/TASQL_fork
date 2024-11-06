@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM users \nWHERE LastAccessDate > '2014-09-01';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 'h')\ndf2 = df1.groupby(molecule.label).having(element = count(molecule.label), filter = 'MAX')\nres = df2.select(molecule.label)\n```"

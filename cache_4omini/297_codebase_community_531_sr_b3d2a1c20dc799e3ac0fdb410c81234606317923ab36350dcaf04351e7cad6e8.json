@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Harlan')\ntmp_res1 = df1.select(users.Reputation).max()\n\ndf2 = df.where(element = users.DisplayName, filter = 'Jarrod Dixon')\ntmp_res2 = df2.select(users.Reputation).max()\n\nres = df.select(case(when(tmp_res1 > tmp_res2, 'Harlan').otherwise('Jarrod Dixon')))\n```"

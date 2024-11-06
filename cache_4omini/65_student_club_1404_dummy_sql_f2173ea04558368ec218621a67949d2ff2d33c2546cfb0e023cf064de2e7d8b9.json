@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(e.cost) AS total_value\nFROM expense e\nJOIN attendance a ON e.link_to_member = a.link_to_member\nJOIN event ev ON a.link_to_event = ev.event_id\nWHERE ev.event_name = 'October Meeting' AND e.approved = 'true';\n```"

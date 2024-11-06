@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN client.gender = 'M' THEN 1 END) AS REAL) * 100 / COUNT(*) AS male_percentage\nFROM \n    client\nINNER JOIN \n    district ON client.district_id = district.district_id\nWHERE \n    district.district_id = (SELECT district_id FROM district WHERE name = 'South Bohemia' ORDER BY inhabitants DESC LIMIT 1);\n```"

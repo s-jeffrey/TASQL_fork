@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    s.School AS School_Name, \n    CONCAT(s.Street, ', ', s.City, ', ', s.State, ' ', s.Zip) AS Full_Communication_Address\nFROM \n    schools s\nJOIN \n    frpm f ON s.CDSCode = f.CDSCode\nWHERE \n    s.DistrictType = 'High School District' \n    AND f.FreeMealCount_Ages_5_17 > 800 \n    AND s.County = 'Monterey';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.Date, filter = '1984')\ndf2 = df1.where(element = Patient.Birthday, filter = 'SUBTRACT(year(current_timestamp), year(Birthday)) < 50')\ndf3 = df2.where(element = Laboratory.PLT, filter = '100 < PLT < 400')\nres = df3.select(Patient.ID)\n```"

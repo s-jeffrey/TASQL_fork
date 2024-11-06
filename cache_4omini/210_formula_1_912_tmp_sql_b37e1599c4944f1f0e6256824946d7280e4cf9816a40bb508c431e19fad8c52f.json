@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.circuitRef \nFROM circuits \nWHERE circuits.name = 'Marina Bay Street Circuit';\n```"

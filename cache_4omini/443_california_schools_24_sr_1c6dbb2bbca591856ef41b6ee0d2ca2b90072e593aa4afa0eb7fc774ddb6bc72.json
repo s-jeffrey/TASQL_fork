@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = satscores.NumGE1500, filter = '> 0')\nres = df1.select(satscores.cds)\n```"

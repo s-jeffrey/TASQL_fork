@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name, cards.artist, cards.isPromo\nFROM cards\nJOIN rulings ON cards.uuid = rulings.uuid\nGROUP BY cards.id\nORDER BY COUNT(rulings.uuid) DESC\nLIMIT 1;\n```"

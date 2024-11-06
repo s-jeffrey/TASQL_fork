@@ -1,0 +1,1 @@
+"```sql\nSELECT name, convertedManaCost \nFROM cards \nWHERE name IN ('Serra Angel', 'Shrine Keeper');\n```"

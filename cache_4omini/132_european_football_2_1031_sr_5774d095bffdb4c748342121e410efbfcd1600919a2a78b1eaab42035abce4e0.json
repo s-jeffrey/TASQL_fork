@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.sprint_speed, filter = '>= 97')\ndf2 = df1.where(element = Player_Attributes.date, filter = '>= 2013').where(element = Player_Attributes.date, filter = '<= 2015')\nres = df2.select(SUBTRACT(DATETIME(), Player.birthday))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT foreign_data.name \nFROM cards \nINNER JOIN foreign_data ON cards.uuid = foreign_data.uuid \nINNER JOIN sets ON cards.setCode = sets.code \nWHERE sets.name = 'Coldsnap' \nAND cards.convertedManaCost = (SELECT MAX(convertedManaCost) FROM cards WHERE setCode = 'COLDSNAP') \nAND foreign_data.language = 'Italian';\n```"

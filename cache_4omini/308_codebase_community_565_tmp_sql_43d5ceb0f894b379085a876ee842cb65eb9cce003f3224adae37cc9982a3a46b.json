@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(*) > 0 AS is_not_well_finished\nFROM \n    comments\nINNER JOIN \n    posts ON comments.PostId = posts.Id\nWHERE \n    comments.UserId = 23853 \n    AND comments.CreationDate = '2013-07-12 09:08:18.0' \n    AND posts.ClosedDate IS NULL;\n```"

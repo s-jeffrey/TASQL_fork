@@ -1,0 +1,1 @@
+"```sql\nSELECT cost \nFROM expense \nWHERE expense_description = 'Posters' \nAND link_to_budget IN (\n    SELECT budget_id \n    FROM budget \n    WHERE link_to_event = (\n        SELECT event_id \n        FROM event \n        WHERE event_name = 'September Speaker'\n    )\n);\n```"

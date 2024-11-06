@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.IGM, filter = '<= 40 OR >= 400')\ndf2 = df1.groupby(Patient.Diagnosis).having(element = count(Patient.Diagnosis), filter = 'MAX')\nres = df2.select(Patient.Diagnosis)\n```"

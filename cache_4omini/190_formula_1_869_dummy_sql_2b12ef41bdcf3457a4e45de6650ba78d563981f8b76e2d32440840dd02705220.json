@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.url \nFROM constructorResults \nJOIN results ON constructorResults.raceId = results.raceId \nJOIN constructors ON constructorResults.constructorId = constructors.constructorId \nWHERE results.raceId = 9 \nORDER BY constructorResults.points DESC \nLIMIT 1;\n```"

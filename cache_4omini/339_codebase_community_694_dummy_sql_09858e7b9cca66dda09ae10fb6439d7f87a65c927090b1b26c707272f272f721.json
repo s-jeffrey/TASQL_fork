@@ -1,0 +1,1 @@
+"```sql\nSELECT c.Text, u.DisplayName\nFROM comments c\nJOIN posts p ON c.PostId = p.Id\nJOIN users u ON c.UserId = u.Id\nWHERE p.Title = 'Analysing wind data with R'\nORDER BY c.CreationDate DESC\nLIMIT 10;\n```"

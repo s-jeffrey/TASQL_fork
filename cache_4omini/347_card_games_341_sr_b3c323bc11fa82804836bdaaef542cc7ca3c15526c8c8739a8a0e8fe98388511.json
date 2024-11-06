@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.borderColor, filter = 'borderless')\ndf2 = df1.where(element = cards.hasFoil, filter = 0)\nres = df2.select(cards.cardKingdomFoilId, cards.cardKingdomId)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = attendance.link_to_event, filter = 'COUNT(attendance.link_to_event) > 20')\ndf2 = df1.where(element = event.event_name, filter = 'NOT LIKE %fundraiser%')\nres = df2.select(event.event_name)\n```"

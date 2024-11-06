@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(YEAR(CURDATE()) - YEAR(Patient.Birthday)) AS average_age\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Patient.SEX = 'M' AND `T-CHO` >= 250;\n```"

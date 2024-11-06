@@ -1,0 +1,1 @@
+"```sql\nSELECT Team.team_fifa_api_id \nFROM Team_Attributes \nINNER JOIN Team ON Team_Attributes.team_fifa_api_id = Team.team_fifa_api_id \nWHERE Team_Attributes.buildUpPlaySpeed > 50 AND Team_Attributes.buildUpPlaySpeed < 60;\n```"

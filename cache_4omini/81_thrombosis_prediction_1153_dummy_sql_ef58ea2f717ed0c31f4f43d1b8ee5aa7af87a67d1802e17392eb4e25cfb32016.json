@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Diagnosis, Laboratory.Date \nFROM Patient \nJOIN Laboratory ON Patient.ID = Laboratory.ID \nWHERE Patient.ID = '30609';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    a.frequency, \n    o.k_symbol \nFROM \n    account a \nLEFT JOIN \n    order o ON a.account_id = o.account_id \nWHERE \n    a.account_id = 3 \n    OR o.account_id = 3539;\n```"

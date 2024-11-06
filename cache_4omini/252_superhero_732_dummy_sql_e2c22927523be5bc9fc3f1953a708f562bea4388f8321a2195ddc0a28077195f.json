@@ -1,0 +1,1 @@
+"```sql\nSELECT p.publisher_name\nFROM superhero s\nJOIN hero_attribute ha ON s.id = ha.hero_id\nJOIN attribute a ON ha.attribute_id = a.id\nJOIN publisher p ON s.publisher_id = p.id\nWHERE a.attribute_name = 'Speed'\nORDER BY ha.attribute_value ASC\nLIMIT 1;\n```"

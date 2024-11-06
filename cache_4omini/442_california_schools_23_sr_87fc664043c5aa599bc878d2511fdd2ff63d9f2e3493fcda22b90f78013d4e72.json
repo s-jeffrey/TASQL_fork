@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = frpm.`Enrollment (K-12) - Enrollment (Ages 5-17)`, filter = '> 30')\nres = df1.select(schools.School, schools.Street)\n```"

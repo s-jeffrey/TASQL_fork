@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM set_translations \nINNER JOIN sets ON set_translations.setCode = sets.code \nWHERE sets.block = 'Commander' \nAND set_translations.language = 'Portuguese (Brazil)';\n```"

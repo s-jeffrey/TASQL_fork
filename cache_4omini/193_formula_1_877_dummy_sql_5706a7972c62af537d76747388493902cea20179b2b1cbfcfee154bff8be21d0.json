@@ -1,0 +1,1 @@
+"```sql\nSELECT driverId, MIN(dob) AS youngest_dob\nFROM results\nJOIN drivers ON results.driverId = drivers.driverId\nWHERE results.raceId = 872\nGROUP BY driverId\nORDER BY youngest_dob ASC\nLIMIT 1;\n```"

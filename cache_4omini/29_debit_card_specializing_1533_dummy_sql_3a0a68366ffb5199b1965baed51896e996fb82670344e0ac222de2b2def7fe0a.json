@@ -1,0 +1,1 @@
+"```sql\nSELECT yearmonth.Consumption\nFROM transactions_1k\nJOIN yearmonth ON transactions_1k.CustomerID = yearmonth.CustomerID\nWHERE yearmonth.Date = '201208'\nAND (transactions_1k.Price / transactions_1k.Amount) > 29.00\nAND transactions_1k.ProductID = 5;\n```"

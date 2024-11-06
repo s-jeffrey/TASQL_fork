@@ -1,0 +1,1 @@
+"```sql\nSELECT defenceAggressionClass \nFROM Team_Attributes \nWHERE team_fifa_api_id = (SELECT team_fifa_api_id FROM Team WHERE team_long_name = 'Hannover 96') \nAND date LIKE '2015-09-10%';\n```"

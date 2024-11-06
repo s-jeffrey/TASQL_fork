@@ -1,0 +1,1 @@
+"```sql\nSELECT r.year, r.name, r.date, r.time\nFROM drivers d\nJOIN qualifying q ON d.driverId = q.driverId\nJOIN races r ON q.raceId = r.raceId\nWHERE d.dob = (SELECT MAX(dob) FROM drivers)\nORDER BY r.date\nLIMIT 1;\n```"

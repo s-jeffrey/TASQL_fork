@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Match.home_team_goal) \nFROM Match \nINNER JOIN Country ON Match.country_id = Country.id \nWHERE Country.name = 'Poland' AND Match.season = '2010/2011';\n```"

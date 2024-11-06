@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM connected \nWHERE connected.atom_id LIKE 'TR%_19' OR connected.atom_id2 LIKE 'TR%_19';\n```"

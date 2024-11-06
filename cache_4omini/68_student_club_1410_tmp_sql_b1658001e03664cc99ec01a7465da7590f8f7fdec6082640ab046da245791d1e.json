@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(member.first_name, ' ', member.last_name) AS full_name, SUM(expense.cost) AS total_cost\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nWHERE expense.link_to_member = 'rec4BLdZHS2Blfp4v'\nGROUP BY member.first_name, member.last_name;\n```"

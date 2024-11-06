@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.RNP, filter = 'negative').where(element = Patient.Admission, filter = '+')\ndf2 = df.where(element = Laboratory.RNP, filter = '0').where(element = Patient.Admission, filter = '+')\nres = df1.union(df2).select(distinct())\n```"

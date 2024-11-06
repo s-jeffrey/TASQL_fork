@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(badges.UserId).having(element = count(badges.Name), filter = '> 5')\nres = df1.count()\n```"

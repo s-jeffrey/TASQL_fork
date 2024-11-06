@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN preferred_foot = 'left' THEN 1 END) * 100.0 / COUNT(*)) AS percentage_left_foot\nFROM \n    Player\nWHERE \n    YEAR(birthday) BETWEEN 1987 AND 1992;\n```"

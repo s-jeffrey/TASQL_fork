@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(drivers.forename, ' ', drivers.surname) AS full_name, drivers.nationality\nFROM drivers\nWHERE drivers.dob = (SELECT MAX(dob) FROM drivers);\n```"

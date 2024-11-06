@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = yearmonth.Date, filter = 'Between 201201 And 201212')\ndf2 = df1.where(element = customers.Segment, filter = 'LAM')\nres = df2.orderby(by = yearmonth.Consumption).limit(1).select(customers.CustomerID)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT s.CharterNum\nFROM schools s\nJOIN satscores ss ON s.CDSCode = ss.cds\nWHERE ss.AvgScrWrite > 499\nORDER BY ss.AvgScrWrite DESC;\n```"

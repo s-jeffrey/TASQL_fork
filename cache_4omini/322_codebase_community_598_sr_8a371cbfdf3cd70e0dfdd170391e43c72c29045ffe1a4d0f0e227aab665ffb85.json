@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Year(badges.Date), filter = 2010)\ndf2 = df.where(element = Year(badges.Date), filter = 2011)\ntotal_count = df.count()\ncount_2010 = df1.count()\ncount_2011 = df2.count()\npercentage_2010 = (count_2010 / total_count) * 100\npercentage_2011 = (count_2011 / total_count) * 100\nres = percentage_2010 - percentage_2011\n```"

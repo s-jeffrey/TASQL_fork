@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(posts.OwnerUserId).having(element = count(posts.Id), filter = '> 10')\nres = df1.select(Divide(Sum(users.UpVotes), Count(users.Id)), Divide(Sum(users.Age), Count(users.Id)))\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.ID, filter = 57266)\nres = df1.where(element = Laboratory.UA, filter = '(> 8.0 and Patient.SEX = \"M\") or (> 6.5 and Patient.SEX = \"F\")').count()\n```"

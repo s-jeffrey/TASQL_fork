@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) FROM Laboratory WHERE PLT < 100) AS count_lower,\n    (SELECT COUNT(*) FROM Laboratory WHERE PLT > 400) AS count_higher,\n    (SELECT COUNT(*) FROM Laboratory WHERE PLT < 100) - (SELECT COUNT(*) FROM Laboratory WHERE PLT > 400) AS res\n```"

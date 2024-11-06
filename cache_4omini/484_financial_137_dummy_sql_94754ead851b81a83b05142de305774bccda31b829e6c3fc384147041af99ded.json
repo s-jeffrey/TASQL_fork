@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM account a \nJOIN loan l ON a.account_id = l.account_id \nWHERE l.status IN ('C', 'D') \nAND a.district_id = 1;\n``` \n\nThis SQL query counts the number of accounts that have running contracts (either status 'C' or 'D') in the specified branch location (district_id = 1)."

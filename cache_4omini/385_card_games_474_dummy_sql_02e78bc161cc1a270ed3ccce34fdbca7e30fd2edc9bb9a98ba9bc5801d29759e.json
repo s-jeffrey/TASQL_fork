@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM sets \nJOIN set_translations ON sets.code = set_translations.setCode \nWHERE set_translations.language = 'Italian' \nAND sets.baseSetSize < 100;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) FROM superhero \n     WHERE publisher_id = (SELECT id FROM publisher WHERE publisher_name = 'Marvel Comics')) -\n    (SELECT COUNT(*) FROM superhero \n     WHERE publisher_id = (SELECT id FROM publisher WHERE publisher_name = 'DC Comics')) AS difference;\n```"

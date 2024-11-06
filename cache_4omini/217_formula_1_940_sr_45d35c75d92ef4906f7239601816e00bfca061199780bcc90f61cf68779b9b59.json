@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.name, filter = 'Chinese Grand Prix').where(element = races.year, filter = 2008)\ndf2 = df1.where(element = results.time, filter = 'exists')\nres = df2.groupby(results.driverId).having(element = count(results.raceId), filter = '> 0').count()\n```"

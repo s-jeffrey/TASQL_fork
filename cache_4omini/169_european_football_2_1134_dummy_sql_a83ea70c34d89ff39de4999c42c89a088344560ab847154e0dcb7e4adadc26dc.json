@@ -1,0 +1,1 @@
+"```sql\nSELECT (p6.jumping - p23.jumping) AS jumping_score_difference\nFROM Player_Attributes p6, Player_Attributes p23\nWHERE p6.id = 6 AND p23.id = 23;\n```"

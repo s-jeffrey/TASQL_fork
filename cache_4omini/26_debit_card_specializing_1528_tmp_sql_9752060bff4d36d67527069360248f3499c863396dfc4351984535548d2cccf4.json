@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN Segment = 'Premium' THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM \n    gasstations\nWHERE \n    Country = 'SVK';\n```"

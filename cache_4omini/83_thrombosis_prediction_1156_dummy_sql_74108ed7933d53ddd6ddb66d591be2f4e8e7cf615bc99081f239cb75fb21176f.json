@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, (YEAR(CURRENT_TIMESTAMP) - YEAR(Patient.Birthday)) AS age\nFROM Patient\nJOIN Examination ON Patient.ID = Examination.ID\nWHERE Examination.RVVT = '+';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT d.A2 \nFROM client c \nJOIN disp d ON c.client_id = d.client_id \nJOIN account a ON d.account_id = a.account_id \nJOIN district d ON a.district_id = d.district_id \nWHERE c.gender = 'F' AND c.birth_date = '1976-01-29';\n```"

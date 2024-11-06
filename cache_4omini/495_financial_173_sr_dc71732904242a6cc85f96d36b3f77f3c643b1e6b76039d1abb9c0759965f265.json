@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = account.account_id, filter = 3)\nres1 = df1.select(account.frequency)\n\ndf2 = df.where(element = order.account_id, filter = 3539)\nres2 = df2.select(order.k_symbol)\n```"

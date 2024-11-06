@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(DISTINCT a.account_id) * 100.0 / (SELECT COUNT(DISTINCT account_id) FROM loan WHERE amount < 100000)) AS percentage\nFROM loan l\nJOIN account a ON l.account_id = a.account_id\nWHERE l.amount < 100000 AND l.status = 'C';\n```"

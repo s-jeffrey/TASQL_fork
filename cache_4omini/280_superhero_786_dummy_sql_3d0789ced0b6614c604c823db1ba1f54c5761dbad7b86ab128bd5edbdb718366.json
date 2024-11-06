@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT hero_id) \nFROM hero_attribute \nWHERE attribute_id = (SELECT id FROM attribute WHERE attribute_name = 'Strength') \nAND attribute_value = (SELECT MAX(attribute_value) FROM hero_attribute WHERE attribute_id = (SELECT id FROM attribute WHERE attribute_name = 'Strength'));\n```"

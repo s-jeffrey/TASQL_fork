@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, s.DOCType\nFROM schools s\nJOIN frpm f ON s.CDSCode = f.CDSCode\nWHERE f.FRMCount_K12 - f.FRPMCount_Ages_5_17 > (\n    SELECT AVG(f2.Enrollment_K12 - f2.Enrollment_Ages_5_17)\n    FROM frpm f2\n    JOIN schools s2 ON f2.CDSCode = s2.CDSCode\n    WHERE s2.FundingType = 'Locally funded'\n)\n```\n"

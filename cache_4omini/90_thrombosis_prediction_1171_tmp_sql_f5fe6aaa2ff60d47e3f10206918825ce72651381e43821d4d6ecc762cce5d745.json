@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM Examination \nINNER JOIN Patient ON Examination.ID = Patient.ID \nWHERE YEAR(Patient.Birthday) > YEAR(CURDATE()) - 18 \nAND YEAR(Examination.Date) BETWEEN 1990 AND 1993;\n```"

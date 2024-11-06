@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(molecule.label) AS REAL) * 100 / COUNT(bond.bond_id) AS proportion\nFROM bond\nINNER JOIN molecule ON bond.molecule_id = molecule.molecule_id\nWHERE bond.bond_type = '-' AND molecule.label = '+';\n```"

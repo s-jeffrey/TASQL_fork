@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(CASE WHEN Currency = 'EUR' THEN 1 END) AS REAL) / COUNT(CASE WHEN Currency = 'CZK' THEN 1 END) AS ratio\nFROM customers\nWHERE Currency IN ('EUR', 'CZK');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(CASE WHEN L.PLT < 100 THEN 1 END) AS Lower_Than_Normal,\n    COUNT(CASE WHEN L.PLT > 400 THEN 1 END) AS Higher_Than_Normal\nFROM \n    Laboratory L\nJOIN \n    Patient P ON L.ID = P.ID\nWHERE \n    L.PLT < 100 OR L.PLT > 400;\n```"

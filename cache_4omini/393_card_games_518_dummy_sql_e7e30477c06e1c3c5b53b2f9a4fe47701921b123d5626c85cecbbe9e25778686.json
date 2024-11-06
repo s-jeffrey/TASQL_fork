@@ -1,0 +1,1 @@
+"```sql\nSELECT format, GROUP_CONCAT(cards.name) AS banned_cards\nFROM legalities\nJOIN cards ON legalities.uuid = cards.uuid\nWHERE legalities.status = 'banned'\nGROUP BY format\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

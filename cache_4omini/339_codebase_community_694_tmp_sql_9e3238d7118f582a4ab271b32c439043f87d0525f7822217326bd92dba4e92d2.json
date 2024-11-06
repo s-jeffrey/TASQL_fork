@@ -1,0 +1,1 @@
+"```sql\nSELECT comments.Text, users.DisplayName\nFROM comments\nINNER JOIN posts ON comments.PostId = posts.Id\nINNER JOIN users ON comments.UserId = users.Id\nWHERE posts.Title = 'Analysing wind data with R'\nORDER BY comments.CreationDate DESC\nLIMIT 10;\n```"

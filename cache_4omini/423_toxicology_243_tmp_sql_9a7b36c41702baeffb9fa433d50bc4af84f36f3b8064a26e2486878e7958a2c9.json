@@ -1,0 +1,1 @@
+"```sql\nSELECT connected.bond_id \nFROM atom AS a1 \nINNER JOIN connected ON a1.atom_id = connected.atom_id \nINNER JOIN atom AS a2 ON connected.atom_id2 = a2.atom_id \nWHERE a1.element = 'p' AND a2.element = 'n';\n```"

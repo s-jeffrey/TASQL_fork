@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(d.forename, ' ', d.surname) AS full_name\nFROM qualifying q\nJOIN races r ON q.raceId = r.raceId\nJOIN drivers d ON q.driverId = d.driverId\nWHERE r.year = 2008 \n  AND r.circuitId = (SELECT circuitId FROM circuits WHERE circuitRef = 'marina_bay')\n  AND q.position = 1\n  AND q.number = 3\nORDER BY q.q3 ASC\nLIMIT 1;\n```"

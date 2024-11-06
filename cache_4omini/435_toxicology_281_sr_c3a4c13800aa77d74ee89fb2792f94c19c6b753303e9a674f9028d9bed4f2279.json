@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = molecule.label, filter = '+')\ndf2 = df1.where(element = substr(atom.atom_id, 7, 1), filter = '4')\nres = df2.select(atom.element).count()\n```"

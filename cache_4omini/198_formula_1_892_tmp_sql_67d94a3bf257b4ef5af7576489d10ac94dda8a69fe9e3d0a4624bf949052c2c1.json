@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname, ds.points\nFROM driverStandings ds\nINNER JOIN drivers d ON ds.driverId = d.driverId\nWHERE ds.points = (SELECT MAX(points) FROM driverStandings);\n```"

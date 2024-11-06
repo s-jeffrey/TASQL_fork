@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN Patient.SEX = 'F' AND Laboratory.PT >= 14 THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS percentage_female_abnormal_PT\nFROM \n    Patient\nINNER JOIN \n    Laboratory ON Patient.ID = Laboratory.ID\nWHERE \n    (YEAR(CURRENT_TIMESTAMP) - YEAR(Patient.Birthday)) > 55\n    AND Laboratory.PT >= 14;\n```"

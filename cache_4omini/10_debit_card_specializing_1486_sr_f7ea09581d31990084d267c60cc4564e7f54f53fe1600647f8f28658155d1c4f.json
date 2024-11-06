@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Segment, filter = 'SME').where(element = customers.Currency, filter = 'CZK')\ntmp_res1 = df1.count()\n\ndf2 = df.where(element = customers.Segment, filter = 'SME').where(element = customers.Currency, filter = 'EUR')\ntmp_res2 = df2.count()\n\nres = tmp_res1 - tmp_res2\n```"

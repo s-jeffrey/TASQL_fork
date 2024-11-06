@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM races \nLEFT JOIN results ON races.raceId = results.raceId \nWHERE races.name = 'Bahrain Grand Prix' \nAND races.year = 2007 \nAND results.time IS NULL;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.overall_rating, filter = 77)\ndf2 = df1.where(element = Player_Attributes.date, filter = '2016-06-23%')\nres = df2.orderby(by = Player.birthday, asc).select(Player.player_name).limit(1)\n```"

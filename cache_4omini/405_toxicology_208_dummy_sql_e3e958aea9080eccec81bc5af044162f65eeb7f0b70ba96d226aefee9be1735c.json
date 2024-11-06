@@ -1,0 +1,1 @@
+"```sql\nSELECT label, COUNT(label) AS label_count\nFROM atom\nJOIN molecule ON atom.molecule_id = molecule.molecule_id\nWHERE element = 'h'\nGROUP BY label\nORDER BY label_count DESC\nLIMIT 1;\n```"

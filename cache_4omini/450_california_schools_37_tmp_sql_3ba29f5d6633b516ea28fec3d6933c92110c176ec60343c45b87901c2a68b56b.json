@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Street, schools.City, schools.State, schools.Zip\nFROM satscores\nINNER JOIN schools ON satscores.cds = schools.CDSCode\nWHERE (satscores.NumGE1500 / satscores.NumTstTakr) = (\n    SELECT MIN(satscores.NumGE1500 / satscores.NumTstTakr)\n    FROM satscores\n)\n```"

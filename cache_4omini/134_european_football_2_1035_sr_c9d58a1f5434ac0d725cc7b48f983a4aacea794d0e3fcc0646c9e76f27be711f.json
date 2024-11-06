@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Team_Attributes.buildUpPlaySpeed, filter = '> 50').where(element = Team_Attributes.buildUpPlaySpeed, filter = '< 60')\nres = df1.select(Team.team_fifa_api_id)\n```"

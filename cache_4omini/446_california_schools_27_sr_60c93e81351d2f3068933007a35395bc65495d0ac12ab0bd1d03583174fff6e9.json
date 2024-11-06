@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.OpenDate, filter = '> 1991').union(df.where(element = schools.ClosedDate, filter = '< 2000'))\nres = df1.select(schools.School, avg(schools.writing_score), schools.Phone)\n```"

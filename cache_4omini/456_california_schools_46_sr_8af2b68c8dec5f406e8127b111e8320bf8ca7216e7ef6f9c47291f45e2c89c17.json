@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.DOC, filter = '31')\nres = df1.select(schools.School).orderby(by = 'enrollment_count', desc).limit(1)\n```"

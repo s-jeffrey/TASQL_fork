@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.year, filter = '< 1975')\ndf2 = df1.where(element = results.position, filter = '1')\nres = df2.select(avg(cast(substring(races.time, 1, 2), real) * 60 + cast(substring(races.time, 4, 2), real) + cast(substring(races.time, 7, 3), real) / 1000))\n```"

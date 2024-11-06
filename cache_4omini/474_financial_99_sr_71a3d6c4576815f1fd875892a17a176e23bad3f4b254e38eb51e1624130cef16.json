@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.duration, filter = '> 12')\ndf2 = df1.where(element = account.date, filter = '1993-01-01')  # Assuming the date format is YYYY-MM-DD\nres = df2.orderby(by = loan.amount, desc).limit(1).select(account.account_id)\n```"

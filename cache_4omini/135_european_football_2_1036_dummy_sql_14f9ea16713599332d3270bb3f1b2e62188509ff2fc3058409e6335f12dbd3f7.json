@@ -1,0 +1,1 @@
+"```sql\nSELECT T.team_long_name\nFROM Team T\nJOIN Team_Attributes TA ON T.team_api_id = TA.team_api_id\nWHERE TA.buildUpPlayPassing > (\n    SELECT AVG(buildUpPlayPassing)\n    FROM Team_Attributes\n    WHERE strftime('%Y', date) = '2012' AND buildUpPlayPassing IS NOT NULL\n)\nAND strftime('%Y', TA.date) = '2012';\n```"

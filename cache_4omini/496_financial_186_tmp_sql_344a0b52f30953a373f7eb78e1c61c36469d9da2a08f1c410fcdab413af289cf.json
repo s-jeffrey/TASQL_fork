@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM disp WHERE account_id IN (SELECT account_id FROM account WHERE frequency = 'POPLATEK TYDNE')) AS percentage_male_clients\nFROM disp\nWHERE client_id IN (SELECT client_id FROM client WHERE gender = 'M') AND account_id IN (SELECT account_id FROM account WHERE frequency = 'POPLATEK TYDNE');\n```"

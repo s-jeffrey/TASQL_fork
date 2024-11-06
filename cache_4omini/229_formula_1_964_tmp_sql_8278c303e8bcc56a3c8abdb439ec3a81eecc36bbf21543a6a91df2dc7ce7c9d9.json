@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.code \nFROM drivers \nWHERE drivers.nationality = 'American';\n```"

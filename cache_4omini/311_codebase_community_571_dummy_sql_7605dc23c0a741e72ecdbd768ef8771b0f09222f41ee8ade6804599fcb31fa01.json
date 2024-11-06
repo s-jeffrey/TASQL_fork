@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) FROM posts WHERE OwnerUserId = 24) AS PostCount,\n    (SELECT COUNT(*) FROM votes WHERE UserId = 24) AS VoteCount,\n    (SELECT COUNT(*) FROM posts WHERE OwnerUserId = 24) / NULLIF((SELECT COUNT(*) FROM votes WHERE UserId = 24), 0) AS PostToVoteRatio\n```\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN a.element = 'h' THEN 1 ELSE 0 END) * 1.0 / COUNT(a.element)) AS hydrogen_ratio,\n    m.label\nFROM \n    atom a\nJOIN \n    molecule m ON a.molecule_id = m.molecule_id\nWHERE \n    a.molecule_id = 'TR006'\nGROUP BY \n    m.label;\n```"

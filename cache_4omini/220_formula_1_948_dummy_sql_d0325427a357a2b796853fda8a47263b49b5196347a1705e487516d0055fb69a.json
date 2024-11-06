@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(cs.points) AS max_points\nFROM constructorStandings cs\nJOIN constructors c ON cs.constructorId = c.constructorId\nWHERE c.nationality = 'British';\n```"

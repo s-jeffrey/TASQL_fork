@@ -1,0 +1,1 @@
+"```sql\nSELECT team_api_id, buildUpPlaySpeed \nFROM Team_Attributes \nORDER BY buildUpPlaySpeed DESC \nLIMIT 4;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN c.Currency = 'CZK' THEN 1 END) - COUNT(CASE WHEN c.Currency = 'EUR' THEN 1 END)) AS difference\nFROM \n    customers c\nINNER JOIN \n    transactions_1k t ON c.CustomerID = t.CustomerID\nWHERE \n    c.Segment = 'SME';\n```"

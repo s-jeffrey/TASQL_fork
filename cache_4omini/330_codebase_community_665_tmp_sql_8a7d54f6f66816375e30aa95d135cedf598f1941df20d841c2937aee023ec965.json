@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(postLinks.Id) / 12 AS average_monthly_links\nFROM postLinks\nINNER JOIN posts ON postLinks.PostId = posts.Id\nWHERE YEAR(postLinks.CreationDate) = 2010 AND posts.AnswerCount <= 2;\n```"

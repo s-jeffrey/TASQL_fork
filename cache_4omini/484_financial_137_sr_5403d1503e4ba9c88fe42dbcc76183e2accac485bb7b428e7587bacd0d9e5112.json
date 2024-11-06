@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = account.district_id, filter = 1)\ndf2 = df1.where(element = loan.status, filter = 'C').union(df1.where(element = loan.status, filter = 'D'))\nres = df2.count()\n```"

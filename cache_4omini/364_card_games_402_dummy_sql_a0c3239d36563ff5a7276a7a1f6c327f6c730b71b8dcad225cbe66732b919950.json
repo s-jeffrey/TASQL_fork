@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(id) AS count_no_textbox, \n       (SELECT COUNT(id) FROM cards WHERE isStorySpotlight = 1) AS total_story_spotlight,\n       (COUNT(id) * 100.0 / (SELECT COUNT(id) FROM cards WHERE isStorySpotlight = 1)) AS percentage\nFROM cards \nWHERE isStorySpotlight = 1 AND isTextless = 1;\n```"

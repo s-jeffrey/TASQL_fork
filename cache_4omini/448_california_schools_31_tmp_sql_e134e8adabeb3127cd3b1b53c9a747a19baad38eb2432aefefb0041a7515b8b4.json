@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(frpm.`Free Meal Count (K-12)` AS REAL) / frpm.`Enrollment (K-12)` AS eligible_free_rate\nFROM \n    frpm\nJOIN \n    schools ON frpm.CDSCode = schools.CDSCode\nORDER BY \n    frpm.`Enrollment (K-12)` DESC\nLIMIT 10;\n```"

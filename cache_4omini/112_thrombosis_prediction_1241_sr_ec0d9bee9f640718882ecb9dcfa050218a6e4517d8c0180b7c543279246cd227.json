@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.PLT, filter = '< 100')\ncount_lower = df1.count()\n\ndf2 = df.where(element = Laboratory.PLT, filter = '> 400')\ncount_higher = df2.count()\n\nres = count_lower - count_higher\n```"

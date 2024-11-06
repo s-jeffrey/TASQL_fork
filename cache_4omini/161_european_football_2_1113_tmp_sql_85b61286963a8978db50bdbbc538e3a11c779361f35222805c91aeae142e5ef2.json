@@ -1,0 +1,1 @@
+"```sql\nSELECT Team_Attributes.defenceAggressionClass \nFROM Team \nINNER JOIN Team_Attributes ON Team.team_fifa_api_id = Team_Attributes.team_fifa_api_id \nWHERE Team.team_long_name = 'Hannover 96' \nAND Team_Attributes.date LIKE '2015-09-10%';\n```"

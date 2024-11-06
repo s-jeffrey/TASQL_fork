@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.UA, filter = '<= 8.0').where(element = Patient.SEX, filter = 'M')\ntmp_res1 = df1.count()\n\ndf2 = df.where(element = Laboratory.UA, filter = '<= 6.5').where(element = Patient.SEX, filter = 'F')\ntmp_res2 = df2.count()\n\nres = df.select(DIVIDE(tmp_res1, tmp_res2))\n```"

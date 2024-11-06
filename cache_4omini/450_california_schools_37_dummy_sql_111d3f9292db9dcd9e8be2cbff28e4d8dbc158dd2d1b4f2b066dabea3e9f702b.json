@@ -1,0 +1,1 @@
+"```sql\nSELECT s.Street, s.City, s.Zip, s.State\nFROM schools s\nJOIN satscores ss ON s.CDSCode = ss.cds\nWHERE ss.NumTstTakr > 0\nORDER BY (ss.NumGE1500 / ss.NumTstTakr) ASC\nLIMIT 1;\n```"

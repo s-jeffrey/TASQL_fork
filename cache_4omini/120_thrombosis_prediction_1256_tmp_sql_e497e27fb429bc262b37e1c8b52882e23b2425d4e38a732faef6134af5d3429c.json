@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM Laboratory \nINNER JOIN Patient ON Laboratory.ID = Patient.ID \nWHERE Laboratory.CRP = '+' AND Patient.Description IS NULL;\n```"

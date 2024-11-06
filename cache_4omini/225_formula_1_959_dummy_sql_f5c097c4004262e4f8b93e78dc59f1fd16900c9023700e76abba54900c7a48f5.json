@@ -1,0 +1,1 @@
+"```sql\nSELECT fastestLap \nFROM results \nJOIN races ON results.raceId = races.raceId \nWHERE races.year = 2009 \nAND results.position = 1;\n```"

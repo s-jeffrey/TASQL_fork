@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT p.ID) \nFROM Patient p \nJOIN Laboratory l ON p.ID = l.ID \nWHERE p.SEX = 'M' \nAND l.WBC > 3.5 AND l.WBC < 9.0 \nAND (l.FG <= 150 OR l.FG >= 450);\n```"

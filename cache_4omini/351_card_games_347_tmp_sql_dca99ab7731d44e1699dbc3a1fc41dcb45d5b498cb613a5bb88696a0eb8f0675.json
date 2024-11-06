@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.id, rulings.text\nFROM cards\nINNER JOIN rulings ON cards.uuid = rulings.uuid\nWHERE cards.artist = 'Stephen Daniel' AND cards.hasContentWarning = 1;\n```"

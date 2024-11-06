@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(Match.league_id).having(element = count(Match.id), filter = 'MAX')\ndf2 = df1.orderby(by = count(Match.id), desc).limit(1)\nres = df2.select(League.name, count(Match.id))\n```"

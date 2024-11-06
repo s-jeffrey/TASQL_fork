@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, SUBTRACT(YEAR(CURRENT_TIMESTAMP), YEAR(Birthday)) AS age\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.HCT >= 52\nGROUP BY Patient.ID, Birthday\nHAVING COUNT(Laboratory.ID) > 2;\n```"

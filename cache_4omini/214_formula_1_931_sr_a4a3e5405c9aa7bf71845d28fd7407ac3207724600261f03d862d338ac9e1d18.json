@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.name, filter = 'Spanish Grand Prix').where(element = races.year, filter = 2009)\nres = df1.select(max(results.fastestLapSpeed))\n```"

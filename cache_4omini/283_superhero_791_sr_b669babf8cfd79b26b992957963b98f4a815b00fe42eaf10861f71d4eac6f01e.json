@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.height_cm, filter = 'IS NOT NULL AND height_cm > 0')\nres = df1.select(avg(superhero.height_cm))\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.link_to_member, filter = 'rec4BLdZHS2Blfp4v')\nres = df1.select(concat(member.first_name, ' ', member.last_name), expense.cost)\n```"

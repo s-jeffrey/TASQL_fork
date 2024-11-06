@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM comments \nWHERE PostId = (\n    SELECT Id \n    FROM posts \n    ORDER BY Score DESC \n    LIMIT 1\n);\n```"

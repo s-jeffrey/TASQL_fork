@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(COUNT(DISTINCT a.molecule_id) - COUNT(DISTINCT a_f.molecule_id) AS REAL) * 100) / COUNT(DISTINCT a.molecule_id) AS percentage\nFROM \n    atom a\nINNER JOIN \n    molecule m ON a.molecule_id = m.molecule_id\nLEFT JOIN \n    atom a_f ON a.molecule_id = a_f.molecule_id AND a_f.element = 'f'\nWHERE \n    m.label = '+';\n```"

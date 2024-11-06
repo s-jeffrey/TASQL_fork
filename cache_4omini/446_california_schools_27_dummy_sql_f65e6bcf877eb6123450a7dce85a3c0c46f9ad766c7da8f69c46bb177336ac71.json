@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, s.AvgScrWrite, s.Phone\nFROM schools s\nWHERE (s.OpenDate > '1991-01-01' OR s.ClosedDate < '2000-01-01')\n```\n"

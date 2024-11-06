@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.Birthday, filter = '1959-02-18')\ndf2 = df1.where(element = Laboratory.Date, filter = '1981-11-%').select(Laboratory.T-CHO).sum()\ndf3 = df1.where(element = Laboratory.Date, filter = '1981-12-%').select(Laboratory.T-CHO).sum()\nres = df.select((df2 - df3) / df3)\n```"

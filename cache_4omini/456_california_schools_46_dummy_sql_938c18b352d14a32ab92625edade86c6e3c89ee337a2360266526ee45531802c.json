@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, f.Enrollment_K_12\nFROM frpm f\nJOIN schools s ON f.CDSCode = s.CDSCode\nWHERE s.DOC = '31' AND f.Enrollment_K_12 IS NOT NULL\nORDER BY f.Enrollment_K_12 DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT OwnerDisplayName, SUM(ViewCount) AS TotalViewCount\nFROM posts\nWHERE OwnerDisplayName IN ('Harvey Motulsky', 'Noah Snyder')\nGROUP BY OwnerDisplayName\nORDER BY TotalViewCount DESC\nLIMIT 1;\n```"

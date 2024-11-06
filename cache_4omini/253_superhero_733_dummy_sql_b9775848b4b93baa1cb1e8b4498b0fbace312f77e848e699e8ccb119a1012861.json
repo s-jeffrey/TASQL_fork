@@ -1,0 +1,1 @@
+"```sql\nCOUNT(DISTINCT superhero.id) \nFROM superhero \nJOIN colour ON superhero.eye_colour_id = colour.id \nJOIN publisher ON superhero.publisher_id = publisher.id \nWHERE colour.colour = 'Gold' AND publisher.publisher_name = 'Marvel Comics';\n```"

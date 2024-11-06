@@ -1,0 +1,1 @@
+"```sql\nSELECT d.nationality\nFROM results r\nJOIN drivers d ON r.driverId = d.driverId\nWHERE r.fastestLapSpeed = (SELECT MAX(fastestLapSpeed) FROM results);\n```"

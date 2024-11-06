@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT a.link_to_event) AS meeting_count\nFROM attendance a\nJOIN event e ON a.link_to_event = e.event_id\nGROUP BY a.link_to_event\nHAVING COUNT(a.link_to_member) > 10 AND e.type = 'Meeting';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Id, posts.Title \nFROM posts \nJOIN users ON posts.OwnerUserId = users.Id \nWHERE users.DisplayName = 'Harvey Motulsky' \nORDER BY posts.ViewCount DESC \nLIMIT 1;\n```"

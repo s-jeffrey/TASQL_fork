@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT g.Country\nFROM transactions_1k t\nJOIN yearmonth ym ON t.CustomerID = ym.CustomerID\nJOIN gasstations g ON t.GasStationID = g.GasStationID\nWHERE ym.Date = '201306';\n```"

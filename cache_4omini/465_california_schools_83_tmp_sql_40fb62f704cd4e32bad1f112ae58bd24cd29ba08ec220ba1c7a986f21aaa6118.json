@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    schools.City, \n    COUNT(schools.School) AS school_count\nFROM \n    schools\nWHERE \n    schools.GSserved = 'K-8' \nGROUP BY \n    schools.City;\n```"

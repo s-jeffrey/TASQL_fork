@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.molecule_id, filter = 'TR010')\ndf2 = df1.groupby(bond.bond_type).having(element = count(bond.bond_type), filter = 'MAX')\nres = df2.select(bond.bond_type, molecule.molecule_id)\n```"

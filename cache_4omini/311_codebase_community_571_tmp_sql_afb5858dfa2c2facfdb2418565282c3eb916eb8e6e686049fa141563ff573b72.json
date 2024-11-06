@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(posts.Id) / COUNT(votes.Id) AS post_vote_ratio\nFROM \n    posts\nLEFT JOIN \n    votes ON posts.Id = votes.PostId\nWHERE \n    posts.OwnerUserId = 24;\n```"

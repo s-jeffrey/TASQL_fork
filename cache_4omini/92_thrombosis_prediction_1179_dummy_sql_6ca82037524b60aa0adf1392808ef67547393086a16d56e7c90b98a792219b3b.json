@@ -1,0 +1,1 @@
+"```sql\nSELECT e.aCL_IgM \nFROM Examination e \nJOIN Patient p ON e.ID = p.ID \nWHERE p.Diagnosis = 'SLE' \nAND p.Description = '1994-02-19' \nAND e.Examination_Date = '1993-11-12';\n```"

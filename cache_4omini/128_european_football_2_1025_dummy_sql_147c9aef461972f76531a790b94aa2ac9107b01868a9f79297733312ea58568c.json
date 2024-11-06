@@ -1,0 +1,1 @@
+"```sql\nSELECT league_id \nFROM Match \nWHERE season = '2015/2016' \nGROUP BY league_id \nORDER BY SUM(home_team_goal + away_team_goal) DESC \nLIMIT 1;\n```"

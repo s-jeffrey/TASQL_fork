@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(hero_power.power_id) \nFROM hero_power \nINNER JOIN superhero ON hero_power.hero_id = superhero.id \nWHERE superhero.superhero_name = 'Amazo';\n```"

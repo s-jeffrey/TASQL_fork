@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.lat, circuits.lng \nFROM circuits \nINNER JOIN races ON circuits.circuitId = races.circuitId \nWHERE races.name = 'Abu Dhabi Grand Prix';\n```"

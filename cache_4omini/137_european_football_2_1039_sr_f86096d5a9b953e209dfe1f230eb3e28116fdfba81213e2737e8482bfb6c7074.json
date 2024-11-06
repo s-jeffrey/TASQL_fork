@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Ahmed Samir Farag')\ndf2 = df1.select(Player.player_api_id)\ndf3 = df.where(element = Player_Attributes.player_api_id, filter = df2)\nres = df3.select(DIVIDE(SUM(Player_Attributes.long_shots), COUNT(Player_Attributes.player_api_id)))\n```"

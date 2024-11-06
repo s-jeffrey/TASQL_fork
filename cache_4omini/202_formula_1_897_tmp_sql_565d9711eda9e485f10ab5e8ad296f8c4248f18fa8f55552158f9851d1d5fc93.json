@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.nationality, MAX(ds.points) AS max_points\nFROM driverStandings ds\nINNER JOIN drivers d ON ds.driverId = d.driverId\nWHERE ds.wins = (SELECT MAX(wins) FROM driverStandings)\nGROUP BY d.driverId, d.forename, d.nationality;\n```"

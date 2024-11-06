@@ -1,0 +1,1 @@
+"```sql\nSELECT player_name \nFROM Player \nJOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id \nWHERE overall_rating = 77 \nAND date LIKE '2016-06-23%' \nORDER BY birthday ASC \nLIMIT 1;\n```"

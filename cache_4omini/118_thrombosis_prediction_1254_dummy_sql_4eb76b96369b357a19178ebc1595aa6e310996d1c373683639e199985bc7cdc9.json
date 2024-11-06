@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Patient \nJOIN Examination ON Patient.ID = Examination.ID \nWHERE Examination.ID IN (\n    SELECT Laboratory.ID \n    FROM Laboratory \n    WHERE IGA > 80 AND IGA < 500\n) \nAND YEAR(Patient.First_Date) >= 1990;\n```"

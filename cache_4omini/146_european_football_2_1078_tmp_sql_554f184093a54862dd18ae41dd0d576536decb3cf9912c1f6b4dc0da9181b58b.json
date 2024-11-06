@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN (SELECT birthday FROM Player WHERE player_name = 'Aaron Lennon') < \n             (SELECT birthday FROM Player WHERE player_name = 'Abdelaziz Barrada') \n        THEN 'Aaron Lennon' \n        ELSE 'Abdelaziz Barrada' \n    END AS older_player;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT atom.atom_id) \nFROM atom \nJOIN connected ON atom.atom_id = connected.atom_id \nJOIN bond ON connected.bond_id = bond.bond_id \nWHERE bond.bond_type = '#' \nAND (atom.element = 'p' OR atom.element = 'br');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT atom.element \nFROM atom \nWHERE atom.atom_id NOT IN (SELECT connected.atom_id FROM connected);\n```"

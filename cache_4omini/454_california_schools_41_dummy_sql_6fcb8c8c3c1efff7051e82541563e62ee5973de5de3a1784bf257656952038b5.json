@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School\nFROM schools s\nJOIN satscores ss ON s.CDSCode = ss.cds\nWHERE s.Virtual = 'F'\nAND ss.AvgScrRead IN (\n    SELECT DISTINCT ss2.AvgScrRead\n    FROM satscores ss2\n    JOIN schools s2 ON ss2.cds = s2.CDSCode\n    WHERE s2.County = s.County\n    ORDER BY ss2.AvgScrRead DESC\n    LIMIT 5\n)\nORDER BY s.County, ss.AvgScrRead DESC;\n```"

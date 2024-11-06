@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM Match \nWHERE league_id = (SELECT id FROM League WHERE name = 'Belgium Jupiler League') \nAND SUBSTR(date, 1, 7) = '2009-04';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) AS disqualified_finishers\nFROM results\nWHERE raceId > 50 AND raceId < 100\nAND statusId = 2\nAND time IS NOT NULL;\n```"

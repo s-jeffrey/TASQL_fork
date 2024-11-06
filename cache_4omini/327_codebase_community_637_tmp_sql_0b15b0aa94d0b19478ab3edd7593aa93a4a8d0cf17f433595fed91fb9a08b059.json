@@ -1,0 +1,1 @@
+"```sql\nSELECT tags.TagName\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nINNER JOIN postLinks ON posts.Id = postLinks.PostId\nINNER JOIN tags ON postLinks.PostId = tags.ExcerptPostId\nWHERE users.DisplayName = 'Mark Meckes' AND posts.CommentCount = 0;\n```"

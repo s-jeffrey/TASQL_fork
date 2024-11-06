@@ -1,0 +1,1 @@
+"```sql\nSELECT r.name, r.year \nFROM results res \nJOIN drivers d ON res.driverId = d.driverId \nJOIN races r ON res.raceId = r.raceId \nWHERE d.forename = 'Michael' AND d.surname = 'Schumacher' \nORDER BY res.fastestLapTime ASC \nLIMIT 1;\n```"

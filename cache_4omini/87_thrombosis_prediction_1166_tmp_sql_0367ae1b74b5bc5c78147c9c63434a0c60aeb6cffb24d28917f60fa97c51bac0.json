@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.Symptoms, Examination.Diagnosis\nFROM Examination\nINNER JOIN Patient ON Examination.ID = Patient.ID\nWHERE Patient.Birthday = (SELECT MAX(Birthday) FROM Patient);\n```"

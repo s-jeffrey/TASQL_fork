@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, \n       (f.`FRPM Count (Ages 5-17)` / f.`Enrollment (Ages 5-17)` * 100) AS `Percent (%) Eligible FRPM (Ages 5-17)`\nFROM schools s\nJOIN frpm f ON s.CDSCode = f.CDSCode\nWHERE f.LowGrade = 'K' \n  AND f.HighGrade = '9' \n  AND s.County = 'Los Angeles';\n```"

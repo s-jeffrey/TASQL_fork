@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM client \nWHERE client.gender = 'M' \nAND client.district_id = (\n    SELECT district.district_id \n    FROM district \n    ORDER BY district.A15 DESC \n    LIMIT 1 OFFSET 1\n);\n```"

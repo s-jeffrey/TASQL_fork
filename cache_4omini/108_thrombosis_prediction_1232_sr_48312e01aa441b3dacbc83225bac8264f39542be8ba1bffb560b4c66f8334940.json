@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.GLU, filter = '>= 180')\ndf2 = df.where(element = `T-CHO`, filter = '< 250')\nres = df1.where(element = df1.ID, filter = df2.ID).select(Laboratory.ID, Patient.SEX, SUBTRACT(year(current_timestamp), year(Patient.Birthday)))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST((r1.fastestLapSpeed - r2.fastestLapSpeed) AS REAL) * 100 / r2.fastestLapSpeed AS percent_faster\nFROM \n    results r1\nJOIN \n    drivers d ON r1.driverId = d.driverId\nJOIN \n    results r2 ON d.driverId = r2.driverId\nWHERE \n    d.forename = 'Paul' \n    AND d.surname = 'di Resta' \n    AND r1.raceId = 853 \n    AND r2.raceId = 854;\n```"

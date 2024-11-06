@@ -1,0 +1,1 @@
+"```sql\nAVG(home_team_goal) AS average_home_team_goal\nFROM Match\nJOIN Country ON Match.country_id = Country.id\nWHERE Country.name = 'Poland' AND Match.season = '2010/2011';\n```"

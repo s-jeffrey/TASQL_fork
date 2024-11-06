@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Patient \nJOIN Examination ON Patient.ID = Examination.ID \nWHERE Examination.Thrombosis = 2 \nAND Examination.ANA = 'S' \nAND Examination.aCL_IgM > (SELECT AVG(aCL_IgM) * 1.2 FROM Examination);\n```"

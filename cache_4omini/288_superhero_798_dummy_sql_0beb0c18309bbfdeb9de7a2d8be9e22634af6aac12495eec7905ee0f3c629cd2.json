@@ -1,0 +1,1 @@
+"```sql\nSELECT publisher_name \nFROM publisher \nJOIN superhero ON publisher.id = superhero.publisher_id \nWHERE superhero.superhero_name IN ('Hawkman', 'Karate Kid', 'Speedy');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT *\nFROM cards\nWHERE borderColor = 'borderless'\nAND hasFoil = 0\nAND cardKingdomFoilId IS NOT NULL\nAND cardKingdomId IS NOT NULL;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT AdmEmail1, AdmEmail2, AdmEmail3 \nFROM schools \nWHERE County = 'San Bernardino' \n  AND City = 'San Bernardino City Unified' \n  AND OpenDate BETWEEN '2009-01-01' AND '2010-12-31' \n  AND SOC = '62' \n  AND DOC = '54';\n```"

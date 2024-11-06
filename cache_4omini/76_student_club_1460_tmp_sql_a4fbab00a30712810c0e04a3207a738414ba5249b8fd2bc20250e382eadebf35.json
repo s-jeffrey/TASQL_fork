@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(member.first_name, ' ', member.last_name) AS full_name, expense.cost\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nWHERE expense.expense_description IN ('Water', 'Veggie tray', 'supplies');\n```"

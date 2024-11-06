@@ -1,0 +1,1 @@
+"```sql\nSELECT legalities.status \nFROM cards \nJOIN legalities ON cards.uuid = legalities.uuid \nWHERE cards.type = 'Artifact' \nAND cards.side IS NULL \nAND legalities.format = 'vintage';\n```"

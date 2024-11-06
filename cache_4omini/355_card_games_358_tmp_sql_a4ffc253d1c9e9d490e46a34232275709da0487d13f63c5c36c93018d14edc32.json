@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.borderColor \nFROM cards \nWHERE cards.name = 'Ancestor''s Chosen';\n```"

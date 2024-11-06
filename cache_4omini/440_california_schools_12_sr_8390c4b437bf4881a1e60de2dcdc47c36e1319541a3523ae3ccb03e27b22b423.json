@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = (satscores.NumGE1500 / satscores.NumTstTakr), filter = '> 0.3')\ndf2 = df1.orderby(by = '`Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)`', desc).limit(1)\nres = df2.select('Eligible free rate for students aged 5-17')\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(m.first_name, ' ', m.last_name) AS full_name\nFROM member m\nJOIN attendance a ON m.member_id = a.link_to_member\nGROUP BY m.member_id\nHAVING COUNT(a.link_to_event) > 7;\n```"

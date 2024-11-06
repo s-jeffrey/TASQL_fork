@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN income.amount = 50 THEN 1 END) * 100.0 / COUNT(member.member_id)) AS percentage\nFROM \n    member\nJOIN \n    income ON member.member_id = income.link_to_member\nWHERE \n    member.t_shirt_size = 'Medium' AND member.position = 'Member';\n```"

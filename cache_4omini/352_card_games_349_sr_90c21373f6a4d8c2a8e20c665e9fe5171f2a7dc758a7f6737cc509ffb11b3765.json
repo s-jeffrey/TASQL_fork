@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(cards.id).having(element = count(rulings.uuid), filter = 'max(count(rulings.uuid))')\ndf2 = df1.where(element = cards.isPromo, filter = 1)\nres = df2.select(cards.name, cards.artist)\n```"

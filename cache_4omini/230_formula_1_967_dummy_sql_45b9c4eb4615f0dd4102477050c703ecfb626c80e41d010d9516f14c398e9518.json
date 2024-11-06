@@ -1,0 +1,1 @@
+"```sql\nSELECT driverId, code \nFROM drivers \nWHERE nationality = 'Dutch' \nORDER BY dob DESC \nLIMIT 3;\n``` \n\nThis SQL query selects the `driverId` and `code` of the top 3 youngest drivers from the `drivers` table, filtering for those who are Dutch (Netherlandic). The results are ordered by date of birth (`dob`) in descending order to get the youngest drivers."

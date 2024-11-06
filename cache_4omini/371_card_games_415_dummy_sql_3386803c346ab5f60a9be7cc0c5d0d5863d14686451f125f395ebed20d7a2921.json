@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM legalities WHERE format = 'commander' AND status = 'legal')) AS percentage\nFROM legalities l\nJOIN foreign_data f ON l.uuid = f.uuid\nWHERE f.hasContentWarning = 0 AND l.format = 'commander' AND l.status = 'legal';\n```"

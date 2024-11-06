@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.IGG, filter = '>= 2000')\nres = df1.select(distinct(Laboratory.ID)).count()\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(posts.Id) FILTER (WHERE posts.Score > 50) * 100.0 / COUNT(posts.Id)) AS percentage\nFROM \n    users\nJOIN \n    posts ON users.Id = posts.OwnerUserId\nWHERE \n    users.Reputation = (SELECT MAX(Reputation) FROM users);\n```"

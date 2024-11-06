@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'chl')\ndf2 = df1.where(element = votes.UserId, filter = df1.Id)\nres = df2.select(min(votes.CreationDate))\n```"

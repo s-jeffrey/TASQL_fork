@@ -1,0 +1,1 @@
+"```sql\nSELECT Player.player_name\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE Player_Attributes.volleys > 70 AND Player_Attributes.dribbling > 70;\n```"

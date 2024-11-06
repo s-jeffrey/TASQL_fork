@@ -1,0 +1,1 @@
+"```sql\nSELECT ROUND((SUM(CASE WHEN atom.element = 'h' THEN 1 ELSE 0 END) * 100.0) / COUNT(atom.atom_id), 4) AS percent\nFROM atom\nWHERE atom.molecule_id = 'TR206';\n```"

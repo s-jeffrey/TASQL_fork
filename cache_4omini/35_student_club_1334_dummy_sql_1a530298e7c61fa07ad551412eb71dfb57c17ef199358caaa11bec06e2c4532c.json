@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(first_name, ' ', last_name) AS full_name\nFROM member\nWHERE zip IN (\n    SELECT zip_code\n    FROM zip_code\n    WHERE state = 'Illinois'\n);\n```"

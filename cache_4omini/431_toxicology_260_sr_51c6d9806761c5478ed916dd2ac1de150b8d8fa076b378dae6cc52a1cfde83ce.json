@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_type, filter = '#')\ndf2 = df1.where(element = atom.element, filter = 'p').union(df1.where(element = atom.element, filter = 'br'))\nres = df2.select(count(distinct(atom.atom_id)))\n```"

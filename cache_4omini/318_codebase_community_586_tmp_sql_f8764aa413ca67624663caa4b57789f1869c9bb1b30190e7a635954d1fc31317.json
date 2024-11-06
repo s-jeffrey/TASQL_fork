@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM votes\nINNER JOIN posts ON votes.PostId = posts.Id\nINNER JOIN users ON votes.UserId = users.Id\nWHERE votes.BountyAmount = 50 AND posts.Title LIKE '%variance%'\n```"

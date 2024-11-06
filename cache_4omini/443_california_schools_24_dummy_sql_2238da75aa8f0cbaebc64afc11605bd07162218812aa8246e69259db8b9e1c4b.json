@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School\nFROM frpm f\nJOIN satscores sa ON f.CDSCode = sa.cds\nWHERE (f.Free_Meal_Count_K_12 / f.Enrollment_K_12) > 0.1\nAND (sa.NumGE1500 > 0);\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = (satscores.NumGE1500 / satscores.NumTstTakr), filter = min(satscores.NumGE1500 / satscores.NumTstTakr))\nres = df1.select(schools.Street, schools.City, schools.State, schools.Zip)\n```"

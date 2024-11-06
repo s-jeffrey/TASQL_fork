@@ -1,0 +1,1 @@
+"```sql\nSELECT atom.element \nFROM bond \nJOIN connected ON bond.bond_id = connected.bond_id \nJOIN atom ON connected.atom_id = atom.atom_id OR connected.atom_id2 = atom.atom_id \nWHERE bond.bond_id = 'TR001_10_11';\n```"

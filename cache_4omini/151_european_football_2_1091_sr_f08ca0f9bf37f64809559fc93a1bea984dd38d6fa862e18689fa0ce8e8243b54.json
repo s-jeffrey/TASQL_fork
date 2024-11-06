@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = League.name, filter = 'Belgium Jupiler League')\ndf2 = df1.where(element = SUBSTR(Match.date, 1, 7), filter = '2009-04')\nres = df2.count()\n```"

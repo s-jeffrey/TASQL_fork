@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.SEX, filter = 'F')\ndf2 = df1.where(element = Laboratory.PLT, filter = '> 400')\ndf3 = df2.where(element = Patient.Diagnosis, filter = 'SLE')\nres = df3.select(avg(Laboratory.ALB))\n```"

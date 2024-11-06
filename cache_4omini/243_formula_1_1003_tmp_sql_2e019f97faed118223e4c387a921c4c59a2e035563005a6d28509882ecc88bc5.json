@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(results.number) AS accident_count\nFROM results\nINNER JOIN races ON results.raceId = races.raceId\nWHERE races.name = 'Canadian Grand Prix' AND results.statusId = 3\nGROUP BY results.driverId\nORDER BY accident_count DESC\nLIMIT 1;\n```"

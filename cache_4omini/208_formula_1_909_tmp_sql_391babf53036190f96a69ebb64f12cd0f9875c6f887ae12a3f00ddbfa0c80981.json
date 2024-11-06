@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM races WHERE name = 'European Grand Prix') AS percentage\nFROM races\nWHERE name = 'European Grand Prix' AND circuitId IN (SELECT circuitId FROM circuits WHERE country = 'Germany');\n```"

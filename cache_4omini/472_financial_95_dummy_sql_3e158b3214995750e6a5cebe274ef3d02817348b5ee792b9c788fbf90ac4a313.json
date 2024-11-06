@@ -1,0 +1,1 @@
+"```sql\nSELECT a.account_id\nFROM client c\nJOIN account a ON c.client_id = disp.client_id\nJOIN disp d ON a.account_id = d.account_id\nJOIN district di ON c.district_id = di.district_id\nWHERE c.birth_date = (SELECT MIN(birth_date) FROM client)\nAND di.average_salary = (SELECT MAX(average_salary) FROM district);\n```"

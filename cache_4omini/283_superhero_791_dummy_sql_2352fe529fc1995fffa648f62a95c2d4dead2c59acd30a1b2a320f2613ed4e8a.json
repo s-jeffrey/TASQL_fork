@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(height_cm) AS average_height FROM superhero;\n```"

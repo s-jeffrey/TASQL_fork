@@ -1,0 +1,1 @@
+"```sql\nSELECT League.name\nFROM Match\nJOIN League ON Match.league_id = League.id\nWHERE Match.season = '2009/2010'\nGROUP BY League.name\nHAVING AVG(home_team_goal) > AVG(away_team_goal);\n```"

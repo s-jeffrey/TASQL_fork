@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Patient.ID\nFROM Examination\nJOIN Laboratory ON Examination.ID = Laboratory.ID\nWHERE Examination.Examination_Date BETWEEN '1987-07-06' AND '1996-01-31'\nAND Laboratory.GPT > 30\nAND Laboratory.ALB < 4;\n```"

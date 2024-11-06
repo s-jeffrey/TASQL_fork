@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM Patient WHERE SEX = 'F') AS percentage\nFROM \n    Patient\nWHERE \n    SEX = 'F' AND YEAR(Birthday) > 1930;\n```"

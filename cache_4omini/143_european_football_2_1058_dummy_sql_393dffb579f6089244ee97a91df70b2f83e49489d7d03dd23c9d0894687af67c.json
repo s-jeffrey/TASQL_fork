@@ -1,0 +1,1 @@
+"```sql\nSELECT P.player_name\nFROM Player P\nJOIN Player_Attributes PA ON P.player_api_id = PA.player_api_id\nWHERE P.height = (SELECT MAX(height) FROM Player)\n   OR P.height = (SELECT MIN(height) FROM Player)\nGROUP BY P.player_name\nORDER BY AVG(PA.finishing) DESC\nLIMIT 1;\n```"

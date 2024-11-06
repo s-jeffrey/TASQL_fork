@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(foreign_data.language) * 100.0 / NULLIF(COUNT(cards.power), 0)) AS percentage\nFROM \n    cards\nJOIN \n    foreign_data ON cards.uuid = foreign_data.uuid\nWHERE \n    foreign_data.language = 'French' \n    AND (cards.power IS NULL OR cards.power = '*');\n```"

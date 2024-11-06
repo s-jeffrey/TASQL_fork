@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    SUM(CASE WHEN strftime('%Y', event.event_date) = '2019' THEN budget.spent ELSE 0 END) - \n    SUM(CASE WHEN strftime('%Y', event.event_date) = '2020' THEN budget.spent ELSE 0 END) AS difference_spent\nFROM \n    budget\nINNER JOIN \n    event ON budget.link_to_event = event.event_id\nWHERE \n    strftime('%Y', event.event_date) IN ('2019', '2020');\n```"

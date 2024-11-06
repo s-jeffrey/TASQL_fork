@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.Thrombosis, filter = 2)\ndf2 = df1.where(element = Examination.ANA, filter = 'S')\navg_aCL_IgM = df.select(AVG(`aCL IgM`))\nthreshold = avg_aCL_IgM * 1.2\ndf3 = df2.where(element = `aCL IgM`, filter = '> threshold')\nres = df3.count()\n```"

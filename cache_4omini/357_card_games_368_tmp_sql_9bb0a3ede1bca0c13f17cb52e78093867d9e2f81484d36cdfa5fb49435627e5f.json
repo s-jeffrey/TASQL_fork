@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM cards) AS percentage\nFROM cards\nWHERE cards.borderColor = 'borderless';\n```"

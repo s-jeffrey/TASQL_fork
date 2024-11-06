@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.artist, filter = 'Allen Williams')\ndf2 = df1.select(cards.frameVersion, cards.name)\nbanned_cards = df1.where(element = legalities.status, filter = 'Banned')\nres = df2, banned_cards\n```"

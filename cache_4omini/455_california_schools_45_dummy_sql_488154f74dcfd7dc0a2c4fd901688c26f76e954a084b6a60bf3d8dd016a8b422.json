@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, AVG(ss.AvgScrWrite) AS Average_Writing_Score\nFROM schools s\nJOIN satscores ss ON s.CDSCode = ss.cds\nWHERE s.AdmFName1 = 'Ricci' AND s.AdmLName1 = 'Ulrich'\nGROUP BY s.School;\n```"

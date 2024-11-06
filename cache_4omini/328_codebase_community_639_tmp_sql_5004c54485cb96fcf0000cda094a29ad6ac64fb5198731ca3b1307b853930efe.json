@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(t.PostId) AS REAL) * 100 / COUNT(p.Id) AS percentage\nFROM \n    posts p\nLEFT JOIN \n    postLinks pl ON p.Id = pl.PostId\nLEFT JOIN \n    tags t ON p.Id = t.ExcerptPostId\nWHERE \n    p.OwnerDisplayName = 'Community'\n    AND t.TagName = 'r';\n```"

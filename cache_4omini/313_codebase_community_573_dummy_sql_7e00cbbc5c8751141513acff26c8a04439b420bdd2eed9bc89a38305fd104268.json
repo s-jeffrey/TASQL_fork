@@ -1,0 +1,1 @@
+"```sql\nSELECT Text \nFROM comments \nWHERE Score = 17;\n```"

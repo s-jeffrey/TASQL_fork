@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(district.A15)\nFROM account\nINNER JOIN district ON account.district_id = district.district_id\nWHERE account.date >= '1997-01-01' AND district.A15 > 4000;\n```"

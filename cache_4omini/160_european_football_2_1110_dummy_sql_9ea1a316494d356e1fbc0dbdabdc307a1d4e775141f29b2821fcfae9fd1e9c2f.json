@@ -1,0 +1,1 @@
+"```sql\nSELECT buildUpPlayPassingClass \nFROM Team_Attributes \nJOIN Team ON Team_Attributes.team_fifa_api_id = Team.team_fifa_api_id \nWHERE Team.team_long_name = 'FC Lorient' \nAND Team_Attributes.date LIKE '2010-02-22%';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT sp.power_name \nFROM hero_power hp \nJOIN superpower sp ON hp.power_id = sp.id \nWHERE hp.hero_id = 1;\n```"

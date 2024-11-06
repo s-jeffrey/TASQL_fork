@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(SUM(CASE WHEN loan.status = 'A' THEN loan.amount ELSE 0 END) AS REAL) * 100 / SUM(loan.amount) AS percentage_paid\nFROM \n    loan\nWHERE \n    loan.status IN ('A', 'B', 'C', 'D');\n```"

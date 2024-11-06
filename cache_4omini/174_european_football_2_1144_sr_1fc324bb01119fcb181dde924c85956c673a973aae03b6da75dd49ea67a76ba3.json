@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.weight, filter = max(Player.weight))\nres = df1.select(finishing, curve)\n```"

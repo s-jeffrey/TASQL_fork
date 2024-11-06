@@ -1,0 +1,1 @@
+"```sql\nSELECT atom.element \nFROM atom \nWHERE atom.molecule_id = 'TR004';\n```"

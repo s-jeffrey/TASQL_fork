@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN (SELECT MAX(Reputation) FROM users WHERE DisplayName = 'Harlan') > \n             (SELECT MAX(Reputation) FROM users WHERE DisplayName = 'Jarrod Dixon') \n        THEN 'Harlan' \n        ELSE 'Jarrod Dixon' \n    END AS Higher_Reputation_User;\n```"

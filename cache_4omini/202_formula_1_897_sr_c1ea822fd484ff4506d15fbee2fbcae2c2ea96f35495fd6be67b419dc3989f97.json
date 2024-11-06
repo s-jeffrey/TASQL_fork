@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(drivers.driverId).having(element = count(driverStandings.wins), filter = 'max')\ndf2 = df1.orderby(by = driverStandings.wins, desc).limit(1)\nres = df2.select(drivers.forename, drivers.nationality, driverStandings.points)\n```"

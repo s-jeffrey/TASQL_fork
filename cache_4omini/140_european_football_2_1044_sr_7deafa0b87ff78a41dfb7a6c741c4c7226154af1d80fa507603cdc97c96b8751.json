@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = substr(Player.birthday, 1, 7), filter = '1970-10')\nres = df1.select(Player.player_name)\n```"

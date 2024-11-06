@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.UserId, filter = '23853').where(element = comments.CreationDate, filter = '2013-07-12 09:08:18.0')\ndf2 = df1.where(element = posts.ClosedDate, filter = 'IS NULL')\nres = df2.count() > 0\n```"

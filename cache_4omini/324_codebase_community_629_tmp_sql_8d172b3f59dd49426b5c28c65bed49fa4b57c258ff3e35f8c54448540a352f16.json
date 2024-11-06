@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    DIVIDE(COUNT(CASE WHEN YEAR(CreationDate) = 2010 THEN Id END), \n            COUNT(CASE WHEN YEAR(CreationDate) = 2011 THEN Id END)) AS vote_ratio\nFROM \n    votes;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN c.colour = 'Blue' THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM \n    superhero s\nINNER JOIN \n    gender g ON s.gender_id = g.id\nINNER JOIN \n    colour c ON s.skin_colour_id = c.id\nWHERE \n    g.gender = 'Female';\n```"

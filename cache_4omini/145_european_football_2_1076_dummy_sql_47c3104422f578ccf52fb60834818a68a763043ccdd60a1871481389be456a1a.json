@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT AVG(ball_control) FROM Player_Attributes WHERE player_api_id IN (SELECT player_api_id FROM Player WHERE player_name = 'Abdou Diallo')) -\n    (SELECT AVG(ball_control) FROM Player_Attributes WHERE player_api_id IN (SELECT player_api_id FROM Player WHERE player_name = 'Aaron Appindangoye')) AS average_ball_control_difference;\n```"

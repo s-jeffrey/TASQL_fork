@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(m.first_name, ' ', m.last_name) AS full_name, i.amount\nFROM income i\nJOIN member m ON i.link_to_member = m.member_id\nWHERE i.date_received = '2019-09-09';\n```"

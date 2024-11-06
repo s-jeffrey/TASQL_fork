@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(Team_Attributes.chanceCreationPassing) AS highest_chance_creation_passing_score, \n       Team_Attributes.chanceCreationPassingClass \nFROM Team_Attributes \nJOIN Team ON Team_Attributes.team_api_id = Team.team_api_id \nWHERE Team.team_long_name = 'Ajax';\n```"

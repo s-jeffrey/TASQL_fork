@@ -1,0 +1,1 @@
+"```sql\nSELECT tags.ExcerptPostId, tags.WikiPostId \nFROM tags \nWHERE tags.TagName = 'sample';\n```"

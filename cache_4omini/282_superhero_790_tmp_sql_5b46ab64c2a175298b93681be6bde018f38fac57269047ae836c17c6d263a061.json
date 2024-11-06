@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN full_name = 'Emil Blonsky' THEN weight_kg ELSE 0 END) - \n     SUM(CASE WHEN full_name = 'Charles Chandler' THEN weight_kg ELSE 0 END)) AS weight_difference\nFROM \n    superhero;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT d.driverId) \nFROM drivers d \nJOIN lapTimes lt ON d.driverId = lt.driverId \nWHERE d.nationality = 'French' \nAND lt.time < '2:00.00';\n```"

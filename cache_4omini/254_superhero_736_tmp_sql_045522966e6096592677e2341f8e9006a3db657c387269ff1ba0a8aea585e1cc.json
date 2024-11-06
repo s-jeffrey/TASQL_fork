@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name\nFROM hero_attribute\nINNER JOIN attribute ON hero_attribute.attribute_id = attribute.id\nINNER JOIN superhero ON hero_attribute.hero_id = superhero.id\nWHERE attribute.attribute_name = 'Intelligence'\nORDER BY hero_attribute.attribute_value ASC\nLIMIT 1;\n```"

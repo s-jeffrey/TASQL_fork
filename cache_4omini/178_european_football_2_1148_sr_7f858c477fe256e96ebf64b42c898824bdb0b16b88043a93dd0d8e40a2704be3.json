@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.height, filter = '< 180')\ndf2 = df1.where(element = Player_Attributes.overall_rating, filter = '> 70')\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

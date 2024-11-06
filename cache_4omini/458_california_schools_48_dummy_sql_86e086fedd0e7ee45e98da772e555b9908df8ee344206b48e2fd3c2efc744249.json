@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) \n     FROM schools \n     WHERE DOC = '54' AND County = 'Orange' AND StatusType = 'Merged') AS Unified_School_Districts,\n    (SELECT COUNT(*) \n     FROM schools \n     WHERE DOC = '52' AND County = 'Orange' AND StatusType = 'Merged') AS Elementary_School_Districts\n```\n```"

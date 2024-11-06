@@ -1,0 +1,1 @@
+"```sql\nSELECT molecule.molecule_id \nFROM atom \nINNER JOIN molecule ON atom.molecule_id = molecule.molecule_id \nWHERE SUBSTR(atom.atom_id, 7, 2) BETWEEN '21' AND '25' \nAND molecule.label = '+';\n```"

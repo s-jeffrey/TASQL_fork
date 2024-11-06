@@ -1,0 +1,1 @@
+"```sql\nSELECT member.department \nFROM member \nWHERE member.position = 'President';\n```"

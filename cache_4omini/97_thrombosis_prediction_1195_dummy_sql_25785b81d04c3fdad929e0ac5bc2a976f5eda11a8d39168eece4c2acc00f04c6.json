@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Laboratory.ALB) AS average_albumin_level\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.SEX = 'F' \nAND Laboratory.PLT > 400 \nAND Patient.Diagnosis = 'SLE';\n```"

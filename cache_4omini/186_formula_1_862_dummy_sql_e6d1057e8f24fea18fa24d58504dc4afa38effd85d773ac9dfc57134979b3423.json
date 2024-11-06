@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) AS drivers_not_finished\nFROM results\nJOIN races ON results.raceId = races.raceId\nWHERE races.name = 'Bahrain Grand Prix' AND races.year = 2007 AND results.time IS NULL;\n```"

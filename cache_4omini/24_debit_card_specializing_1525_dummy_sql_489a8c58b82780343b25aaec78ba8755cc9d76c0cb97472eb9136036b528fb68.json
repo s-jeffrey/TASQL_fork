@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(DISTINCT t.CustomerID) * 100.0 / (SELECT COUNT(DISTINCT CustomerID) FROM transactions_1k WHERE Date = '2012-08-25')) AS percentage\nFROM \n    transactions_1k t\nJOIN \n    customers c ON t.CustomerID = c.CustomerID\nWHERE \n    c.Currency = 'EUR' AND t.Date = '2012-08-25';\n```"

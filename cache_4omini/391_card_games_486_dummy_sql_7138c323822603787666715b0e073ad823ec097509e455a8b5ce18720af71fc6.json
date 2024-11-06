@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM cards WHERE setCode = 'CSP')) AS percentage\nFROM \n    cards\nWHERE \n    convertedManaCost = 7 AND setCode = 'CSP';\n```"

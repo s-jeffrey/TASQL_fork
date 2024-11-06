@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(frpm.`FRPM Count (K-12)` AS REAL) / CAST(frpm.`Enrollment (K-12)` AS REAL) AS eligible_FRPM_rate\nFROM \n    frpm \nINNER JOIN \n    schools ON frpm.CDSCode = schools.CDSCode\nWHERE \n    schools.SOC = '66'\nORDER BY \n    frpm.`FRPM Count (K-12)` DESC\nLIMIT 5;\n```"

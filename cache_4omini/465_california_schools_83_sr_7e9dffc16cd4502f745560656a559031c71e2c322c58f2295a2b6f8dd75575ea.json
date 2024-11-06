@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.GSserved, filter = 'K-8').where(element = schools.Magnet, filter = 1)\nres1 = df1.where(element = 'NSLP Provision Status', filter = 'Multiple Provision Types').count()\n\ndf2 = df.where(element = schools.GSserved, filter = 'K-8')\nres2 = df2.groupby(schools.City).select(schools.City, count(schools.School))\n```"

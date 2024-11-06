@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.expense_description, filter = 'Water, Veggie tray, supplies')\ndf2 = df1.select(expense.cost, expense.link_to_member)\nres = df2.join(member, df2.link_to_member == member.member_id).select(concat(member.first_name, ' ', member.last_name), expense.cost)\n```"

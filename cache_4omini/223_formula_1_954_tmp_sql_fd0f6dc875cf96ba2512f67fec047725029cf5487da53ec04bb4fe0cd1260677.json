@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(r.results.driverId) AS REAL) * 100 / COUNT(d.driverId) AS race_completion_percentage\nFROM \n    drivers d\nINNER JOIN \n    results r ON d.driverId = r.driverId\nINNER JOIN \n    races ra ON r.raceId = ra.raceId\nWHERE \n    d.nationality = 'Japanese' \n    AND ra.year BETWEEN 2007 AND 2009\n    AND r.time IS NOT NULL;\n```"

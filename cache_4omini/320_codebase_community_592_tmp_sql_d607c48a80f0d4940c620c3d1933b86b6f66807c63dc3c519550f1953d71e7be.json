@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM (\n    SELECT badges.UserId \n    FROM badges \n    GROUP BY badges.UserId \n    HAVING COUNT(badges.Name) > 5\n) AS subquery;\n```"

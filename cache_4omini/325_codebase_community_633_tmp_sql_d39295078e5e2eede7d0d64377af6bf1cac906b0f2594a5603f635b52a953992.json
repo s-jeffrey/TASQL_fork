@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Id\nFROM posts\nWHERE posts.OwnerDisplayName = 'slashnick'\nORDER BY posts.AnswerCount DESC\nLIMIT 1;\n```"

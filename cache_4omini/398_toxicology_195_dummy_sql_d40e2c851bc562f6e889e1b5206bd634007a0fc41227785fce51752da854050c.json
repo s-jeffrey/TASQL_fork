@@ -1,0 +1,1 @@
+"```sql\nSELECT bond_type, COUNT(bond_type) AS count\nFROM bond\nGROUP BY bond_type\nORDER BY count DESC\nLIMIT 1;\n```"

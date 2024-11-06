@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.dob, filter = max(drivers.dob))\ndf2 = df1.where(element = qualifying.driverId, filter = df1.select(drivers.driverId))\ndf3 = df2.orderby(by = races.date).limit(1)\nres = df3.select(races.year, races.name, races.date, races.time)\n```"

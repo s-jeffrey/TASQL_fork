@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.`Percent (%) Eligible FRPM (Ages 5-17)`\nFROM schools\nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode\nWHERE schools.County = 'Los Angeles'\nAND frpm.CDSCode = 'Kindergarten to 9th grade';\n```"

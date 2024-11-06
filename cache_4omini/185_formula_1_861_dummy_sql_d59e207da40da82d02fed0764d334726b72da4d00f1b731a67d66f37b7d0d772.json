@@ -1,0 +1,1 @@
+"```sql\nSELECT d.number \nFROM qualifying q \nJOIN races r ON q.raceId = r.raceId \nJOIN drivers d ON q.driverId = d.driverId \nWHERE q.q3 LIKE '0:01:54%' AND r.raceId = 903;\n```"

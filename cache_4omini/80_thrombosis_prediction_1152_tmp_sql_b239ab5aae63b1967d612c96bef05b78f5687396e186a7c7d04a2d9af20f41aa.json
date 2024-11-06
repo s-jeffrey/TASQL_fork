@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    DIVIDE(COUNT(CASE WHEN Admission = '+' THEN ID END), COUNT(CASE WHEN Admission = '-' THEN ID END)) AS ratio\nFROM \n    Patient\nWHERE \n    Diagnosis = 'SLE';\n```"

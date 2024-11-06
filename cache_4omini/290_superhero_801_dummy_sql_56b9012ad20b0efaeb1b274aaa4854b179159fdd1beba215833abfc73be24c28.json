@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(CASE WHEN g.gender = 'Male' THEN 1 END) AS male_count,\n    COUNT(CASE WHEN g.gender = 'Female' THEN 1 END) AS female_count,\n    COUNT(CASE WHEN g.gender = 'Male' THEN 1 END) * 1.0 / NULLIF(COUNT(CASE WHEN g.gender = 'Female' THEN 1 END), 0) AS male_female_ratio\nFROM \n    superhero s\nJOIN \n    gender g ON s.gender_id = g.id;\n```"

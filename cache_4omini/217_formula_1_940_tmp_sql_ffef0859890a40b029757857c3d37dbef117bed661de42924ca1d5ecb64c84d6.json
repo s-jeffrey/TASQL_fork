@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT results.driverId) \nFROM results \nINNER JOIN races ON results.raceId = races.raceId \nWHERE races.name = 'Chinese Grand Prix' \nAND races.year = 2008 \nAND results.time IS NOT NULL;\n```"

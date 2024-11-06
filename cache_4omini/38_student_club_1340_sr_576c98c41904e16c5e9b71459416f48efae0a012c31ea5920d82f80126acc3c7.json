@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_date, filter = '2019%')\n    total_spent_2019 = df1.select(budget.spent).sum()\n\ndf2 = df.where(element = event.event_date, filter = '2020%')\n    total_spent_2020 = df2.select(budget.spent).sum()\n\nres = df.select(total_spent_2019 - total_spent_2020)\n```"

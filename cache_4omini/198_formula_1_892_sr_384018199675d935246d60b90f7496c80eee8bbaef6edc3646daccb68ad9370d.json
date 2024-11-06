@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = driverStandings.points, filter = max(driverStandings.points))\nres = df1.select(drivers.forename, drivers.surname)\n```"

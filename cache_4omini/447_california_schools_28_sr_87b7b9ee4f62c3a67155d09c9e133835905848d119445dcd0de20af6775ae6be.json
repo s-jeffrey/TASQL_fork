@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.FundingType, filter = 'Locally funded')\navg_difference = df1.select(avg(`Enrollment (K-12)` - `Enrollment (Ages 5-17)`))\ndf2 = df1.where(element = `Enrollment (K-12)` - `Enrollment (Ages 5-17)`, filter = '> avg_difference')\nres = df2.select(schools.School, schools.DOCType)\n```"

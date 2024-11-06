@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN g.Segment = 'Premium' THEN 1 END) * 100.0 / COUNT(*)) AS premium_percentage\nFROM \n    gasstations g\nWHERE \n    g.Country = 'SVK';\n```"

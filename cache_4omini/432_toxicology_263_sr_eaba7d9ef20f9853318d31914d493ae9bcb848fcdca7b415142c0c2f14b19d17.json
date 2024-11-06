@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_type, filter = '-')\ndf2 = df1.where(element = atom.element, filter = 'cl')\nres = df2.select(DIVIDE(SUM(df2.count()), COUNT(df1.count())) * 100)\n```"

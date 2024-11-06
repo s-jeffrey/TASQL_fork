@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Amber')\nres = df1.select(superhero.height_cm)\n```"

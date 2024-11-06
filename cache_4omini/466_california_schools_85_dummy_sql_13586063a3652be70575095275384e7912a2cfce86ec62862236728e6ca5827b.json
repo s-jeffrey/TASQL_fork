@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.\"Percent (%) Eligible Free (K-12)\", schools.\"District Code\"\nFROM frpm\nJOIN schools ON frpm.\"CDSCode\" = schools.\"CDSCode\"\nWHERE schools.\"AdmFName1\" = 'Alusine';\n```"

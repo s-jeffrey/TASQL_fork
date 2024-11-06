@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(ID) * 100.0 / NULLIF((SELECT COUNT(ID) FROM Patient WHERE SEX = 'F'), 0)) AS female_percentage\nFROM \n    Patient\nWHERE \n    YEAR(Birthday) > 1930 AND SEX = 'F';\n```"

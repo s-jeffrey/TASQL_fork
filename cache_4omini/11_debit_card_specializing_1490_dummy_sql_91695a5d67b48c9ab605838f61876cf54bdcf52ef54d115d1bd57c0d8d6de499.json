@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM customers WHERE Segment = 'LAM')) AS percentage\nFROM yearmonth\nWHERE CustomerID IN (SELECT CustomerID FROM customers WHERE Segment = 'LAM') AND Consumption > 46.73;\n```"

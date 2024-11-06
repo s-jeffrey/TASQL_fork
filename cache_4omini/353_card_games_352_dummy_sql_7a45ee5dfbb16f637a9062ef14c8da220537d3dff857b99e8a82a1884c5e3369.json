@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(foreign_data.id) * 100.0 / (SELECT COUNT(cards.id) FROM cards)) AS percentage\nFROM foreign_data\nWHERE foreign_data.language = 'Chinese Simplified';\n```"

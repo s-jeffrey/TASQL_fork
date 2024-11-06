@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname, AVG(ps.duration) AS average_pit_stop_duration\nFROM drivers d\nJOIN pitStops ps ON d.driverId = ps.driverId\nWHERE d.nationality = 'German' \nAND d.dob BETWEEN '1980-01-01' AND '1985-12-31'\nGROUP BY d.driverId\nORDER BY average_pit_stop_duration ASC\nLIMIT 3;\n```"

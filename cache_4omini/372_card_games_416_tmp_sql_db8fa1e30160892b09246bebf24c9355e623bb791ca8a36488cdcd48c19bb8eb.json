@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN foreign_data.language = 'French' THEN 1 END) * 100.0 / COUNT(*)) AS percentage\nFROM \n    cards\nINNER JOIN \n    foreign_data ON foreign_data.uuid = cards.uuid\nWHERE \n    cards.power IS NULL OR cards.power = '*';\n```"

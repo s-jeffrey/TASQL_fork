@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN c.colour = 'Blue' THEN 1 END) * 100.0 / COUNT(*)) AS percentage\nFROM \n    superhero s\nINNER JOIN \n    colour c ON s.eye_colour_id = c.id;\n```"

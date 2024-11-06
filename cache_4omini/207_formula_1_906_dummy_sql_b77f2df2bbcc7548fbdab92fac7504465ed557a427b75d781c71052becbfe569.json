@@ -1,0 +1,1 @@
+"```sql\nSELECT results.points \nFROM results \nJOIN drivers ON results.driverId = drivers.driverId \nJOIN races ON results.raceId = races.raceId \nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton' \nORDER BY races.year, races.round \nLIMIT 1;\n```"

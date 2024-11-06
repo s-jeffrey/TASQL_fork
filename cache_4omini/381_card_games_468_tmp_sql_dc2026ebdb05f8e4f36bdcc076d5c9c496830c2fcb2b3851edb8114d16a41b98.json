@@ -1,0 +1,1 @@
+"```sql\nSELECT set_translations.translation \nFROM sets \nINNER JOIN set_translations ON sets.code = set_translations.setCode \nWHERE sets.name = 'Eighth Edition' AND set_translations.language = 'Chinese Simplified';\n```"

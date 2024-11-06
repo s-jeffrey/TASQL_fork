@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN r.country = 'Germany' THEN 1 END) * 100.0 / COUNT(*)) AS percentage\nFROM \n    races r\nWHERE \n    r.name = 'European Grand Prix';\n```"

@@ -1,0 +1,1 @@
+"```sql\nCOUNT(DISTINCT loan.account_id) AS loan_count\nFROM loan\nJOIN account ON loan.account_id = account.account_id\nWHERE loan.amount >= 250000\nAND loan.date BETWEEN '1995-01-01' AND '1997-12-31'\nAND account.frequency = 'POPLATEK MESICNE';\n```"

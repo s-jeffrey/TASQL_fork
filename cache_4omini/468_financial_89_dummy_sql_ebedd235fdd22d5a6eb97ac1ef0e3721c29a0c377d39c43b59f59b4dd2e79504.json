@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT a.account_id) \nFROM account a \nJOIN trans t ON a.account_id = t.account_id \nJOIN district d ON a.district_id = d.district_id \nWHERE t.type = 'POPLATEK PO OBRATU' \nAND d.region = 'east Bohemia';\n```"

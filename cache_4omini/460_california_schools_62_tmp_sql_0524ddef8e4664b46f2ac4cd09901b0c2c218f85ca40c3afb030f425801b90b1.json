@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM schools \nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode \nWHERE schools.Charter = 0 \nAND schools.County = 'Los Angeles' \nAND (frpm.`Free Meal Count (K-12)` * 100 / frpm.`Enrollment (K-12)`) < 0.18;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT e.Symptoms, e.Diagnosis\nFROM Examination e\nJOIN Patient p ON e.ID = p.ID\nWHERE p.Birthday IS NOT NULL\nORDER BY p.Birthday DESC\nLIMIT 1;\n```"

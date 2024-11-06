@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(P.Birthday) AS Youngest_Birthday\nFROM Patient P\nJOIN Laboratory L ON P.ID = L.ID\nWHERE L.GOT >= 60;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.status, filter = 'C').where(element = loan.status, filter = 'D')\ndf2 = df1.where(element = account.frequency, filter = 'POPLATEK PO OBRATU')\nres = df2.select(avg(loan.amount))\n```"

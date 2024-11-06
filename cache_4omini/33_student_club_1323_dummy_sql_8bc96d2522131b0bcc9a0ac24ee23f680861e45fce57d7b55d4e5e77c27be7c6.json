@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name\nFROM event\nJOIN attendance ON event.event_id = attendance.link_to_event\nGROUP BY event.event_id\nHAVING COUNT(attendance.link_to_member) > 20 AND event.event_name NOT LIKE '%fundraiser%';\n```"

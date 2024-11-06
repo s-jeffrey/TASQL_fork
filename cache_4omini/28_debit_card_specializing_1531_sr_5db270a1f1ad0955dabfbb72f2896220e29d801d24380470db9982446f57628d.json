@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(transactions_1k.CustomerID).agg(total_price = sum(transactions_1k.Price), total_amount = sum(transactions_1k.Amount))\ndf2 = df1.orderby(by = total_price, desc).limit(1)\nres = df2.select(customers.Currency, (total_price / total_amount) as average_price_per_item)\n```"

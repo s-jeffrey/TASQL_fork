@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM cards WHERE setCode = 'Coldsnap') AS percentage\nFROM cards\nWHERE convertedManaCost = 7 AND setCode = 'Coldsnap';\n```"

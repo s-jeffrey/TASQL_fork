@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(yearmonth.Consumption) / 12 AS average_monthly_consumption\nFROM yearmonth\nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Segment = 'SME' \nAND yearmonth.Date BETWEEN '201301' AND '201312';\n```"

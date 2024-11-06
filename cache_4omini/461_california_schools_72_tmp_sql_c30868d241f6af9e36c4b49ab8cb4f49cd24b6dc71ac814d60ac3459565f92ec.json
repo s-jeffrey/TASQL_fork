@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(frpm.`Enrollment (Ages 5-17)`)\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE frpm.`Academic Year` = 2014\nAND schools.County = 'Fremont'\nAND schools.EdOpsCode = 'SSS';\n```"

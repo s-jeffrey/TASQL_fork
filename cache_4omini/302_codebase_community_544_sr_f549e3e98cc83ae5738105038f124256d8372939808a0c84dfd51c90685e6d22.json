@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Examples for teaching: Correlation does not mean causation')\ndf2 = df1.where(element = posts.LastEditorUserId, filter = df1.LastEditorUserId)\nres = df2.select(users.DisplayName)\n```"

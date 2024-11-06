@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name\nFROM expense\nJOIN budget ON expense.link_to_budget = budget.link_to_event\nJOIN event ON budget.link_to_event = event.event_id\nWHERE expense.cost = (SELECT MIN(cost) FROM expense);\n```"

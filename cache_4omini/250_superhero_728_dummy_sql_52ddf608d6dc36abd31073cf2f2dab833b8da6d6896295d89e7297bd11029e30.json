@@ -1,0 +1,1 @@
+"```sql\nSELECT colour.colour, COUNT(superhero.id) AS popularity\nFROM superhero\nJOIN publisher ON superhero.publisher_id = publisher.id\nJOIN colour ON superhero.eye_colour_id = colour.id\nWHERE publisher.publisher_name = 'Marvel Comics'\nGROUP BY colour.colour\nORDER BY popularity DESC;\n```"

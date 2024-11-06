@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = frpm.`Enrollment (K-12)`, desc).limit(11)\ndf2 = df1.select(frpm.`Free Meal Count (K-12)`, frpm.`Enrollment (K-12)`)\nres = df2.select(cast(df2.`Free Meal Count (K-12)`, real) / df2.`Enrollment (K-12)`)\n```"

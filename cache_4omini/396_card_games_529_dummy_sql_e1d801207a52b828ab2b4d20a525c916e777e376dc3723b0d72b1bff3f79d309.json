@@ -1,0 +1,1 @@
+"```sql\nSELECT s.name\nFROM sets s\nJOIN set_translations st ON s.code = st.setCode\nWHERE st.language = 'Korean'\nAND s.id NOT IN (\n    SELECT st2.id\n    FROM set_translations st2\n    WHERE st2.language = 'Japanese'\n);\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(id) * 100.0 / (SELECT COUNT(id) FROM cards WHERE isStorySpotlight = 1)) AS percentage\nFROM \n    cards\nWHERE \n    language = 'French' AND isStorySpotlight = 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT account.district_id, COUNT(client.client_id) AS female_count\nFROM client\nINNER JOIN account ON client.client_id = disp.client_id\nWHERE client.gender = 'F'\nGROUP BY account.district_id\nORDER BY female_count DESC\nLIMIT 9;\n```"

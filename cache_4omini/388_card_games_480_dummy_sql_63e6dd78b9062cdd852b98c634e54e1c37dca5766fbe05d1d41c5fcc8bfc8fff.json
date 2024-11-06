@@ -1,0 +1,1 @@
+"```sql\nSELECT fd.flavorText \nFROM foreign_data fd \nJOIN cards c ON fd.uuid = c.uuid \nWHERE fd.language = 'Italian' AND c.name = 'Ancestor''s Chosen';\n```"

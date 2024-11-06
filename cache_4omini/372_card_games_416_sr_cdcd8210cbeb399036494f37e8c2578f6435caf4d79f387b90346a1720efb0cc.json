@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = foreign_data.language, filter = 'French')\ndf2 = df.where(element = cards.power, filter = 'IS NULL OR power = \"*\"')\nres = df.select(cast(df1.count(), real) * 100 / df2.count())\n```"

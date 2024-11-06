@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(expense.cost) \nFROM expense \nINNER JOIN member ON expense.link_to_member = member.member_id \nWHERE member.first_name = 'Elijah' \nAND member.last_name = 'Allen' \nAND (MONTH(expense.expense_date) = 9 OR MONTH(expense.expense_date) = 10);\n```"

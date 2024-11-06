@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN c.Currency = 'CZK' THEN ym.Consumption ELSE 0 END) - \n     SUM(CASE WHEN c.Currency = 'EUR' THEN ym.Consumption ELSE 0 END)) AS Consumption_Difference\nFROM \n    customers c\nINNER JOIN \n    yearmonth ym ON c.CustomerID = ym.CustomerID\nWHERE \n    ym.Date BETWEEN '201201' AND '201212';\n```"

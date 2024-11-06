@@ -1,0 +1,1 @@
+"```sql\nSELECT s.superhero_name, p.publisher_name\nFROM superhero s\nJOIN publisher p ON s.publisher_id = p.id\nWHERE s.hair_colour_id = s.skin_colour_id \n  AND s.hair_colour_id = s.eye_colour_id;\n```"

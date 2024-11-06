@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN cards.isStorySpotlight = 1 AND cards.isTextless = 0 THEN 1 END) * 100.0 / COUNT(*)) AS percentage,\n    cards.id\nFROM \n    cards\nWHERE \n    cards.isStorySpotlight = 1 AND cards.isTextless = 0\nGROUP BY \n    cards.id;\n```"

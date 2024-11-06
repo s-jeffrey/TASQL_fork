@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name \nFROM superhero \nJOIN alignment ON superhero.alignment_id = alignment.id \nWHERE alignment.alignment = 'Neutral';\n```"

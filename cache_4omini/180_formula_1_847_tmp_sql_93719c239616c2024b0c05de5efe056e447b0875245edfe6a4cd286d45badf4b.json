@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.surname\nFROM qualifying\nINNER JOIN drivers ON qualifying.driverId = drivers.driverId\nWHERE qualifying.raceId = 19\nORDER BY qualifying.q2 ASC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.atom_id, filter = \"SUBSTR(atom_id, 7, 2) BETWEEN '21' AND '25'\")\ndf2 = df1.where(element = molecule.label, filter = \"'+'\")\nres = df2.select(molecule.molecule_id)\n```"

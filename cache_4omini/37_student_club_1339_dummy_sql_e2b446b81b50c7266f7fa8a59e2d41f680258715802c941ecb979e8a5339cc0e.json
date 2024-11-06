@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(cost) AS average_cost\nFROM expense\nJOIN member ON expense.link_to_member = member.member_id\nWHERE member.first_name = 'Elijah' AND member.last_name = 'Allen'\nAND MONTH(expense_date) IN (9, 10);\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT products.Description\nFROM products\nINNER JOIN transactions_1k ON products.ProductID = transactions_1k.ProductID\nINNER JOIN yearmonth ON transactions_1k.CustomerID = yearmonth.CustomerID\nWHERE yearmonth.Date = '201309';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = circuits.name, filter = 'Marina Bay Street Circuit')\nres = df1.select(circuits.circuitRef)\n```"

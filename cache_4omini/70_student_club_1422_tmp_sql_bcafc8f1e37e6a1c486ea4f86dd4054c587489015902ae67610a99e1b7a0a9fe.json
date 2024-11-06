@@ -1,0 +1,1 @@
+"```sql\nSELECT event.type \nFROM event \nWHERE event.location = 'MU 215';\n```"

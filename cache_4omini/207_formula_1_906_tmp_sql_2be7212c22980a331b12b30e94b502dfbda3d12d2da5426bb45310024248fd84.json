@@ -1,0 +1,1 @@
+"```sql\nSELECT races.name, results.points\nFROM drivers\nINNER JOIN results ON drivers.driverId = results.driverId\nINNER JOIN races ON results.raceId = races.raceId\nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton'\nAND races.year = (SELECT MIN(year) FROM races INNER JOIN results ON races.raceId = results.raceId WHERE results.driverId = drivers.driverId);\n```"

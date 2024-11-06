@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(Laboratory.Date) AS Latest_Lab_Date, \n       YEAR(Patient.First_Date) - YEAR(Patient.Birthday) AS Age_At_Admission\nFROM Patient\nJOIN Examination ON Patient.ID = Examination.ID\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.Diagnosis = 'SJS'\nGROUP BY Patient.ID;\n```"

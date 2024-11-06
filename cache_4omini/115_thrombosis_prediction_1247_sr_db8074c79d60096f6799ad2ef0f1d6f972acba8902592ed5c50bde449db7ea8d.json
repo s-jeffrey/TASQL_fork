@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.SEX, filter = 'M')\ndf2 = df1.where(element = Laboratory.WBC, filter = '> 3.5 and < 9.0')\ndf3 = df2.where(element = Laboratory.FG, filter = '<= 150 or >= 450')\nres = df3.count()\n```"

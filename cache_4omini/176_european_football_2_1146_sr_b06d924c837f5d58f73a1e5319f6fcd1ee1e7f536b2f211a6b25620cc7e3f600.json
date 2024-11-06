@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(Match.away_team_api_id).having(element = max(Match.away_team_goal), filter = 'MAX')\nres = df1.select(Team.team_long_name)\n```"

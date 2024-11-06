@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM transactions_1k \nINNER JOIN gasstations ON transactions_1k.GasStationID = gasstations.GasStationID \nWHERE transactions_1k.Date = '2012-08-26' \nAND transactions_1k.Time BETWEEN '08:00:00' AND '09:00:00' \nAND gasstations.Country = 'CZE';\n```"

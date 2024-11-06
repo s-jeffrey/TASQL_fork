@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN c.colour = 'Blue' THEN 1 END) * 100.0 / COUNT(*)) AS percentage\nFROM \n    superhero s\nJOIN \n    colour c ON s.skin_colour_id = c.id\nWHERE \n    s.gender_id = (SELECT id FROM gender WHERE gender = 'Female');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT element \nFROM atom \nWHERE atom_id IN (\n    SELECT atom_id \n    FROM connected \n    WHERE bond_id = 'TR144_8_19'\n);\n```"

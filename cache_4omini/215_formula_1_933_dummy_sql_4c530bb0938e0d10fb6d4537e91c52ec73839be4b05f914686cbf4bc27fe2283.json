@@ -1,0 +1,1 @@
+"```sql\nSELECT results.positionOrder \nFROM results \nJOIN races ON results.raceId = races.raceId \nJOIN drivers ON results.driverId = drivers.driverId \nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton' \nAND races.name = 'Chinese Grand Prix' \nAND results.raceId = (SELECT raceId FROM races WHERE name = 'Chinese Grand Prix' AND year = 2008);\n```"

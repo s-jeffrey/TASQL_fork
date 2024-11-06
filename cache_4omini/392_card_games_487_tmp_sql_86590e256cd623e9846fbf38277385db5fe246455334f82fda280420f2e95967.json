@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM cards WHERE setCode = 'Coldsnap') AS percentage_incredibly_powerful\nFROM \n    cards\nWHERE \n    setCode = 'Coldsnap' \n    AND cardKingdomFoilId IS NOT NULL \n    AND cardKingdomId IS NOT NULL;\n```"

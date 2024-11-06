@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(UpVotes) AS AverageUpVotes, AVG(Age) AS AverageAge\nFROM users\nWHERE Id IN (\n    SELECT OwnerUserId\n    FROM posts\n    GROUP BY OwnerUserId\n    HAVING COUNT(Id) > 10\n);\n```"

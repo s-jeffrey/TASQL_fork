@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Phone\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.District = 'Fresno Unified'\nORDER BY satscores.AvgScrRead ASC\nLIMIT 1;\n```"

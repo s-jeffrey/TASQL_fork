@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Ariel Borysiuk')\ntmp_res1 = df1.select(Player_Attributes.overall_rating).sum()\n\ndf2 = df.where(element = Player.player_name, filter = 'Paulin Puel')\ntmp_res2 = df2.select(Player_Attributes.overall_rating).sum()\n\nres = df.select(multiply(divide(subtract(tmp_res1, tmp_res2), tmp_res2), 100))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN event.event_name = 'Yearly Kickoff' THEN expense.cost ELSE 0 END) / SUM(expense.cost)) * 100 AS percentage\nFROM \n    expense\nINNER JOIN \n    attendance ON expense.link_to_member = attendance.link_to_member\nINNER JOIN \n    event ON attendance.link_to_event = event.event_id\n```\n"

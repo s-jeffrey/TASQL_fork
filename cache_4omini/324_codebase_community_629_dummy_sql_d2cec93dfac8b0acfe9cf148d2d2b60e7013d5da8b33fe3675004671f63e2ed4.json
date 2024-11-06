@@ -1,0 +1,1 @@
+"```sql\nSELECT DIVIDE(COUNT(Id) WHERE YEAR(CreationDate) = 2010, COUNT(Id) WHERE YEAR(CreationDate) = 2011) AS VoteRatio FROM votes;\n```"

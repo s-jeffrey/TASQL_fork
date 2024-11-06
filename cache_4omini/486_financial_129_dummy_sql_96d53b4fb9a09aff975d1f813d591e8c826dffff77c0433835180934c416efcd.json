@@ -1,0 +1,1 @@
+"```sql\nSELECT d.A2 AS district_name, t.amount\nFROM trans t\nJOIN account a ON t.account_id = a.account_id\nJOIN district d ON a.district_id = d.district_id\nWHERE t.type = 'VYDAJ' AND t.date LIKE '1996-01%'\nORDER BY t.amount DESC\nLIMIT 10;\n```"

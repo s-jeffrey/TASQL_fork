@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.setCode, filter = 'Coldsnap')\ndf2 = df1.where(element = cards.convertedManaCost, filter = '> 5')\nres = df2.where(element = cards.power, filter = '*').count()\n```"

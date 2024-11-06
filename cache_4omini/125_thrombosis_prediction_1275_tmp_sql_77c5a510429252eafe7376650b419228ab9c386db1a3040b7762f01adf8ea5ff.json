@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID) \nFROM Laboratory \nINNER JOIN Patient ON Laboratory.ID = Patient.ID \nWHERE Laboratory.CENTROMEA IN ('-', '+-') \nAND Laboratory.SSB IN ('-', '+-') \nAND Patient.SEX = 'M';\n```"

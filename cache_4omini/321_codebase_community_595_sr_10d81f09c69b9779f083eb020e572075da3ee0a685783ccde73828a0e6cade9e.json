@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(postHistory.UserId).having(element = count(postHistory.PostId), filter = '= 1')\ndf2 = df.where(element = posts.ViewCount, filter = '>= 1000')\nres = df1.select(postHistory.UserId).intersect(df2.select(postHistory.UserId))\n```"

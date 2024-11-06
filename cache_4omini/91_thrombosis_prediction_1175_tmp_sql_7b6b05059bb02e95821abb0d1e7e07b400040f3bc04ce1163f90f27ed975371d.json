@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    Examination.Diagnosis, \n    (YEAR(Examination.`Examination Date`) - YEAR(Patient.Birthday)) AS age\nFROM \n    Examination\nINNER JOIN \n    Patient ON Examination.ID = Patient.ID\nWHERE \n    Examination.ID = (SELECT ID FROM Laboratory ORDER BY HGB DESC LIMIT 1)\n```"

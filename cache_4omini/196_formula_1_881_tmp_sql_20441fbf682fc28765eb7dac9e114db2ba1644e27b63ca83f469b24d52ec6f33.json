@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(DISTINCT results.driverId) AS REAL) * 100 / COUNT(DISTINCT lapTimes.driverId) AS completion_rate\nFROM \n    races \nLEFT JOIN \n    lapTimes ON lapTimes.raceId = races.raceId \nLEFT JOIN \n    results ON results.raceId = races.raceId \nWHERE \n    races.date = '1983-07-16' \n    AND results.time IS NOT NULL;\n```"

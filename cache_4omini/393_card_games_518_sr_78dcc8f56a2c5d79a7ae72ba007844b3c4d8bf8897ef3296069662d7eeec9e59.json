@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = legalities.status, filter = 'Banned')\ndf2 = df1.groupby(legalities.format).having(element = count(legalities.status), filter = 'MAX')\nres = df2.select(legalities.format, cards.name)\n```"

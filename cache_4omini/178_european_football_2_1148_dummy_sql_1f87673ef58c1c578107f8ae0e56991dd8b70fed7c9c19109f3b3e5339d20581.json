@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Player_Attributes)) AS percentage\nFROM Player_Attributes\nWHERE height < 180 AND overall_rating > 70;\n```"

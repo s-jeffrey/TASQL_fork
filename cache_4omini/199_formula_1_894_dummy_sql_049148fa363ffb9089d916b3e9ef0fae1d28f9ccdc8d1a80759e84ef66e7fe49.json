@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname, r.name, MIN(lapTimes.milliseconds) AS best_lap_time\nFROM lapTimes\nJOIN drivers d ON lapTimes.driverId = d.driverId\nJOIN races r ON lapTimes.raceId = r.raceId\nGROUP BY d.driverId, r.raceId\nORDER BY best_lap_time\nLIMIT 1;\n```"

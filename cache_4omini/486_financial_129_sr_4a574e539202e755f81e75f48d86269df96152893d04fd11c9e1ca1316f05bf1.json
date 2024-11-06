@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.type, filter = 'VYDAJ')\ndf2 = df1.where(element = trans.date, filter = 'LIKE 1996-01%')\nres = df2.groupby(district.A2).orderby(trans.amount, desc).limit(10)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN u.Age > 65 THEN 1 END) * 100.0 / COUNT(*)) AS percentage\nFROM \n    posts p\nJOIN \n    users u ON p.OwnerUserId = u.Id\nWHERE \n    p.Score > 5;\n```"

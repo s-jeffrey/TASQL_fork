@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM superhero s JOIN publisher p ON s.publisher_id = p.id WHERE p.publisher_name = 'Marvel Comics')) AS percent\nFROM \n    superhero s \nJOIN \n    gender g ON s.gender_id = g.id \nJOIN \n    publisher p ON s.publisher_id = p.id \nWHERE \n    g.gender = 'Female' AND p.publisher_name = 'Marvel Comics';\n```"

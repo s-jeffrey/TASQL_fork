@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(carcinogenic_count) AS average_carcinogenic_single_bonded\nFROM (\n    SELECT COUNT(DISTINCT m.molecule_id) AS carcinogenic_count\n    FROM molecule m\n    JOIN bond b ON m.molecule_id = b.molecule_id\n    WHERE m.label = '+' AND b.bond_type = '-'\n) AS carcinogenic_single_bonded;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Black')\ndf2 = df1.where(element = superhero.eye_colour_id, filter = df1.id).where(element = superhero.hair_colour_id, filter = df1.id)\nres = df2.select(superhero.superhero_name)\n```"

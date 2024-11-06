@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.name, filter = 'Serra Angel')\ndf2 = df.where(element = cards.name, filter = 'Shrine Keeper')\nres = df.select(df1.convertedManaCost > df2.convertedManaCost)\n```"

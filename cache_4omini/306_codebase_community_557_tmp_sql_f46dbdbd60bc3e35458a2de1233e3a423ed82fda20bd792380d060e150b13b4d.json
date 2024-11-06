@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(CASE WHEN users.Age > 65 THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.Score > 5;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT League.name\nFROM Match\nINNER JOIN League ON Match.league_id = League.id\nWHERE Match.season = '2015/2016'\nGROUP BY Match.league_id\nORDER BY COUNT(Match.id) DESC\nLIMIT 4;\n```"

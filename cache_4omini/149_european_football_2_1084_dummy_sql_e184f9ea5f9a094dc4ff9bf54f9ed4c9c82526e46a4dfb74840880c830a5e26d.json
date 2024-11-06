@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT p.id) \nFROM Player p \nJOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id \nWHERE strftime('%Y', p.birthday) < '1986' \nAND pa.defensive_work_rate = 'high';\n```"

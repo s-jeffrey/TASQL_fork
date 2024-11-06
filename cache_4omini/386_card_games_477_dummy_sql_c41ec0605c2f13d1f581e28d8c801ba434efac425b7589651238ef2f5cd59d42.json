@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT artist \nFROM cards \nWHERE setCode = 'CSP' AND artist IN ('Jeremy Jarvis', 'Aaron Miller', 'Chippy';\n```"

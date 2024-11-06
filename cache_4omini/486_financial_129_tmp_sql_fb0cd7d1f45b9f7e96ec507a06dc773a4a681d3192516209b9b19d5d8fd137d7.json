@@ -1,0 +1,1 @@
+"```sql\nSELECT district.A2, SUM(trans.amount) AS total_withdrawals\nFROM trans\nINNER JOIN account ON trans.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE trans.type = 'VYDAJ' AND trans.date LIKE '1996-01%'\nGROUP BY district.A2\nORDER BY total_withdrawals DESC\nLIMIT 10;\n```"

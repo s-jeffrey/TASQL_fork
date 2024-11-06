@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(Consumption) AS PeakConsumption, Date\nFROM yearmonth\nWHERE CustomerID IN (\n    SELECT CustomerID\n    FROM customers\n    WHERE Segment = 'SME'\n)\nAND Date BETWEEN '201301' AND '201312'\nGROUP BY Date\nORDER BY PeakConsumption DESC\nLIMIT 1;\n```"

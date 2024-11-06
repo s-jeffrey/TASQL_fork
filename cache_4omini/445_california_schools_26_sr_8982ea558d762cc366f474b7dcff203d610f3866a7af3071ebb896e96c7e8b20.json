@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.County, filter = 'Monterey')\ndf2 = df1.where(element = frpm.CDSCode, filter = '> 800')\nres = df2.select(schools.School, concat(schools.Street, ', ', schools.City, ', ', schools.State, ' ', schools.Zip))\n```"

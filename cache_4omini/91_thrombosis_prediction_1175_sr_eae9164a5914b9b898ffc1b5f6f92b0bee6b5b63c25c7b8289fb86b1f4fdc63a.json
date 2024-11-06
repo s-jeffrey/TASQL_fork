@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.ID, filter = 'MAX(HGB)')\ndf2 = df1.select(Patient.Birthday)\nage = SUBTRACT(year(df1.`Examination Date`), year(df2))\nres = df1.select(Examination.Diagnosis, age)\n```"

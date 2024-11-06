@@ -1,0 +1,1 @@
+"```sql\nSELECT s.School, s.FundingType\nFROM schools s\nJOIN satscores ss ON s.CDSCode = ss.cds\nWHERE s.County = 'Riverside'\nGROUP BY s.School, s.FundingType\nHAVING AVG(ss.AvgScrMath) > 400;\n```"

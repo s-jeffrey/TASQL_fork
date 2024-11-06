@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(loan.amount) \nFROM loan \nINNER JOIN account ON loan.account_id = account.account_id \nWHERE loan.status IN ('C', 'D') \nAND account.frequency = 'POPLATEK PO OBRATU';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT id FROM cards WHERE duelDeck = 'a';\n```"

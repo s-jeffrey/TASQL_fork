@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(yearmonth.Consumption) \nFROM yearmonth \nWHERE yearmonth.Date LIKE '2012%';\n```"

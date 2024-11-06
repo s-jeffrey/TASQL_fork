@@ -1,0 +1,1 @@
+"```sql\nMAX(spent) AS highest_budget_spent\nFROM budget;\n```"

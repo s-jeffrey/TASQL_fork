@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(single_bond_count) AS average_carcinogenic_molecules\nFROM (\n    SELECT COUNT(bond.molecule_id) AS single_bond_count\n    FROM bond\n    INNER JOIN molecule ON bond.molecule_id = molecule.molecule_id\n    WHERE bond.bond_type = '-' AND molecule.label = '+'\n) AS subquery;\n```"

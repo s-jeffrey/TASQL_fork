@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.birth_date, filter = 'min(client.birth_date)')\ndf2 = df1.groupby(client.client_id).having(element = avg(disp.account_id), filter = 'max(avg(disp.account_id))')\nres = df2.select(account.account_id)\n```"

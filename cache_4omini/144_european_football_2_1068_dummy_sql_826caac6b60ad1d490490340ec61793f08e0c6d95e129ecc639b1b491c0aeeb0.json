@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(pa.overall_rating) AS average_overall_rating\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nWHERE strftime('%Y', pa.date) >= '2010' AND strftime('%Y', pa.date) <= '2015'\nAND p.height > 170;\n```"

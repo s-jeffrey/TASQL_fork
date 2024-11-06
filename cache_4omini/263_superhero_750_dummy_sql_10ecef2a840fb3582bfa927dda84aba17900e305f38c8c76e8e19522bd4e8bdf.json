@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(weight_kg) \nFROM superhero \nWHERE gender_id = (SELECT id FROM gender WHERE gender = 'Female');\n```"

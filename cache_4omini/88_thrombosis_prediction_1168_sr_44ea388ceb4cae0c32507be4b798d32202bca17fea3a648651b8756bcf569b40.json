@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.Diagnosis, filter = 'SJS')\ndf2 = df1.orderby(by = Laboratory.Date, asc).limit(1)\nres = df2.select(Laboratory.Date, SUBTRACT(year(Laboratory.Date), year(Patient.Birthday)))\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.birthday, filter = \"YEAR(birthday) BETWEEN '1987' AND '1992'\")\ndf2 = df1.where(element = 'preferred_foot', filter = 'left')\nres = df.select(DIVIDE(MULTIPLY((COUNT(df2.player_fifa_api_id), 100)), COUNT(df1.player_fifa_api_id)))\n```"

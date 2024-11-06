@@ -1,0 +1,1 @@
+"```sql\nSELECT postHistory.UserId\nFROM postHistory\nJOIN posts ON postHistory.PostId = posts.Id\nWHERE posts.ViewCount >= 1000\nGROUP BY postHistory.UserId, postHistory.PostId\nHAVING COUNT(postHistory.Id) = 1;\n```"

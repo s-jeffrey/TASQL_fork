@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM connected \nINNER JOIN bond ON connected.bond_id = bond.bond_id \nWHERE bond.molecule_id = 'TR009' \nAND (connected.atom_id = 'TR009_12' OR connected.atom_id2 = 'TR009_12');\n```"

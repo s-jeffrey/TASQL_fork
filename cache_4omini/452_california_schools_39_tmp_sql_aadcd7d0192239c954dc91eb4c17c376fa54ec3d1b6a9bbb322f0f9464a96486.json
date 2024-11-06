@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(satscores.NumTstTakr) \nFROM satscores \nINNER JOIN schools ON satscores.cds = schools.CDSCode \nWHERE schools.City = 'Fresno' \nAND schools.OpenDate BETWEEN '1980-01-01' AND '1980-12-31';\n```"

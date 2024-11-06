@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN Date LIKE '1981-11-%' THEN `T-CHO` END) - \n     SUM(CASE WHEN Date LIKE '1981-12-%' THEN `T-CHO` END)) / \n    SUM(CASE WHEN Date LIKE '1981-12-%' THEN `T-CHO` END) AS decrease_rate\nFROM \n    Laboratory \nJOIN \n    Patient ON Laboratory.ID = Patient.ID \nWHERE \n    Patient.Birthday = '1959-02-18';\n```"

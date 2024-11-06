@@ -1,0 +1,1 @@
+"```sql\nSELECT OwnerDisplayName \nFROM posts \nWHERE Title = 'Open source tools for visualizing multi-dimensional data';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(o.count) AS average_oxygen_atoms\nFROM (\n    SELECT COUNT(a.atom_id) AS count\n    FROM atom a\n    JOIN bond b ON a.molecule_id = b.molecule_id\n    WHERE b.bond_type = '-' AND a.element = 'o'\n    GROUP BY a.molecule_id\n) o;\n```"

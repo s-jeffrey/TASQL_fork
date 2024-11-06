@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM circuits \nWHERE country = 'Australia' AND location = 'Melbourne';\n```"

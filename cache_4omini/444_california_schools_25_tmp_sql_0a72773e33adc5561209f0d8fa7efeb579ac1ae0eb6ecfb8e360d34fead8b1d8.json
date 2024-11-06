@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.FundingType, schools.School\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.County = 'Riverside'\nGROUP BY schools.FundingType, schools.School\nHAVING AVG(satscores.AvgScrMath) > 400;\n```"

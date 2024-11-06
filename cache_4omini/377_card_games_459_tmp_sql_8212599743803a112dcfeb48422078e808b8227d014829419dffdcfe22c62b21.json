@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN (SELECT convertedManaCost FROM cards WHERE name = 'Serra Angel') > \n             (SELECT convertedManaCost FROM cards WHERE name = 'Shrine Keeper') \n        THEN 'Serra Angel' \n        ELSE 'Shrine Keeper' \n    END AS card_with_higher_cost\n```"

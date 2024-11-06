@@ -1,0 +1,1 @@
+"```sql\nSELECT notes \nFROM income \nWHERE source = 'Fundraising' AND date_received = '2019-09-14';\n```"

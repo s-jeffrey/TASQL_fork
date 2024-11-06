@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 'i')\ndf2 = df.where(element = bond.bond_id, filter = 'bond_id')\nres = df.select(divide(count(df2.bond_id), count(df1.atom_id)))\n```"

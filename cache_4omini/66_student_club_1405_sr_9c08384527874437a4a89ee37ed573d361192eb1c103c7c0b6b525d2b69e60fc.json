@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = 'April Speaker')\ndf2 = df1.orderby(by = budget.amount, asc)\nres = df2.select(budget.category, sum(budget.amount))\n```"

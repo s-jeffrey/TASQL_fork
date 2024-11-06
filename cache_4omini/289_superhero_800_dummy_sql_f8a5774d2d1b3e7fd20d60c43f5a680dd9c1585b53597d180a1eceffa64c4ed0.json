@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM superhero)) AS percentage\nFROM superhero\nWHERE eye_colour_id = (SELECT id FROM colour WHERE colour = 'Blue');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT income.date_received \nFROM income \nINNER JOIN member ON income.link_to_member = member.member_id \nWHERE member.first_name = 'Connor' AND member.last_name = 'Hilton' AND income.source = 'Dues';\n```"

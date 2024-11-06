@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name\nFROM superhero\nJOIN hero_attribute ON superhero.id = hero_attribute.hero_id\nJOIN attribute ON hero_attribute.attribute_id = attribute.id\nWHERE attribute.attribute_name = 'Durability' AND hero_attribute.attribute_value < 50;\n```"

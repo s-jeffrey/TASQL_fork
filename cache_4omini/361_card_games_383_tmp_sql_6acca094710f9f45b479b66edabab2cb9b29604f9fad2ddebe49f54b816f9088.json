@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM cards \nINNER JOIN legalities ON cards.uuid = legalities.uuid \nWHERE legalities.status = 'Banned' \nAND cards.borderColor = 'white';\n```"
