@@ -65,9 +65,9 @@ def run_sqls_parallel(sqls, db_places, num_cpus=1, meta_time_out=30.0, sql_diale
 
 
 def compute_acc_by_diff(exec_results, diff_json_path):
+    contents = load_json(diff_json_path)
     num_queries = len(exec_results)
     results = [res["res"] for res in exec_results]
-    contents = load_json(diff_json_path)
     simple_results, moderate_results, challenging_results = [], [], []
 
     for i, content in enumerate(contents):
@@ -85,9 +85,53 @@ def compute_acc_by_diff(exec_results, diff_json_path):
 
     simple_acc = sum([res["res"] for res in simple_results]) / len(simple_results)
     moderate_acc = sum([res["res"] for res in moderate_results]) / len(moderate_results)
-    challenging_acc = sum([res["res"] for res in challenging_results]) / len(
-        challenging_results
+    challenging_acc = sum([res["res"] for res in challenging_results]) / len(challenging_results)
+    all_acc = sum(results) / num_queries
+    count_lists = [
+        len(simple_results),
+        len(moderate_results),
+        len(challenging_results),
+        num_queries,
+    ]
+    return (
+        simple_acc * 100,
+        moderate_acc * 100,
+        challenging_acc * 100,
+        all_acc * 100,
+        count_lists,
     )
+
+
+def compute_acc_by_db(exec_results, diff_json_path, database=None):
+    simple_results, moderate_results, challenging_results = [], [], []
+
+    contents = load_json(diff_json_path)
+    for i, content in enumerate(contents):
+            if content["db_id"] == database:
+                if content["difficulty"] == "simple":
+                    simple_results.append(exec_results[i])
+
+                if content["difficulty"] == "moderate":
+                    moderate_results.append(exec_results[i])
+
+                if content["difficulty"] == "challenging":
+                    try:
+                        challenging_results.append(exec_results[i])
+                    except:
+                        print(i)
+
+
+
+    num_queries = 0
+    results = []
+    for i, content in enumerate(contents):
+            if content["db_id"] == database:
+                num_queries += 1
+                results.append(exec_results[i]["res"])
+
+    simple_acc = sum([res["res"] for res in simple_results]) / len(simple_results)
+    moderate_acc = sum([res["res"] for res in moderate_results]) / len(moderate_results)
+    challenging_acc = sum([res["res"] for res in challenging_results]) / len(challenging_results)
     all_acc = sum(results) / num_queries
     count_lists = [
         len(simple_results),
@@ -161,5 +205,20 @@ if __name__ == "__main__":
     print(
         "==========================================================================================="
     )
+
+    contents = load_json(args.diff_json_path)
+    unique_db_ids = {content["db_id"] for content in contents}
+    for db in unique_db_ids:   
+        simple_acc, moderate_acc, challenging_acc, acc, count_lists = compute_acc_by_db(
+            exec_result, args.diff_json_path, db
+        )
+        score_lists = [simple_acc, moderate_acc, challenging_acc, acc]
+        print()
+        print(f"EX for {args.engine} on {args.sql_dialect} set on {db}")
+        print_data(score_lists, count_lists, metric="EX", db=db)
+        print(
+            "==========================================================================================="
+        )
+
     print(f"Finished EX evaluation for {args.engine} on {args.sql_dialect} set")
     print("\n\n")

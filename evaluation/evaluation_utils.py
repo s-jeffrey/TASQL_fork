@@ -108,12 +108,12 @@ def sort_results(list_of_dicts):
     return sorted(list_of_dicts, key=lambda x: x["sql_idx"])
 
 
-def print_data(score_lists, count_lists, metric="F1 Score"):
+def print_data(score_lists, count_lists, metric="F1 Score", db=None):
     levels = ["simple", "moderate", "challenging", "total"]
     print("{:20} {:20} {:20} {:20} {:20}".format("", *levels))
     print("{:20} {:<20} {:<20} {:<20} {:<20}".format("count", *count_lists))
 
     print(
-        f"======================================    {metric}    ====================================="
+        f"======================================    {db}    ====================================="
     )
     print("{:20} {:<20.2f} {:<20.2f} {:<20.2f} {:<20.2f}".format(metric, *score_lists))
