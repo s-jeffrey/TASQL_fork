@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN results.position > 1 THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM \n    drivers\nINNER JOIN \n    results ON drivers.driverId = results.driverId\nINNER JOIN \n    races ON results.raceId = races.raceId\nWHERE \n    drivers.surname = 'Hamilton' \n    AND races.year >= 2010;\n```"

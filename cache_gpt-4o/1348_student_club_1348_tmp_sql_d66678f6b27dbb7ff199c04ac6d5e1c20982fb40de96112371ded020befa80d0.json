@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM budget\nINNER JOIN event ON budget.link_to_event = event.event_id\nWHERE event.event_name = 'November Meeting' AND budget.remaining < 0;\n```"

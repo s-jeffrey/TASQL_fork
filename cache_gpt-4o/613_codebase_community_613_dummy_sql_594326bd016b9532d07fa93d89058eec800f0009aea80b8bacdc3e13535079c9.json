@@ -1,0 +1,1 @@
+"```sql\nSELECT b.Date\nFROM badges b\nJOIN users u ON b.UserId = u.Id\nWHERE u.Location = 'Rochester, NY';\n```"

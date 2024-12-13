@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player\nJOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE Player.weight < 130 AND Player_Attributes.preferred_foot = 'left';\n```"

@@ -1,0 +1,1 @@
+"`molecule.label` FROM `molecule` JOIN `atom` ON `molecule.molecule_id` = `atom.molecule_id` WHERE `atom.atom_id` = 'TR001_1';\""

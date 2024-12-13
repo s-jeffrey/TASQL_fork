@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE (power IS NULL OR power = '*')\n  AND hasFoil = 0\n  AND duelDeck = 'a';\n```"

@@ -1,0 +1,1 @@
+"`team_long_name` FROM `Team` WHERE `team_short_name` = 'GEN';\""

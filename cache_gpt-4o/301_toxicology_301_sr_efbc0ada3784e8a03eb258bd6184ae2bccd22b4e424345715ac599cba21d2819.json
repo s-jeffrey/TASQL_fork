@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_id, filter = 'TR007_4_19')\nres = df1.select(bond.bond_type)\n```"

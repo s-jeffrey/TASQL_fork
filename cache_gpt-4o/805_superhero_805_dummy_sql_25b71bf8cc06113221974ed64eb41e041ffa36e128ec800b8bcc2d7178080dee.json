@@ -1,0 +1,1 @@
+"`full_name` FROM `superhero` WHERE `weight_kg` = 0 OR `weight_kg` IS NULL;\""

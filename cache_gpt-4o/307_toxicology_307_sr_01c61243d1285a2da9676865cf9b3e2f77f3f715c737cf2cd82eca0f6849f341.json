@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = connected.bond_id, filter = 'TR000_2_3')\ndf2 = df1.select(connected.atom_id, connected.atom_id2)\ndf3 = df.where(element = atom.atom_id, filter = df2.connected.atom_id)\ndf4 = df.where(element = atom.atom_id, filter = df2.connected.atom_id2)\nres = df3.union(df4).select(atom.element)\n```"

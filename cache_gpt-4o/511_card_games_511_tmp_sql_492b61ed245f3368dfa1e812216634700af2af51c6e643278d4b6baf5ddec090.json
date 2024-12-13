@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.frameEffects\nFROM cards\nWHERE cards.cardKingdomFoilId IS NOT NULL AND cards.cardKingdomId IS NOT NULL\nGROUP BY cards.frameEffects\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

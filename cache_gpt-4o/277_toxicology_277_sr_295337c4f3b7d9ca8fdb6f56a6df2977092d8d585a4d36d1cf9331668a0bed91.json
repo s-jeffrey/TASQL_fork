@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = connected.bond_id, filter = 'TR000_1_2')\nres = df1.select(atom.element)\n```"

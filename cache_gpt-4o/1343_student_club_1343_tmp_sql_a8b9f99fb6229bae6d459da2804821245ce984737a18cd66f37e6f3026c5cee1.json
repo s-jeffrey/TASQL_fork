@@ -1,0 +1,1 @@
+"```sql\nSELECT budget.remaining\nFROM budget\nWHERE budget.category = 'Food'\nORDER BY budget.amount DESC\nLIMIT 1\n```"

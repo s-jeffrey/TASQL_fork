@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.amount, filter = '> 300000')\nres = df1.select(account.account_id, district.A2, district.A3)\n```"

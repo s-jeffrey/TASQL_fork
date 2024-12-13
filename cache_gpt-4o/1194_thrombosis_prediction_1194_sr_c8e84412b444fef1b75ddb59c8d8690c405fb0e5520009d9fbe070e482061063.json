@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.Diagnosis, filter = 'PSS')\ndf2 = df1.where(element = Laboratory.CRP, filter = '> 2')\ndf3 = df2.where(element = Laboratory.CRE, filter = 1)\ndf4 = df3.where(element = Laboratory.LDH, filter = 123)\nres = df4.select(Patient.SEX)\n```"

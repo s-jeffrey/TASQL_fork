@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(hero_attribute.attribute_value) AS average\nFROM hero_attribute\nINNER JOIN superhero ON hero_attribute.hero_id = superhero.id\nINNER JOIN alignment ON superhero.alignment_id = alignment.id\nWHERE alignment.alignment = 'Neutral';\n```"

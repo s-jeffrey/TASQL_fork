@@ -1,0 +1,1 @@
+"`attribute_name` FROM `hero_attribute` JOIN `superhero` ON `hero_attribute`.`hero_id` = `superhero`.`id` JOIN `attribute` ON `hero_attribute`.`attribute_id` = `attribute`.`id` WHERE `superhero`.`superhero_name` = 'Black Panther' ORDER BY `hero_attribute`.`attribute_value` ASC LIMIT 1;\"\n"

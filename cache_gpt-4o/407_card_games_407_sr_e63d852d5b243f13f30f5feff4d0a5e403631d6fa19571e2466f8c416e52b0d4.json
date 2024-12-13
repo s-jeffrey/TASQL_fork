@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = foreign_data.language, filter = 'German')\nres = df1.select(foreign_data.type).distinct()\n```"

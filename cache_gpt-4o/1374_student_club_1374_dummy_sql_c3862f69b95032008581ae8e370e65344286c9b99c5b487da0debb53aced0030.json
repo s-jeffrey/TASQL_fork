@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM attendance\nJOIN member ON attendance.link_to_member = member.member_id\nWHERE member.phone = '954-555-6240';\n```\n\nThis SQL query counts the number of events attended by the member with the specified phone number by joining the `attendance` and `member` tables using the foreign key relationship."

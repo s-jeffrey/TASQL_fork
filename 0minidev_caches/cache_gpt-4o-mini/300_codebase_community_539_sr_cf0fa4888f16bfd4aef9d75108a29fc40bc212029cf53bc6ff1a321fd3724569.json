@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Eliciting priors from experts')\nres = df1.select(users.DisplayName)\n```"

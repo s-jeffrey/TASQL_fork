@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.releaseDate, filter = '2017-07-14')\nres = df1.select(sets.code)\n```"

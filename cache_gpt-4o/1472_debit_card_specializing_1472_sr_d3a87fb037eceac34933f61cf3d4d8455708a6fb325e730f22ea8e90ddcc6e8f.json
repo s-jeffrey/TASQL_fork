@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = yearmonth.Date, filter = '>= 201201').where(element = yearmonth.Date, filter = '<= 201212')\ndf2 = df1.where(element = customers.Segment, filter = 'LAM')\ndf3 = df2.orderby(by = yearmonth.Consumption, asc).limit(1)\nres = df3.select(customers.CustomerID)\n```"

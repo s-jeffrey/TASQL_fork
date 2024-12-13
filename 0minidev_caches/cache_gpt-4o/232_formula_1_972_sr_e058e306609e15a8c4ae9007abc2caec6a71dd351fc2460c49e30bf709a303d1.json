@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = year(drivers.dob), filter = 1971)\ndf2 = df1.where(element = results.fastestLapTime, filter = 'not null')\nres = df2.select(drivers.driverId, drivers.code)\n```"

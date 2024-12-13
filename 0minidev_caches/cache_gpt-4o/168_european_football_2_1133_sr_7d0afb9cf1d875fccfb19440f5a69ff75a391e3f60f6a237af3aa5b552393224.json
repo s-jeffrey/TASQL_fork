@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.birthday, filter = '> 1990-01-01')\ndf2 = df1.where(element = Player.player_name, filter = \"LIKE 'Aaron%'\")\nres = df2.count()\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT colour.colour\nFROM superhero\nINNER JOIN race ON superhero.race_id = race.id\nINNER JOIN colour ON superhero.hair_colour_id = colour.id\nWHERE superhero.height_cm = 185 AND race.race = 'Human';\n```"

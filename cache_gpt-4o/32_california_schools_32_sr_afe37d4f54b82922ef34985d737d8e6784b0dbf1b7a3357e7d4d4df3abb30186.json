@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.SOC, filter = '66')\ndf2 = df1.orderby(by = frpm.`FRPM Count (K-12)`, desc).limit(5)\nres = df2.select((frpm.`FRPM Count (K-12)` / frpm.`Enrollment (K-12)`))\n```"

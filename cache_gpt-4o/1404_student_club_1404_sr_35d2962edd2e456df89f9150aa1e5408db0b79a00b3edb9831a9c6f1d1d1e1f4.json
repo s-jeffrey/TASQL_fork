@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = 'October Meeting')\ndf2 = df1.where(element = expense.approved, filter = 'true')\nres = df2.groupby(expense.expense_description).select(expense.expense_description, sum(expense.cost))\n```"

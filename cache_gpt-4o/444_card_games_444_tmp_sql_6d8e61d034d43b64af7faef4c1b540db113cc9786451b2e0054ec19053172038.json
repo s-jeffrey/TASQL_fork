@@ -1,0 +1,1 @@
+"```sql\nSELECT foreign_data.name, foreign_data.type\nFROM cards\nINNER JOIN foreign_data ON cards.uuid = foreign_data.uuid\nWHERE cards.watermark = 'boros';\n```"

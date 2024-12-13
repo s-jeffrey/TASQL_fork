@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.LastActivityDate, filter = \"LIKE '2010-07-19%'\")\nres = df1.select(posts.Score).sum()\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(COUNT(CASE WHEN Laboratory.UA <= 6.5 THEN 1 END) AS REAL) * 100.0 / COUNT(*)) AS percentage\nFROM \n    Laboratory\nWHERE \n    Laboratory.`U-PRO` > 0 \n    AND Laboratory.`U-PRO` < 30;\n```"

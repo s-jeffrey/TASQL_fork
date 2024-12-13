@@ -1,0 +1,1 @@
+"`colour.colour` FROM `superhero` INNER JOIN `colour` ON `superhero.hair_colour_id` = `colour.id` INNER JOIN `race` ON `superhero.race_id` = `race.id` WHERE `superhero.height_cm` = 185 AND `race.race` = 'Human';\""

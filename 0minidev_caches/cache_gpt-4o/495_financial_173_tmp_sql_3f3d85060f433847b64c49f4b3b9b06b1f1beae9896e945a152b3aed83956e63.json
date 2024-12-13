@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) AS statement_request_count\nFROM trans\nWHERE trans.account_id = 3 AND trans.k_symbol = 'SLUZBY';\n\nSELECT trans.k_symbol\nFROM trans\nWHERE trans.amount = 3539;\n```"

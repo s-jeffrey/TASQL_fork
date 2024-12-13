@@ -1,0 +1,1 @@
+"`major_name` FROM `member` JOIN `major` ON `member`.`link_to_major` = `major`.`major_id` WHERE `first_name` = 'Phillip' AND `last_name` = 'Cullen';\""

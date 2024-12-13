@@ -1,0 +1,1 @@
+"```sql\nSELECT comments.Text\nFROM comments\nINNER JOIN postHistory ON comments.UserId = postHistory.UserId\nINNER JOIN posts ON postHistory.PostId = posts.Id\nWHERE posts.Title = 'Why square the difference instead of taking the absolute value in standard deviation?'\n```\n"

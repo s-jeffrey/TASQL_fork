@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(m.first_name, ' ', m.last_name) AS full_name, m.phone\nFROM expense e\nINNER JOIN member m ON e.link_to_member = m.member_id\nGROUP BY e.expense_id, m.member_id\nHAVING e.cost > AVG(e.cost)\n```\n"

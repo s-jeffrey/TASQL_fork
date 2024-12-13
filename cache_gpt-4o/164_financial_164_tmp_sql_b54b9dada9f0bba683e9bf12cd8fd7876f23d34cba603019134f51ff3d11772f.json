@@ -1,0 +1,1 @@
+"```sql\nSELECT disp.client_id\nFROM order\nINNER JOIN disp ON order.account_id = disp.account_id\nWHERE order.order_id = 32423;\n```"

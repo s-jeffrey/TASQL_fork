@@ -1,0 +1,1 @@
+"`superhero.superhero_name` FROM `superhero` JOIN `hero_attribute` ON `superhero.id` = `hero_attribute.hero_id` WHERE `hero_attribute.attribute_value` BETWEEN 75 AND 80;\""

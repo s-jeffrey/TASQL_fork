@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.language, filter = 'Korean')\ndf2 = df.where(element = set_translations.language, filter = '!= Japanese')\nres = df1.intersect(df2).select(sets.name)\n```"

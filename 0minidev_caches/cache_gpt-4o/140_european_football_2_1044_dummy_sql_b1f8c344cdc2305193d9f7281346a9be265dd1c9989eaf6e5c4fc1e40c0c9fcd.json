@@ -1,0 +1,1 @@
+"```sql\nSELECT player_name\nFROM Player\nWHERE SUBSTR(birthday, 1, 4) = '1970' AND SUBSTR(birthday, 6, 2) = '10';\n```"

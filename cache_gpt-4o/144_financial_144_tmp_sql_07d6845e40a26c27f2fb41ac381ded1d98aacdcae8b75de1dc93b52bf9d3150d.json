@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(trans.amount) \nFROM trans \nWHERE trans.operation = 'VYBER KARTOU' \n  AND strftime('%Y', trans.date) = '2021' \nGROUP BY strftime('%m', trans.date);\n```"

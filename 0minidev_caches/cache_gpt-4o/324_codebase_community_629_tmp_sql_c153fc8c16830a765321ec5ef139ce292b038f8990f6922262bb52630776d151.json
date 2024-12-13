@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(CASE WHEN YEAR(CreationDate) = 2010 THEN Id END) AS REAL) / COUNT(CASE WHEN YEAR(CreationDate) = 2011 THEN Id END) AS vote_ratio\nFROM votes;\n```"

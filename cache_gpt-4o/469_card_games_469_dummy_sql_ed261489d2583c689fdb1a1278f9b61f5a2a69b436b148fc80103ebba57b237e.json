@@ -1,0 +1,1 @@
+"```sql\nSELECT s.name\nFROM cards c\nJOIN sets s ON c.setCode = s.code\nWHERE c.name = 'Angel of Mercy' AND s.mtgoCode IS NOT NULL;\n```"

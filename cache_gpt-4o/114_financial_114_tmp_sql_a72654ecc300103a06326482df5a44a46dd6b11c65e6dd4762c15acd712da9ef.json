@@ -1,0 +1,1 @@
+"```sql\nSELECT a.account_id\nFROM account a\nINNER JOIN disp d ON a.account_id = d.account_id\nINNER JOIN client c ON d.client_id = c.client_id\nINNER JOIN district di ON a.district_id = di.district_id\nWHERE di.A3 = 'Prague'\nORDER BY a.date ASC\nLIMIT 1;\n```"

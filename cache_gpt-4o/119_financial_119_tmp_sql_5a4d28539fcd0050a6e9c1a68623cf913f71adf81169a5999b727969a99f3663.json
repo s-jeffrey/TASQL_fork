@@ -1,0 +1,1 @@
+"```sql\nSELECT account.account_id, district.A2 AS district_name, district.A3 AS region\nFROM account\nINNER JOIN district ON account.district_id = district.district_id\nWHERE strftime('%Y', account.date) = '1993'\nAND account.frequency = 'POPLATEK PO OBRATU';\n```"

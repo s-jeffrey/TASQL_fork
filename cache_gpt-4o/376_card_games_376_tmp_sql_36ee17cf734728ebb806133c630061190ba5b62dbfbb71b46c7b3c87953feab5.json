@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT layout\nFROM cards\nWHERE keywords LIKE '%Flying%'\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(CASE WHEN m.label = '+' THEN 1 ELSE 0 END) * 100.0 / COUNT(b.bond_id)) AS carcinogenic_single_bond_percentage\nFROM bond b\nJOIN molecule m ON b.molecule_id = m.molecule_id\nWHERE b.bond_type = '-';\n```"

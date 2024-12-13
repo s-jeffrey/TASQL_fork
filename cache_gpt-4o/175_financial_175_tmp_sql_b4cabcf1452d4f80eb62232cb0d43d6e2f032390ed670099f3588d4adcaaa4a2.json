@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT account.account_id)\nFROM account\nINNER JOIN disp ON account.account_id = disp.account_id\nWHERE disp.type = 'OWNER' AND account.frequency = 'POPLATEK PO OBRATU';\n```"

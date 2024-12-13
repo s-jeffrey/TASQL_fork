@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.volleys, filter = '> 70')\ndf2 = df1.where(element = Player_Attributes.dribbling, filter = '> 70')\nres = df2.select(Player.player_name)\n```"

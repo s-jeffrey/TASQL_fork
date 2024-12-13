@@ -1,0 +1,1 @@
+"`bond_type` FROM bond GROUP BY `bond_type` ORDER BY COUNT(`bond_type`) DESC LIMIT 1;\""

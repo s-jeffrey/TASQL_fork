@@ -1,0 +1,1 @@
+"COUNT(*) FROM posts p JOIN tags t ON p.Id = t.ExcerptPostId WHERE t.TagName = 'careers';\"\n"

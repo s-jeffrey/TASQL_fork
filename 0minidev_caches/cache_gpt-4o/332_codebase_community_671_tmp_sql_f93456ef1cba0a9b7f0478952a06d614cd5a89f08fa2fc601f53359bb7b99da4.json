@@ -1,0 +1,1 @@
+"```sql\nSELECT u.DisplayName\nFROM badges b\nINNER JOIN users u ON b.UserId = u.Id\nWHERE b.Name = 'Autobiographer'\nORDER BY b.Date ASC\nLIMIT 1;\n```"

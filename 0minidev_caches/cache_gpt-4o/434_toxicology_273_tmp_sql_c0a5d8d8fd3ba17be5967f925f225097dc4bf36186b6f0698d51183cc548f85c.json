@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / total_count) AS percentage\nFROM (\n    SELECT a.element, m.label, COUNT(*) OVER () AS total_count\n    FROM atom a\n    INNER JOIN molecule m ON a.molecule_id = m.molecule_id\n    WHERE m.label = '+'\n) AS subquery\nWHERE element = 'cl';\n```"

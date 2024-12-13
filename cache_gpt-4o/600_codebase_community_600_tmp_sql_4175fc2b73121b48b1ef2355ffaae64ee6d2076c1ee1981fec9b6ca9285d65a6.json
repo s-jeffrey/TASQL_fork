@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Id, posts.ViewCount\nFROM postLinks\nINNER JOIN posts ON postLinks.PostId = posts.Id\nWHERE postLinks.RelatedPostId = 61217;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT cr.constructorId)\nFROM constructorResults cr\nJOIN constructors c ON cr.constructorId = c.constructorId\nWHERE c.nationality = 'Japanese'\nGROUP BY cr.constructorId\nHAVING SUM(cr.points) = 0 AND COUNT(DISTINCT cr.raceId) = 2;\n```"

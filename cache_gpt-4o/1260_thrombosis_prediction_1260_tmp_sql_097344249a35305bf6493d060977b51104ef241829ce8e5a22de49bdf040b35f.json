@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Patient.ID\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.RF < 20\nAND (YEAR(CURDATE()) - YEAR(Patient.Birthday)) > 60;\n```"

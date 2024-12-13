@@ -1,0 +1,1 @@
+"```sql\nSELECT r.year\nFROM results res\nJOIN races r ON res.raceId = r.raceId\nORDER BY res.fastestLapTime ASC\nLIMIT 1;\n```"

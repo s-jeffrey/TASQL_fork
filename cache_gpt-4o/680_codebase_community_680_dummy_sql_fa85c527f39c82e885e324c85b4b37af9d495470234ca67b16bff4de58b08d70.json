@@ -1,0 +1,1 @@
+"AVG(Score) FROM posts JOIN users ON posts.OwnerUserId = users.Id WHERE users.DisplayName = 'Stephen Turner';\""

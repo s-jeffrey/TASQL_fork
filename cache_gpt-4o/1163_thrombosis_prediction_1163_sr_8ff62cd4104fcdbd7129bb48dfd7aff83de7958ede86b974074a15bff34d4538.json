@@ -1,0 +1,1 @@
+"```python\ndf1 = df.select(SUBTRACT(YEAR(Patient.`First Date`), YEAR(Patient.Birthday)).alias('age'))\nres = df1.orderby(by='age', asc).limit(1)\n```"

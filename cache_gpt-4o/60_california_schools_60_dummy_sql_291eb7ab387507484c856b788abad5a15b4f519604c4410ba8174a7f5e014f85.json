@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Website\nFROM schools\nWHERE schools.Virtual = 'P'\n  AND schools.Charter = 1\n  AND schools.County = 'San Joaquin';\n```\n\nThis SQL query selects the `Website` column from the `schools` table where the school is partially virtual (`Virtual = 'P'`), is a charter school (`Charter = 1`), and is located in San Joaquin County."

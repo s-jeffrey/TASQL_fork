@@ -1,0 +1,1 @@
+"```sql\nSELECT Segment, SUM(Consumption) AS TotalConsumption\nFROM yearmonth\nJOIN customers ON yearmonth.CustomerID = customers.CustomerID\nGROUP BY Segment\nORDER BY TotalConsumption ASC\nLIMIT 1;\n```"

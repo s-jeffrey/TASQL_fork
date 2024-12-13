@@ -1,0 +1,1 @@
+"```sql\nSELECT member.first_name, member.last_name, major.major_name\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nINNER JOIN major ON member.link_to_major = major.major_id\nWHERE expense.cost > 100;\n```"

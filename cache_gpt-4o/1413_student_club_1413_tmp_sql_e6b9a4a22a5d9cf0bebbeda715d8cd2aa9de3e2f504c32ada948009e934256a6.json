@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT member.zip\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nWHERE expense.cost < 50;\n```"

@@ -1,0 +1,1 @@
+"`element` FROM `atom` WHERE `atom_id` NOT IN (SELECT `atom_id` FROM `connected`);\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT results.time\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nWHERE races.year = 2008\n  AND races.name = 'Chinese Grand Prix'\n  AND results.rank = 2;\n```"

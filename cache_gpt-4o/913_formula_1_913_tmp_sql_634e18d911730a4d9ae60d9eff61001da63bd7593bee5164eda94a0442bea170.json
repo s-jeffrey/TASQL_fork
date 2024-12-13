@@ -1,0 +1,1 @@
+"```sql\nSELECT country\nFROM circuits\nORDER BY alt DESC\nLIMIT 1;\n```"

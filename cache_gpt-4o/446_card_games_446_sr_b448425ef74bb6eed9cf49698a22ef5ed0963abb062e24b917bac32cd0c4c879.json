@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.name, filter = 'Abyssal Horror')\ndf2 = df1.where(element = cards.convertedManaCost, filter = 10)\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

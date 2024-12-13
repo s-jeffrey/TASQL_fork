@@ -1,0 +1,1 @@
+"```sql\nSELECT manaCost\nFROM cards\nWHERE layout = 'normal'\n  AND frameVersion = '2003'\n  AND borderColor = 'black'\n  AND availability = 'mtgo,paper';\n```"

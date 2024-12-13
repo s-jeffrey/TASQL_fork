@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = publisher.publisher_name, filter = 'DC Comics')\ndf2 = df.where(element = publisher.publisher_name, filter = 'Marvel Comics')\nres = df.select(df1.count() - df2.count())\n```"

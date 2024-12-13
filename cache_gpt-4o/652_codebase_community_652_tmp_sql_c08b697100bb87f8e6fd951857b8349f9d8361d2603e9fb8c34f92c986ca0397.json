@@ -1,0 +1,1 @@
+"```sql\nSELECT p.Id AS PostId, b.Name AS BadgeName\nFROM users u\nINNER JOIN posts p ON u.Id = p.OwnerUserId\nINNER JOIN badges b ON u.Id = b.UserId\nWHERE u.DisplayName = 'Samuel'\n  AND YEAR(p.CreationDate) = 2013\n  AND YEAR(b.Date) = 2013;\n```"

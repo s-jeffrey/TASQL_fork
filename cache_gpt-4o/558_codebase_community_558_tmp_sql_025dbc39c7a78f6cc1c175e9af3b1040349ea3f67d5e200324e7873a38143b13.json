@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM votes\nWHERE votes.UserId = 58 AND votes.CreationDate = '2010-07-19';\n```"

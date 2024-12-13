@@ -1,0 +1,1 @@
+"`attendance.link_to_member` FROM `attendance` JOIN `member` ON `attendance.link_to_member` = `member.member_id` JOIN `event` ON `attendance.link_to_event` = `event.event_id` WHERE `member.first_name` = 'Maya' AND `member.last_name` = 'Mclean' AND `event.event_name` = 'Women''s Soccer';\""

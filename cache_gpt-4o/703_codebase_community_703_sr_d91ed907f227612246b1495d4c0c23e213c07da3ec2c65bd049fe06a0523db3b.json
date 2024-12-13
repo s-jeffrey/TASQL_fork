@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = tags.Id, filter = '< 15')\ndf2 = df1.where(element = tags.Count, filter = '<= 20')\nres = df2.count()\n```"

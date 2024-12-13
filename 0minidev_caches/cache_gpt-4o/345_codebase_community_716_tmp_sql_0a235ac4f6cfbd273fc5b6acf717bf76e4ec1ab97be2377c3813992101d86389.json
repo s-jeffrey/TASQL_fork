@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(DISTINCT users.Id) FILTER (WHERE users.UpVotes = 0) AS REAL) * 100 / COUNT(DISTINCT users.Id) AS percentage\nFROM comments\nINNER JOIN users ON comments.UserId = users.Id\nWHERE comments.Score BETWEEN 5 AND 10;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.gender, filter = 'M')\ndf2 = df1.join(disp, on = client.client_id == disp.client_id)\ndf3 = df2.join(loan, on = disp.account_id == loan.account_id)\nres = df3.select(loan.amount).mean()\n```"

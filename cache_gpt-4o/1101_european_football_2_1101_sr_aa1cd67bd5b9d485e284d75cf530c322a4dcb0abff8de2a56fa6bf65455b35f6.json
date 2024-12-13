@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Team.team_long_name, filter = 'Parma')\ndf2 = df1.where(element = Country.name, filter = 'Italy')\nres = df2.select(avg(Match.away_team_goal))\n```"

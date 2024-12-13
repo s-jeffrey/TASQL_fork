@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = budget.remaining, filter = '< 0')\nres = df.select(cast(df1.count(), real) * 100 / df.count())\n```"

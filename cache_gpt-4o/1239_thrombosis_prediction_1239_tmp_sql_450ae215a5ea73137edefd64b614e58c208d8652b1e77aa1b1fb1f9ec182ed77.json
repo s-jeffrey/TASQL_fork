@@ -1,0 +1,1 @@
+"```sql\nSELECT Laboratory.ID, (strftime('%Y', 'now') - strftime('%Y', Patient.Birthday)) AS age\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.HCT >= 52\nGROUP BY Laboratory.ID\nHAVING COUNT(Laboratory.ID) >= 2;\n```"

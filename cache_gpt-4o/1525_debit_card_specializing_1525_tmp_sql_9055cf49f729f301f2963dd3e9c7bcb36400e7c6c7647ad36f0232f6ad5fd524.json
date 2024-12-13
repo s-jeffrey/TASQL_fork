@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(DISTINCT t1.CustomerID) AS REAL) * 100 / COUNT(DISTINCT t2.CustomerID) AS percentage\nFROM \n    customers t1\nINNER JOIN \n    transactions_1k t2 ON t1.CustomerID = t2.CustomerID\nWHERE \n    t1.Currency = 'EUR' \n    AND t2.Date = '2012-08-25';\n```"

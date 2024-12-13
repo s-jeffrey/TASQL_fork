@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.location || ', ' || circuits.country AS full_location\nFROM races\nINNER JOIN circuits ON races.circuitId = circuits.circuitId\nORDER BY races.date DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"`molecule_id` FROM `atom` WHERE `molecule_id` IN (SELECT `molecule_id` FROM `molecule` WHERE `label` = '-') GROUP BY `molecule_id` HAVING COUNT(`atom_id`) > 5;\"\n"

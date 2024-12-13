@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName, users.Location\nFROM tags\nJOIN posts ON tags.ExcerptPostId = posts.Id\nJOIN users ON posts.OwnerUserId = users.Id\nWHERE tags.TagName = 'hypothesis-testing';\n```"

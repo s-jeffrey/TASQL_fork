@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.preferred_foot, filter = 'left')\ndf2 = df1.where(element = Player.birthday, filter = \">= '1987-01-01' and <= '1992-12-31'\")\nres = df.select(cast(df2.count(), real) * 100 / df.where(element = Player.birthday, filter = \">= '1987-01-01' and <= '1992-12-31'\").count())\n```"

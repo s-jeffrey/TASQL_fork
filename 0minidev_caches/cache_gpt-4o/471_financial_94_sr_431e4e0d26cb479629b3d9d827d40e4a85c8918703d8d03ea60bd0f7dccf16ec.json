@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.gender, filter = 'F')\ndf2 = df1.orderby(by = client.birth_date).limit(1)\ndf3 = df2.orderby(by = district.A11).limit(1)\nres1 = df3.select(account.account_id)\n\nmax_salary = df.select(district.A11).max()\nmin_salary = df3.select(district.A11).min()\ngap = df.select(max_salary - min_salary)\n```"

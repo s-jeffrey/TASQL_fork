@@ -1,0 +1,1 @@
+"```sql\nSELECT member.first_name, member.last_name\nFROM income\nINNER JOIN member ON income.link_to_member = member.member_id\nWHERE income.source = 'Dues'\nORDER BY income.date_received ASC\nLIMIT 1;\n```"

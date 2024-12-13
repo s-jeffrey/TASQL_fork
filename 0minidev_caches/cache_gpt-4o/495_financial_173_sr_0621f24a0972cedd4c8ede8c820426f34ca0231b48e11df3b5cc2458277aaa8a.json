@@ -1,0 +1,1 @@
+"```plaintext\ndf1 = df.where(element = account.account_id, filter = 3).where(element = trans.k_symbol, filter = 'SLUZBY')\nres1 = df1.count()\n\ndf2 = df.where(element = trans.amount, filter = 3539)\nres2 = df2.select(trans.k_symbol)\n```"

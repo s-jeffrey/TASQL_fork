@@ -1,0 +1,1 @@
+"```sql\nAVG(Player.height) \nFROM Player \nJOIN Country ON Player.country_id = Country.id \nWHERE Country.name = 'Italy';\n```\n"

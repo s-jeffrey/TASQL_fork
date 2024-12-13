@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.Date, filter = \"BETWEEN '1998-01-01' AND '1998-12-31'\")\ndf2 = df1.where(element = Patient.SEX, filter = 'M')\nres = df2.select(df2.count() / 12)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(trans.balance) AS total_balance, client.gender\nFROM trans\nINNER JOIN disp ON trans.account_id = disp.account_id\nINNER JOIN client ON disp.client_id = client.client_id\nWHERE trans.trans_id = 851 AND disp.client_id = 4;\n```"

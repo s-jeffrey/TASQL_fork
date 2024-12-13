@@ -1,0 +1,1 @@
+"ROUND((COUNT(*) * 100.0 / (SELECT COUNT(*) FROM yearmonth WHERE Date = '201202')), 2) AS Percentage\nFROM yearmonth\nWHERE Date = '201202' AND Consumption > 528.3;\"\n"

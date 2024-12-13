@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Match.date, filter = '2008-09-24%')\ndf2 = df1.where(element = League.name, filter = 'Belgium Jupiler League')\nres = df2.select(Match.home_team_goal, Match.away_team_goal)\n```"

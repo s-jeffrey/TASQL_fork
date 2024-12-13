@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Laboratory.ID)\nFROM Laboratory\nWHERE IGG >= 2000;\n```\n\nThis SQL query counts the number of distinct patients who have an Ig G level higher than the normal range (2000 or more) in the Laboratory table. The use of `DISTINCT` ensures that each patient is only counted once, even if they have multiple laboratory records with high Ig G levels."

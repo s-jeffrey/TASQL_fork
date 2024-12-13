@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.molecule_id, filter = 'TR006')\ndf2 = df1.where(element = atom.element, filter = 'h')\nratio = df2.count() / df1.count()\nres = df1.select(ratio, molecule.label)\n```"

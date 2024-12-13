@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = frpm.`FRPM Count (K-12)`, desc).limit(1)\ndf2 = df1.join(satscores, df1.frpm.CDSCode == satscores.cds)\nres = df2.select(satscores.NumTstTakr)\n```"

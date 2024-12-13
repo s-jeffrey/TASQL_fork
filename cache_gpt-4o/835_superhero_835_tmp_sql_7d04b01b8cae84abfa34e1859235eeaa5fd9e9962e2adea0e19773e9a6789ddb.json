@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(SUM(CASE WHEN alignment.alignment = 'Good' THEN 1 ELSE 0 END) AS REAL) / COUNT(*)) * 100 AS percentage_of_good_superheroes\nFROM \n    superhero\nINNER JOIN \n    publisher ON superhero.publisher_id = publisher.id\nINNER JOIN \n    alignment ON superhero.alignment_id = alignment.id\nWHERE \n    publisher.publisher_name = 'Marvel Comics';\n```"

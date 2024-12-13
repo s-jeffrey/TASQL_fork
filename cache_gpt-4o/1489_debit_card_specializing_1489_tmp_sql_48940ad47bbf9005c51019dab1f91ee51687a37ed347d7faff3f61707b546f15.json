@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(yearmonth.Consumption) \nFROM yearmonth \nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID \nWHERE customers.Segment = 'KAM' \nAND yearmonth.Date = '201305';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(results.fastestLapSpeed) AS fastest_lap_speed\nFROM results\nJOIN races ON results.raceId = races.raceId\nWHERE races.name = 'Spanish Grand Prix' AND races.year = 2009;\n```"

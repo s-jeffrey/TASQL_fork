@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.Diagnosis, filter = 'SLE')\nres = df1.groupby(Examination.Symptoms).count().orderby(by = 'count', desc).limit(1).select(Examination.Symptoms)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT expense.expense_description\nFROM expense\nWHERE expense.expense_description LIKE '%Club%'\nORDER BY expense.cost DESC\nLIMIT 1;\n```"

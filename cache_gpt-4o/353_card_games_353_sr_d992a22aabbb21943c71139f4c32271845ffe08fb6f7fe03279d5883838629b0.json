@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.language, filter = 'Italian')\nres = df1.select(sets.name, sets.totalSetSize)\n```"

@@ -1,0 +1,1 @@
+"```sql\nCOUNT(*) \nFROM trans \nWHERE operation = 'VYBER KARTOU' \nAND date > '1995-12-31';\n```\nThis SQL query counts the number of credit card withdrawal transactions recorded after the year 1995. It uses the `operation` column to filter for credit card withdrawals (`'VYBER KARTOU'`) and the `date` column to ensure the transactions occurred after 1995."

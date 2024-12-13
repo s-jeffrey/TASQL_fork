@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.country, circuits.name, circuits.location\nFROM races\nINNER JOIN circuits ON races.circuitId = circuits.circuitId\nWHERE races.name = 'European Grand Prix'\nORDER BY races.year ASC\nLIMIT 1;\n```"

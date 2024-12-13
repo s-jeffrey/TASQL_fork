@@ -1,0 +1,1 @@
+"```sql\nSELECT mcmName\nFROM sets\nWHERE releaseDate = '2017-06-09';\n```"

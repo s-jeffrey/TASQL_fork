@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM superhero\nWHERE publisher_id IS NULL\n```"

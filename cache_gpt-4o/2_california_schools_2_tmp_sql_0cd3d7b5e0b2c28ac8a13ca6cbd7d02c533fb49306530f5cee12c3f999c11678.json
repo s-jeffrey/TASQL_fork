@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT schools.Zip\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE frpm.`Charter School (Y/N)` = 1\n  AND schools.County = 'Fresno'\n```\n"

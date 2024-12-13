@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.type\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE cards.name = 'Samite Pilgrim'\n```"

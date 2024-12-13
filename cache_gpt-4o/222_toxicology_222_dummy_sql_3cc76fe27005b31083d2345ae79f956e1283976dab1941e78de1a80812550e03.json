@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(CASE WHEN label = '+' THEN 1 ELSE 0 END) - SUM(CASE WHEN label = '-' THEN 1 ELSE 0 END)) AS difference\nFROM molecule;\n```"

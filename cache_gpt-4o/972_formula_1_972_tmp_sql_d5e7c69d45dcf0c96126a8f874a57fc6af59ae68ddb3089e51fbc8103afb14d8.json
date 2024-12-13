@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT drivers.driverId, drivers.code\nFROM drivers\nINNER JOIN results ON drivers.driverId = results.driverId\nWHERE YEAR(drivers.dob) = 1971\n  AND results.fastestLapTime IS NOT NULL;\n```"

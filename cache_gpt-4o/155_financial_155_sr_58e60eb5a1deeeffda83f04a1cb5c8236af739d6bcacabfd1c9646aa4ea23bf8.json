@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = card.type, filter = 'gold').where(element = card.issued, filter = '< 1998-01-01')\ngold_count = df1.count()\n\ntotal_count = df.count()\n\nres = df.select(cast(gold_count, real) * 100 / total_count)\n```"

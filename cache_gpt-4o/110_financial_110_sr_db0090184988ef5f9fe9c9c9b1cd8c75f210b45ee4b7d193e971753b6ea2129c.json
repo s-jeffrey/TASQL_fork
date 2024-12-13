@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.amount, filter = 5100).where(element = trans.date, filter = '1998-09-02')\nres = df1.select(disp.disp_id)\n```"

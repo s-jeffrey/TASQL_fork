@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.duration, filter = 60)\nres = df1.select(loan.loan_id, district.A2, district.A11)\n```"

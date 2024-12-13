@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.side, filter = 'IS NULL')\ndf2 = df1.orderby(by = cards.convertedManaCost, desc).limit(1)\nres = df2.select(cards.artist)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(DISTINCT b.UserId) AS REAL) * 100 / (SELECT COUNT(DISTINCT UserId) FROM badges)) AS percentage\nFROM badges b\nWHERE b.Name = 'Teacher';\n```"

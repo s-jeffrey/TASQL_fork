@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nINNER JOIN foreign_data ON cards.uuid = foreign_data.uuid\nWHERE cards.borderColor = 'borderless' AND foreign_data.language = 'Russian';\n```"

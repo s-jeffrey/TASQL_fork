@@ -1,0 +1,1 @@
+"```sql\nSELECT t_shirt_size\nFROM member\nGROUP BY t_shirt_size\nORDER BY COUNT(t_shirt_size) DESC\nLIMIT 1;\n```"

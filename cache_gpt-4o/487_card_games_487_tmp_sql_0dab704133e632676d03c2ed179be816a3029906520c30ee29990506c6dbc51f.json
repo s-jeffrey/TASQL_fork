@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100.0 / (SELECT COUNT(*) FROM cards \nJOIN sets ON cards.setCode = sets.code \nWHERE sets.name = 'Coldsnap')) AS percentage\nFROM cards \nJOIN sets ON cards.setCode = sets.code \nWHERE sets.name = 'Coldsnap' \nAND cards.cardKingdomFoilId IS NOT NULL \nAND cards.cardKingdomId IS NOT NULL;\n```"

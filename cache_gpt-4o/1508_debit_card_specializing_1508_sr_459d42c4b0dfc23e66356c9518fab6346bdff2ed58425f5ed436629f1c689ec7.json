@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = gasstations.Country, filter = 'CZE')\ndf2 = df1.where(element = transactions_1k.Price, filter = '> 1000')\nres = df2.count()\n```"

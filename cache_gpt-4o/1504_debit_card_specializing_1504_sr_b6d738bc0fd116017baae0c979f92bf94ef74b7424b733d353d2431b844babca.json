@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.Date, filter = '2012-01')\ndf2 = df1.select((transactions_1k.Amount * transactions_1k.Price).alias('total_price'))\nres = df2.select(df2.total_price.mean())\n```"

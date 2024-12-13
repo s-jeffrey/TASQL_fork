@@ -1,0 +1,1 @@
+"```sql\nSELECT L.name\nFROM League L\nJOIN Match M ON L.id = M.league_id\nGROUP BY L.id, L.name\nORDER BY SUM(M.home_team_goal + M.away_team_goal) ASC\nLIMIT 5;\n```"

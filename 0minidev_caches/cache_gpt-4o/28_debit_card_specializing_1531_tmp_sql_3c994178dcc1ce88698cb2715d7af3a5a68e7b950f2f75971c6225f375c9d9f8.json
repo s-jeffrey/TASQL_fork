@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    t.CustomerID, \n    SUM(t.Price) / SUM(t.Amount) AS avg_price, \n    c.Currency\nFROM \n    transactions_1k t\nINNER JOIN \n    customers c ON t.CustomerID = c.CustomerID\nGROUP BY \n    t.CustomerID, c.Currency\nORDER BY \n    SUM(t.Price) DESC\nLIMIT 1;\n```"

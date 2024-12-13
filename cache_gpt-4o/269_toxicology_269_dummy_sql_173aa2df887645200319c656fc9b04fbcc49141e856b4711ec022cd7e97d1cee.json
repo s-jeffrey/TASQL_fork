@@ -1,0 +1,1 @@
+"COUNT(DISTINCT b.bond_id) FROM bond b JOIN connected c ON b.bond_id = c.bond_id JOIN atom a ON c.atom_id = a.atom_id WHERE a.element = 'i';\""

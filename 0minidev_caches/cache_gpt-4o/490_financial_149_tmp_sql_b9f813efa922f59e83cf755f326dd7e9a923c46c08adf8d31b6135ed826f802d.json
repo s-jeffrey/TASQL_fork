@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT disp.type\nFROM account\nINNER JOIN disp ON account.account_id = disp.account_id\nINNER JOIN district ON account.district_id = district.district_id\nLEFT JOIN loan ON account.account_id = loan.account_id\nWHERE disp.type = 'DISPONENT'\nAND loan.account_id IS NULL\nAND district.A11 > 8000\nAND district.A11 <= 9000;\n```"

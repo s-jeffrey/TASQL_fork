@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.overall_rating, filter = '> 80')\ndf2 = df1.where(element = strftime('%Y', Player_Attributes.date), filter = 'BETWEEN 2008 AND 2010')\nres = df2.select(Player.player_name)\n```"

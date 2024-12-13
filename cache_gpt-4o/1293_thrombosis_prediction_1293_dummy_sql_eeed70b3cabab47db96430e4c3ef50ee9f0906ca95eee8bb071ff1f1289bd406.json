@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(Examination.ANA)\nFROM Examination\nJOIN Laboratory ON Examination.ID = Laboratory.ID\nWHERE Laboratory.CRE < 1.5;\n```"

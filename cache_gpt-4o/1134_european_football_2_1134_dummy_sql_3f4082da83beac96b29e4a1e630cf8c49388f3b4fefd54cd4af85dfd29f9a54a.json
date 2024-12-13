@@ -1,0 +1,1 @@
+"`(SELECT jumping FROM Player_Attributes WHERE id = 6) - (SELECT jumping FROM Player_Attributes WHERE id = 23) AS jumping_difference;`"

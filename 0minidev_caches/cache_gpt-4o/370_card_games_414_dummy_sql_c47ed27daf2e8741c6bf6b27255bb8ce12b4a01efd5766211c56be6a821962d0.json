@@ -1,0 +1,1 @@
+"```sql\nSELECT st.language\nFROM sets s\nJOIN set_translations st ON s.code = st.setCode\nWHERE s.baseSetSize = 180 AND s.block = 'Ravnica';\n```\nThis SQL query selects the language of the set that has a base set size of 180 cards and belongs to the Ravnica block, using the `sets` and `set_translations` tables."

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM (\n    SELECT drivers.code \n    FROM drivers \n    ORDER BY drivers.dob DESC \n    LIMIT 3\n) AS top3 \nWHERE top3.nationality = 'Netherlandic';\n```"

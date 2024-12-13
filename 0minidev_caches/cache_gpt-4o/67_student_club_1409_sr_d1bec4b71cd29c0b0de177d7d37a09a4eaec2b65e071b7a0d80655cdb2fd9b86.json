@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.expense_date, filter = '2019-08-20')\nres = df1.select(expense.cost).sum()\n```"

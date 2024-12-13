@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = legalities.format, filter = 'legacy')\nres = df1.select(cards.uuid, foreign_data.language)\n```"

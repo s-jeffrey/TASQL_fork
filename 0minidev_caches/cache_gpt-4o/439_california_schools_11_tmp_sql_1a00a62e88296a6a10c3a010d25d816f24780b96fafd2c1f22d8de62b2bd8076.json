@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.CDSCode\nFROM frpm\nWHERE (frpm.`Enrollment (K-12)` + frpm.`Enrollment (Ages 5-17)`) > 500;\n```"

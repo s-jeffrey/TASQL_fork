@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(comments.UserId).count(comments.Id).orderby(by='count', desc).limit(1)\ndf2 = df1.select(comments.UserId)\nres = df.where(element=badges.UserId, filter=df2).select(badges.Name)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT constructors.name\nFROM results\nINNER JOIN constructors ON results.constructorId = constructors.constructorId\nWHERE results.rank = 1;\n```"

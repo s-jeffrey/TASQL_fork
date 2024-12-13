@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.cardKingdomFoilId, filter = 'IS NOT NULL')\ndf2 = df1.where(element = cards.cardKingdomId, filter = 'IS NOT NULL')\ndf3 = df2.where(element = cards.hasFoil, filter = 1).where(element = cards.hasNonFoil, filter = 1)\nres = df3.select(cards.id)\n```"

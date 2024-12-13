@@ -1,0 +1,1 @@
+"```sql\nSELECT r.year\nFROM results res\nJOIN races r ON res.raceId = r.raceId\nWHERE res.fastestLapSpeed = (\n    SELECT MIN(fastestLapSpeed)\n    FROM results\n)\nLIMIT 1;\n```"

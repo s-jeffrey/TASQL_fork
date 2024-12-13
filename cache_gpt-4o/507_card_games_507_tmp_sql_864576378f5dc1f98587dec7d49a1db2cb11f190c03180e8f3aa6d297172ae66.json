@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(SUM(CASE WHEN cards.isOnlineOnly = 1 THEN 1 ELSE 0 END) AS REAL) / COUNT(*)) * 100 AS online_only_percentage\nFROM \n    cards\nINNER JOIN \n    set_translations ON cards.setCode = set_translations.setCode\nWHERE \n    set_translations.language = 'Portuguese (Brazil)';\n```"

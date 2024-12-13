@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.forename, filter = 'Eddie').where(element = drivers.surname, filter = 'Irvine')\ndf2 = df1.join(races, on = (results.raceId == races.raceId)).where(element = races.year, filter = 2000)\nres = df2.select(avg(results.points))\n```"

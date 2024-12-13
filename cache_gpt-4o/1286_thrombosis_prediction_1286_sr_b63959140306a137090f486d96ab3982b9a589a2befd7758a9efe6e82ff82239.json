@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.ALP, filter = '>= 300')\ndf2 = df1.where(element = Patient.Admission, filter = '+')\nres = df2.count()\n```"

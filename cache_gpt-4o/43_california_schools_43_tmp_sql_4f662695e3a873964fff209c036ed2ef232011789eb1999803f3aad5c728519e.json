@@ -1,0 +1,1 @@
+"```sql\nSELECT satscores.AvgScrMath, schools.County\nFROM (\n    SELECT satscores.cds, satscores.AvgScrMath, \n           (satscores.AvgScrMath + satscores.AvgScrRead + satscores.AvgScrWrite) AS TotalAvgScore\n    FROM satscores\n    ORDER BY TotalAvgScore ASC\n    LIMIT 1\n) AS lowest_score_school\nINNER JOIN schools ON lowest_score_school.cds = schools.CDSCode;\n```"

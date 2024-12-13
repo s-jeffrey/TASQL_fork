@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.Reputation, filter = '> 1000').where(element = year(users.CreationDate), filter = 2011)\ndf2 = df.select(posts.Id)\nres = df.select(cast(df1.count(), real) * 100 / df2.count())\n```"

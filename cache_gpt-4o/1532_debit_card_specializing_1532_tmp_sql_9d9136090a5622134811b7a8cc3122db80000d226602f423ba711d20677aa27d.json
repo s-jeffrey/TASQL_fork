@@ -1,0 +1,1 @@
+"```sql\nSELECT gs.Country\nFROM transactions_1k t\nINNER JOIN gasstations gs ON t.GasStationID = gs.GasStationID\nWHERE t.ProductID = 2\nORDER BY t.Price DESC\nLIMIT 1;\n```"

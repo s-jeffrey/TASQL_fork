@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(schools.AdmFName1).count().orderby(by='count', desc).limit(2)\nres = df1.select(schools.AdmFName1, schools.District)\n```"

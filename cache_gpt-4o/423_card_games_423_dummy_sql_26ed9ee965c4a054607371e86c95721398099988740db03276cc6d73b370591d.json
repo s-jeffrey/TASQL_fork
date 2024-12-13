@@ -1,0 +1,1 @@
+"```sql\nSELECT cardKingdomFoilId, cardKingdomId\nFROM cards\nWHERE cardKingdomFoilId IS NOT NULL AND cardKingdomId IS NOT NULL\nORDER BY cardKingdomFoilId ASC\nLIMIT 3;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(d.forename, ' ', d.surname) AS full_name\nFROM drivers d\nJOIN pitStops ps ON d.driverId = ps.driverId\nWHERE d.nationality = 'German'\n  AND YEAR(d.dob) BETWEEN 1980 AND 1985\nGROUP BY d.driverId\nORDER BY AVG(ps.duration) ASC\nLIMIT 3;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.FavoriteCount, filter = '> 150')\nres = df1.select(users.DisplayName, users.WebsiteUrl)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT users.UpVotes\nFROM comments\nINNER JOIN users ON comments.UserId = users.Id\nWHERE comments.Text = 'R is also lazy evaluated.'\n```"

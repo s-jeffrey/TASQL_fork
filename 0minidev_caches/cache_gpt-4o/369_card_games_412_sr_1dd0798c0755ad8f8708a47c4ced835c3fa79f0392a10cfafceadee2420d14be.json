@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = foreign_data.language, filter = 'French')\ndf2 = df1.where(element = cards.borderColor, filter = 'black')\ndf3 = df2.where(element = cards.layout, filter = 'normal')\ndf4 = df3.where(element = cards.type, filter = 'Creature')\ndf5 = df4.where(element = cards.artist, filter = 'Matthew D. Wilson')\nres = df5.select(foreign_data.name)\n```"

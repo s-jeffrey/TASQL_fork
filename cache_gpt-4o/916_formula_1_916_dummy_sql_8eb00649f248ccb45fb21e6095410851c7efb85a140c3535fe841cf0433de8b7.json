@@ -1,0 +1,1 @@
+"```sql\nSELECT surname\nFROM drivers\nWHERE nationality = 'Italian';\n```"

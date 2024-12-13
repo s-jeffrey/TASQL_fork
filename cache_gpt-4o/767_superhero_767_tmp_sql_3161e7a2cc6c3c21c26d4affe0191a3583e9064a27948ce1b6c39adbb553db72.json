@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(superhero.id) * 1.0 / (SELECT COUNT(*) FROM superhero) AS average\nFROM superhero\nWHERE superhero.skin_colour_id IS NULL;\n```"

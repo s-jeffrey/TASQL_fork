@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nINNER JOIN legalities ON cards.uuid = legalities.uuid\nINNER JOIN rulings ON cards.uuid = rulings.uuid\nWHERE legalities.format = 'premodern'\n  AND rulings.text = 'This is a triggered mana ability.'\n  AND cards.side IS NULL;\n```"

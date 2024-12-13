@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Title\nFROM postLinks\nINNER JOIN posts ON postLinks.RelatedPostId = posts.Id\nWHERE postLinks.PostId = (\n    SELECT Id\n    FROM posts\n    WHERE Title = 'How to tell if something happened in a data set which monitors a value over time'\n)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(DISTINCT Laboratory.ID) FROM Laboratory WHERE PLT < 100) - \n    (SELECT COUNT(DISTINCT Laboratory.ID) FROM Laboratory WHERE PLT > 400) AS difference\nFROM Laboratory\nWHERE PLT <= 100 OR PLT >= 400;\n```"

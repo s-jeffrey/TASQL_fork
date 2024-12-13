@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.mtgoCode, filter = 'NULL').union(df.where(element = sets.mtgoCode, filter = ''))\ndf2 = df1.orderby(by = sets.name, asc).limit(3)\nres = df2.select(sets.name)\n```"

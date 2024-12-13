@@ -1,0 +1,1 @@
+"```sql\nSELECT card.type\nFROM card\nJOIN disp ON card.disp_id = disp.disp_id\nJOIN client ON disp.client_id = client.client_id\nWHERE client.client_id = 9;\n```\n\nThis SQL query retrieves the type of credit card possessed by client number 9 by joining the `card`, `disp`, and `client` tables using the foreign key relationships."

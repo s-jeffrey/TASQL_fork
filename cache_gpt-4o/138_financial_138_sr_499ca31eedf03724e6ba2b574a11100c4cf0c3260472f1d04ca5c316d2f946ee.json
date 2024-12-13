@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = district.A15, desc).limit(2)\ndf2 = df.where(element = client.district_id, filter = df1.select(district.district_id).iloc[1])\ndf3 = df2.where(element = client.gender, filter = 'M')\nres = df3.count()\n```"

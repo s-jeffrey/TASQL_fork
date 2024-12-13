@@ -1,0 +1,1 @@
+"```sql\nSELECT comments.Text\nFROM posts\nINNER JOIN comments ON posts.Id = comments.PostId\nWHERE posts.ViewCount BETWEEN 100 AND 150\nORDER BY comments.Score DESC\nLIMIT 1;\n```"

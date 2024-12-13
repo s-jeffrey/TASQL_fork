@@ -1,0 +1,1 @@
+"`race.race`, `alignment.alignment` FROM `superhero` INNER JOIN `race` ON `superhero.race_id` = `race.id` INNER JOIN `alignment` ON `superhero.alignment_id` = `alignment.id` WHERE `superhero.superhero_name` = 'Cameron Hicks';\""

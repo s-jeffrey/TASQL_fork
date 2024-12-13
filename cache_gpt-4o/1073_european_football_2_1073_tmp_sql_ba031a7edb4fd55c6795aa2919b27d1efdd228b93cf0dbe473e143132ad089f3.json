@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Match\nINNER JOIN League ON Match.league_id = League.id\nWHERE League.name = 'Germany 1. Bundesliga'\n  AND strftime('%Y-%m', Match.date) BETWEEN '2008-08' AND '2008-10';\n```"

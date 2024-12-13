@@ -1,0 +1,1 @@
+"```sql\nSELECT bond.bond_type, bond.bond_id\nFROM bond\nWHERE CAST(SUBSTR(bond.bond_id, 7, 2) AS INTEGER) = 45 OR CAST(SUBSTR(bond.bond_id, 10, 2) AS INTEGER) = 45;\n```"

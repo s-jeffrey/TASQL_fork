@@ -1,0 +1,1 @@
+"```sql\nSELECT races.raceId\nFROM races\nWHERE races.year = 2009;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT district.A3 AS region\nFROM client\nJOIN district ON client.district_id = district.district_id\nWHERE client.client_id = 3541;\n```"

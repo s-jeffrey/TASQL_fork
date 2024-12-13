@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.PLT, filter = '< 100')\ndf2 = df.where(element = Laboratory.PLT, filter = '> 400')\nres = df.select(df1.count() - df2.count())\n```"

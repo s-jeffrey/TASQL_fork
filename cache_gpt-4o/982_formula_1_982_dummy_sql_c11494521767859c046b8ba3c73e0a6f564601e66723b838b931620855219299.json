@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT drivers.driverId)\nFROM drivers\nJOIN results ON drivers.driverId = results.driverId\nJOIN status ON results.statusId = status.statusId\nWHERE drivers.nationality = 'American' AND status.status = 'Puncture';\n```"

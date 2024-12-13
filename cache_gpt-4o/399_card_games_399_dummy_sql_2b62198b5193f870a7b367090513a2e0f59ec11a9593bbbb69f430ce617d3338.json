@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT type\nFROM cards\nWHERE availability LIKE '%arena%';\n```\n\nThis SQL query selects distinct card types from the `cards` table where the availability includes 'arena'. The query uses the `LIKE` operator with a wildcard to ensure it captures any combination that includes 'arena'."

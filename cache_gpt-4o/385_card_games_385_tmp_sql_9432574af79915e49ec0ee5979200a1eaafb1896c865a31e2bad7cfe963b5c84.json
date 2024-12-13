@@ -1,0 +1,1 @@
+"```sql\nSELECT rulings.text\nFROM cards\nINNER JOIN rulings ON cards.uuid = rulings.uuid\nWHERE cards.name = 'Beacon of Immortality';\n```"

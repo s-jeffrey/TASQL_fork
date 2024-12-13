@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = Patient.Birthday, desc).limit(1)\ndf2 = df1.where(element = Examination.Symptoms, filter = 'is not NULL')\nres = df2.select(Examination.Symptoms, Examination.Diagnosis)\n```"

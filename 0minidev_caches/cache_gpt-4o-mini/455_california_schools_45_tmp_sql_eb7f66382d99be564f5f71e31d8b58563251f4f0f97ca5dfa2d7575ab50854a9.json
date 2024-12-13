@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, satscores.AvgScrWrite\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.AdmFName1 = 'Ricci' AND schools.AdmLName1 = 'Ulrich';\n```"

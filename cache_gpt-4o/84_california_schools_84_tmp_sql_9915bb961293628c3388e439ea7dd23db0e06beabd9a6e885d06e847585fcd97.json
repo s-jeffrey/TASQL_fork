@@ -1,0 +1,1 @@
+"```sql\nSELECT AdmFName1, District\nFROM schools\nGROUP BY AdmFName1, District\nORDER BY COUNT(*) DESC\nLIMIT 2;\n```"

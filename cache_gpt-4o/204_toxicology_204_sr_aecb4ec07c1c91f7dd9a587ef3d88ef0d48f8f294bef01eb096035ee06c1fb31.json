@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = molecule.molecule_id, filter = '>= TR000').where(element = molecule.molecule_id, filter = '<= TR099')\ndf2 = df1.where(element = molecule.label, filter = '+')\nres = df2.count()\n```"

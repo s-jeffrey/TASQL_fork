@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.Symptoms, Examination.Diagnosis\nFROM Examination\nINNER JOIN Patient ON Examination.ID = Patient.ID\nWHERE Examination.Symptoms IS NOT NULL\nORDER BY Patient.Birthday DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT major.college\nFROM member\nINNER JOIN major ON member.link_to_major = major.major_id\nGROUP BY major.college\nORDER BY COUNT(member.member_id) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT zip_code.zip_code\nFROM zip_code\nWHERE zip_code.type = 'PO Box'\n  AND zip_code.county = 'San Juan Municipio'\n  AND zip_code.state = 'Puerto Rico';\n```"

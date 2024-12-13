@@ -1,0 +1,1 @@
+"`ProductID` FROM `transactions_1k` WHERE `Date` = '2012-08-23' AND `Time` = '21:20:00';\""

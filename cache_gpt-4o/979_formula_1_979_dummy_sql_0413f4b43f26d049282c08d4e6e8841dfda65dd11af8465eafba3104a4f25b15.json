@@ -1,0 +1,1 @@
+"```sql\nSELECT raceId\nFROM results\nWHERE time IS NOT NULL\nGROUP BY raceId\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

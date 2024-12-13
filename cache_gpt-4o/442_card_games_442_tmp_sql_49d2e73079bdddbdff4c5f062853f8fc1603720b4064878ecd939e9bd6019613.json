@@ -1,0 +1,1 @@
+"```sql\nSELECT baseSetSize, code\nFROM sets\nWHERE block IN ('Masques', 'Mirage')\n```"

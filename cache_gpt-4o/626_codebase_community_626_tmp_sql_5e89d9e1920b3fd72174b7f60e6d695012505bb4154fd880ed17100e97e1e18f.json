@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM votes \nWHERE YEAR(CreationDate) = 2010;\n```"

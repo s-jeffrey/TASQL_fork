@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT cards.id) AS card_count, legalities.status\nFROM cards\nINNER JOIN legalities ON cards.uuid = legalities.uuid\nWHERE cards.frameVersion = 'future'\nGROUP BY legalities.status;\n```"

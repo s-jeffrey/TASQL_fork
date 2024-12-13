@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(DISTINCT df1.molecule_id) - COUNT(DISTINCT df2.molecule_id)) * 100.0 / COUNT(DISTINCT df1.molecule_id) AS percentage\nFROM \n    molecule AS df1\nLEFT JOIN \n    atom AS df2 ON df1.molecule_id = df2.molecule_id AND df2.element = 'f'\nWHERE \n    df1.label = '+'\n```\n"

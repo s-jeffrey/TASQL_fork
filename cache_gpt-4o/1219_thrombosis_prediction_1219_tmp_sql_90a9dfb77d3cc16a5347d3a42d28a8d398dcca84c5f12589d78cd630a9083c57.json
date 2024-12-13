@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Laboratory.UA) AS average_ua_index\nFROM (\n    SELECT Laboratory.ID, Laboratory.UA\n    FROM Laboratory\n    INNER JOIN Patient ON Laboratory.ID = Patient.ID\n    WHERE (Laboratory.UA < 8.0 AND Patient.SEX = 'M')\n       OR (Laboratory.UA < 6.5 AND Patient.SEX = 'F')\n    ORDER BY Laboratory.Date DESC\n) AS latest_results\nGROUP BY Laboratory.ID\n```\n"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.molecule_id, filter = 'TR000')\ndf2 = df1.orderby(by = atom.element, asc).limit(3)\nres = df2.select(atom.element)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_id, event.location, event.status\nFROM event\nWHERE event.event_date BETWEEN '2019-11-01' AND '2020-03-31';\n```"

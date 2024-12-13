@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = card.issued, filter = '1994-03-03')\nres = df1.select(client.client_id)\n```"

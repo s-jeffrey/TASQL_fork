@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.type, filter = 'VYDAJ')\ndf2 = df1.join(district, on = (account.district_id == district.district_id))\nres = df2.select(district.A2)\n```"

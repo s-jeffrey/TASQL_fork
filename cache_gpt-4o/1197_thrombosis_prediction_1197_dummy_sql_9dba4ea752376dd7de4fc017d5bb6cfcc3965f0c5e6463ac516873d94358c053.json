@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Description, Patient.Diagnosis\nFROM Patient\nWHERE Patient.ID = 48473;\n```"

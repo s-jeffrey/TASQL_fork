@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT department\nFROM major\nWHERE college = 'College of Humanities and Social Sciences';\n```"

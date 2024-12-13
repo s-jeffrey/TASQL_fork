@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.flavorName, filter = 'Battra, Dark Destroyer')\nres = df1.select(cards.artist)\n```"

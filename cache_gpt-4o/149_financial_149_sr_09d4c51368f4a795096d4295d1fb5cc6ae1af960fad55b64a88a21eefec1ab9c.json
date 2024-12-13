@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = district.A11, filter = '> 8000').where(element = district.A11, filter = '<= 9000')\ndf2 = df1.where(element = disp.type, filter = 'DISPONENT')\nres = df2.select(disp.type)\n```"

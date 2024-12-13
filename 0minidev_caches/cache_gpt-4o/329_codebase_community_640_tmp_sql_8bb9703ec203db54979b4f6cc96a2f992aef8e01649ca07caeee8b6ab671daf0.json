@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(p1.ViewCount) - SUM(p2.ViewCount)) AS ViewCountDifference\nFROM \n    posts p1\nINNER JOIN \n    users u1 ON p1.OwnerUserId = u1.Id\nINNER JOIN \n    posts p2 ON p2.OwnerUserId = u1.Id\nINNER JOIN \n    users u2 ON p2.OwnerUserId = u2.Id\nWHERE \n    u1.DisplayName = 'Mornington' AND u2.DisplayName = 'Amos';\n```"

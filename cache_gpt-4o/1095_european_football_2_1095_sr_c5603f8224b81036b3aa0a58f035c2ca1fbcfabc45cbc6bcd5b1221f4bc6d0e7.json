@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Team.team_long_name, filter = 'Heart of Midlothian')\nres = df1.select(avg(Team_Attributes.buildUpPlaySpeed))\n```"

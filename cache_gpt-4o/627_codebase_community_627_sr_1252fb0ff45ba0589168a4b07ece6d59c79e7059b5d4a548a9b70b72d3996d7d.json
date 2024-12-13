@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.Age, filter = 'BETWEEN 19 AND 65')\nres = df1.count()\n```"

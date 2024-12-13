@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.translation, filter = 'Hauptset Zehnte Edition')\nres = df1.select(sets.baseSetSize)\n```"

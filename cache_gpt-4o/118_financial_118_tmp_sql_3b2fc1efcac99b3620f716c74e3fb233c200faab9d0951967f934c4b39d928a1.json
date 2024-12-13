@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN loan.status = 'C' THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM \n    loan\nWHERE \n    loan.amount < 100000;\n```"

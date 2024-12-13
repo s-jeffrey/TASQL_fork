@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM foreign_data)) AS percentage\nFROM foreign_data\nWHERE language = 'Chinese Simplified';\n```"

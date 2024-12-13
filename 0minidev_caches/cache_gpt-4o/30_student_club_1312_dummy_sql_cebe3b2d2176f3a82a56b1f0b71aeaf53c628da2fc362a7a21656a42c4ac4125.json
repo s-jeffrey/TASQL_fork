@@ -1,0 +1,1 @@
+"`major_name` FROM `major` WHERE `major_id` = (SELECT `link_to_major` FROM `member` WHERE `first_name` = 'Angela' AND `last_name` = 'Sanders');\""

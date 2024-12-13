@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = publisher.publisher_name, filter = 'Dark Horse Comics')\ndf2 = df1.where(element = attribute.attribute_name, filter = 'Durability')\ndf3 = df2.orderby(by = hero_attribute.attribute_value, desc).limit(1)\nres = df3.select(superhero.superhero_name)\n```"

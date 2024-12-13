@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM member\nWHERE position = 'Member' AND t_shirt_size = 'X-Large';\n```"

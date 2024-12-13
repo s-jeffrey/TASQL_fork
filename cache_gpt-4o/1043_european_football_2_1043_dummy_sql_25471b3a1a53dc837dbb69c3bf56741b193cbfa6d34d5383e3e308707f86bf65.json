@@ -1,0 +1,1 @@
+"`team_short_name` FROM `Team` WHERE `team_long_name` = 'Queens Park Rangers';\""

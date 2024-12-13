@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nWHERE MailState = 'CA'\n  AND City = 'San Joaquin'\n  AND StatusType = 'Active';\n```"

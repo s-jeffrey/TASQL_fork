@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.url\nFROM races\nJOIN circuits ON races.circuitId = circuits.circuitId\nWHERE races.name = 'Spanish Grand Prix' AND races.year = 2009;\n```"

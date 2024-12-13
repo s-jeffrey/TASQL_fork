@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name, rulings.date\nFROM cards\nJOIN rulings ON cards.uuid = rulings.uuid\nWHERE cards.originalType = 'Creature \u2014 Elf';\n```\n\nThis SQL query selects the names of cards and the dates of rulings for cards that have the original type \"Creature \u2014 Elf\". It joins the `cards` table with the `rulings` table using the `uuid` as the foreign key."

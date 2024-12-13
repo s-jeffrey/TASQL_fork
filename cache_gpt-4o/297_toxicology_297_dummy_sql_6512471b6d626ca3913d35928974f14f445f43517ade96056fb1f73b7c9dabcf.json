@@ -1,0 +1,1 @@
+"`atom_id` FROM `atom` JOIN `molecule` ON `atom`.`molecule_id` = `molecule`.`molecule_id` WHERE `atom`.`element` = 'c' AND `molecule`.`label` = '-';\""

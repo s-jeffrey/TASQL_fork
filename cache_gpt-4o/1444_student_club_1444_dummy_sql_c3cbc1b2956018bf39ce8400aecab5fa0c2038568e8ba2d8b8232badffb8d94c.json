@@ -1,0 +1,1 @@
+"`expense_description` FROM `expense` GROUP BY `expense_description` HAVING AVG(`cost`) > 50;\"\n\nThis SQL query selects the `expense_description` from the `expense` table, groups the results by `expense_description`, and filters the groups to include only those where the average `cost` is greater than 50 dollars."

@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.`Examination Date`\nFROM Examination\nINNER JOIN Laboratory ON Examination.ID = Laboratory.ID\nWHERE Laboratory.ALB > 3.5 AND Laboratory.ALB < 5.5\nORDER BY Laboratory.ALB DESC\nLIMIT 1;\n```"

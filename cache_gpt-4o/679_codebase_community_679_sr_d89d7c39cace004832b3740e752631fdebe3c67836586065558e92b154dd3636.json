@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = posts.Score, desc).limit(1)\nres = df1.select(posts.Id, posts.Title)\n```"

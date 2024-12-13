@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.name, filter = 'Angel of Mercy')\nres = df1.select(sets.mtgoCode).where(element = sets.mtgoCode, filter = 'IS NOT NULL')\n```"

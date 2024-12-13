@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.location, circuits.lat, circuits.lng, COUNT(*)\nFROM circuits\nWHERE circuits.country = 'Austria'\nGROUP BY circuits.location, circuits.lat, circuits.lng;\n```"

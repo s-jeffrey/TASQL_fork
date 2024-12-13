@@ -1,0 +1,1 @@
+"COUNT(*) FROM superhero WHERE alignment_id = 1 AND gender_id = 2;\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.full_name\nFROM superhero\nWHERE superhero.weight_kg = 0 OR superhero.weight_kg IS NULL;\n```"

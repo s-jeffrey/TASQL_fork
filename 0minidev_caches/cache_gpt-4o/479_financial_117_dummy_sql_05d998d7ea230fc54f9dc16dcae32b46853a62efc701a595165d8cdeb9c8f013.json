@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(amount) FILTER (WHERE status = 'A') / SUM(amount)) * 100 AS percentage_fully_paid\nFROM loan;\n```"

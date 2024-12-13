@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.year, filter = 2017)\ndf2 = df.where(element = races.year, filter = 2000)\nres = df1.where(element = races.name, filter = 'not in', values = df2.select(races.name)).select(races.name)\n```"

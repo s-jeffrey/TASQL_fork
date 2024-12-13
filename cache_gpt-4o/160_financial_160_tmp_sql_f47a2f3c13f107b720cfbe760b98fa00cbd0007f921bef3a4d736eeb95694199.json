@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM account\nINNER JOIN loan ON account.account_id = loan.account_id\nWHERE account.frequency = 'POPLATEK TYDNE' AND loan.amount < 200000;\n```"

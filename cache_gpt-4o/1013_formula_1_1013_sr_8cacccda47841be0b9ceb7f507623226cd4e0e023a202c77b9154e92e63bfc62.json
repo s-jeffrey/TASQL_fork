@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = circuits.name, filter = 'Austrian Grand Prix Circuit')\ndf2 = df1.join(races, on = circuits.circuitId == races.circuitId)\ndf3 = df2.join(lapTimes, on = races.raceId == lapTimes.raceId)\ndf4 = df3.orderby(by = lapTimes.time, asc).limit(1)\nres = df4.select(lapTimes.time)\n```"

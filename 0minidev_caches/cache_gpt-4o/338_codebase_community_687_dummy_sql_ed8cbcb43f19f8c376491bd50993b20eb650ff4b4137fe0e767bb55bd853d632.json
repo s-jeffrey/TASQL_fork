@@ -1,0 +1,1 @@
+"```sql\nSELECT CommentCount\nFROM posts\nWHERE Score = (SELECT MAX(Score) FROM posts);\n```\n\nThis SQL query retrieves the `CommentCount` for the post with the highest score from the `posts` table. It uses a subquery to find the maximum score and then selects the `CommentCount` for the post that matches this score."

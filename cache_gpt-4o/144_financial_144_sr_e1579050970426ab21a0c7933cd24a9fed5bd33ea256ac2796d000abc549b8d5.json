@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.operation, filter = 'VYBER KARTOU')\ndf2 = df1.where(element = trans.date, filter = '2021')\nres = df2.groupby(month(trans.date)).select(avg(trans.amount))\n```"

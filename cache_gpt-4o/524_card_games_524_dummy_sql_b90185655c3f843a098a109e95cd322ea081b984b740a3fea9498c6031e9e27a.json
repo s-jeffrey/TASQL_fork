@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT artist\nFROM cards\nWHERE borderColor = 'black' AND availability = 'arena';\n```"

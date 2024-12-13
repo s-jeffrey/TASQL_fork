@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    YEAR(CURRENT_TIMESTAMP) - YEAR(drivers.dob) AS age, \n    drivers.forename, \n    drivers.surname \nFROM \n    drivers \nWHERE \n    drivers.nationality = 'Japanese' \nORDER BY \n    drivers.dob DESC \nLIMIT 1;\n```"

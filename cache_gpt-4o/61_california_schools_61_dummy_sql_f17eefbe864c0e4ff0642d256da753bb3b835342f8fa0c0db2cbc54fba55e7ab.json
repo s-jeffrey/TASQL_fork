@@ -1,0 +1,1 @@
+"COUNT(*) FROM schools WHERE City = 'Hickman' AND Charter = 1 AND DOC = 52;\""

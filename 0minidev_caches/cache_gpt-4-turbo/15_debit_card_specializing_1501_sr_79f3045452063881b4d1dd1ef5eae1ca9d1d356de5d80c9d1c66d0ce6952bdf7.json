@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = yearmonth.Date, filter = '201306')\n    df2 = df1.select(gasstations.GasStationID)\n    df3 = df.where(element = gasstations.GasStationID, filter = df2)\n    res = df3.select(gasstations.Country)\""

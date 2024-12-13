@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, Patient.SEX, Patient.Birthday\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.T-BIL = (\n    SELECT MAX(Laboratory.T-BIL)\n    FROM Laboratory\n)\nLIMIT 1;\n```"

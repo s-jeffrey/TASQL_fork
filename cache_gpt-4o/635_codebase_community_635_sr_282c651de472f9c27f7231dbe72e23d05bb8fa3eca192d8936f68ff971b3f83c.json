@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Matt Parker')\ndf2 = df1.groupby(posts.Id).having(element = count(votes.PostId), filter = '> 4')\nres = df2.count()\n```"

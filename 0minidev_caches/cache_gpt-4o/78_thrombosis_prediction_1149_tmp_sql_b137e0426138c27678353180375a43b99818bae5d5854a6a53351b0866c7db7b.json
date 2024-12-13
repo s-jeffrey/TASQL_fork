@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    ((COUNT(CASE WHEN Admission = '+' THEN ID END) - COUNT(CASE WHEN Admission = '-' THEN ID END)) * 100.0 / COUNT(CASE WHEN Admission = '-' THEN ID END)) AS percentage_deviation\nFROM \n    Patient\nWHERE \n    SEX = 'M';\n```"

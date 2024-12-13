@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = circuits.country, filter = 'Italy')\ndf2 = df1.select(lapTimes.milliseconds)\nres = df2.avg()\n```"

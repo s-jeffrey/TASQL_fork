@@ -1,0 +1,1 @@
+"```sql\nSELECT publisher.id\nFROM publisher\nWHERE publisher.publisher_name = 'Star Trek';\n```"

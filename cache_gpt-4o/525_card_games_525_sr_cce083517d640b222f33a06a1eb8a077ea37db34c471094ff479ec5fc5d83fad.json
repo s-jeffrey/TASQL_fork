@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = legalities.format, filter = 'oldschool')\ndf2 = df1.where(element = legalities.status, filter = ['Banned', 'Restricted'])\nres = df2.select(legalities.uuid)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = 'Yearly Kickoff')\ndf2 = df1.join(budget, budget.link_to_event == event.event_id)\ndf3 = df2.join(member, member.member_id == budget.link_to_event)\nres = df3.select(member.first_name, member.last_name)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.ANA\nFROM Examination\nWHERE Examination.ID = 3605340\nAND Examination.`Examination Date` = '1996-12-02';\n```"

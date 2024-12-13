@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.number\nFROM cards\nWHERE cards.side IS NULL\n  AND cards.subtypes LIKE '%Angel%'\n  AND cards.subtypes LIKE '%Wizard%'\n```\n"

@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname\nFROM drivers\nJOIN driverStandings ON drivers.driverId = driverStandings.driverId\nWHERE drivers.dob > '1975-12-31' AND driverStandings.position = 2;\n```"

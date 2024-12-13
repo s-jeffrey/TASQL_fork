@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = card.issued, filter = '1996-10-21')\ndf2 = df1.join(disp, on = card.disp_id == disp.disp_id)\ndf3 = df2.join(trans, on = disp.account_id == trans.account_id)\nres = df3.orderby(by = trans.amount, desc).limit(1).select(trans.amount)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Consumption) AS AverageMonthlyConsumption\nFROM yearmonth\nJOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Segment = 'SME' AND yearmonth.Date BETWEEN '201301' AND '201312';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT jumping FROM Player_Attributes WHERE id = 6) - \n    (SELECT jumping FROM Player_Attributes WHERE id = 23) AS jumping_difference;\n```\nThis SQL query calculates the difference between the jumping scores of players with IDs 6 and 23 from the `Player_Attributes` table."

@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(Player_Attributes.overall_rating) / COUNT(Player_Attributes.id) AS average_overall_rating\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE Player.height > 170\nAND strftime('%Y', Player_Attributes.date) BETWEEN '2010' AND '2015';\n```"

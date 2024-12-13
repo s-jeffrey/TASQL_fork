@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = badges.Name, filter = 'Outliers')\ndf2 = df1.join(users, df1.badges.UserId == users.Id)\nres = df2.select(users.LastAccessDate, users.Location)\n```"

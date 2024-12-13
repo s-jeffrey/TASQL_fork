@@ -1,0 +1,1 @@
+"```sql\nSELECT ym.Consumption\nFROM yearmonth ym\nWHERE ym.Date = '201208'\nAND ym.CustomerID IN (\n    SELECT t.CustomerID\n    FROM transactions_1k t\n    WHERE t.ProductID = 5\n    AND (t.Price / t.Amount) > 29.00\n    AND t.Date BETWEEN '2012-08-01' AND '2012-08-31'\n);\n```"

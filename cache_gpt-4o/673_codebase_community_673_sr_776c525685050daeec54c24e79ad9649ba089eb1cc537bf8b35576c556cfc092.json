@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.Age, filter = max(users.Age))\ndf2 = df1.join(votes, df1.users.Id == votes.UserId)\nres = df2.groupby(votes.UserId).select(avg(votes.PostId))\n```"

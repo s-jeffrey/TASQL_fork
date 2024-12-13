@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'How to tell if something happened in a data set which monitors a value over time')\ndf2 = df.where(element = postLinks.PostId, filter = df1.select(posts.Id))\nres = df2.select(posts.Title)\n```"

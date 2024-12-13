@@ -1,0 +1,1 @@
+"`bond_type`, `bond_id` FROM `bond` WHERE SUBSTR(`bond_id`, 7, 2) + 0 = 45;\""

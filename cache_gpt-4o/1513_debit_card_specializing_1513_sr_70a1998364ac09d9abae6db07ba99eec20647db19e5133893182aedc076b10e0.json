@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.Date, filter = '2012-08-25')\ndf2 = df1.orderby(by = transactions_1k.Time, asc).limit(1)\nres = df2.select(gasstations.Country)\n```"

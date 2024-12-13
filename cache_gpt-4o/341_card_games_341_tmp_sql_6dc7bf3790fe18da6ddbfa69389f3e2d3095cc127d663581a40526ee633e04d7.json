@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nWHERE cards.borderColor = 'borderless'\n  AND cards.cardKingdomFoilId IS NULL\n  AND cards.cardKingdomId IS NOT NULL;\n```"

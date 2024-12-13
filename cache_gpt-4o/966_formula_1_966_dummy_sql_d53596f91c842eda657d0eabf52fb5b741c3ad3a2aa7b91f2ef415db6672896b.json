@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT driverId) \nFROM results \nWHERE raceId = 18;\n```"

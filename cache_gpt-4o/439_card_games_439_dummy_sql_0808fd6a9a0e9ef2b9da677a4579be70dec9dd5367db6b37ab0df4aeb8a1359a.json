@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM sets\nWHERE code = 'ALL';\n```"

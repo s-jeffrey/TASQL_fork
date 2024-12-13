@@ -1,0 +1,1 @@
+"`expense_description` FROM `expense` ORDER BY `cost` DESC LIMIT 1;\"\n"

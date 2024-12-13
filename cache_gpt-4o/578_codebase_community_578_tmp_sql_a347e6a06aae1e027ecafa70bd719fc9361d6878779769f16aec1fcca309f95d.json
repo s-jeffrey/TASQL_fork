@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName, users.Reputation\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.Title = 'Understanding what Dassault iSight is doing?';\n```"

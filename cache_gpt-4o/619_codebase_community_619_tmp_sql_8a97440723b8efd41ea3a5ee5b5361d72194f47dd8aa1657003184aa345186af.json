@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT badges.UserId)\nFROM badges\nINNER JOIN users ON badges.UserId = users.Id\nWHERE badges.Name = 'Supporter' AND users.Age BETWEEN 19 AND 65;\n```"

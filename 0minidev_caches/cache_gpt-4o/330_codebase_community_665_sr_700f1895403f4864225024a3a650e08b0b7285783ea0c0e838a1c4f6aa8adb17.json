@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.AnswerCount, filter = '<= 2')\ndf2 = df1.where(element = year(postLinks.CreationDate), filter = 2010)\nres = df2.select(df2.count() / 12)\n```"

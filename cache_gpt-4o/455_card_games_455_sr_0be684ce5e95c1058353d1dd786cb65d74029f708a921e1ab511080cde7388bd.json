@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.isPromo, filter = 1)\ndf2 = df1.where(element = cards.side, filter = 'is not Null')\nres = df2.select(cards.name)\n```"

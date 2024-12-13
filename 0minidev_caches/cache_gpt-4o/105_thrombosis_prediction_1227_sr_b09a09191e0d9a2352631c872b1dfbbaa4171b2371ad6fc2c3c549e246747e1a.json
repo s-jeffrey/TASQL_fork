@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.SEX, filter = 'M')\ndf2 = df1.where(element = Laboratory.T-CHO, filter = '>= 250')\nres = df2.select((sum(year(now()) - year(Patient.Birthday)) / df2.count()).alias('average_age'))\n```"

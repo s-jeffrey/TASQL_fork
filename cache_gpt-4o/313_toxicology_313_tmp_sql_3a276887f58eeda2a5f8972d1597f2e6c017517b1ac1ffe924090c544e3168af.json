@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM atom\nWHERE molecule_id = 'TR001';\n```"

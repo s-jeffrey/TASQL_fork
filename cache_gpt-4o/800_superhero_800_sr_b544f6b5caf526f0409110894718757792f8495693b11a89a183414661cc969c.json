@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Blue').where(element = colour.id, filter = 7)\nres = df.select(cast(df1.count(), real) * 100 / df.count())\n```"

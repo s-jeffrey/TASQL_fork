@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = disp.type, filter = 'OWNER')\nres = df1.select(client.client_id, client.district_id)\n```"

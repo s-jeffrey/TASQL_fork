@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = foreign_data.multiverseid, filter = 149934)\nres = df1.select(foreign_data.language)\n```"

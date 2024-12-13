@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT drivers.driverId)\nFROM drivers\nINNER JOIN results ON drivers.driverId = results.driverId\nWHERE drivers.nationality = 'Italian' AND results.time IS NULL;\n```"

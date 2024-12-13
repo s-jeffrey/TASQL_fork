@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(DISTINCT p.Id) FILTER (WHERE t.TagName = 'r') AS REAL) * 100.0 / COUNT(DISTINCT p.Id) AS percentage\nFROM \n    posts p\nJOIN \n    users u ON p.OwnerUserId = u.Id\nJOIN \n    tags t ON t.ExcerptPostId = p.Id\nWHERE \n    u.DisplayName = 'Community';\n```"

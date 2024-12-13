@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = driverStandings.position, filter = 91)\nres = df1.select(driverStandings.wins)\n```"

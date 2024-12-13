@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(results.points)\nFROM results\nJOIN races ON results.raceId = races.raceId\nJOIN drivers ON results.driverId = drivers.driverId\nWHERE drivers.forename = 'Eddie' AND drivers.surname = 'Irvine' AND races.year = 2000;\n```"

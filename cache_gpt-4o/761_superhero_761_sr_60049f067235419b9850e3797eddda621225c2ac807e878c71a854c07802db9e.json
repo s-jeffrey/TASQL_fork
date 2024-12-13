@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = gender.gender, filter = 'Male')\naverage_weight = df.select(avg(superhero.weight_kg))\ndf2 = df1.where(element = superhero.weight_kg, filter = '> ' + str(average_weight * 0.79))\nres = df2.select(superhero.superhero_name)\n```"

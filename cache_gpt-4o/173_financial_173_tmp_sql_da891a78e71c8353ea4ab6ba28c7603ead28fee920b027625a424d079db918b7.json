@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) \n     FROM trans \n     WHERE trans.account_id = 3 AND trans.k_symbol = 'SLUZBY') AS statement_count,\n    (SELECT trans.k_symbol \n     FROM trans \n     WHERE trans.amount = 3539) AS aim_of_debiting;\n```"

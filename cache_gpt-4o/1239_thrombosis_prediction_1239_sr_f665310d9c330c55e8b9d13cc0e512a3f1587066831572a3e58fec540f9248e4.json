@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.HCT, filter = '>= 52')\ndf2 = df1.groupby(Laboratory.ID).having(element = count(Laboratory.ID), filter = '> 2')\nres = df2.select(Laboratory.ID, subtract(year(current_timestamp), year(Patient.Birthday)))\n```"

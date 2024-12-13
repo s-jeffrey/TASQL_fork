@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(DISTINCT u.Id) FILTER (WHERE u.Age BETWEEN 13 AND 18) AS REAL) * 100 / COUNT(DISTINCT u.Id) AS percentage_of_teenagers\nFROM \n    badges b\nINNER JOIN \n    users u ON b.UserId = u.Id\nWHERE \n    b.Name = 'Organizer';\n```"

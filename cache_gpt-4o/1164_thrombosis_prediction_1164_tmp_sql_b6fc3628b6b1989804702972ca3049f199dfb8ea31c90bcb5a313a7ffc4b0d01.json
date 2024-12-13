@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Examination\nINNER JOIN Patient ON Examination.ID = Patient.ID\nWHERE Examination.Thrombosis = 1\n  AND strftime('%Y', Examination.`Examination Date`) = '1997'\n  AND Patient.SEX = 'F';\n```"

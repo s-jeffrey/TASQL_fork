@@ -1,0 +1,1 @@
+"```sql\nSELECT c.Segment\nFROM transactions_1k t\nJOIN customers c ON t.CustomerID = c.CustomerID\nWHERE t.Date = '2012-08-23' AND t.Time = '21:20:00';\n```"

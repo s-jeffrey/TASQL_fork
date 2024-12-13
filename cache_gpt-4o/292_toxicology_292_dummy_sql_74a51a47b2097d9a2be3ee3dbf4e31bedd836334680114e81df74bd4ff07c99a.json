@@ -1,0 +1,1 @@
+"```sql\nSELECT atom_id\nFROM atom\nWHERE element = 'c'\nAND CAST(SUBSTR(molecule_id, 3, 3) AS INTEGER) BETWEEN 10 AND 50;\n```"

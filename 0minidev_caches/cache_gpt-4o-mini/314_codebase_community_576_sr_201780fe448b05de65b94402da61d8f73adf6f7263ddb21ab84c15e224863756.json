@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.Text, filter = 'thank you user93!')\nres = df1.select(users.DisplayName)\n```"

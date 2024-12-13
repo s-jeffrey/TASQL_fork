@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM comments\nINNER JOIN users ON comments.UserId = users.Id\nWHERE comments.Score BETWEEN 1 AND 5\nAND users.DownVotes = 0;\n```"

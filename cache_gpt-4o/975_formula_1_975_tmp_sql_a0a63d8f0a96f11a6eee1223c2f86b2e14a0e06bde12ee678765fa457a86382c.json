@@ -1,0 +1,1 @@
+"```sql\nSELECT races.year\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nORDER BY CAST(results.fastestLapSpeed AS FLOAT) ASC\nLIMIT 1;\n```"

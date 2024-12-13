@@ -1,0 +1,1 @@
+"```sql\nSELECT district.district_id, district.A2 AS district_name\nFROM district\nWHERE district.A13 = (\n    SELECT MAX(district.A13)\n    FROM district\n);\n```\n\nThis SQL query selects the `district_id` and `district_name` (A2) from the `district` table where the unemployment rate in 1996 (A13) is the highest among all districts."

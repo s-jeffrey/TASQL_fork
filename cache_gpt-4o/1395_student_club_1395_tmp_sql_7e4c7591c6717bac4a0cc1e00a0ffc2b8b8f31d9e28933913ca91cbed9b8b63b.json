@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT attendance.link_to_member)\nFROM attendance\nINNER JOIN event ON attendance.link_to_event = event.event_id\nWHERE event.event_name = 'Community Theater'\n  AND strftime('%Y', event.event_date) = '2019';\n```"

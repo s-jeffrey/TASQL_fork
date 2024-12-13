@@ -1,0 +1,1 @@
+"`attribute_value` FROM `hero_attribute` JOIN `superhero` ON `hero_attribute`.`hero_id` = `superhero`.`id` WHERE `superhero`.`superhero_name` = 'Abomination';\"\n  "

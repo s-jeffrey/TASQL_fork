@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.type\nFROM sets\nWHERE sets.name = 'From the Vault: Lore';\n```"

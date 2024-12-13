@@ -1,0 +1,1 @@
+"```sql\nSELECT artist\nFROM cards\nWHERE side IS NULL\nORDER BY convertedManaCost DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Patient\nWHERE SEX = 'F' AND Diagnosis = 'APS';\n```"

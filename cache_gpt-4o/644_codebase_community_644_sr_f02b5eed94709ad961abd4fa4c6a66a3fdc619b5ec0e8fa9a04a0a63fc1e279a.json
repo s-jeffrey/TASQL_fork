@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Detecting a given face in a database of facial images')\nres = df1.select(posts.LastEditDate, posts.LastEditorUserId)\n```"

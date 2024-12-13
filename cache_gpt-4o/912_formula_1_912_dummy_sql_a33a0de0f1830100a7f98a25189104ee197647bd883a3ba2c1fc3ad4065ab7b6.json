@@ -1,0 +1,1 @@
+"`circuitRef` FROM `circuits` WHERE `name` = 'Marina Bay Street Circuit';\""

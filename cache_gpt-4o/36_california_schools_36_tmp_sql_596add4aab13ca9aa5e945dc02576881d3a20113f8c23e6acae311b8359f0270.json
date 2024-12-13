@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    schools.AdmFName1, schools.AdmLName1, \n    schools.AdmFName2, schools.AdmLName2, \n    schools.AdmFName3, schools.AdmLName3\nFROM \n    satscores\nINNER JOIN \n    schools ON satscores.cds = schools.CDSCode\nORDER BY \n    satscores.NumGE1500 DESC\nLIMIT 1;\n```"

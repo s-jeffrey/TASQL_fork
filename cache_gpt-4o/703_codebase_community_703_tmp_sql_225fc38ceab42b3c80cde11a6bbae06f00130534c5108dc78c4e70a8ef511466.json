@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM tags\nWHERE Id < 15 AND Count <= 20;\n```"

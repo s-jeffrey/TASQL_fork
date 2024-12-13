@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_date, filter = '2020-03-24T12:00:00')\nres = df1.select(event.type)\n```"

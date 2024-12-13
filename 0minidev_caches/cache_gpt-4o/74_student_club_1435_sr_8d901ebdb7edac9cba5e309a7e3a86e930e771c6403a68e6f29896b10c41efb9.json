@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.type, filter = 'Game').where(element = event.status, filter = 'Closed')\ndf2 = df1.where(element = event.event_date, filter = '>= 2019-03-15').where(element = event.event_date, filter = '<= 2020-03-20')\nres = df2.select(event.event_name)\n```"

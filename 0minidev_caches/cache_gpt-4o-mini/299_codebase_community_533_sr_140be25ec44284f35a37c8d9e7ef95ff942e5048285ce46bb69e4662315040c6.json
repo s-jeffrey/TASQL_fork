@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.LastAccessDate, filter = '> 2014-09-01')\nres = df1.count()\n```"

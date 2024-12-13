@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Match\nJOIN League ON Match.league_id = League.id\nWHERE Match.season = '2015/2016' AND League.name = 'Italy Serie A';\n```"

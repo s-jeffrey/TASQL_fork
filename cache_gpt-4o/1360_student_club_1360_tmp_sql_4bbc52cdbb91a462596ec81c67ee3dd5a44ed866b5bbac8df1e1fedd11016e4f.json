@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(b1.amount) * 100.0 / SUM(b2.amount)) AS percentage\nFROM budget b1\nINNER JOIN event e ON b1.link_to_event = e.event_id\nINNER JOIN budget b2 ON b2.link_to_event = e.event_id\nWHERE b1.category = 'Parking' AND e.event_name = 'November Speaker'\nAND e.event_name = 'November Speaker';\n```"

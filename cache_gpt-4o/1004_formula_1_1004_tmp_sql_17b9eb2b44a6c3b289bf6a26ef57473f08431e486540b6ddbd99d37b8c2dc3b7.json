@@ -1,0 +1,1 @@
+"```sql\nSELECT ds.wins, d.forename, d.surname\nFROM drivers d\nINNER JOIN driverStandings ds ON d.driverId = ds.driverId\nWHERE d.dob = (SELECT MIN(dob) FROM drivers)\nLIMIT 1;\n```"

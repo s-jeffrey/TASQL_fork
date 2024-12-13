@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.client_id, filter = 9)\ndf2 = df1.join(disp, on = client.client_id == disp.client_id)\ndf3 = df2.join(card, on = disp.disp_id == card.disp_id)\nres = df3.select(card.type)\n```"

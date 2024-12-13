@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Examination\nWHERE Thrombosis = 2\n  AND `ANA Pattern` = 'S'\n  AND `aCL IgM` > (SELECT AVG(`aCL IgM`) * 1.2 FROM Examination);\n```"

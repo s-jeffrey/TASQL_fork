@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(\n    (SELECT COUNT(ID) \n     FROM Patient \n     WHERE Diagnosis = 'SLE' AND Admission = '+') AS REAL) \n    / \n    (SELECT COUNT(ID) \n     FROM Patient \n     WHERE Diagnosis = 'SLE' AND Admission = '-') AS ratio;\n```"

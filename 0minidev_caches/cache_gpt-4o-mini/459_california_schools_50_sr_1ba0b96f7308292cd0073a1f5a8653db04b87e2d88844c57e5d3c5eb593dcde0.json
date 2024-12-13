@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = satscores.AvgScrMath, desc).limit(7)\nres = df1.select(schools.Street, schools.School)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM races\nWHERE year = 2005\nORDER BY name DESC;\n```\n\nThis SQL query selects the names of all races that took place in the year 2005 and orders them in descending order by name."

@@ -1,0 +1,1 @@
+"```sql\nSELECT zip_code.type\nFROM member\nINNER JOIN zip_code ON member.zip = zip_code.zip_code\nWHERE member.first_name = 'Christof' AND member.last_name = 'Nielson';\n```"

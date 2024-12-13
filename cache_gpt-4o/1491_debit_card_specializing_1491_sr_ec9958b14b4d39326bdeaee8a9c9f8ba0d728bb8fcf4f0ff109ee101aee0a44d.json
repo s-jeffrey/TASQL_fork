@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = gasstations.Segment, filter = 'Value for money')\nres = df1.groupby(gasstations.Country).count()\n```"

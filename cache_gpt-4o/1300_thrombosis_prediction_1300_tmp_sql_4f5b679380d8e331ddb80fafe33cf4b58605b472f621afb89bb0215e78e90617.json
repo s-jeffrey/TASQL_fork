@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Diagnosis\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.TG < 200\nORDER BY Laboratory.TG DESC\nLIMIT 1;\n```"

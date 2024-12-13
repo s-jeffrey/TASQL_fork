@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT posts.Id)\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nINNER JOIN votes ON posts.Id = votes.PostId\nWHERE users.DisplayName = 'Matt Parker'\nGROUP BY posts.Id\nHAVING COUNT(votes.PostId) > 4;\n```"

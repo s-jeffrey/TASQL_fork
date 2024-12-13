@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(posts.Id)\nFROM posts\nINNER JOIN tags ON posts.Id = tags.ExcerptPostId\nWHERE tags.TagName = 'careers';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM card\nINNER JOIN disp ON card.disp_id = disp.disp_id\nWHERE card.type = 'classic' AND disp.type = 'OWNER'\n```\n"

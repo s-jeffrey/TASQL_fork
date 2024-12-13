@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode\nWHERE schools.City = 'Los Angeles'\n  AND frpm.`Free Meal Count (K-12)` > 500\n  AND frpm.`FRPM Count (K-12)` < 700;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, schools.Street, schools.City, schools.State, schools.Zip\nFROM schools\nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode\nWHERE schools.County = 'Monterey'\n  AND schools.SOCType = 'High Schools (Public)'\n  AND frpm.`FRPM Count (Ages 5-17)` > 800;\n```"

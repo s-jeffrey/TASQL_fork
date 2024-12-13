@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Blue').where(element = superhero.eye_colour_id, filter = colour.id)\ndf2 = df.where(element = superpower.power_name, filter = 'Agility')\ndf3 = df1.join(df2, on = hero_power.hero_id == superhero.id).where(element = hero_power.power_id, filter = superpower.id)\nres = df3.count()\n```"

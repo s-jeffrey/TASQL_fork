@@ -1,0 +1,1 @@
+"`AdmEmail1` FROM `schools` JOIN `frpm` ON `schools`.`CDSCode` = `frpm`.`CDSCode` WHERE `frpm`.`Charter School (Y/N)` = 1 ORDER BY `frpm`.`Enrollment (K-12)` ASC LIMIT 1;\""

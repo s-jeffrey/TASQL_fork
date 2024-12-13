@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_id, filter = 'TR001_3_4')\ndf2 = df1.select(connected.atom_id, connected.atom_id2)\ndf3 = df2.join(df, on = [connected.atom_id, atom.atom_id]).select(atom.element)\ndf4 = df2.join(df, on = [connected.atom_id2, atom.atom_id]).select(atom.element)\nres = df3.union(df4).distinct().count()\n```"

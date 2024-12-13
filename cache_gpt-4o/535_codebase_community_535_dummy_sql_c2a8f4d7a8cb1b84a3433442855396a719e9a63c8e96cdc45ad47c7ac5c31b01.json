@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nWHERE UpVotes > 100 AND DownVotes > 1;\n```\n\nThis SQL query counts the number of users who have more than 100 upvotes and more than 1 downvote, as specified in the question and evidence."

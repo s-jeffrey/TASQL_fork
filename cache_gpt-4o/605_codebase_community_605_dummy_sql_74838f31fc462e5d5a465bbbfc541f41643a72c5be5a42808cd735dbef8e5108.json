@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT UserId)\nFROM badges\nWHERE Name = 'Announcer';\n```\n\nThis SQL query counts the number of distinct users who have obtained the \"Announcer\" badge by selecting distinct `UserId` values from the `badges` table where the `Name` column matches 'Announcer'."

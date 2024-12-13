@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.Symptoms\nFROM Examination\nINNER JOIN Patient ON Examination.ID = Patient.ID\nWHERE Patient.Birthday = '1959-03-01'\n  AND Examination.`Examination Date` = '1993-09-27';\n```"

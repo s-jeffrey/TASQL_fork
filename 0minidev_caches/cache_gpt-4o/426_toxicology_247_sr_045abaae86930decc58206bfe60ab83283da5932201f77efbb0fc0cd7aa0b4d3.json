@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.atom_id, filter = 'NOT IN connected.atom_id')\nres = df1.select(atom.element)\n```"

@@ -1,0 +1,1 @@
+"`CDSCode` FROM frpm WHERE `Enrollment (K-12)` + `Enrollment (Ages 5-17)` > 500;\"\n"

@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Reputation, users.Views\nFROM users\nWHERE users.DisplayName = 'Jarrod Dixon';\n```"

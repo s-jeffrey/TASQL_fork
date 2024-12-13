@@ -1,0 +1,1 @@
+"```sql\nSELECT (p.CommentCount + p.AnswerCount) AS TotalInteractions\nFROM posts p\nWHERE p.Title = 'Clustering 1D data';\n```"

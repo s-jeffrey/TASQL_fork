@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(fd.id) AS REAL) * 100 / COUNT(c.id) AS percentage\nFROM cards c\nINNER JOIN foreign_data fd ON c.uuid = fd.uuid\nWHERE c.isStorySpotlight = 1 AND fd.language = 'French';\n```"

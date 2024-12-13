@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(users.Id).having(element = count(posts.OwnerUserId), filter = '> 10')\navg_upvotes = df1.select(sum(users.UpVotes) / df1.count())\navg_age = df1.select(sum(users.Age) / df1.count())\nres = df.select(avg_upvotes, avg_age)\n```"

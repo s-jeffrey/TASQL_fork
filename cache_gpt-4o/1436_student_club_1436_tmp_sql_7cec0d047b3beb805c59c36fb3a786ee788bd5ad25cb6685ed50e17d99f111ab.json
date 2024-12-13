@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT attendance.link_to_event\nFROM attendance\nINNER JOIN expense ON attendance.link_to_member = expense.link_to_member\nWHERE expense.cost > 50\n```"

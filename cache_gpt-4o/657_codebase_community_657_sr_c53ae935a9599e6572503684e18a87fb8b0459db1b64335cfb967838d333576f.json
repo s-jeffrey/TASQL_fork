@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = votes.VoteTypeId, filter = 8)\ndf2 = df1.orderby(by = votes.BountyAmount, desc).limit(1)\nres = df2.select(users.DisplayName, users.WebsiteUrl)\n```"

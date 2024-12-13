@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Examination.ID)\nFROM Examination\nINNER JOIN Laboratory ON Examination.ID = Laboratory.ID\nWHERE Laboratory.CPK < 250\nAND (Examination.KCT = '+' OR Examination.RVVT = '+' OR Examination.LAC = '+')\n```\n"

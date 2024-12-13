@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT layout\nFROM cards\nWHERE keywords LIKE '%Flying%';\n```\n\nThis SQL query selects the distinct card layouts from the `cards` table where the `keywords` column contains the keyword \"Flying\"."

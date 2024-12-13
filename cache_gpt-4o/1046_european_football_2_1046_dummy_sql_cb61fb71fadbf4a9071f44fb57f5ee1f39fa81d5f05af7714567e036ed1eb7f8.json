@@ -1,0 +1,1 @@
+"```sql\nSELECT Team_Attributes.buildUpPlayPositioningClass\nFROM Team_Attributes\nJOIN Team ON Team_Attributes.team_api_id = Team.team_api_id\nWHERE Team.team_long_name = 'ADO Den Haag';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nWHERE Location = 'New York';\n```"

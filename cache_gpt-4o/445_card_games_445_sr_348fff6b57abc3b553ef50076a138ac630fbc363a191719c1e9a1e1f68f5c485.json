@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.watermark, filter = 'colorpie')\nres = df1.select(foreign_data.language, foreign_data.flavorText, cards.type)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN Laboratory.PLT < 100 THEN 1 ELSE 0 END) - \n     SUM(CASE WHEN Laboratory.PLT > 400 THEN 1 ELSE 0 END)) AS difference\nFROM \n    Laboratory\nWHERE \n    Laboratory.PLT <= 100 OR Laboratory.PLT >= 400;\n```"

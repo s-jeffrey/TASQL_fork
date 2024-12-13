@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.nationality, filter = 'Italian')\ndf2 = df1.where(element = results.time, filter = 'is null')\nres = df2.count()\n```"

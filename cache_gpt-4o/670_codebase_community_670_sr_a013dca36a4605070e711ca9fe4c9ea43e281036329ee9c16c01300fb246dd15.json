@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = users.Age, asc).limit(1)\ndf2 = df1.orderby(by = posts.CreaionDate, asc).limit(1)\nres = df2.select(posts.CreaionDate)\n```"

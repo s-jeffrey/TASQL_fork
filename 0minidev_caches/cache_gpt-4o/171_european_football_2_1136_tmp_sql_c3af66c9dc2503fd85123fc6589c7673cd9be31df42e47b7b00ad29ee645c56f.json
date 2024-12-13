@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player_Attributes\nWHERE preferred_foot = 'left'\nAND crossing = (SELECT MAX(crossing) FROM Player_Attributes)\n```"

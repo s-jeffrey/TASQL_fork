@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nJOIN legalities ON cards.uuid = legalities.uuid\nWHERE legalities.status = 'restricted' AND cards.isTextless = 0;\n```"

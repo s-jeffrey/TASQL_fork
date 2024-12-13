@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = income.source, filter = 'Fundraising').where(element = income.date_received, filter = '2019-09-14')\nres = df1.select(income.notes)\n```"

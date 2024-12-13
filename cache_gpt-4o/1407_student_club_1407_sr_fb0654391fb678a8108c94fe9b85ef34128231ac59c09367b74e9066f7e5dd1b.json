@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = budget.category, filter = 'Advertisement')\ndf2 = df1.orderby(by = budget.amount, desc).limit(3)\nres = df2.select(budget.budget_id)\n```"

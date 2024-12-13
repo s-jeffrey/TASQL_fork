@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM drivers\nWHERE nationality = 'British' AND dob > '1980-01-01';\n```"

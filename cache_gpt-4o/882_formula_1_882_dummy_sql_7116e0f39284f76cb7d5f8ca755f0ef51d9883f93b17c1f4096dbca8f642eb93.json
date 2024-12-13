@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(year)\nFROM races\nWHERE name = 'Singapore Grand Prix';\n```"

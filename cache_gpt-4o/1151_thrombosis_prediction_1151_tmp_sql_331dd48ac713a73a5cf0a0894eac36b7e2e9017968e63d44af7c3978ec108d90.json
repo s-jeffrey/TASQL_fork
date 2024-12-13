@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(CASE WHEN Admission = '+' THEN 1 END) AS REAL) * 100.0 / COUNT(*) AS inpatient_percentage\nFROM \n    Patient\nWHERE \n    strftime('%Y', Birthday) BETWEEN '1930' AND '1940';\n```"

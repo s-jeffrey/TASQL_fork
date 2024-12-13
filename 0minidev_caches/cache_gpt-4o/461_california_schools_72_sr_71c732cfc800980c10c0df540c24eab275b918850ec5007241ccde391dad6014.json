@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.EdOpsCode, filter = 'SSS')\ndf2 = df1.where(element = schools.City, filter = 'Fremont')\ndf3 = df2.where(element = frpm.`Academic Year`, filter = '2014-2015')\nres = df3.select(frpm.`Enrollment (Ages 5-17)`).sum()\n```"

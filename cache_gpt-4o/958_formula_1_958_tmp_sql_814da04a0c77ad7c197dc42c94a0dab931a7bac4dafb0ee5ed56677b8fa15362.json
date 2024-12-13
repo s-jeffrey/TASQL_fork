@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname\nFROM drivers d\nINNER JOIN results r ON d.driverId = r.driverId\nORDER BY r.fastestLapTime ASC\nLIMIT 1;\n```"

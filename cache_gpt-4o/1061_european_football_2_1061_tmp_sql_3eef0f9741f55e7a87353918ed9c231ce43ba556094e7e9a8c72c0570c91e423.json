@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player\nWHERE player_name LIKE 'Adam%' AND weight > 170;\n```"

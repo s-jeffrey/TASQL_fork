@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.artist, filter = 'Kev Walker')\ndf2 = df1.orderby(by = rulings.date, desc)\nres = df2.select(rulings.text)\n```"

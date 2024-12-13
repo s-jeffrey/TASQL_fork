@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(time) AS fastest_lap_time\nFROM lapTimes;\n```\n\nThis SQL query selects the minimum lap time from the `lapTimes` table, which corresponds to the fastest lap time recorded across all circuits."

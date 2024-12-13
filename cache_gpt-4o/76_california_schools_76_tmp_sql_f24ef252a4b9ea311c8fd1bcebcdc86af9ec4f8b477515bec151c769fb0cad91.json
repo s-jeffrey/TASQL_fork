@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.City\nFROM schools\nWHERE schools.County = 'Merced'\n  AND schools.EILCode = 'HS'\n  AND schools.CDSCode IN (\n    SELECT frpm.CDSCode\n    FROM frpm\n    WHERE frpm.LunchProvision = 2\n      AND frpm.LowestGrade = 9\n      AND frpm.HighestGrade = 12\n  );\n```"

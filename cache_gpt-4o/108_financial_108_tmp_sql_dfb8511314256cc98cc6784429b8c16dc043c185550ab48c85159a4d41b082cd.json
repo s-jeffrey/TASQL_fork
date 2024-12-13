@@ -1,0 +1,1 @@
+"```sql\nSELECT trans.amount\nFROM loan\nINNER JOIN disp ON loan.account_id = disp.account_id\nINNER JOIN account ON disp.account_id = account.account_id\nINNER JOIN trans ON account.account_id = trans.account_id\nWHERE loan.amount = (\n    SELECT MAX(loan.amount)\n    FROM loan\n)\nAND trans.date > account.date\nORDER BY trans.date ASC\nLIMIT 1;\n```"

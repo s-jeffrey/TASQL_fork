@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Phone\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE frpm.`Charter Funding Type` = 'Directly funded'\n  AND frpm.`Charter School (Y/N)` = 1\n  AND schools.OpenDate > '2000-01-01';\n```"

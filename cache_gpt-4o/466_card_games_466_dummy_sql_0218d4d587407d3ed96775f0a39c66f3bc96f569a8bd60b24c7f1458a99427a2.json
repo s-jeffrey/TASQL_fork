@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nJOIN set_translations ON cards.setCode = set_translations.setCode\nWHERE set_translations.translation = 'Hauptset Zehnte Edition'\nAND cards.artist = 'Adam Rex';\n```"

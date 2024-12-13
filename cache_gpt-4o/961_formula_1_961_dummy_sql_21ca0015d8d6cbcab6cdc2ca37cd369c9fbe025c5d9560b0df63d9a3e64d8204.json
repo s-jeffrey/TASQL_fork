@@ -1,0 +1,1 @@
+"```sql\nSELECT r.name, r.year\nFROM results res\nJOIN races r ON res.raceId = r.raceId\nWHERE res.milliseconds = (\n    SELECT MIN(milliseconds)\n    FROM results\n    WHERE milliseconds IS NOT NULL\n);\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT type\nFROM sets\nWHERE name = 'From the Vault: Lore';\n```"

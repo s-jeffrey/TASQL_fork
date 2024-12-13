@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(cards.id) AS card_count, cards.id\nFROM cards\nWHERE cards.borderColor = 'black';\n```"

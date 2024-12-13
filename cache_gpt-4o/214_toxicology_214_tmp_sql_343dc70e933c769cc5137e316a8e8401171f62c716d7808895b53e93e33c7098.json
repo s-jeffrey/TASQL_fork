@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT m.label\nFROM molecule m\nWHERE m.label != '-'\nAND m.molecule_id NOT IN (\n    SELECT a.molecule_id\n    FROM atom a\n    WHERE a.element = 'sn'\n);\n```"

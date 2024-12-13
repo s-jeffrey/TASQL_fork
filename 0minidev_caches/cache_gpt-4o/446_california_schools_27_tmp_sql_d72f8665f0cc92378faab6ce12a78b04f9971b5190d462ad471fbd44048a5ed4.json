@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, satscores.AvgScrWrite, schools.Phone\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.OpenDate > '1991-12-31' OR schools.ClosedDate < '2000-01-01';\n```"

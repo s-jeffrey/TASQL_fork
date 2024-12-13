@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(CASE WHEN income.amount = 50 THEN 1 END) AS REAL) * 100 / COUNT(member.member_id)) AS percentage\nFROM member\nINNER JOIN income ON member.member_id = income.link_to_member\nWHERE member.t_shirt_size = 'Medium' AND member.position = 'Member';\n```"

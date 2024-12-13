@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.PostId, filter = 395)\nres = df1.select(comments.Score, postLinks.LinkTypeId)\n```"

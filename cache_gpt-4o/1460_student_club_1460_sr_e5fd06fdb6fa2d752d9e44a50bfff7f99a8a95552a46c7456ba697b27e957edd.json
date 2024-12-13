@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.expense_description, filter = 'Water, Veggie tray, supplies')\nres = df1.select(member.first_name, member.last_name, expense.cost)\n```"

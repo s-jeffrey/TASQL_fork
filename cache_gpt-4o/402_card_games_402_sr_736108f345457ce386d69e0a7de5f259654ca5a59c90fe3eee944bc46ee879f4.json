@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.isStorySpotlight, filter = 1).where(element = cards.isTextless, filter = 0)\nres = df.select(cast(df1.count(), real) * 100 / df.count(), cards.id)\n```"

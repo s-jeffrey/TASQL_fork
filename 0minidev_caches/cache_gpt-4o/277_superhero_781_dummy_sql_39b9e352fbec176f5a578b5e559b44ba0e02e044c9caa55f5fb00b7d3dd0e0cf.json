@@ -1,0 +1,1 @@
+"`height_cm` FROM `superhero` WHERE `eye_colour_id` = (SELECT `id` FROM `colour` WHERE `colour` = 'Amber');\""

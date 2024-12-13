@@ -1,0 +1,1 @@
+"```sql\nSELECT attendance.link_to_event, attendance.link_to_member\nFROM attendance\nINNER JOIN expense ON attendance.link_to_member = expense.link_to_member\nWHERE expense.approved = 'true'\nAND expense.expense_date BETWEEN '2019-01-10' AND '2019-11-19';\n```"

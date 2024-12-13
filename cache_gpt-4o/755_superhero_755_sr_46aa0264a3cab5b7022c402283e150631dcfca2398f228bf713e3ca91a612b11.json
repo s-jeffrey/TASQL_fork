@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = race.race, filter = 'Demi-God')\nres = df1.select(superhero.full_name).limit(5)\n```"

@@ -1,0 +1,1 @@
+"((c2012.Consumption - c2013.Consumption) / c2012.Consumption) AS ConsumptionDecreaseRate\nFROM yearmonth c2012\nJOIN yearmonth c2013 ON c2012.CustomerID = c2013.CustomerID\nJOIN transactions_1k t ON t.CustomerID = c2012.CustomerID\nWHERE t.Date = '2012-08-25' AND t.Amount = 634.8 AND c2012.Date = '201212' AND c2013.Date = '201312';\"\n"

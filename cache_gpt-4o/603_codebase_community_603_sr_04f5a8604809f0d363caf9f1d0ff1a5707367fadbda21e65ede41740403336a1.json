@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.OwnerUserId, filter = 686)\nres = df1.select(posts.FavoriteCount).sum()\n```"

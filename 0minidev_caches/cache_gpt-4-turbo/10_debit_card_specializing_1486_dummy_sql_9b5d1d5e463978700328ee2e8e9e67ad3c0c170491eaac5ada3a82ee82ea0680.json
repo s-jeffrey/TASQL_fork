@@ -1,0 +1,1 @@
+"(COUNT(*) FILTER (WHERE c.Currency = 'CZK') - COUNT(*) FILTER (WHERE c.Currency = 'EUR')) AS Amount_of_more_SMEs \\\nFROM customers c \\\nWHERE c.Segment = 'SME';\"\n  "

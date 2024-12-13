@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.language, filter = 'Italian')\ndf2 = df1.where(element = sets.block, filter = 'Shadowmoor')\ndf3 = df2.orderby(by = sets.name, asc).limit(2)\nres = df3.select(sets.name, sets.id)\n```"

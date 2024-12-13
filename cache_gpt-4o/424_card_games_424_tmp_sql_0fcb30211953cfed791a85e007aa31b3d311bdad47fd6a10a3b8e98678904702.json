@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM cards WHERE isTextless = 1)) AS proportion\nFROM cards\nWHERE isTextless = 1 AND layout = 'normal';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT CustomerID\nFROM transactions_1k\nWHERE Date = '2012-08-25'\nORDER BY Amount DESC\nLIMIT 1;\n```"

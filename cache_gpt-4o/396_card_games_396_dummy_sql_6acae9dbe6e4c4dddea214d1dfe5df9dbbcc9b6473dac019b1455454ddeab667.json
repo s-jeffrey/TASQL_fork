@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE frameVersion = '1993'\n  AND availability LIKE '%paper%'\n  AND hasContentWarning = 1;\n```"

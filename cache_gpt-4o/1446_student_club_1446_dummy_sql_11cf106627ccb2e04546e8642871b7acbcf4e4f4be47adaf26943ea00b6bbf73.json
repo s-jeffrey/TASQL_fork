@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(CASE WHEN type = 'PO Box' THEN 1 ELSE 0 END) / COUNT(zip_code)) * 100 AS percentage_po_box\nFROM zip_code;\n```\n\nThis SQL query calculates the percentage of ZIP codes that are PO boxes by dividing the count of ZIP codes with the type 'PO Box' by the total count of ZIP codes, and then multiplying by 100 to get the percentage."

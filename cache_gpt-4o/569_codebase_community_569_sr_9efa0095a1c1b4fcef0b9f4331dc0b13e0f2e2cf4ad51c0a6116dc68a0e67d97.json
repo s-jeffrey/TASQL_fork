@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'data visualization')\ndf2 = df1.join(votes, df1.posts.Id == votes.PostId)\nres = df2.count()\n```"

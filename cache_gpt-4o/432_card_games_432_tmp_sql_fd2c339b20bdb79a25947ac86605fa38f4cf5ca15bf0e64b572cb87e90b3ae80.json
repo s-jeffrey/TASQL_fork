@@ -1,0 +1,1 @@
+"```sql\nSELECT st.setCode\nFROM set_translations st\nINNER JOIN sets s ON st.setCode = s.code\nWHERE st.language = 'Russian'\nORDER BY s.baseSetSize DESC\nLIMIT 1;\n```"

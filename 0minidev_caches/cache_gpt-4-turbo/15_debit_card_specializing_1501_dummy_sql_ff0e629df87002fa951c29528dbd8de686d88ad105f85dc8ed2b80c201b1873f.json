@@ -1,0 +1,1 @@
+"DISTINCT gs.Country \\\nFROM gasstations gs \\\nJOIN transactions_1k t ON gs.GasStationID = t.GasStationID \\\nJOIN yearmonth ym ON t.CustomerID = ym.CustomerID \\\nWHERE ym.Date = '201306';\"\n\n"

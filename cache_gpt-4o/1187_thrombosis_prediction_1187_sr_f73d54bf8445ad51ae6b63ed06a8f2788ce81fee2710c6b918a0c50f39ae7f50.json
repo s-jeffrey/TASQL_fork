@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.Date, filter = \"BETWEEN '1987-07-06' AND '1996-01-31'\")\ndf2 = df1.where(element = Laboratory.GPT, filter = '> 30')\ndf3 = df2.where(element = Laboratory.ALB, filter = '< 4')\nres = df3.select(Laboratory.ID)\n```"

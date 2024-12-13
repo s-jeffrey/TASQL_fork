@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(overall_rating)\nFROM Player_Attributes\nJOIN Player ON Player_Attributes.player_api_id = Player.player_api_id\nWHERE Player.player_name = 'Marko Arnautovic'\nAND SUBSTR(Player_Attributes.date, 1, 10) BETWEEN '2007-02-22' AND '2016-04-21';\n```"

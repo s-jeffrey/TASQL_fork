@@ -1,0 +1,1 @@
+"```sql\nSELECT CreationDate\nFROM votes\nGROUP BY CreationDate\nORDER BY COUNT(Id) DESC\nLIMIT 1;\n```\n\nThis SQL query selects the `CreationDate` from the `votes` table, groups the results by `CreationDate`, orders them by the count of `Id` in descending order, and limits the result to the top entry, which corresponds to the creation date with the maximum number of votes."

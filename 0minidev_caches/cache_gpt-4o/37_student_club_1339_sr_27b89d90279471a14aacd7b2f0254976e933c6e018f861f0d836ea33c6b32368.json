@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = member.first_name, filter = 'Elijah').where(element = member.last_name, filter = 'Allen')\ndf2 = df1.where(element = expense.expense_date, filter = lambda x: x[5:7] in ['09', '10'])\nres = df2.select(expense.cost).mean()\n```"

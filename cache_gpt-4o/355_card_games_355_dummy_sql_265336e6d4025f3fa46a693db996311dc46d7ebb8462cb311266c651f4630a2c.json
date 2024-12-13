@@ -1,0 +1,1 @@
+"```sql\nSELECT keywords\nFROM cards\nWHERE name = 'Angel of Mercy';\n```"

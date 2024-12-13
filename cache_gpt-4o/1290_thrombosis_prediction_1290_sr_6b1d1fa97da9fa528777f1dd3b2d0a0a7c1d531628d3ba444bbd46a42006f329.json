@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.ALB, filter = '> 3.5').where(element = Laboratory.ALB, filter = '< 5.5')\ndf2 = df1.orderby(by = Laboratory.ALB, desc).limit(1)\nres = df2.select(Examination.`Examination Date`)\n```"

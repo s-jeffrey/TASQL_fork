@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nWHERE County = 'Alpine'\n  AND EdOpsCode = 'COMMDAY'\n  AND StatusType IN ('Active', 'Closed');\n```"

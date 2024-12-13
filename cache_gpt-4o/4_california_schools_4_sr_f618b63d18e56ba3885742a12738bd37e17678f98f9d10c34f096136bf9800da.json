@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = frpm.`Charter Funding Type`, filter = 'Directly funded')\ndf2 = df1.where(element = frpm.`Charter School (Y/N)`, filter = 1)\ndf3 = df2.where(element = schools.OpenDate, filter = '> 2000-01-01')\nres = df3.select(schools.Phone)\n```"

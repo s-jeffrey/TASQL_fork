@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN publisher.publisher_name = 'Marvel Comics' THEN superhero.id END) - \n     COUNT(CASE WHEN publisher.publisher_name = 'DC Comics' THEN superhero.id END)) AS difference\nFROM \n    publisher\nINNER JOIN \n    superhero ON publisher.id = superhero.publisher_id\nWHERE \n    publisher.publisher_name IN ('Marvel Comics', 'DC Comics');\n```"

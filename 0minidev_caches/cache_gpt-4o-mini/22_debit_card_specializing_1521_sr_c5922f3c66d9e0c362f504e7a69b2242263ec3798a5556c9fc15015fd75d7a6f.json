@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.Date, filter = '2012-08-26')\ndf2 = df1.where(element = transactions_1k.Time, filter = 'BETWEEN 08:00:00 AND 09:00:00')\ndf3 = df2.where(element = gasstations.Country, filter = 'CZE')\nres = df3.count()\n```"

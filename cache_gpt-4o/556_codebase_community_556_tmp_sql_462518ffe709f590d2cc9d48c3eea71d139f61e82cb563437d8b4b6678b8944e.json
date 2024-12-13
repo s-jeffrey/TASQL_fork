@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(badge_count) \nFROM (\n    SELECT COUNT(badges.Id) AS badge_count\n    FROM users\n    INNER JOIN badges ON users.Id = badges.UserId\n    WHERE users.Views > 200\n    GROUP BY badges.UserId\n) AS badge_counts;\n```"

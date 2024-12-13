@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.language, filter = 'Italian').where(element = set_translations.translation, filter = 'not null')\ndf2 = df1.where(element = sets.baseSetSize, filter = '< 100')\nres = df2.count()\n```"

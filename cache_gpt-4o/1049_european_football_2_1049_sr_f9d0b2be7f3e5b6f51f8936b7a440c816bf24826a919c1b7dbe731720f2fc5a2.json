@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Match.season, filter = '2015/2016')\ndf2 = df1.where(element = League.name, filter = 'Scotland Premier League')\nres = df2.count()\n```"

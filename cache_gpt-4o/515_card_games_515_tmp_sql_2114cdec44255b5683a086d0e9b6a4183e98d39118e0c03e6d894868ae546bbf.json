@@ -1,0 +1,1 @@
+"```sql\nSELECT c.originalReleaseDate, l.format\nFROM cards c\nINNER JOIN legalities l ON c.uuid = l.uuid\nWHERE c.rarity = 'mythic' AND l.status = 'Legal'\nORDER BY c.originalReleaseDate ASC\nLIMIT 1;\n```"

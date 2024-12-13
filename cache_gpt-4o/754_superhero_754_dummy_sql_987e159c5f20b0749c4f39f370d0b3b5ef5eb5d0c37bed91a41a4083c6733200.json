@@ -1,0 +1,1 @@
+"`power_name` FROM `superpower` JOIN `hero_power` ON `superpower`.`id` = `hero_power`.`power_id` WHERE `hero_power`.`hero_id` = 56;\"\n"

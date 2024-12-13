@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name\nFROM attendance\nINNER JOIN event ON attendance.link_to_event = event.event_id\nGROUP BY attendance.link_to_event\nORDER BY COUNT(attendance.link_to_event) DESC\nLIMIT 1;\n```"

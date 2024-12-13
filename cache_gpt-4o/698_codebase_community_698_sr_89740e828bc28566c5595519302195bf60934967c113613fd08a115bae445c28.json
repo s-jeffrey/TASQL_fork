@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Clustering 1D data')\nres = df1.select(posts.CommentCount + posts.AnswerCount)\n```"

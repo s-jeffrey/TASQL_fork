@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = 'November Speaker')\ndf2 = df1.where(element = budget.category, filter = 'Parking')\nparking_budget = df2.select(budget.amount).sum()\ntotal_budget = df1.select(budget.amount).sum()\nres = df.select(cast(parking_budget, real) * 100 / total_budget)\n```"

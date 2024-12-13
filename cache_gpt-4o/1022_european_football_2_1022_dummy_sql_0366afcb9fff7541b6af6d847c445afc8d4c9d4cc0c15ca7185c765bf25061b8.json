@@ -1,0 +1,1 @@
+"`preferred_foot` FROM `Player_Attributes` WHERE `potential` = (SELECT MIN(`potential`) FROM `Player_Attributes`);\""

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.name, filter = 'European Grand Prix')\ndf2 = df1.orderby(by = races.year, asc).limit(1)\nres = df2.select(circuits.country, circuits.name, circuits.location)\n```"

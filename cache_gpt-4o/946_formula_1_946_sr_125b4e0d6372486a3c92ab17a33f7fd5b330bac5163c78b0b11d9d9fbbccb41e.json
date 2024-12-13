@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = circuits.country, filter = 'USA')\nres = df1.select(circuits.lat, circuits.lng)\n```"

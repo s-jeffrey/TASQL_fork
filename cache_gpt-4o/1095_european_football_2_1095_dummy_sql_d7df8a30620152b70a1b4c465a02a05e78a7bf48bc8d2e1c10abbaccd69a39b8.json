@@ -1,0 +1,1 @@
+"```sql\nAVG(buildUpPlaySpeed)\nFROM Team_Attributes\nJOIN Team ON Team_Attributes.team_api_id = Team.team_api_id\nWHERE Team.team_long_name = 'Heart of Midlothian';\n```"

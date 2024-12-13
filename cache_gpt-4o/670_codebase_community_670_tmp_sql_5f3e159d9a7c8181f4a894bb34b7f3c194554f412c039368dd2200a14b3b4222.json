@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(posts.CreaionDate) \nFROM posts \nINNER JOIN users ON posts.OwnerUserId = users.Id \nWHERE users.Age = (SELECT MIN(Age) FROM users);\n```"

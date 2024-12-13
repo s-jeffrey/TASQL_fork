@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(comments.Id)\nFROM comments\nWHERE comments.PostId = (\n    SELECT posts.Id\n    FROM posts\n    ORDER BY posts.Score DESC\n    LIMIT 1\n);\n```"

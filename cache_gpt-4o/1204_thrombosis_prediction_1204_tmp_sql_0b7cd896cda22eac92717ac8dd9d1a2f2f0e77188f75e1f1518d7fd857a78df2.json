@@ -1,0 +1,1 @@
+"```sql\nSELECT DATEDIFF(Examination.`Examination Date`, Patient.`First Date`)\nFROM Patient\nINNER JOIN Examination ON Patient.ID = Examination.ID\nWHERE Patient.ID = 821298;\n```"

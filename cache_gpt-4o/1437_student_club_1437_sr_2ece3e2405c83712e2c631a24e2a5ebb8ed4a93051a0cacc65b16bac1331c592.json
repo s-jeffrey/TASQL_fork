@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.approved, filter = 'true').where(element = expense.expense_date, filter = 'BETWEEN 2019-01-10 AND 2019-11-19')\ndf2 = df1.select(expense.link_to_member)\ndf3 = df.where(element = attendance.link_to_member, filter = df2)\nres = df3.select(attendance.link_to_event, attendance.link_to_member)\n```"

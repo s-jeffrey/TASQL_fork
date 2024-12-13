@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.SEX, filter = 'M').where(element = Patient.Admission, filter = '+')\ncount_inpatient = df1.count()\n\ndf2 = df.where(element = Patient.SEX, filter = 'M').where(element = Patient.Admission, filter = '-')\ncount_outpatient = df2.count()\n\nres = df.select((count_inpatient - count_outpatient) * 100 / count_outpatient)\n```"

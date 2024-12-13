@@ -1,0 +1,1 @@
+"```sql\nSELECT races.year, races.name, races.date, races.time\nFROM drivers\nJOIN qualifying ON drivers.driverId = qualifying.driverId\nJOIN races ON qualifying.raceId = races.raceId\nORDER BY drivers.dob DESC, races.date\nLIMIT 1;\n```"

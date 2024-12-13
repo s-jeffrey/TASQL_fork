@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM races\nINNER JOIN circuits ON races.circuitId = circuits.circuitId\nWHERE races.year = 2010\nAND circuits.country NOT IN ('Asia', 'Europe');\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT member.first_name || ' ' || member.last_name AS full_name\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nGROUP BY expense.link_to_member, member.first_name, member.last_name\nORDER BY SUM(expense.cost) DESC\nLIMIT 5;\n```"

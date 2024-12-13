@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.molecule_id, filter = 'TR009')\ndf2 = df1.where(element = connected.atom_id, filter = 'TR009_12').union(df1.where(element = connected.atom_id2, filter = 'TR009_12'))\nres = df2.count()\n```"

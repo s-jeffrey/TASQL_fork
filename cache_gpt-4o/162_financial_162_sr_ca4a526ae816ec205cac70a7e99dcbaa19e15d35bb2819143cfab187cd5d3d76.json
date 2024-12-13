@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.client_id, filter = 3541)\nres = df1.select(district.A3)\n```"

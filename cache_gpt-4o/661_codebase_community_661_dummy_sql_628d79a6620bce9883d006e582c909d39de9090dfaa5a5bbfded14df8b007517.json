@@ -1,0 +1,1 @@
+"```sql\nSELECT Age\nFROM users\nWHERE Reputation = (SELECT MAX(Reputation) FROM users);\n```\n\nThis SQL query selects the age of the user with the highest reputation, which is considered the most influential user based on the evidence provided."

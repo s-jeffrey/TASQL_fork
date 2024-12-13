@@ -1,0 +1,1 @@
+"`element` FROM `atom` WHERE `atom_id` IN (SELECT `atom_id` FROM `connected` WHERE `bond_id` = 'TR001_10_11');\""

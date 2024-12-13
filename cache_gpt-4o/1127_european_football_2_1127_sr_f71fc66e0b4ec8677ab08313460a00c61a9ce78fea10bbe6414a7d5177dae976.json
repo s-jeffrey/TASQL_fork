@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.vision, filter = '> 89')\nres = df1.select(Country.name)\n```"

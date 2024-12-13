@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nWHERE Reputation > 2000 AND Views > 1000;\n```\n\nThis SQL query counts the number of users in the `users` table whose reputation is higher than 2000 and who have more than 1000 views. The conditions are directly derived from the question and the evidence provided."

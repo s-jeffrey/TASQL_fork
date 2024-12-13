@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name, legalities.format\nFROM cards\nJOIN legalities ON cards.uuid = legalities.uuid\nWHERE cards.edhrecRank = 1 AND legalities.status = 'banned';\n```"

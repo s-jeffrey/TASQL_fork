@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT sets.code)\nFROM sets\nINNER JOIN set_translations ON sets.code = set_translations.setCode\nWHERE sets.block = 'Commander' AND set_translations.language = 'Portuguese (Brazil)'\n```"

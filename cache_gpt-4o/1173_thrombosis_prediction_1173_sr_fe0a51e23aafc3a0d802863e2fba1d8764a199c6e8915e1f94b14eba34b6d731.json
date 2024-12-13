@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.`Examination Date`, filter = '>= 1985-01-01').where(element = Examination.`Examination Date`, filter = '<= 1995-12-31')\ndf2 = df1.groupby(Examination.Diagnosis).count()\nres = df2.orderby(by = 'count', desc).limit(1).select(Examination.Diagnosis)\n```"

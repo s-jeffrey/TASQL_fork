@@ -1,0 +1,1 @@
+"```sql\nSELECT first_name || ' ' || last_name AS full_name\nFROM member\nWHERE t_shirt_size = 'X-Large';\n```"

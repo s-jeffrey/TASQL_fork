@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT users.Id)\nFROM comments\nINNER JOIN users ON comments.UserId = users.Id\nWHERE comments.Score = 0 AND users.Age = 40;\n```"

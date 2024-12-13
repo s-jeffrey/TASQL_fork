@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM customers WHERE Segment = 'KAM') AS percentage_of_kam_euro\nFROM customers\nWHERE Segment = 'KAM' AND Currency = 'EUR';\n```"

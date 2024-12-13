@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.finishing, pa.curve\nFROM Player p\nJOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id\nWHERE p.weight = (SELECT MAX(weight) FROM Player);\n```"

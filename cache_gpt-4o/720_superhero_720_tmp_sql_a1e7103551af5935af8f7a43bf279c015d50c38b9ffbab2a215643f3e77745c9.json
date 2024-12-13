@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.full_name\nFROM superhero\nINNER JOIN hero_power ON superhero.id = hero_power.hero_id\nGROUP BY superhero.id\nHAVING COUNT(hero_power.power_id) > 15;\n```"

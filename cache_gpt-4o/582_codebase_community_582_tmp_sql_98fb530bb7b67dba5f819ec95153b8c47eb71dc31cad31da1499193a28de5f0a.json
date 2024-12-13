@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Title\nFROM posts\nINNER JOIN users ON posts.LastEditorUserId = users.Id\nWHERE users.DisplayName = 'Vebjorn Ljosa';\n```"

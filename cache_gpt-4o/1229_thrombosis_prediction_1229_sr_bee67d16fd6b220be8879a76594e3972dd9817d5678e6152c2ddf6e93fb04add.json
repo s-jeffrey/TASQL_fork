@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.TG, filter = '>= 200')\ndf2 = df1.where(element = 'SUBTRACT(year(current_timestamp), year(Patient.Birthday))', filter = '> 50')\nres = df2.select(df2['Patient.ID'].distinct().count())\n```"

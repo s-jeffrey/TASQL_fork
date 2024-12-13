@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(height_cm) AS average_height\nFROM superhero\nWHERE height_cm IS NOT NULL AND height_cm > 0;\n```\n\nThis SQL query calculates the average height of all superheroes by selecting the average of the `height_cm` column from the `superhero` table, ensuring that only non-null and positive height values are considered."

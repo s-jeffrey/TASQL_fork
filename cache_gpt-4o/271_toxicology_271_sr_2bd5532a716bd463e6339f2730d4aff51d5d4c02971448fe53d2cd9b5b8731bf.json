@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_id, filter = 'TR001_1_8')\ndf2 = df1.where(element = atom.element, filter = 'cl')\ndf3 = df1.where(element = atom.element, filter = 'c')\nres = df.select((df2.count() > 0) & (df3.count() > 0))\n```"

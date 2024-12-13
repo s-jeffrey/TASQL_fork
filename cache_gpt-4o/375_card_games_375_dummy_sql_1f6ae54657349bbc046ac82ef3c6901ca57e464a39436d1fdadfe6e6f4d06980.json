@@ -1,0 +1,1 @@
+"```sql\nSELECT id\nFROM cards\nWHERE convertedManaCost = 0;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT country\nFROM circuits\nWHERE alt = (SELECT MAX(alt) FROM circuits);\n```"

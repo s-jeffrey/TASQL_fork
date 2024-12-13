@@ -1,0 +1,1 @@
+"```sql\nSELECT i.amount\nFROM income i\nJOIN member m ON i.link_to_member = m.member_id\nWHERE m.position = 'Vice President';\n```"

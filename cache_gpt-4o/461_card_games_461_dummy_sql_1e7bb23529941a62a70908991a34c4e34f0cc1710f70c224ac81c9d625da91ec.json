@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM cards\nWHERE frameVersion = '2003'\nORDER BY convertedManaCost DESC\nLIMIT 3;\n```"

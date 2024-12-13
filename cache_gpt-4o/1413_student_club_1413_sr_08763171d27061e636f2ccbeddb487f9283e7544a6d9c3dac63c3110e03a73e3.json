@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.cost, filter = '< 50')\nres = df1.select(member.zip)\n```"

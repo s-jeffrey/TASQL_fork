@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(SUM(CASE WHEN atom.element = 'cl' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(atom.atom_id)) AS percent\nFROM atom\nINNER JOIN connected ON atom.atom_id = connected.atom_id\nINNER JOIN bond ON connected.bond_id = bond.bond_id\nWHERE bond.bond_type = '-'\n```"

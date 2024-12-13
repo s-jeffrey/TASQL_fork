@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(SUM(CASE WHEN budget.remaining < 0 THEN 1 ELSE 0 END) AS REAL) / COUNT(budget.link_to_event)) * 100 AS percentage_over_budget\nFROM budget;\n```"

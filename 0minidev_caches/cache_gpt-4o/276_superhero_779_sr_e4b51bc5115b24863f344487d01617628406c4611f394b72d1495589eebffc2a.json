@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.superhero_name, filter = 'Amazo')\nres = df1.count(hero_power.hero_id)\n```"

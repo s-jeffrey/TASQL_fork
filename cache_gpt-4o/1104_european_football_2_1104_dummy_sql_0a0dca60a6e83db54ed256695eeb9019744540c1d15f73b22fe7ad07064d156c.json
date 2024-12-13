@@ -1,0 +1,1 @@
+"```sql\npotential \nFROM Player_Attributes \nJOIN Player ON Player_Attributes.player_api_id = Player.player_api_id \nWHERE Player.player_name = 'Francesco Parravicini' \nAND Player_Attributes.date = '2010-08-30 00:00:00';\n```"

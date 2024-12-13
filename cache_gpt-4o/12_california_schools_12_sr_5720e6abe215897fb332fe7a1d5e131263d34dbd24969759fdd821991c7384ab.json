@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = (satscores.NumGE1500 / satscores.NumTstTakr), filter = '> 0.3')\nres = df1.select(frpm.`Percent (%) Eligible Free (Ages 5-17)`).max()\n```"

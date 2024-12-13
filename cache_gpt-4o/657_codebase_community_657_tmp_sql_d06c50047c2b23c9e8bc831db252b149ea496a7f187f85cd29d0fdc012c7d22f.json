@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName, users.WebsiteUrl\nFROM votes\nINNER JOIN users ON votes.UserId = users.Id\nWHERE votes.VoteTypeId = 8\nORDER BY votes.BountyAmount DESC\nLIMIT 1;\n```"

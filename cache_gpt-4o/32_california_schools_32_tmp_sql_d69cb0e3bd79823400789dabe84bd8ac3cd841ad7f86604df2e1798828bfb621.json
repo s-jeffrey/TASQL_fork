@@ -1,0 +1,1 @@
+"```sql\nSELECT (frpm.`FRPM Count (K-12)` / frpm.`Enrollment (K-12)`) AS eligible_frpm_rate\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE schools.SOC = '66'\nORDER BY frpm.`FRPM Count (K-12)` DESC\nLIMIT 5;\n```"

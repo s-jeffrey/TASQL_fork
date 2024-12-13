@@ -1,0 +1,1 @@
+"```sql\nSELECT d.nationality\nFROM qualifying q\nJOIN drivers d ON q.driverId = d.driverId\nWHERE q.q2 = '0:01:15' AND q.raceId = 347;\n```"

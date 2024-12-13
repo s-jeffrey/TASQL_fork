@@ -1,0 +1,1 @@
+"```sql\nSELECT Description, Diagnosis\nFROM Patient\nWHERE ID = 48473;\n```"

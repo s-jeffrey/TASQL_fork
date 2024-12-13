@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM drivers \nWHERE code IS NULL;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT d.driverRef\nFROM qualifying q\nJOIN drivers d ON q.driverId = d.driverId\nWHERE q.raceId = 20\nORDER BY q.q1 DESC\nLIMIT 5;\n```"

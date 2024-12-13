@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = member.first_name, filter = 'Maya').where(element = member.last_name, filter = 'Mclean')\ndf2 = df.where(element = event.event_name, filter = \"Women's Soccer\")\ndf3 = df1.join(df2, on = attendance.link_to_member == member.member_id, on = attendance.link_to_event == event.event_id)\nres = df3.count() > 0\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.SSA NOT IN ('negative', '0')\nORDER BY Patient.`First Date` ASC\nLIMIT 1;\n```"

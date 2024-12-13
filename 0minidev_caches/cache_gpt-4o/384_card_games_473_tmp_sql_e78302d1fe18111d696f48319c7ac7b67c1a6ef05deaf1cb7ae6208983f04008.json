@@ -1,0 +1,1 @@
+"```sql\nSELECT s.isForeignOnly\nFROM cards c\nINNER JOIN sets s ON c.setCode = s.code\nWHERE c.name = 'Adarkar Valkyrie';\n```"

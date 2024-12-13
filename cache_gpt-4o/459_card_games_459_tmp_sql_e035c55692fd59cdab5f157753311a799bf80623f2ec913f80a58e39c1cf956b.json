@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nWHERE cards.name IN ('Serra Angel', 'Shrine Keeper')\nORDER BY cards.convertedManaCost DESC\nLIMIT 1;\n```"

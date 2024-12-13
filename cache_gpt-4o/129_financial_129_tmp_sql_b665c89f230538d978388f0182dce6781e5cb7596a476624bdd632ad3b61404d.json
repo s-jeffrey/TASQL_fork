@@ -1,0 +1,1 @@
+"```sql\nSELECT district.A2\nFROM trans\nINNER JOIN account ON trans.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE trans.type = 'VYDAJ' \nAND trans.date LIKE '1996-01%'\nORDER BY trans.amount DESC\nLIMIT 10;\n```"

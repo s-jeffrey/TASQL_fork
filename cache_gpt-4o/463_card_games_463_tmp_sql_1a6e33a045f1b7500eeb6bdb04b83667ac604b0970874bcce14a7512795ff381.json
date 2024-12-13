@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM set_translations\nWHERE setCode IN (\n    SELECT setCode\n    FROM cards\n    WHERE name = 'Angel of Mercy'\n)\n```\n"

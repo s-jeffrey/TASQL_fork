@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN County = 'Colusa' THEN 1 END) * 1.0 / \n     COUNT(CASE WHEN County = 'Humboldt' THEN 1 END)) AS ratio\nFROM \n    schools\nWHERE \n    MailState = 'CA';\n```"

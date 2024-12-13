@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = frpm.`Free Meal Count (K-12)` / frpm.`Enrollment (K-12)`, filter = '> 0.1')\ndf2 = df1.where(element = satscores.NumGE1500, filter = '> 0')\nres = df2.select(schools.School)\n```"

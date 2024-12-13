@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Aaron Lennon')\nres = df1.select(Match.home_team_goal).sum()\n```"

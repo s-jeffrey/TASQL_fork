@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(e.cost) FILTER (WHERE ev.event_name = 'Yearly Kickoff') * 100.0 / SUM(e.cost)) AS percentage\nFROM \n    expense e\nINNER JOIN \n    budget b ON e.link_to_budget = b.budget_id\nINNER JOIN \n    event ev ON b.link_to_event = ev.event_id;\n```"

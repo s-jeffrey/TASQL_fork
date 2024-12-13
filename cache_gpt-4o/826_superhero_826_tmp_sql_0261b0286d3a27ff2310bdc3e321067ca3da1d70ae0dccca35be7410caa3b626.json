@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name\nFROM superhero\nINNER JOIN publisher ON superhero.publisher_id = publisher.id\nWHERE publisher.publisher_name = 'DC Comics'\nORDER BY superhero.weight_kg DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Green')\ndf2 = df1.where(element = alignment.alignment, filter = 'Bad')\nres = df2.count()\n```"

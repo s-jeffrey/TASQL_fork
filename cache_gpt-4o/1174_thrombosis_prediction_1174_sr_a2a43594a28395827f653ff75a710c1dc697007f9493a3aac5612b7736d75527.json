@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.Date, filter = \"BETWEEN '1991-10-01' AND '1991-10-30'\")\ndf2 = df1.select(SUBTRACT('1999', year(Patient.Birthday)))\nres = df2.avg()\n```"

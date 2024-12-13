@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(r.fastestLapTime) AS fastest_lap_time\nFROM results r\nJOIN drivers d ON r.driverId = d.driverId\nWHERE d.forename = 'Lewis' AND d.surname = 'Hamilton';\n```"

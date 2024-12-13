@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Title\nFROM posts\nINNER JOIN comments ON posts.Id = comments.PostId\nORDER BY comments.Score DESC\nLIMIT 1\n```"

@@ -1,0 +1,1 @@
+"ROUND((COUNT(CASE WHEN Segment = 'Premium' THEN 1 END) * 100.0) / COUNT(*), 2) AS PremiumPercentage FROM gasstations WHERE Country = 'SVK';\"\n"

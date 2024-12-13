@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.MailState, filter = 'CA')\ndf2 = df1.where(element = schools.County, filter = 'Colusa')\ndf3 = df1.where(element = schools.County, filter = 'Humboldt')\nres = df.select(df2.count() / df3.count())\n```"

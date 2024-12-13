@@ -1,0 +1,1 @@
+"`element` FROM `atom` JOIN `molecule` ON `atom`.`molecule_id` = `molecule`.`molecule_id` WHERE `molecule`.`label` = '-' GROUP BY `element` ORDER BY COUNT(`element`) ASC LIMIT 1;\"\n"

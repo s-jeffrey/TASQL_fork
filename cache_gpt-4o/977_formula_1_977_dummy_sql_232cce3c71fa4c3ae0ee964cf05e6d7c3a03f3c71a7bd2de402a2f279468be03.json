@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM results\nWHERE raceId > 50 AND raceId < 100\nAND statusId = 2\nAND time IS NOT NULL;\n```\n\nThis SQL query counts the number of finishers who have been disqualified in races with IDs between 50 and 100. It checks for `statusId = 2` to identify disqualified drivers and ensures that the `time` column is not null to confirm they finished the race."

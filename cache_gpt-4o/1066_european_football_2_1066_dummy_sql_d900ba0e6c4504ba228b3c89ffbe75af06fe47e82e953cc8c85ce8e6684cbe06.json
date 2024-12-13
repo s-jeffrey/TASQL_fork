@@ -1,0 +1,1 @@
+"`buildUpPlayPassingClass` FROM `Team_Attributes` INNER JOIN `Team` ON `Team_Attributes`.`team_api_id` = `Team`.`team_api_id` WHERE `Team`.`team_short_name` = 'CLB';\""

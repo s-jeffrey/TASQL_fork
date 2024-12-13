@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.ViewCount, filter = 1910)\nres = df1.select(posts.CommentCount)\n```"

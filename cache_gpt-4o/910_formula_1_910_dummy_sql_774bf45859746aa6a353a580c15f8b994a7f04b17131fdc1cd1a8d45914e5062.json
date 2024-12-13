@@ -1,0 +1,1 @@
+"`lat`, `lng` FROM `circuits` WHERE `name` = 'Silverstone Circuit';\""

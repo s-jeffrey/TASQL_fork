@@ -1,0 +1,1 @@
+"```sql\nSELECT Team.team_long_name\nFROM Team\nINNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id\nWHERE Team_Attributes.buildUpPlaySpeedClass = 'Fast';\n```"

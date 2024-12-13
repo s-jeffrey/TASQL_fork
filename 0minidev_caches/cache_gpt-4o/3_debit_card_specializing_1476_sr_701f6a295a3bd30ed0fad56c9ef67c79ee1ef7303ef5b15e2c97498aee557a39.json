@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = yearmonth.Date, filter = '>= 201201').where(element = yearmonth.Date, filter = '<= 201212')\ndf2 = df1.where(element = customers.Currency, filter = 'CZK')\ndf3 = df1.where(element = customers.Currency, filter = 'EUR')\nres = df.select(df2.select(yearmonth.Consumption).sum() - df3.select(yearmonth.Consumption).sum())\n```"

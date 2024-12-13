@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM superhero\nINNER JOIN alignment ON superhero.alignment_id = alignment.id\nWHERE alignment.alignment = 'Bad';\n```"

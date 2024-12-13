@@ -1,0 +1,1 @@
+"`superhero_name` FROM `superhero` INNER JOIN `race` ON `superhero`.`race_id` = `race`.`id` WHERE `race`.`race` = 'Alien';\""

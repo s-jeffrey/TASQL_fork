@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(superpower.power_name).count(hero_power.power_id)\ndf2 = df1.orderby(by = 'count', desc).limit(1)\nres = df2.select(superpower.power_name)\n```"

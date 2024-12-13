@@ -1,0 +1,1 @@
+"```sql\nSELECT bond_id\nFROM bond\nWHERE molecule_id = 'TR006'\nORDER BY bond_id\nLIMIT 2;\n```"

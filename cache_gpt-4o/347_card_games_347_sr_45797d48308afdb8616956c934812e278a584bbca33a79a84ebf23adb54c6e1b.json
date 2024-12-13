@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.artist, filter = 'Stephen Daniele')\ndf2 = df1.where(element = cards.hasContentWarning, filter = 1)\nres = df2.select(cards.id, rulings.text)\n```"

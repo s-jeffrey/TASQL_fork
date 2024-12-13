@@ -1,0 +1,1 @@
+"```sql\nSELECT player_api_id\nFROM Player_Attributes\nWHERE potential = (\n    SELECT MIN(potential)\n    FROM Player_Attributes\n)\nAND preferred_foot = 'right'\nLIMIT 4;\n```"

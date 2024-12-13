@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = gender.gender, filter = 'Female')\nres = df1.select(avg(superhero.weight_kg))\n```"

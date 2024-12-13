@@ -1,0 +1,1 @@
+"COUNT(*) FROM atom WHERE element IN ('c', 'h');\""

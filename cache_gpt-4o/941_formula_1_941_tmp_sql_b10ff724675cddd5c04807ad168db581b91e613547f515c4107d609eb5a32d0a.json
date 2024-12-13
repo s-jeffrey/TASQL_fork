@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(results.points) AS total_points\nFROM drivers\nINNER JOIN results ON drivers.driverId = results.driverId\nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton';\n```"

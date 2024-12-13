@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nWHERE Age BETWEEN 19 AND 65\n  AND UpVotes > 5000;\n```\n\nThis SQL query counts the number of users in the `users` table who are classified as adults (age between 19 and 65) and have cast more than 5000 upvotes."

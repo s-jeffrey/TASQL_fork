@@ -1,0 +1,1 @@
+"COUNT(*) FROM comments WHERE Score > 60;\"\n"

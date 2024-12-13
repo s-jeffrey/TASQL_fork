@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.frameVersion, filter = '1993')\ndf2 = df1.where(element = cards.availability, filter = 'paper')\ndf3 = df2.where(element = cards.hasContentWarning, filter = 1)\nres = df3.count()\n```"

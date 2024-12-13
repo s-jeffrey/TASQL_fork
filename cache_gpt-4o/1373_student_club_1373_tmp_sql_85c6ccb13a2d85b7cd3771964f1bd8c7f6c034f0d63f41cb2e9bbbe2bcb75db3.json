@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM member\nINNER JOIN zip_code ON member.zip = zip_code.zip_code\nWHERE zip_code.state = 'Maryland';\n```"

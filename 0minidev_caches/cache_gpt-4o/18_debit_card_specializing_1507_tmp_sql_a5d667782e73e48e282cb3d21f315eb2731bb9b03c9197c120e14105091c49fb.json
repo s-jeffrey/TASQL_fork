@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT transactions_1k.Time\nFROM gasstations\nINNER JOIN transactions_1k ON gasstations.GasStationID = transactions_1k.GasStationID\nWHERE gasstations.ChainID = 11;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_date, filter = \"BETWEEN '2019-11-01' and '2020-03-31'\")\nres = df1.select(event.event_id, event.location, event.status)\n```"

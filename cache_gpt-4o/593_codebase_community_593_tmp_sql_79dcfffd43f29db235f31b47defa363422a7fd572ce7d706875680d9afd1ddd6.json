@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT badges.UserId)\nFROM users\nINNER JOIN badges ON users.Id = badges.UserId\nWHERE users.Location = 'New York'\nAND badges.Name IN ('Teacher', 'Supporter')\nGROUP BY badges.UserId\nHAVING COUNT(DISTINCT badges.Name) = 2;\n```"

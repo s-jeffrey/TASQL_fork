@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Currency, filter = 'EUR')\ndf2 = df1.where(element = products.Description, filter = 'Gas')\ndf3 = df2.groupby(year(transactions_1k.Date)).sum(transactions_1k.Amount)\nres = df3.orderby(by = 'sum', desc).limit(1).select(year(transactions_1k.Date))\n```"

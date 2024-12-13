@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT p.Description\nFROM transactions_1k t\nJOIN products p ON t.ProductID = p.ProductID\nJOIN customers c ON t.CustomerID = c.CustomerID\nWHERE c.Currency = 'EUR';\n```"

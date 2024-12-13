@@ -1,0 +1,1 @@
+"```plaintext\ndf1 = df.where(element = colour.colour, filter = 'Blue').where(element = superhero.eye_colour_id, filter = colour.id)\ndf2 = df.where(element = colour.colour, filter = 'Blond').where(element = superhero.hair_colour_id, filter = colour.id)\ndf3 = df1.intersect(df2)\nres = df3.select(superhero.superhero_name)\n```"

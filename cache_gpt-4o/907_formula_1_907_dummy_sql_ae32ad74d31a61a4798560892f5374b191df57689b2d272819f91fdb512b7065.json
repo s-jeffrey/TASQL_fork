@@ -1,0 +1,1 @@
+"```sql\nSELECT races.name, circuits.country\nFROM races\nJOIN circuits ON races.circuitId = circuits.circuitId\nWHERE races.year = 2017\nORDER BY races.date;\n```"

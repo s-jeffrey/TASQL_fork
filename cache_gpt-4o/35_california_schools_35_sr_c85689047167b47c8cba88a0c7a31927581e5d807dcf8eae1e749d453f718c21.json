@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = frpm.`Charter School (Y/N)`, filter = 1)\ndf2 = df1.orderby(by = frpm.`Enrollment (K-12)`, asc).limit(1)\nres = df2.select(schools.AdmEmail1)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT ym.Consumption\nFROM transactions_1k t\nINNER JOIN yearmonth ym ON t.CustomerID = ym.CustomerID\nWHERE t.ProductID = 5\n  AND (t.Price / t.Amount) > 29.00\n  AND t.Date BETWEEN '2012-08-01' AND '2012-08-31'\n  AND ym.Date = '201208';\n```"

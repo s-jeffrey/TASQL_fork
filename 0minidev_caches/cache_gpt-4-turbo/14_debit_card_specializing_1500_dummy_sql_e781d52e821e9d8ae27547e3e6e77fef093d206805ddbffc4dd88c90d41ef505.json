@@ -1,0 +1,1 @@
+"p.Description FROM products p JOIN transactions_1k t ON p.ProductID = t.ProductID JOIN yearmonth y ON t.CustomerID = y.CustomerID WHERE y.Date = '201309';\"\n  "

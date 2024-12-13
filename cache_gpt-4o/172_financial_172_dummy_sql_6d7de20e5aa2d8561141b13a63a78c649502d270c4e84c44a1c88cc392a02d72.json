@@ -1,0 +1,1 @@
+"```sql\nSELECT type, COUNT(*)\nFROM disp\nWHERE account_id BETWEEN 1 AND 10\nAND type IN ('OWNER', 'DISPONENT')\nGROUP BY type;\n```\n\nThis SQL query counts the number of 'OWNER' and 'DISPONENT' dispositions for account numbers ranging from 1 to 10. It groups the results by the type of disposition."

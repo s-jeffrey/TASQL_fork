@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, schools.MailZip\nFROM schools\nWHERE schools.AdmFName1 = 'Avetik' AND schools.AdmLName1 = 'Atoian';\n```"

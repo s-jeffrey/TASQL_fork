@@ -1,0 +1,1 @@
+"`player_name` FROM `Player` WHERE `birthday` LIKE '1970-10%';\""

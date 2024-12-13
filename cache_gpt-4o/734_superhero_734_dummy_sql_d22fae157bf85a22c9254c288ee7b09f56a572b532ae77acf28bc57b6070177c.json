@@ -1,0 +1,1 @@
+"`publisher_name` FROM `publisher` JOIN `superhero` ON `superhero`.`publisher_id` = `publisher`.`id` WHERE `superhero_name` = 'Blue Beetle II';\""

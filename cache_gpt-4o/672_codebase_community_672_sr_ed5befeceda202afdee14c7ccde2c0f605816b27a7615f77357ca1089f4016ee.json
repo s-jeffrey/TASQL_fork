@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.Location, filter = 'United Kingdom')\ndf2 = df1.where(element = posts.FavoriteCount, filter = '>= 4')\nres = df2.groupby(users.Id).count()\n```"

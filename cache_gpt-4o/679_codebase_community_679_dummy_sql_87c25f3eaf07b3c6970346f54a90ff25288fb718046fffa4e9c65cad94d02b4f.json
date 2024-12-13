@@ -1,0 +1,1 @@
+"```sql\nSELECT Id, Title\nFROM posts\nWHERE Score = (SELECT MAX(Score) FROM posts);\n```\n\nThis SQL query selects the `Id` and `Title` of the post with the highest score from the `posts` table. It uses a subquery to find the maximum score and filters the posts to return only the one with that score."

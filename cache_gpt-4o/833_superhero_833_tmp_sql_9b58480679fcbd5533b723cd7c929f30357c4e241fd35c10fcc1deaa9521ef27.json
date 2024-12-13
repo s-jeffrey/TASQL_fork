@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name\nFROM superhero\nWHERE superhero.full_name = 'Charles Chandler';\n```"

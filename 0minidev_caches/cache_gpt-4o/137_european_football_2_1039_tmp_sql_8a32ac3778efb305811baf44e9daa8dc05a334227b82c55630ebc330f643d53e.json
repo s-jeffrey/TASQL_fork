@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Player_Attributes.long_shots) \nFROM Player \nINNER JOIN Player_Attributes \nON Player.player_fifa_api_id = Player_Attributes.player_fifa_api_id \nWHERE Player.player_name = 'Ahmed Samir Farag';\n```"

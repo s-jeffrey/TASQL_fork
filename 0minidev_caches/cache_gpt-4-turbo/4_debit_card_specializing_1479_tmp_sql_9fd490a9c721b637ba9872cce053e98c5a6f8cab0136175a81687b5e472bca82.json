@@ -1,0 +1,1 @@
+"```sql\nSELECT SUBSTR(yearmonth.Date, 1, 4) AS Year, SUM(yearmonth.Consumption) AS Total_Consumption\nFROM yearmonth\nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Currency = 'CZK'\nGROUP BY SUBSTR(yearmonth.Date, 1, 4)\nORDER BY SUM(yearmonth.Consumption) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM users\nINNER JOIN votes ON users.Id = votes.UserId\nWHERE votes.Id = 6347;\n```"

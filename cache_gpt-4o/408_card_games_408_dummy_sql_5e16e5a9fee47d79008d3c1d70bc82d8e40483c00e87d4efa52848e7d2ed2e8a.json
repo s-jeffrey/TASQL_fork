@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE (power IS NULL OR power = '*') AND text LIKE '%triggered ability%'\n```\nThis SQL query counts the number of cards in the `cards` table where the `power` is either `NULL` or `*`, and the `text` column contains the phrase \"triggered ability\"."

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(SUM(CASE WHEN Examination.Diagnosis LIKE '%SLE%' THEN 1 ELSE 0 END) AS REAL) * 100.0 / \n    SUM(CASE WHEN Examination.Symptoms LIKE '%thrombocytopenia%' THEN 1 ELSE 0 END) AS proportion\nFROM \n    Examination\nWHERE \n    Examination.Symptoms LIKE '%thrombocytopenia%'\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT gasstations.ChainID\nFROM transactions_1k\nINNER JOIN customers ON transactions_1k.CustomerID = customers.CustomerID\nINNER JOIN gasstations ON transactions_1k.GasStationID = gasstations.GasStationID\nWHERE customers.Currency = 'EUR';\n```"

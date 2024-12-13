@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT c.id)\nFROM cards c\nINNER JOIN legalities l ON c.uuid = l.uuid\nWHERE c.rarity = 'rare'\n  AND c.types LIKE '%Enchantment%'\n  AND c.name = 'Abundance'\nGROUP BY c.id\nHAVING COUNT(DISTINCT l.status) = 1 AND MIN(l.status) = 'Legal';\n```"

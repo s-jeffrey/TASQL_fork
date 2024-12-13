@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(DISTINCT d.driverId) FILTER (WHERE YEAR(d.dob) < 1985 AND r.laps > 50) AS REAL) * 100 / \n    COUNT(DISTINCT d.driverId) AS percentage\nFROM \n    drivers d\nJOIN \n    results r ON d.driverId = r.driverId\nJOIN \n    races ra ON r.raceId = ra.raceId\nWHERE \n    ra.year BETWEEN 2000 AND 2005;\n```"

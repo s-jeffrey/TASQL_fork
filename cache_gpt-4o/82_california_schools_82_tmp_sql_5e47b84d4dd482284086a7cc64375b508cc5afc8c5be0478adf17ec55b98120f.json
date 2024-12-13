@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.GSoffered\nFROM schools\nORDER BY ABS(schools.Longitude) DESC\nLIMIT 1\n```"

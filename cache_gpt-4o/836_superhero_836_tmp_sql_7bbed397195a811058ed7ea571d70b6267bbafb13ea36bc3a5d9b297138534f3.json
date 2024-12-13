@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM superhero \nWHERE full_name LIKE 'John%';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Patient.ID\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE YEAR(Patient.`First Date`) > 1992\nAND Laboratory.PT < 14;\n```"

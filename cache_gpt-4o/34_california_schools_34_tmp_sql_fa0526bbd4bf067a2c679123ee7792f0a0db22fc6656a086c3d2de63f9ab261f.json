@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.`Free Meal Count (Ages 5-17)` / frpm.`Enrollment (Ages 5-17)` AS free_rate\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE schools.AdmFName1 = 'Kacey' AND schools.AdmLName1 = 'Gibson';\n```"

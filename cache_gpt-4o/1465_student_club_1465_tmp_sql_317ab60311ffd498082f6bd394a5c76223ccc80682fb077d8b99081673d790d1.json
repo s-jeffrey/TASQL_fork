@@ -1,0 +1,1 @@
+"```sql\nSELECT budget.category\nFROM expense\nINNER JOIN budget ON expense.link_to_budget = budget.budget_id\nWHERE expense.expense_description = 'Posters'\n```"

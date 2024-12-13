@@ -1,0 +1,1 @@
+"`notes` FROM `income` WHERE `source` = 'Fundraising' AND `date_received` = '2019-09-14';\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE originalType = 'Summon - Angel' AND subtypes != 'Angel';\n```"

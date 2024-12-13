@@ -1,0 +1,1 @@
+"```sql\nSELECT b.bond_id, c.atom_id, c.atom_id2\nFROM bond b\nJOIN connected c ON b.bond_id = c.bond_id\nWHERE b.bond_type = '-';\n```\n\nThis SQL query selects the bond IDs and the atom IDs connected by those bonds from the `bond` and `connected` tables, where the bond type is a single bond (indicated by `'-'`)."

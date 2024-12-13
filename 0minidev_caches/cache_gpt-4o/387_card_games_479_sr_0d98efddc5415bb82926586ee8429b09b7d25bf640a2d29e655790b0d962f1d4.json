@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.name, filter = 'Coldsnap')\ndf2 = df1.where(element = cards.convertedManaCost, filter = '> 5')\ndf3 = df2.where(element = cards.power, filter = '*').union(df2.where(element = cards.power, filter = None))\nres = df3.count()\n```"

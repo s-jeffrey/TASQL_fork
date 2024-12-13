@@ -1,0 +1,1 @@
+"```sql\nSELECT c.Nationality\nFROM yearmonth ym\nINNER JOIN customers c ON ym.CustomerID = c.CustomerID\nWHERE ym.Date = '2012-08-24' AND ym.Consumption = 548.4;\n```"

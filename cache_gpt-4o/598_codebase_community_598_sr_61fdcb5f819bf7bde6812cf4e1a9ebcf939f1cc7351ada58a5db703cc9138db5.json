@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = badges.Name, filter = 'Student')\n\ndf2 = df1.where(element = year(badges.Date), filter = 2010)\npercentage_2010 = df2.count() * 100 / df1.count()\n\ndf3 = df1.where(element = year(badges.Date), filter = 2011)\npercentage_2011 = df3.count() * 100 / df1.count()\n\nres = df.select(percentage_2010 - percentage_2011)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, Laboratory.T-CHO\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nORDER BY Patient.Birthday ASC, Laboratory.T-CHO DESC\nLIMIT 1;\n```"

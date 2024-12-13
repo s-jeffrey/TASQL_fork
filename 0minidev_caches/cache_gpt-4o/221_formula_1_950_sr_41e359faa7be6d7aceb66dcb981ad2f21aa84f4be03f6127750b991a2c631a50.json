@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = constructorResults.raceId, filter = 291)\ndf2 = df1.where(element = constructorResults.points, filter = 0)\nres = df2.select(constructors.name)\n```"

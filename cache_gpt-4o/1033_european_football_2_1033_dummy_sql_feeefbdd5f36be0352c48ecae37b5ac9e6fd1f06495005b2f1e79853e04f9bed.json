@@ -1,0 +1,1 @@
+"`AVG(height)` AS `average_height` FROM `Player` WHERE `birthday` >= '1990-01-01 00:00:00' AND `birthday` < '1996-01-01 00:00:00';\""

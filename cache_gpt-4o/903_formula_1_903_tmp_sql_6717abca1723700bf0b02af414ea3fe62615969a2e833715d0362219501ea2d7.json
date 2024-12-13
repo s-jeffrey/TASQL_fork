@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM results\nINNER JOIN races ON results.raceId = races.raceId\nINNER JOIN circuits ON races.circuitId = circuits.circuitId\nINNER JOIN drivers ON results.driverId = drivers.driverId\nWHERE circuits.name = 'Sepang International Circuit'\n  AND drivers.forename = 'Michael'\n  AND drivers.surname = 'Schumacher'\n  AND results.position = 1;\n```"

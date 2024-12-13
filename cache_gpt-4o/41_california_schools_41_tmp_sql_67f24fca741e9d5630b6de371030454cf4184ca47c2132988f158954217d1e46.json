@@ -1,0 +1,1 @@
+"```sql\nSELECT School\nFROM (\n    SELECT s.School, \n           ss.AvgScrRead, \n           s.County,\n           ROW_NUMBER() OVER (PARTITION BY s.County ORDER BY ss.AvgScrRead DESC) as rn\n    FROM schools s\n    INNER JOIN satscores ss ON s.CDSCode = ss.cds\n    WHERE s.Virtual = 'F'\n) ranked_schools\nWHERE rn <= 5;\n```"

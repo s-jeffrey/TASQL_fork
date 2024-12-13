@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School\nFROM schools\nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode\nWHERE schools.DOC = '31'\nORDER BY frpm.CDSCode DESC\nLIMIT 1;\n```"

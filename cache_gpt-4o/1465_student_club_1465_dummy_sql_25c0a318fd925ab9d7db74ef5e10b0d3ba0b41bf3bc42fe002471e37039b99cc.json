@@ -1,0 +1,1 @@
+"```sql\nSELECT b.category\nFROM expense e\nJOIN budget b ON e.link_to_budget = b.budget_id\nWHERE e.expense_description = 'Posters';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(race_count) AS annual_average_races\nFROM (\n    SELECT COUNT(*) AS race_count\n    FROM races\n    WHERE races.date BETWEEN '2000-01-01' AND '2010-12-31'\n    GROUP BY races.year\n) AS yearly_race_counts;\n```"

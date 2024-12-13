@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nINNER JOIN rulings ON cards.uuid = rulings.uuid\nWHERE cards.rarity = 'uncommon'\nORDER BY rulings.date ASC\nLIMIT 3;\n```"

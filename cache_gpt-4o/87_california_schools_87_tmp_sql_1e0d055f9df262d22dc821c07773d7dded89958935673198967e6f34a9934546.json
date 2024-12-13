@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT schools.AdmEmail1, schools.AdmEmail2\nFROM schools\nWHERE schools.County = 'San Bernardino'\n  AND schools.City = 'San Bernardino City Unified'\n  AND schools.OpenDate BETWEEN '2009-01-01' AND '2010-12-31'\n  AND schools.SOC = '62'\n  AND schools.DOC = '54';\n```"

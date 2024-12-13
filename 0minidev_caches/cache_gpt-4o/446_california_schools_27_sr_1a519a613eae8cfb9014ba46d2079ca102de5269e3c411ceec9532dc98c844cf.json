@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.OpenDate, filter = '> 1991-12-31').or_where(element = schools.ClosedDate, filter = '< 2000-01-01')\nres = df1.select(schools.School, satscores.AvgScrWrite, schools.Phone)\n```"

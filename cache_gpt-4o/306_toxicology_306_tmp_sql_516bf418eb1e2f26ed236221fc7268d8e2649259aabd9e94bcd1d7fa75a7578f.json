@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT a.molecule_id, a.element\nFROM bond b\nINNER JOIN atom a ON b.molecule_id = a.molecule_id\nWHERE b.bond_type = '#'\n```\n"

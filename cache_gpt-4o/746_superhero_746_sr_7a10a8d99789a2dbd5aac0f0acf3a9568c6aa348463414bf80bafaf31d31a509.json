@@ -1,0 +1,1 @@
+"```python\nres = df.select(avg(hero_attribute.attribute_value))\n```"

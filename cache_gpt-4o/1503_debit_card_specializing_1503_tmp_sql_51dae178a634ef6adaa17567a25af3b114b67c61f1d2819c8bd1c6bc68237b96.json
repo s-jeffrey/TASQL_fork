@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT products.Description\nFROM transactions_1k\nINNER JOIN customers ON transactions_1k.CustomerID = customers.CustomerID\nINNER JOIN products ON transactions_1k.ProductID = products.ProductID\nWHERE customers.Currency = 'EUR';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT T.team_short_name\nFROM Team T\nJOIN Team_Attributes TA ON T.team_api_id = TA.team_api_id\nWHERE TA.chanceCreationPassingClass = 'Risky';\n```"

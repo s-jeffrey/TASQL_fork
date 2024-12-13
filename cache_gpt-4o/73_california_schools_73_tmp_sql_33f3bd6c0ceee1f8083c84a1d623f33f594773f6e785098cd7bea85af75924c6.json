@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.`FRPM Count (Ages 5-17)`\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE schools.EdOpsName = 'Youth Authority School'\nAND schools.MailStreet = 'PO Box 1040';\n```"

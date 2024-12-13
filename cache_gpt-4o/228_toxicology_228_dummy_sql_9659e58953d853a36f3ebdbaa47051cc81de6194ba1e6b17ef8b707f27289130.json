@@ -1,0 +1,1 @@
+"`(CAST(SUM(CASE WHEN element = 'h' THEN 1 ELSE 0 END) AS FLOAT) / COUNT(atom_id)) * 100 AS percent FROM atom WHERE molecule_id = 'TR206';`"

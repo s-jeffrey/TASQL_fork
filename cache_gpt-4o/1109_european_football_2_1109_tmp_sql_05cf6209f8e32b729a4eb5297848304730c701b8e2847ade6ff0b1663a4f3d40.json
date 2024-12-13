@@ -1,0 +1,1 @@
+"```sql\nSELECT Team_Attributes.buildUpPlayDribblingClass\nFROM Team\nINNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id\nWHERE Team.team_short_name = 'LEI' AND Team_Attributes.date = '2015-09-10 00:00:00';\n```"

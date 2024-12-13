@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = year(votes.CreationDate), filter = 2010)\ncount_2010 = df1.count()\n\ndf2 = df.where(element = year(votes.CreationDate), filter = 2011)\ncount_2011 = df2.count()\n\nres = df.select(cast(count_2010, real) / count_2011)\n```"

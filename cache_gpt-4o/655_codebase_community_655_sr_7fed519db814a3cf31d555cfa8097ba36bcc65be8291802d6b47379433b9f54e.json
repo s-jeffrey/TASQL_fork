@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'What are principal component scores?')\ndf2 = df1.select(posts.Id)\ndf3 = df.where(element = postLinks.PostId, filter = df2)\nres = df3.select(posts.Title, postLinks.LinkTypeId)\n```"

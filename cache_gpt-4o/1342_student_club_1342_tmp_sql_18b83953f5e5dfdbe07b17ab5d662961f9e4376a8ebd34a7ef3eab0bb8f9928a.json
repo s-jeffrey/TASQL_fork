@@ -1,0 +1,1 @@
+"```sql\nSELECT cost\nFROM expense\nWHERE expense_description = 'Posters' AND expense_date = '2019-09-04';\n```"

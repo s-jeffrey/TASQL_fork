@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Id\nFROM users\nORDER BY users.Views ASC\nLIMIT 1;\n```"

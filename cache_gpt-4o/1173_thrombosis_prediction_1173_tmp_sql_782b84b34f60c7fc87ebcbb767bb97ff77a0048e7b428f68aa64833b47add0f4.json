@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.Diagnosis\nFROM Examination\nWHERE `Examination Date` BETWEEN '1985-01-01' AND '1995-12-31'\nGROUP BY Examination.Diagnosis\nORDER BY COUNT(Examination.Diagnosis) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT fd.name\nFROM cards c\nINNER JOIN foreign_data fd ON c.uuid = fd.uuid\nWHERE c.setCode = 'Coldsnap' AND fd.language = 'Italian'\nORDER BY c.convertedManaCost DESC\nLIMIT 1;\n```"

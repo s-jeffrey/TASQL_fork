@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT c.colors, l.format\nFROM cards c\nINNER JOIN legalities l ON c.uuid = l.uuid\nWHERE c.id BETWEEN 1 AND 20;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.code\nFROM sets\nWHERE sets.releaseDate = '2017-07-14';\n```"

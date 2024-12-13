@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = budget.category, filter = 'Food').where(element = budget.event_status, filter = 'Closed')\nres = df1.select(df1.spent.sum() / df1.spent.count())\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Examination.`aCL IgG`)\nFROM Examination\nINNER JOIN Patient ON Examination.ID = Patient.ID\nWHERE Patient.Admission = '+'\nAND (strftime('%Y', 'now') - strftime('%Y', Patient.Birthday)) >= 50;\n```"

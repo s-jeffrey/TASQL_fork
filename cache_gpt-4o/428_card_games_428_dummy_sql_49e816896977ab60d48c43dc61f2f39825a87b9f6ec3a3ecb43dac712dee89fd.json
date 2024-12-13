@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.name, set_translations.translation\nFROM sets\nJOIN set_translations ON sets.code = set_translations.setCode\nWHERE sets.id = 5;\n```"

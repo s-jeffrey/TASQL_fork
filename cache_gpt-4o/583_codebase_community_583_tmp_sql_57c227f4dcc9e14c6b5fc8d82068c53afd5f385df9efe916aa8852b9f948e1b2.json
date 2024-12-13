@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(posts.Score), users.WebsiteUrl\nFROM users\nINNER JOIN posts ON posts.LastEditorUserId = users.Id\nWHERE users.DisplayName = 'Yevgeny'\n```\n"

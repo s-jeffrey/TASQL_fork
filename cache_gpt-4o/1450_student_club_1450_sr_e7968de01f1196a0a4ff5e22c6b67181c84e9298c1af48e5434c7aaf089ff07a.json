@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(event.event_id).having(element = count(income.income_id), filter = '> 40')\nres = df1.select(zip_code.city, zip_code.county)\n```"

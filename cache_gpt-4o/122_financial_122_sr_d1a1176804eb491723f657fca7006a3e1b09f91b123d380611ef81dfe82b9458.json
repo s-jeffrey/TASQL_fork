@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.loan_id, filter = 4990)\ndf2 = df1.select(account.district_id)\nres = df.where(element = district.district_id, filter = df2).select(district.A2, district.A3)\n```"

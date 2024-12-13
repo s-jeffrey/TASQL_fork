@@ -1,0 +1,1 @@
+"```sql\nSELECT users.CreationDate, users.Age\nFROM comments\nINNER JOIN users ON comments.UserId = users.Id\nWHERE comments.Text LIKE '%http://%'\n```"

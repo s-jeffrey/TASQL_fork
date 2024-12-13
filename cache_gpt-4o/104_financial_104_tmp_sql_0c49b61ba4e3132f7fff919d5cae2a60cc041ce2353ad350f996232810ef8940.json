@@ -1,0 +1,1 @@
+"```sql\nSELECT account.date\nFROM account\nWHERE account.account_id = (\n    SELECT trans.account_id\n    FROM trans\n    WHERE trans.amount = 840 AND trans.date = '1998-10-14'\n);\n```"

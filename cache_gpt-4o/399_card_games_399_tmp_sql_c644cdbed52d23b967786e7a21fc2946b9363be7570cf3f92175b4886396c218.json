@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT type\nFROM cards\nWHERE availability LIKE '%arena%'\n```"

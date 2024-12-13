@@ -1,0 +1,1 @@
+"`a1.element`, `a2.element` FROM `connected` AS `c` JOIN `atom` AS `a1` ON `c.atom_id` = `a1.atom_id` JOIN `atom` AS `a2` ON `c.atom_id2` = `a2.atom_id` WHERE `c.bond_id` = 'TR001_10_11';\""

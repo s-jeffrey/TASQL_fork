@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = tags.TagName, filter = 'hypothesis-testing')\ndf2 = df1.select(posts.OwnerUserId)\ndf3 = df.where(element = users.Id, filter = df2)\nres = df3.select(users.DisplayName, users.Location)\n```"

@@ -1,0 +1,1 @@
+"`(COUNT(CASE WHEN element = 'h' THEN 1 END) * 100.0 / COUNT(atom_id)) AS percent FROM atom WHERE molecule_id = 'TR206';`"

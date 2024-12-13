@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM posts\nINNER JOIN users ON posts.ParentId = users.Id\nWHERE posts.ParentId IS NOT NULL\nORDER BY posts.Score DESC\nLIMIT 1;\n```"

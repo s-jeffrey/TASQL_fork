@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM superhero\nINNER JOIN alignment ON superhero.alignment_id = alignment.id\nINNER JOIN gender ON superhero.gender_id = gender.id\nWHERE alignment.id = 1 AND gender.id = 2;\n```"

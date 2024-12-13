@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT disp.client_id\nFROM trans\nINNER JOIN disp ON trans.account_id = disp.account_id\nWHERE trans.operation = 'VYBER KARTOU'\n  AND strftime('%Y', trans.date) = '1998'\n  AND trans.amount < (\n    SELECT AVG(trans.amount)\n    FROM trans\n    WHERE trans.operation = 'VYBER KARTOU'\n      AND strftime('%Y', trans.date) = '1998'\n  );\n```"

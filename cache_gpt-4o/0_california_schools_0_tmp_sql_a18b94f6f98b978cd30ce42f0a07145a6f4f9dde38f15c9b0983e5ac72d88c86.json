@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(frpm.`Percent (%) Eligible Free (K-12)`) \nFROM frpm \nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode \nWHERE schools.County = 'Alameda';\n```"

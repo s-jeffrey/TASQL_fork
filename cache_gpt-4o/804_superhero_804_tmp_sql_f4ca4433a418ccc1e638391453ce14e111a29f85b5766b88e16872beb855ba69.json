@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero_name\nFROM superhero\nWHERE id = 294;\n```"

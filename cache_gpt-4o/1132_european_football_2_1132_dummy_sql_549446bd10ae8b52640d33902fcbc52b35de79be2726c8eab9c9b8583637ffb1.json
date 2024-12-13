@@ -1,0 +1,1 @@
+"```sql\nSELECT player_name\nFROM Player\nWHERE height > 180\nORDER BY player_name\nLIMIT 3;\n```"

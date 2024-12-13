@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Id, comments.Text\nFROM posts\nINNER JOIN comments ON comments.PostId = posts.Id\nWHERE posts.Title = 'Group differences on a five point Likert item';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Laboratory.Date\nFROM Laboratory\nWHERE Laboratory.ID = 48473\nAND Laboratory.GOT > 60;\n```"

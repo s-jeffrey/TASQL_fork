@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(CASE WHEN Player_Attributes.preferred_foot = 'left' THEN 1 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE strftime('%Y', Player.birthday) BETWEEN '1987' AND '1992';\n```"

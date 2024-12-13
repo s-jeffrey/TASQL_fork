@@ -1,0 +1,1 @@
+"`player_api_id` FROM `Player_Attributes` WHERE `overall_rating` = (SELECT MAX(`overall_rating`) FROM `Player_Attributes` WHERE SUBSTR(`date`, 1, 4) = '2010') AND SUBSTR(`date`, 1, 4) = '2010';\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT p.ViewCount, u.DisplayName\nFROM posts p\nINNER JOIN users u ON p.LastEditorUserId = u.Id\nWHERE p.Title = 'Computer Game Datasets';\n```"

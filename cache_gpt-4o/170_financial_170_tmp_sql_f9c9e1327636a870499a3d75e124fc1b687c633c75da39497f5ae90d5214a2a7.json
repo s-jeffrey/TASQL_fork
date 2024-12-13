@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM trans\nWHERE trans.operation = 'VYBER KARTOU'\n  AND trans.date > '1995-12-31';\n```"

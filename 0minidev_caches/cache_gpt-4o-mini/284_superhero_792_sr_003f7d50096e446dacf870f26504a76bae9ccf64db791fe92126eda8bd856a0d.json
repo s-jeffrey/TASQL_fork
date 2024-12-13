@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.superhero_name, filter = 'Abomination')\nres = df1.select(superpower.power_name)\n```"

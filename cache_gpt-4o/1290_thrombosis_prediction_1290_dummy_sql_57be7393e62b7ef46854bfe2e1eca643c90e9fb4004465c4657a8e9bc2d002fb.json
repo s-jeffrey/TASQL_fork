@@ -1,0 +1,1 @@
+"```sql\nSELECT e.\"Examination Date\"\nFROM Examination e\nJOIN Laboratory l ON e.ID = l.ID\nWHERE l.ALB = (\n  SELECT MAX(ALB)\n  FROM Laboratory\n  WHERE ALB > 3.5 AND ALB < 5.5\n);\n```"

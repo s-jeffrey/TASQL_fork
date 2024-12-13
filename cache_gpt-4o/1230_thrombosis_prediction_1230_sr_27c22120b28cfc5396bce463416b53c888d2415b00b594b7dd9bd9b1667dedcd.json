@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.Admission, filter = '-')\ndf2 = df1.where(element = Laboratory.CPK, filter = '< 250')\nres = df2.select(Laboratory.ID).distinct()\n```"

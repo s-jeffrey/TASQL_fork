@@ -1,0 +1,1 @@
+"```sql\nSELECT ROUND(CAST(SUM(CASE WHEN bond.bond_type = '=' THEN 1 ELSE 0 END) AS REAL) * 100.0 / COUNT(bond.bond_id), 5) AS percent\nFROM bond\nWHERE bond.molecule_id = 'TR008';\n```"

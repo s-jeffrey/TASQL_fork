@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.MailStreet\nFROM frpm\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nORDER BY frpm.`FRPM Count (K-12)` DESC\nLIMIT 1;\n```"

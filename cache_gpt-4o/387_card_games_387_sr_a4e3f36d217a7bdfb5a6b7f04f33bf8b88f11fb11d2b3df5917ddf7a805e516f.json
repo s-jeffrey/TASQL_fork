@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.setCode, filter = 'OGW')\nres = df1.select(cards.name, cards.colors)\n```"

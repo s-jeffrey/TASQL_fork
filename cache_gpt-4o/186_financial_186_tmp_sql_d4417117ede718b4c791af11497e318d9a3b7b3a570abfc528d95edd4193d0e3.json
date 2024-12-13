@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(COUNT(DISTINCT df1.client_id) AS REAL) * 100 / COUNT(DISTINCT df2.client_id)) AS percentage_of_male_clients\nFROM \n    disp\nINNER JOIN \n    client AS df1 ON disp.client_id = df1.client_id\nINNER JOIN \n    account AS df2 ON disp.account_id = df2.account_id\nWHERE \n    df1.gender = 'M' \n    AND df2.frequency = 'POPLATEK TYDNE';\n```"

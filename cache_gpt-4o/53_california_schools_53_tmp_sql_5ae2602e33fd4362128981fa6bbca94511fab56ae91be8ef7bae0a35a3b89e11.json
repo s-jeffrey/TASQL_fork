@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(satscores.NumTstTakr) \nFROM satscores \nINNER JOIN schools ON satscores.cds = schools.CDSCode \nWHERE schools.MailCity = 'Fresno';\n```"

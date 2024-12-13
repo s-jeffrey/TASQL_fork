@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT molecule.molecule_id)\nFROM molecule\nINNER JOIN atom ON molecule.molecule_id = atom.molecule_id\nWHERE molecule.label = '+' AND atom.element = 'br';\n```"

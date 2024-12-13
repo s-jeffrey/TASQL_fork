@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.UA, filter = '<= 8.0').where(element = Patient.SEX, filter = 'M')\nmale_count = df1.count()\n\ndf2 = df.where(element = Laboratory.UA, filter = '<= 6.5').where(element = Patient.SEX, filter = 'F')\nfemale_count = df2.count()\n\nres = df.select(cast(male_count, real) / cast(female_count, real))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(Match.home_team_goal)\nFROM Match\nINNER JOIN League ON Match.league_id = League.id\nWHERE League.name = 'Netherlands Eredivisie';\n```"

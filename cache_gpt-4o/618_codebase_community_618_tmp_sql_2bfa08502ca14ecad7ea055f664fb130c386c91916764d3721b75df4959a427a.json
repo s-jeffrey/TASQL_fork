@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT users.Age\nFROM users\nINNER JOIN badges ON users.Id = badges.UserId\nWHERE users.Location = 'Vienna, Austria';\n```"

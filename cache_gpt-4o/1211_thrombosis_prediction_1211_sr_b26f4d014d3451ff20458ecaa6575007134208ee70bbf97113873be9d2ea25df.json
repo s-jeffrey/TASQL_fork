@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.LDH, filter = 'BETWEEN 600 AND 800')\nres = df1.select(Laboratory.ID, subtract(year(current_timestamp()), year(Patient.Birthday)))\n```"

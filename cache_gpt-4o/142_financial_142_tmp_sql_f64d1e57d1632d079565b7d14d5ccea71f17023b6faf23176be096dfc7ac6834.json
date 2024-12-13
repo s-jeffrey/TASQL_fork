@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT order.account_id\nFROM order\nINNER JOIN account ON order.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE order.k_symbol = 'SIPO' AND district.A2 = 'Pisek';\n```"

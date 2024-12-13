@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname, driverStandings.points\nFROM driverStandings\nINNER JOIN drivers ON driverStandings.driverId = drivers.driverId\nORDER BY driverStandings.points DESC\nLIMIT 1;\n```"

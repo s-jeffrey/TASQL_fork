@@ -1,0 +1,1 @@
+"```sql\nSELECT SUBSTRING(Date, 1, 4) AS Year\nFROM yearmonth\nJOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Currency = 'CZK'\nGROUP BY Year\nORDER BY SUM(Consumption) DESC\nLIMIT 1;\n```"

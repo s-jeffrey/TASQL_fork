@@ -1,0 +1,1 @@
+"```sql\nSELECT races.year\nFROM races\nGROUP BY races.year\nORDER BY COUNT(races.round) DESC\nLIMIT 1;\n```"

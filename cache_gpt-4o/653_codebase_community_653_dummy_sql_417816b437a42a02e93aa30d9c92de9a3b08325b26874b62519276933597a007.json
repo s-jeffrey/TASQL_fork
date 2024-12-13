@@ -1,0 +1,1 @@
+"```sql\nSELECT p.OwnerDisplayName\nFROM posts p\nWHERE p.ViewCount = (\n    SELECT MAX(ViewCount)\n    FROM posts\n);\n```\n\nThis SQL query selects the `OwnerDisplayName` of the post with the highest `ViewCount`, which is considered the most popular post based on the given evidence."

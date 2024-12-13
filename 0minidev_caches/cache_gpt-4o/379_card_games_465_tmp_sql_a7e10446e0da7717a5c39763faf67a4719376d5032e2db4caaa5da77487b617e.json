@@ -1,0 +1,1 @@
+"```sql\nSELECT EXISTS (\n    SELECT 1\n    FROM cards\n    INNER JOIN set_translations ON cards.setCode = set_translations.setCode\n    WHERE cards.name = 'Ancestor''s Chosen' AND set_translations.language = 'Korean'\n)\n```"

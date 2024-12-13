@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Phone, schools.Ext, schools.School\nFROM schools\nWHERE schools.Zip = '95203-3704';\n```"

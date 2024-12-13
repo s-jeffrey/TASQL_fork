@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM superhero\nWHERE alignment_id = 3;\n```"

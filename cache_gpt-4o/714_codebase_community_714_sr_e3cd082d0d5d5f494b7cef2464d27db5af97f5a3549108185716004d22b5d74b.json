@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Harvey Motulsky')\nres = df1.select(comments.Text)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(*) FILTER (WHERE frpm.`Charter Funding Type` = 'Locally funded') AS REAL) * 100.0 / COUNT(*) AS ratio_percentage\nFROM \n    schools\nINNER JOIN \n    frpm ON schools.CDSCode = frpm.CDSCode\nWHERE \n    schools.County = 'Santa Clara';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Country, COUNT(*) AS ValueForMoneyGasStations\nFROM gasstations\nWHERE Segment = 'Value for money'\nGROUP BY Country;\n```\n\nThis SQL query will count the number of gas stations with the segment \"Value for money\" in each country, allowing you to determine which country has more of these gas stations."

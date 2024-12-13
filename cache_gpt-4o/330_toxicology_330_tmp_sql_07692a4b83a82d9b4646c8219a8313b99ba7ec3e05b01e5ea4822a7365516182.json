@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(DISTINCT m.molecule_id) AS REAL) * 100.0 / COUNT(DISTINCT a.molecule_id)) AS percentage\nFROM atom a\nJOIN connected c ON a.atom_id = c.atom_id\nJOIN bond b ON c.bond_id = b.bond_id\nJOIN molecule m ON a.molecule_id = m.molecule_id\nWHERE a.element = 'h' AND b.bond_type = '#' AND m.label = '+'\n```"

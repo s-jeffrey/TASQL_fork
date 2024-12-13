@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.ProductID, filter = 5)\ndf2 = df1.where(element = transactions_1k.Price / transactions_1k.Amount, filter = '> 29.00')\ndf3 = df2.where(element = transactions_1k.Date, filter = ['2012-08-01', '2012-08-31'])\nres = df3.select(yearmonth.Consumption)\n```"

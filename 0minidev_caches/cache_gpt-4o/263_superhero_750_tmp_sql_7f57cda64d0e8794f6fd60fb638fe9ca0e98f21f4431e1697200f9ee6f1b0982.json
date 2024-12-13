@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(superhero.weight_kg) \nFROM superhero \nINNER JOIN gender ON superhero.gender_id = gender.id \nWHERE gender.gender = 'Female';\n```"

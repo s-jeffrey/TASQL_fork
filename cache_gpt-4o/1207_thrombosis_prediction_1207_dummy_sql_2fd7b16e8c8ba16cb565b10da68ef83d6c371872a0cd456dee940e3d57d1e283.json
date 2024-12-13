@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, Patient.SEX, Patient.Birthday\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.GOT < 60 AND YEAR(Laboratory.Date) = 1994;\n```"

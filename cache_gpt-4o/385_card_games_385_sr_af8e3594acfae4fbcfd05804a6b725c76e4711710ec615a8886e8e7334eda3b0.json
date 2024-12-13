@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.name, filter = 'Beacon of Immortality')\ndf2 = df1.join(rulings, on = cards.uuid == rulings.uuid)\nres = df2.select(rulings.text)\n```"

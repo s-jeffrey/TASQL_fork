@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Aaron Lennon')\ndf2 = df.where(element = Player.player_name, filter = 'Abdelaziz Barrada')\nres = df.select(df1.where(element = Player.birthday, filter = min(df1.birthday)).select(Player.player_name))\n```"

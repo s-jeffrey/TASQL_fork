@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM posts\nJOIN users ON posts.OwnerUserId = users.Id\nWHERE users.DisplayName = 'Tiago Pasqualini';\n```"

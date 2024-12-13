@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = 'Yearly Kickoff')\ntmp_res1 = df1.select(expense.cost).sum()\n\ntmp_res2 = df.select(expense.cost).sum()\n\nres = df.select(cast(tmp_res1, real) * 100 / tmp_res2)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT seasons.url\nFROM races\nINNER JOIN seasons ON races.year = seasons.year\nWHERE races.raceId = 901;\n```"

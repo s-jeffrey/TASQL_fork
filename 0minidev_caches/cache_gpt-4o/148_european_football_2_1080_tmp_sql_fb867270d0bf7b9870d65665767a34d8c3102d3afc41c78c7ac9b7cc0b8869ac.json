@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player_Attributes\nWHERE preferred_foot = 'left' AND attacking_work_rate = 'low';\n```"

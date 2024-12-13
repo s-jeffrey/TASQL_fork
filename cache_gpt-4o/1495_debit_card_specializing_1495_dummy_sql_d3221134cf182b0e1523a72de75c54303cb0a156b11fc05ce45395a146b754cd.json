@@ -1,0 +1,1 @@
+"`CustomerID` FROM `yearmonth` WHERE `Date` = '201309' ORDER BY `Consumption` DESC LIMIT 1;\""

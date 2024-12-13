@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT a.element)\nFROM connected c\nJOIN atom a ON c.atom_id = a.atom_id OR c.atom_id2 = a.atom_id\nWHERE c.bond_id = 'TR001_3_4';\n```"

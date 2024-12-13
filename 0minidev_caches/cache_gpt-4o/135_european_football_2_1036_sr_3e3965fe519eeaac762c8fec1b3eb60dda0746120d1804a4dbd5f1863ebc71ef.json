@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = strftime('%Y', Team_Attributes.date), filter = '2012')\naverage_passing = df1.select(Team_Attributes.buildUpPlayPassing).mean()\ndf2 = df1.where(element = Team_Attributes.buildUpPlayPassing, filter = f'> {average_passing}')\nres = df2.select(Team.team_long_name)\n```"

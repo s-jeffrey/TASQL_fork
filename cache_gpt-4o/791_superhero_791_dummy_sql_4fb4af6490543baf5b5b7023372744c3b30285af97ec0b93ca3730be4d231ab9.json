@@ -1,0 +1,1 @@
+"`superhero_name`, AVG(height_cm) AS average_height FROM superhero GROUP BY superhero_name;\"\n\nThis SQL query calculates the average height for each superhero by grouping the data based on the `superhero_name` and then computing the average of the `height_cm` column."

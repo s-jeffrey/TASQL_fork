@@ -1,0 +1,1 @@
+"`defenceAggressionClass` FROM `Team_Attributes` WHERE `team_api_id` = (SELECT `team_api_id` FROM `Team` WHERE `team_long_name` = 'Hannover 96') AND `date` LIKE '2015-09-10%';\""

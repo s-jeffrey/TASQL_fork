@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = Player_Attributes.potential, asc).limit(1)\nres = df1.select(Player_Attributes.preferred_foot)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName, users.Location\nFROM posts\nINNER JOIN users ON posts.LastEditorUserId = users.Id\nWHERE posts.Id = 183\nORDER BY posts.LastEditDate DESC\nLIMIT 1;\n```"

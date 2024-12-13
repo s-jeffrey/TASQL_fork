@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM transactions_1k\nINNER JOIN gasstations ON transactions_1k.GasStationID = gasstations.GasStationID\nWHERE gasstations.Country = 'CZE' AND transactions_1k.Date > '2012-01-01'\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.SEX = 'M' AND (Laboratory.ALB <= 3.5 OR Laboratory.ALB >= 5.5)\nORDER BY Patient.Birthday DESC;\n```"

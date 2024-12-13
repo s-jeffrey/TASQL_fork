@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN SUM(CASE WHEN Patient.SEX = 'M' THEN 1 ELSE 0 END) > SUM(CASE WHEN Patient.SEX = 'F' THEN 1 ELSE 0 END) \n        THEN 'True' \n        ELSE 'False' \n    END AS result\nFROM \n    Laboratory\nINNER JOIN \n    Patient ON Laboratory.ID = Patient.ID\nWHERE \n    Laboratory.CRE >= 1.5;\n```"

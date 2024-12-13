@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(height_cm) \nFROM superhero\nWHERE height_cm IS NOT NULL AND height_cm != 0;\n```"

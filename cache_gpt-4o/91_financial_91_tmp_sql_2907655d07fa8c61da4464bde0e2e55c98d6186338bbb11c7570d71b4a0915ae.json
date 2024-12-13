@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN AVG(district.A12) > AVG(district.A13) THEN '1995' \n        ELSE '1996' \n    END AS higher_unemployment_year\nFROM \n    district;\n```"

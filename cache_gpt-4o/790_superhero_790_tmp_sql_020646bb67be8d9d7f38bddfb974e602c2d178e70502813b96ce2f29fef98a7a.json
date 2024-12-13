@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT weight_kg FROM superhero WHERE full_name = 'Emil Blonsky') - \n    (SELECT weight_kg FROM superhero WHERE full_name = 'Charles Chandler') AS weight_difference;\n```"

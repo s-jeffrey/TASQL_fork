@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Age\nFROM users\nORDER BY users.Reputation DESC\nLIMIT 1;\n```"

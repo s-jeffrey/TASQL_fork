@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = customers.Segment, filter = 'SME')\n    df2 = df1.where(element = customers.Currency, filter = 'CZK')\n    df3 = df1.where(element = customers.Currency, filter = 'EUR')\n    res = df.select(df2.count() - df3.count())\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(results.fastestLapSpeed)\nFROM races\nJOIN results ON races.raceId = results.raceId\nWHERE races.name = 'Spanish Grand Prix' AND races.year = 2009;\n```"

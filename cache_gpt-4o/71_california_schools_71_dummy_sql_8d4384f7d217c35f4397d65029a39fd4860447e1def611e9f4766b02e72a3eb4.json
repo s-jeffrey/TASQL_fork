@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.\"District Code\"\nFROM frpm\nJOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE schools.City = 'Fresno' AND schools.Magnet = 0;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT district.A2\nFROM loan\nINNER JOIN account ON loan.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE loan.status IN ('C', 'D')\nGROUP BY district.A2\nORDER BY COUNT(loan.loan_id) DESC\nLIMIT 1;\n```"

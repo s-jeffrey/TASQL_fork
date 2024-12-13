@@ -1,0 +1,1 @@
+"```sql\nSELECT Laboratory.Date\nFROM Laboratory\nWHERE Laboratory.LDH >= 500\nORDER BY Laboratory.Date DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = qualifying.raceId, filter = 23).where(element = qualifying.q2, filter = 'is not null')\nres = df1.select(drivers.driverRef, drivers.nationality, drivers.dob)\n```"

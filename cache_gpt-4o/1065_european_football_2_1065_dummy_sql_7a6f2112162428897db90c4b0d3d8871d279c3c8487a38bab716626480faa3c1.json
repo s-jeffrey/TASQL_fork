@@ -1,0 +1,1 @@
+"`Team.team_long_name` FROM `Team` JOIN `Team_Attributes` ON `Team.team_api_id` = `Team_Attributes.team_api_id` WHERE `Team_Attributes.buildUpPlaySpeedClass` = 'Fast';\""

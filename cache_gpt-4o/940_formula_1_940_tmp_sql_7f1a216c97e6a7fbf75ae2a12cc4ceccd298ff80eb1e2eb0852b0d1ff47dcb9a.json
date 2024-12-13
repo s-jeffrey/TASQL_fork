@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT results.driverId)\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nWHERE races.name = 'Chinese Grand Prix'\n  AND races.year = 2008\n  AND results.time IS NOT NULL\n  AND results.driverId IN (\n    SELECT driverId\n    FROM results\n    GROUP BY driverId\n    HAVING COUNT(raceId) > 0\n  )\n```\n"

@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(pitStops.duration) AS longest_pit_stop_time\nFROM pitStops\nJOIN drivers ON pitStops.driverId = drivers.driverId\nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton';\n```"

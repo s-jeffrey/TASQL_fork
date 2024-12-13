@@ -1,0 +1,1 @@
+"`zip_code.city`, `zip_code.county`, `zip_code.state` FROM `member` JOIN `zip_code` ON `member.zip` = `zip_code.zip_code` WHERE `member.first_name` = 'Amy' AND `member.last_name` = 'Firth';\""

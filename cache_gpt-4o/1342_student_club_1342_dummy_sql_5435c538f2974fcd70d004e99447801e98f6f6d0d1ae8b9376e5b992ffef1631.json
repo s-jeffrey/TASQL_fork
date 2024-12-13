@@ -1,0 +1,1 @@
+"`cost` FROM `expense` WHERE `expense_description` = 'Posters' AND `expense_date` = '2019-09-04';\""

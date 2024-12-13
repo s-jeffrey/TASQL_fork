@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.UserId, filter = '3025')\ndf2 = df1.where(element = comments.CreationDate, filter = '2014/4/23 20:29:39.0')\nres = df2.select(posts.FavoriteCount)\n```"

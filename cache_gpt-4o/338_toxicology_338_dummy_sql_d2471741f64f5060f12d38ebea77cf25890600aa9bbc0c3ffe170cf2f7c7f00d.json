@@ -1,0 +1,1 @@
+"`atom.atom_id` FROM `atom`  \nJOIN `bond` ON `atom.molecule_id` = `bond.molecule_id`  \nJOIN `connected` ON `bond.bond_id` = `connected.bond_id`  \nWHERE `atom.element` = 'c'  \nAND `bond.bond_type` = '='  \nAND `atom.molecule_id` = 'TR012';\""

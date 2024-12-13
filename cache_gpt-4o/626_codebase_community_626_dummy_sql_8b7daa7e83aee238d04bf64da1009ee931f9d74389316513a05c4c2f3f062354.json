@@ -1,0 +1,1 @@
+"COUNT(*) FROM votes WHERE YEAR(CreationDate) = 2010;\"\n  "

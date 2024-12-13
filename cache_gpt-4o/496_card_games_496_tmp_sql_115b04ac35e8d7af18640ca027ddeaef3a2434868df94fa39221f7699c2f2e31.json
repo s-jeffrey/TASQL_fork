@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.baseSetSize\nFROM set_translations\nINNER JOIN sets ON set_translations.setCode = sets.code\nWHERE set_translations.translation = 'Rinascita di Alara';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.superhero_name, filter = 'Black Panther')\ndf2 = df1.orderby(by = hero_attribute.attribute_value, asc).limit(1)\nres = df2.select(attribute.attribute_name)\n```"

@@ -1,0 +1,1 @@
+"`Team.team_long_name` FROM `Match` JOIN `Team` ON `Match.home_team_api_id` = `Team.team_api_id` WHERE `Match.season` = '2015/2016' AND `Match.home_team_goal` < `Match.away_team_goal` GROUP BY `Team.team_long_name` ORDER BY COUNT(`Match.id`) ASC LIMIT 1;\"\n"

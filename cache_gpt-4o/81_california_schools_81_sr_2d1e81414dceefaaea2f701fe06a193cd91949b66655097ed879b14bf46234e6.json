@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.State, filter = 'CA')\ndf2 = df1.orderby(by = schools.Latitude, asc).limit(1)\nres = df2.select(schools.City, schools.GSserved, schools.School)\n```"

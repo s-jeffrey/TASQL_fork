@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(1999 - strftime('%Y', Patient.Birthday)) AS average_age\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.Date BETWEEN '1991-10-01' AND '1991-10-31';\n```"

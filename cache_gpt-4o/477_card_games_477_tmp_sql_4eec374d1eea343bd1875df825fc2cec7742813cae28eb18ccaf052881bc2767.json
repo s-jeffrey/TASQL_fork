@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT cards.artist\nFROM cards\nWHERE cards.setCode = 'Coldsnap'\nAND cards.artist IN ('Jeremy Jarvis', 'Aaron Miller', 'Chippy');\n```"

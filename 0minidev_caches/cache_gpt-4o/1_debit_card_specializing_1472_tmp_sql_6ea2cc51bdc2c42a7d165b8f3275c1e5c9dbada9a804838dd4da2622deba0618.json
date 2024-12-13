@@ -1,0 +1,1 @@
+"```sql\nSELECT ym.CustomerID\nFROM yearmonth ym\nINNER JOIN customers c ON ym.CustomerID = c.CustomerID\nWHERE c.Segment = 'LAM'\nAND ym.Date BETWEEN '201201' AND '201212'\nORDER BY ym.Consumption ASC\nLIMIT 1;\n```"

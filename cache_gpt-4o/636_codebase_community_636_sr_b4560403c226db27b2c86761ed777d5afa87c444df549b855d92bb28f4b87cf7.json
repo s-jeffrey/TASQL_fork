@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Neil McGuigan')\ndf2 = df1.join(posts, df1.users.Id == posts.OwnerUserId)\ndf3 = df2.join(comments, df2.posts.Id == comments.PostId)\ndf4 = df3.where(element = comments.Score, filter = '< 60')\nres = df4.count()\n```"

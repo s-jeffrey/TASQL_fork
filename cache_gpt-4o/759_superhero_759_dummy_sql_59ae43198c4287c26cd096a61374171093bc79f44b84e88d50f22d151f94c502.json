@@ -1,0 +1,1 @@
+"```sql\nSELECT colour.colour\nFROM superhero\nJOIN colour ON superhero.eye_colour_id = colour.id\nWHERE superhero.weight_kg = (\n    SELECT MAX(weight_kg)\n    FROM superhero\n);\n```"

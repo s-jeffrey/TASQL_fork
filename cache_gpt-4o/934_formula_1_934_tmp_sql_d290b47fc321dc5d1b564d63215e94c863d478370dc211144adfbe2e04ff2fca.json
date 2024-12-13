@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nINNER JOIN drivers ON results.driverId = drivers.driverId\nWHERE races.year = 1989\n  AND races.name = 'Australian Grand Prix'\n  AND results.grid = 4;\n```"

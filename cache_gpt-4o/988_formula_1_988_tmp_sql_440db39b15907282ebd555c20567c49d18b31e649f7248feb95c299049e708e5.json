@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname\nFROM drivers\nINNER JOIN pitStops ON drivers.driverId = pitStops.driverId\nWHERE drivers.nationality = 'German'\n  AND YEAR(drivers.dob) > 1980\n  AND YEAR(drivers.dob) < 1985\nGROUP BY drivers.driverId, drivers.forename, drivers.surname\nORDER BY AVG(CAST(pitStops.duration AS FLOAT)) ASC\nLIMIT 3;\n```"

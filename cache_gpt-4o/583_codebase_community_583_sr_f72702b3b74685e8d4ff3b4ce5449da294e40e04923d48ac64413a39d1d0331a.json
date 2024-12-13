@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Yevgeny')\ndf2 = df1.join(posts, posts.LastEditorUserId == users.Id)\nres = df2.select(posts.Score.sum(), users.WebsiteUrl)\n```"

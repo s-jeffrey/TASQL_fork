@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.player_api_id\nFROM Player_Attributes pa\nWHERE substr(pa.date, 1, 4) = '2010'\nAND pa.overall_rating > (\n    SELECT avg(pa2.overall_rating)\n    FROM Player_Attributes pa2\n    WHERE substr(pa2.date, 1, 4) = '2010'\n)\nORDER BY pa.overall_rating DESC\nLIMIT 1;\n```"

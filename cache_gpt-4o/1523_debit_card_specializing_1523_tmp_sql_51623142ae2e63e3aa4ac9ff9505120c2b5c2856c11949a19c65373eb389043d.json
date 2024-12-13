@@ -1,0 +1,1 @@
+"```sql\nSELECT customers.Currency\nFROM transactions_1k\nINNER JOIN customers ON transactions_1k.CustomerID = customers.CustomerID\nWHERE transactions_1k.CardID = 667467;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = frpm.`Free Meal Count (Ages 5-17)`, filter = '>= 1900').where(element = frpm.`Free Meal Count (Ages 5-17)`, filter = '<= 2000')\nres = df1.select(schools.School, schools.Website)\n```"

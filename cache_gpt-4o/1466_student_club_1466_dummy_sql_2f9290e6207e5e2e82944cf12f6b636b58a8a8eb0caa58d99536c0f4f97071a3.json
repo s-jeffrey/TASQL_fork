@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(m.first_name, ' ', m.last_name) AS full_name, maj.college\nFROM member m\nJOIN major maj ON m.link_to_major = maj.major_id\nWHERE m.position = 'Secretary';\n```"

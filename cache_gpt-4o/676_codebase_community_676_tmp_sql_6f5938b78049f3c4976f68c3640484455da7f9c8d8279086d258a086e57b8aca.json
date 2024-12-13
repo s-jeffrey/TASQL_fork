@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM users\nWHERE users.Age BETWEEN 19 AND 65;\n```"

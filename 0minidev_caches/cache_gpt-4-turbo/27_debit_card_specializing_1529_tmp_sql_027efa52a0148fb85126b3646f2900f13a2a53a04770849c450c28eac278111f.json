@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(transactions_1k.Amount * transactions_1k.Price) AS Total_Spent\nFROM transactions_1k\nWHERE transactions_1k.CustomerID = 38508\nAND transactions_1k.Date BETWEEN '2012-01-01' AND '2012-01-31';\n```"

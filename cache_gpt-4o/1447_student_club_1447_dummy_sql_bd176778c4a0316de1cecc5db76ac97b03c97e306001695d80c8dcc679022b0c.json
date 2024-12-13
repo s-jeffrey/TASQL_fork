@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name, event.location\nFROM event\nJOIN budget ON event.event_id = budget.link_to_event\nWHERE budget.remaining > 0;\n```"

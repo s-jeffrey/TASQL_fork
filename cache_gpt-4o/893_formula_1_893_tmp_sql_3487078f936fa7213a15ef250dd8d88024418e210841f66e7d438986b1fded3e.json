@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname, results.points\nFROM results\nINNER JOIN drivers ON results.driverId = drivers.driverId\nINNER JOIN races ON results.raceId = races.raceId\nWHERE races.year = 2017 AND races.name = 'Chinese Grand Prix'\nORDER BY results.points DESC\nLIMIT 3;\n```"

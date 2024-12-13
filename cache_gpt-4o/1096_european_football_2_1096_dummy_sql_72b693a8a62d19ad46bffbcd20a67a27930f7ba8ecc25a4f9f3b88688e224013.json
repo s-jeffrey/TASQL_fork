@@ -1,0 +1,1 @@
+"AVG(T1.overall_rating) FROM Player_Attributes T1 JOIN Player T2 ON T1.player_api_id = T2.player_api_id WHERE T2.player_name = 'Pietro Marino';\""

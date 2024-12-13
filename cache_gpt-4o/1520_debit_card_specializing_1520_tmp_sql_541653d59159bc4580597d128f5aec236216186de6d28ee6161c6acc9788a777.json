@@ -1,0 +1,1 @@
+"```sql\nSELECT yearmonth.Date, yearmonth.Consumption\nFROM yearmonth\nWHERE yearmonth.CustomerID = (\n    SELECT transactions_1k.CustomerID\n    FROM transactions_1k\n    WHERE transactions_1k.Date = '2012-08-24' AND transactions_1k.Amount = 124.05\n) AND yearmonth.Date = '201201';\n```"

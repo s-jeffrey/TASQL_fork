@@ -1,0 +1,1 @@
+"```plaintext\ndf1 = df.where(element = atom.atom_id, filter = 'TR%_19')\ndf2 = df.where(element = connected.atom_id, filter = 'TR%_19').union(df.where(element = connected.atom_id2, filter = 'TR%_19'))\nres = df2.count()\n```"

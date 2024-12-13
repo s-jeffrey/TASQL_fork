@@ -1,0 +1,1 @@
+"```sql\nSELECT trans.amount\nFROM card\nINNER JOIN disp ON card.disp_id = disp.disp_id\nINNER JOIN trans ON disp.account_id = trans.account_id\nWHERE card.issued = '1996-10-21'\nORDER BY trans.amount DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM card\nJOIN disp ON card.disp_id = disp.disp_id\nWHERE card.type = 'gold' AND disp.type = 'OWNER';\n```\n\nThis SQL query counts the number of high-level credit cards (gold type) that have an \"OWNER\" type of disposition by joining the `card` and `disp` tables on the `disp_id` column and applying the specified conditions."

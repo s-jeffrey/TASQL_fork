@@ -1,0 +1,1 @@
+"```sql\nSELECT p.Admission\nFROM Laboratory l\nJOIN Patient p ON l.ID = p.ID\nWHERE l.ALP < 300;\n```\n\nThis SQL query selects the admission status (inpatient or outpatient) of patients whose alkaliphophatase (ALP) levels are within the normal range (less than 300). It joins the Laboratory and Patient tables using the patient ID as the foreign key."

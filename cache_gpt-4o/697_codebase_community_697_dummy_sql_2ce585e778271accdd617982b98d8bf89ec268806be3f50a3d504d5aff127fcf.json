@@ -1,0 +1,1 @@
+"```sql\nSELECT Reputation, Views\nFROM users\nWHERE DisplayName = 'Jarrod Dixon';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) \n     FROM gasstations \n     WHERE Country = 'CZE' AND Segment = 'Discount') \n    - \n    (SELECT COUNT(*) \n     FROM gasstations \n     WHERE Country = 'SVK' AND Segment = 'Discount') AS difference\n```"

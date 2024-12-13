@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID\nFROM Patient\nWHERE Patient.SEX = 'F'\n  AND YEAR(Patient.Birthday) = 1964\n  AND Patient.Admission = '+'\n```\n"

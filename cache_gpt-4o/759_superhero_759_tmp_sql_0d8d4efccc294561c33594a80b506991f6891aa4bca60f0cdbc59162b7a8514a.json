@@ -1,0 +1,1 @@
+"```sql\nSELECT colour.colour\nFROM superhero\nINNER JOIN colour ON superhero.eye_colour_id = colour.id\nORDER BY superhero.weight_kg DESC\nLIMIT 1;\n```"

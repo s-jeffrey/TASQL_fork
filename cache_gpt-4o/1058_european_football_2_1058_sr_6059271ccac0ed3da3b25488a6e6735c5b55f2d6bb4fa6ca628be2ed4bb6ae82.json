@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = Player.height, desc).limit(1)\ndf2 = df.orderby(by = Player.height, asc).limit(1)\n\ndf3 = df1.union(df2)\ndf4 = df3.groupby(Player.player_api_id).select(avg(Player_Attributes.finishing).alias('avg_finishing'))\nres = df4.orderby(by = 'avg_finishing', desc).limit(1).select(Player.player_name)\n```"

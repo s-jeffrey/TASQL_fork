@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) FILTER (WHERE Segment = 'Premium') AS REAL) * 100 / COUNT(*) AS percentage\nFROM gasstations\nWHERE Country = 'SVK';\n```"

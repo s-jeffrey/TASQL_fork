@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'What is the best introductory Bayesian statistics textbook?')\nres = df1.select(postHistory.Id.count(), posts.LastEditDate)\n```"

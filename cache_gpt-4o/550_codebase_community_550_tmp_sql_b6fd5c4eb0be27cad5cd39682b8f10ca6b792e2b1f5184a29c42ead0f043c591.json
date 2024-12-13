@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Body\nFROM posts\nWHERE posts.Id = (\n    SELECT tags.ExcerptPostId\n    FROM tags\n    ORDER BY tags.Count DESC\n    LIMIT 1\n)\n```"

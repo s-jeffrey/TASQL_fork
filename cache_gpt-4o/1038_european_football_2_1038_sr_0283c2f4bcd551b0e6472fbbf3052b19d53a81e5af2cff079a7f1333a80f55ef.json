@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(League.id).agg(total_goals = sum(Match.home_team_goal + Match.away_team_goal))\ndf2 = df1.orderby(by = total_goals, asc).limit(5)\nres = df2.select(League.name)\n```"

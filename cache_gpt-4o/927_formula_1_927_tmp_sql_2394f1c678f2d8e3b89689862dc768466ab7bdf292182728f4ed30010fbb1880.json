@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname\nFROM results\nINNER JOIN drivers ON results.driverId = drivers.driverId\nORDER BY CAST(results.fastestLapSpeed AS FLOAT) DESC\nLIMIT 1;\n```"

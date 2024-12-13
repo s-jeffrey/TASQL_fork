@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Admission\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.SEX = 'F'\n  AND (strftime('%Y', 'now') - strftime('%Y', Patient.Birthday)) >= 50\n  AND (Laboratory.RBC <= 3.5 OR Laboratory.RBC >= 6.0);\n```"

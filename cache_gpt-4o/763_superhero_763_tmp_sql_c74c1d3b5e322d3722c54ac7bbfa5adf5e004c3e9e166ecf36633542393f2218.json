@@ -1,0 +1,1 @@
+"```sql\nSELECT hero_attribute.attribute_value\nFROM superhero\nINNER JOIN hero_attribute ON superhero.id = hero_attribute.hero_id\nWHERE superhero.superhero_name = 'Abomination';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(DISTINCT b.molecule_id) AS REAL) * 100 / COUNT(DISTINCT m.molecule_id) AS percent_triple_bond\nFROM bond b\nJOIN molecule m ON b.molecule_id = m.molecule_id\nWHERE b.bond_type = '#';\n```"

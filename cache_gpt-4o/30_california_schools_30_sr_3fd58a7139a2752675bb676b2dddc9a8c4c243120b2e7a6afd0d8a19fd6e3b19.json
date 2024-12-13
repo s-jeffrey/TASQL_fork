@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = frpm.`Enrollment (K-12)`, asc).limit(5)\nres = df1.select(schools.City)\n```"

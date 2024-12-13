@@ -1,0 +1,1 @@
+"`b.bond_id` FROM `bond` b\nJOIN `connected` c ON b.bond_id = c.bond_id\nJOIN `atom` a1 ON c.atom_id = a1.atom_id\nJOIN `atom` a2 ON c.atom_id2 = a2.atom_id\nWHERE b.bond_id = 'TR001_1_8' AND \n((a1.element = 'cl' AND a2.element = 'c') OR (a1.element = 'c' AND a2.element = 'cl'));"

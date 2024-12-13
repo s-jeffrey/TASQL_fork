@@ -1,0 +1,1 @@
+"max(yearmonth.Consumption) AS HighestConsumption\nFROM yearmonth\nWHERE substr(yearmonth.Date, 1, 4) = '2012'\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(c.id) AS card_count, l.status\nFROM cards c\nJOIN legalities l ON c.uuid = l.uuid\nWHERE c.frameVersion = 'future'\nGROUP BY l.status;\n```\n\nThis SQL query counts the number of cards with a 'future' frame version and groups them by their legality status. It joins the `cards` table with the `legalities` table using the `uuid` foreign key relationship."

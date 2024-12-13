@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(COUNT(*) AS REAL) * 100.0 / (SELECT COUNT(*) FROM account WHERE strftime('%Y', date) = '1993') AS percentage\nFROM \n    account\nINNER JOIN \n    district ON account.district_id = district.district_id\nWHERE \n    district.A2 = 'Decin' \n    AND strftime('%Y', account.date) = '1993';\n```"

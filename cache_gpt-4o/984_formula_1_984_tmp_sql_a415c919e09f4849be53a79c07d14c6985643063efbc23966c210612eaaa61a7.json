@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.url\nFROM constructorStandings\nJOIN constructors ON constructorStandings.constructorId = constructors.constructorId\nGROUP BY constructorStandings.constructorId\nORDER BY SUM(constructorStandings.wins) DESC\nLIMIT 1;\n```"

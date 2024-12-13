@@ -1,0 +1,1 @@
+"```sql\nSELECT Player.player_name\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE Player.player_name IN ('Alexis', 'Ariel Borysiuk', 'Arouna Kone')\nORDER BY Player_Attributes.crossing DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT set_translations.language\nFROM set_translations\nINNER JOIN sets ON set_translations.setCode = sets.code\nWHERE sets.mcmName = 'Archenemy' AND sets.code = 'ARC';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT races.name\nFROM races\nWHERE YEAR(races.date) = (SELECT YEAR(MIN(date)) FROM races)\n  AND MONTH(races.date) = (SELECT MONTH(MIN(date)) FROM races);\n```"

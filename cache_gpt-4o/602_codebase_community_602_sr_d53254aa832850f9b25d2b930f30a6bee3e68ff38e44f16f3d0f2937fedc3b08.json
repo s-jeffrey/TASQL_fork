@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Score, filter = '> 60')\nres = df1.select(posts.Id, posts.OwnerUserId)\n```"

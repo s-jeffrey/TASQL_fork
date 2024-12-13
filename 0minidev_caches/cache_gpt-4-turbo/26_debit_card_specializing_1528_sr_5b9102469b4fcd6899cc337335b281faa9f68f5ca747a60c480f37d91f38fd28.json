@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = gasstations.Country, filter = 'SVK')\n    df2 = df1.where(element = gasstations.Segment, filter = 'Premium')\n    res = df.select(cast(df2.count(), real) * 100 / df1.count())\""

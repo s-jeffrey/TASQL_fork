@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM satscores\nINNER JOIN schools ON satscores.cds = schools.CDSCode\nWHERE satscores.AvgScrMath > 400 AND schools.Virtual = 'F';\n```"

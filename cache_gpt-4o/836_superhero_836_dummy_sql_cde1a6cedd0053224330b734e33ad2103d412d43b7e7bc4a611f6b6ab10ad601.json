@@ -1,0 +1,1 @@
+"COUNT(*) FROM superhero WHERE full_name LIKE 'John%';\""

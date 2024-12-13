@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(Id) \nFROM badges \nWHERE Name = 'Revival';\n```"

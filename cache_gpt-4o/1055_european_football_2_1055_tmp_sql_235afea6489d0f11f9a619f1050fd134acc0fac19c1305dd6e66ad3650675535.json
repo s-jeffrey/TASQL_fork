@@ -1,0 +1,1 @@
+"```sql\nSELECT Player.birthday\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nORDER BY Player_Attributes.overall_rating DESC\nLIMIT 1;\n```"

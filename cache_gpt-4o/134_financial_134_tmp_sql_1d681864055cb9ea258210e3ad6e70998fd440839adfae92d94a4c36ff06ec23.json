@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM account\nWHERE district_id = (\n    SELECT district_id\n    FROM district\n    ORDER BY A16 DESC\n    LIMIT 1\n);\n```"

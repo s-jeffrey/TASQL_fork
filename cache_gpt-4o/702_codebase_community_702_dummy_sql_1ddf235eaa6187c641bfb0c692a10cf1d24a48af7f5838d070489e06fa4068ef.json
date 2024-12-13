@@ -1,0 +1,1 @@
+"`COUNT(*)` FROM `posts` WHERE `Score` < 20;\""

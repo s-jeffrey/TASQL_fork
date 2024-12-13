@@ -1,0 +1,1 @@
+"```sql\nSELECT L.name, COUNT(M.id) AS match_count\nFROM Match M\nJOIN League L ON M.league_id = L.id\nGROUP BY L.name\nORDER BY match_count DESC\nLIMIT 1;\n```"

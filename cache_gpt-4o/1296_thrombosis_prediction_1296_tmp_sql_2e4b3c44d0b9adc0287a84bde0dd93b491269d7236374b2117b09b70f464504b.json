@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.ANA\nFROM Examination\nINNER JOIN Laboratory ON Examination.ID = Laboratory.ID\nWHERE Laboratory.T-BIL < 2.0\nORDER BY Laboratory.T-BIL DESC\nLIMIT 1;\n```"

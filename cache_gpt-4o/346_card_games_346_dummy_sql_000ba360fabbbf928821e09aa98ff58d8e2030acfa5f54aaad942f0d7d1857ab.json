@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.id, cards.artist\nFROM cards\nJOIN legalities ON cards.uuid = legalities.uuid\nWHERE (cards.power = '*' OR cards.power IS NULL)\n  AND legalities.format = 'commander'\n  AND legalities.status = 'legal';\n```\n"

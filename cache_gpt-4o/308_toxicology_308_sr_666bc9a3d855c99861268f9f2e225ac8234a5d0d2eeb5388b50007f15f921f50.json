@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 'cl')\ndf2 = df1.join(connected, df1.atom_id == connected.atom_id)\nres = df2.select(bond.bond_id).count()\n```"

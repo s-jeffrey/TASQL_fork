@@ -1,0 +1,1 @@
+"```sql\nSELECT users.CreationDate\nFROM users\nWHERE users.DisplayName = 'IrishStat';\n```"

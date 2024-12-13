@@ -1,0 +1,1 @@
+"```sql\nSELECT originalType\nFROM cards\nWHERE name = 'Ancestor''s Chosen';\n```"

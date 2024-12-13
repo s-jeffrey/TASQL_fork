@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Reputation, users.UpVotes\nFROM comments\nJOIN users ON comments.UserId = users.Id\nWHERE comments.Text = 'fine, you win :)';\n```"

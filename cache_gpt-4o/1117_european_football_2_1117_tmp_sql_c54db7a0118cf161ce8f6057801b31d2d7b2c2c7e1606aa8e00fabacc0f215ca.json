@@ -1,0 +1,1 @@
+"```sql\nSELECT player_api_id\nFROM Player\nORDER BY weight DESC\nLIMIT 10;\n```"

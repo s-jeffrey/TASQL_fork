@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.weight_kg, filter = 0).or_where(element = superhero.weight_kg, filter = None)\ndf2 = df1.where(element = superhero.eye_colour_id, filter = 7)\ndf3 = df1.where(element = superhero.eye_colour_id, filter = 1)\nres = df.select(df2.count() - df3.count())\n```"

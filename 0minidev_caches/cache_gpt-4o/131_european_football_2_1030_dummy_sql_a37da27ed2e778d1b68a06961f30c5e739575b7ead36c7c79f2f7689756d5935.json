@@ -1,0 +1,1 @@
+"```sql\nSELECT L.name\nFROM Match M\nJOIN League L ON M.league_id = L.id\nWHERE M.season = '2015/2016'\nGROUP BY L.name\nORDER BY SUM(CASE WHEN M.home_team_goal = M.away_team_goal THEN 1 ELSE 0 END) DESC\nLIMIT 1;\n```"

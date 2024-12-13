@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = income.amount, filter = '> 40')\nres = df1.select(member.first_name, member.last_name)\n```"

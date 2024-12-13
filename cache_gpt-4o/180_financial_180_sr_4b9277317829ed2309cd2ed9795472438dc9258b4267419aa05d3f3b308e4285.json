@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.birth_date, filter = '>= 1983-01-01').where(element = client.birth_date, filter = '<= 1987-12-31')\ndf2 = df1.where(element = district.A3, filter = 'east Bohemia')\nres = df2.select(client.client_id, client.birth_date)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(Score) \nFROM posts \nWHERE LastActivityDate LIKE '2010-07-19%';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT users.Id)\nFROM users\nINNER JOIN posts ON users.Id = posts.OwnerUserId\nWHERE users.Location LIKE '%United Kingdom%'\nAND posts.FavoriteCount >= 4;\n```"

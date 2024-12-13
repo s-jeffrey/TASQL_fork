@@ -1,0 +1,1 @@
+"`overall_rating` FROM `Player_Attributes` JOIN `Player` ON `Player_Attributes`.`player_api_id` = `Player`.`player_api_id` WHERE `Player`.`player_name` = 'Gabriel Tamas' AND strftime('%Y', `Player_Attributes`.`date`) = '2011';\""

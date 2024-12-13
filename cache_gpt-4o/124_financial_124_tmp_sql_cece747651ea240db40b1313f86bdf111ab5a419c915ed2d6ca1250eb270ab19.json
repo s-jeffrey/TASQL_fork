@@ -1,0 +1,1 @@
+"```sql\nSELECT loan.loan_id, district.A2, district.A11\nFROM loan\nINNER JOIN account ON loan.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE loan.duration = 60;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Eliciting priors from experts')\ndf2 = df1.select(posts.OwnerUserId)\nres = df.where(element = users.Id, filter = df2).select(users.Location)\n```"

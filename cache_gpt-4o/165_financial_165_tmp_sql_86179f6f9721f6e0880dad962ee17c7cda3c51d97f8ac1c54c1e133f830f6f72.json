@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    trans.trans_id, \n    trans.account_id, \n    trans.amount, \n    trans.balance, \n    trans.bank, \n    trans.date, \n    trans.k_symbol, \n    trans.operation, \n    trans.type\nFROM \n    trans\nINNER JOIN \n    account ON trans.account_id = account.account_id\nWHERE \n    account.district_id = 5;\n```"

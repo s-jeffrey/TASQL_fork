@@ -1,0 +1,1 @@
+"```sql\nSELECT source\nFROM income\nWHERE date_received BETWEEN '2019-09-01' AND '2019-09-30'\nGROUP BY source\nORDER BY SUM(amount) DESC\nLIMIT 1;\n```\n\nThis SQL query selects the top source of funds received in September 2019 by summing the amounts for each source and ordering them in descending order. The `LIMIT 1` clause ensures that only the top source is returned."

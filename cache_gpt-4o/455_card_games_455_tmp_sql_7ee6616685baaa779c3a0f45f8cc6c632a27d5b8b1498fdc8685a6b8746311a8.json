@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nWHERE cards.isPromo = 1 AND cards.side IS NOT NULL;\n```"

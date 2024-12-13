@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 'i')\nres = df1.select(df1.count(bond.bond_id) / df1.count(atom.atom_id))\n```"

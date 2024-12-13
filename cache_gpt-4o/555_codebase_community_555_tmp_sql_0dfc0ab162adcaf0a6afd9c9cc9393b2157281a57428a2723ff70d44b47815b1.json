@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(posts.Score) \nFROM users \nINNER JOIN posts ON users.Id = posts.OwnerUserId \nWHERE users.DisplayName = 'csgillespie';\n```"

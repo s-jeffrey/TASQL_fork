@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name\nFROM attendance\nINNER JOIN event ON attendance.link_to_event = event.event_id\nINNER JOIN member ON attendance.link_to_member = member.member_id\nWHERE event.type = 'Social'\n  AND member.position = 'Vice President'\n  AND event.location = '900 E. Washington St.'\n```"

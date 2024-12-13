@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.Score, filter = 0)\ndf2 = df1.where(element = posts.ViewCount, filter = '< 5')\nres = df2.count()\n```"

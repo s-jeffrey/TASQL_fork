@@ -1,0 +1,1 @@
+"`player_name` FROM `Player` WHERE (strftime('%Y', 'now') - strftime('%Y', `birthday`)) > 34;\"\n"

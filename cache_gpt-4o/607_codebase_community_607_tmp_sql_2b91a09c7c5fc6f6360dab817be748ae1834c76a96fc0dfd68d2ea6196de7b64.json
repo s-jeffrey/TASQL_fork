@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM comments\nWHERE Score > 60;\n```"

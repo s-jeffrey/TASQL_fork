@@ -1,0 +1,1 @@
+"`Text` FROM `comments` INNER JOIN `users` ON `comments`.`UserId` = `users`.`Id` WHERE `users`.`DisplayName` = 'Harvey Motulsky';\""

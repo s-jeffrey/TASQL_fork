@@ -1,0 +1,1 @@
+"```sql\nSELECT client.client_id\nFROM client\nJOIN disp ON client.client_id = disp.client_id\nJOIN card ON disp.disp_id = card.disp_id\nWHERE card.issued = '1994-03-03';\n```\n\nThis SQL query joins the `client`, `disp`, and `card` tables to find the `client_id` of the client who issued their card on March 3, 1994."

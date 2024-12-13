@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.T-BIL, filter = '< 2.0').orderby(by = Laboratory.T-BIL, desc).limit(1)\nres = df1.select(Examination.ANA)\n```"

@@ -1,0 +1,1 @@
+"COUNT(*) FROM Player WHERE player_name LIKE 'Adam %' AND weight > 170;\""

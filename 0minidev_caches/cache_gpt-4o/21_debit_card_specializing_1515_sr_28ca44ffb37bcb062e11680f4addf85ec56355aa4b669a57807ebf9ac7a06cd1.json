@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.Date, filter = '2012-08-23').where(element = transactions_1k.Time, filter = '21:20:00')\ndf2 = df1.select(transactions_1k.CustomerID)\nres = df.where(element = customers.CustomerID, filter = df2).select(customers.Segment)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.molecule_id, filter = 'TR001')\nres = df1.count()\n```"

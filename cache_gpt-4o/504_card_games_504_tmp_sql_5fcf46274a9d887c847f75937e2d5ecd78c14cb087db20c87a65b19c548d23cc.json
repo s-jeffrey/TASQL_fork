@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE sets.name = 'World Championship Decks 2004' AND cards.convertedManaCost = 3;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nWHERE Views > 10 AND YEAR(CreationDate) > 2013;\n```\n\nThis SQL query counts the number of users who have more than 10 views and whose accounts were created after the year 2013. The conditions are based on the `Views` column and the `CreationDate` column in the `users` table."

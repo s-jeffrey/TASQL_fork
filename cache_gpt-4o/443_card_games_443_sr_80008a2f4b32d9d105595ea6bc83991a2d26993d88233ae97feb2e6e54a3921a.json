@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.type, filter = 'expansion')\nres = df1.select(sets.code)\n```"

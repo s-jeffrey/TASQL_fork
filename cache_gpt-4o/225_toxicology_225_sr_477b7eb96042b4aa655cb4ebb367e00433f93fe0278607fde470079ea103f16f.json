@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_type, filter = '=')\ndf2 = df1.select(bond.molecule_id).distinct()\nres = df2.orderby(by = bond.molecule_id, asc).limit(5)\n```"

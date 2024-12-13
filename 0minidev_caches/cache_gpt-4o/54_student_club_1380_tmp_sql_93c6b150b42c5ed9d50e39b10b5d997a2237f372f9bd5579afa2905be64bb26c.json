@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(spent) \nFROM budget \nWHERE category = 'Food';\n```"

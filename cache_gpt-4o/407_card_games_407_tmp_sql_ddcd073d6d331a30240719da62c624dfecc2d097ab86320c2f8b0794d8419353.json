@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT foreign_data.type\nFROM foreign_data\nWHERE foreign_data.language = 'German';\n```"

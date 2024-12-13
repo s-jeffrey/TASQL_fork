@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player\nWHERE strftime('%Y', birthday) > '1990';\n```"

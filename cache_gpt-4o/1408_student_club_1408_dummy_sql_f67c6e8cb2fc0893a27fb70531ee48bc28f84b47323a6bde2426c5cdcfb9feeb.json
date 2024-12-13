@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(cost) \nFROM expense \nWHERE expense_description = 'Parking';\n```"

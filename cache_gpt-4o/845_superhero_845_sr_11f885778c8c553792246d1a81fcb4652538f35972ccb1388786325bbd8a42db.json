@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.height_cm, filter = '> MULTIPLY(AVG(superhero.height_cm), 0.8)')\ndf2 = df1.join(hero_power, superhero.id == hero_power.hero_id)\ndf3 = df2.join(superpower, hero_power.power_id == superpower.id)\nres = df3.select(superpower.power_name)\n```"

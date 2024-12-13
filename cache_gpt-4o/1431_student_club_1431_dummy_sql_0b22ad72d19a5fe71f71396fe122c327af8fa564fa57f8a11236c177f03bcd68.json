@@ -1,0 +1,1 @@
+"`last_name` FROM `member` WHERE `member_id` IN (SELECT `link_to_member` FROM `attendance` WHERE `link_to_event` IN (SELECT `event_id` FROM `event` WHERE `event_name` = 'Women's Soccer')) AND `position` = 'Member';\""

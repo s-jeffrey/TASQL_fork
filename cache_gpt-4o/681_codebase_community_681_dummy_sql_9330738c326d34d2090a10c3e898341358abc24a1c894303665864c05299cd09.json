@@ -1,0 +1,1 @@
+"`DisplayName` FROM `users` WHERE `Id` IN (SELECT `OwnerUserId` FROM `posts` WHERE `ViewCount` > 20000 AND YEAR(`CreationDate`) = 2011);\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Amount * Price) AS average_total_price\nFROM transactions_1k\nWHERE Date LIKE '2012-01%';\n```"

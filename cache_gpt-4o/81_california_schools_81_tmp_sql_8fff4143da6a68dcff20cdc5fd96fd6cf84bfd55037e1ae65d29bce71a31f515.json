@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.City, schools.GSserved, schools.School\nFROM schools\nWHERE schools.State = 'CA'\nORDER BY schools.Latitude ASC\nLIMIT 1;\n```"

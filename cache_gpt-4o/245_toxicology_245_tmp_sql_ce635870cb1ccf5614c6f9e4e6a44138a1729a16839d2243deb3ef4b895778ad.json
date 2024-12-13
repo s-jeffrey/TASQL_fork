@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(bond_count) \nFROM (\n    SELECT COUNT(connected.bond_id) AS bond_count\n    FROM atom\n    INNER JOIN connected ON atom.atom_id = connected.atom_id\n    WHERE atom.element = 'i'\n    GROUP BY atom.atom_id\n) AS subquery;\n```"

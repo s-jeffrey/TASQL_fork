@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.operation, filter = 'VYBER KARTOU')\ndf2 = df1.where(element = account.frequency, filter = 'POPLATEK MESICNE')\ndf3 = df2.where(element = trans.balance, filter = '< 0')\nres = df3.select(disp.account_id).distinct().count()\n```"

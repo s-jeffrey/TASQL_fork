@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(weight_kg) \nFROM superhero \nJOIN race ON superhero.race_id = race.id \nWHERE race.race = 'Alien';\n```"

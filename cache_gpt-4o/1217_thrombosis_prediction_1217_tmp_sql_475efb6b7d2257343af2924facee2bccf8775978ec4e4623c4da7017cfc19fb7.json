@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    Patient.ID, \n    CASE \n        WHEN Laboratory.ALB BETWEEN 3.5 AND 5.5 THEN 'Yes' \n        ELSE 'No' \n    END AS Albumin_Normal_Range\nFROM \n    Patient\nINNER JOIN \n    Laboratory ON Patient.ID = Laboratory.ID\nWHERE \n    YEAR(Patient.Birthday) = 1982;\n```"

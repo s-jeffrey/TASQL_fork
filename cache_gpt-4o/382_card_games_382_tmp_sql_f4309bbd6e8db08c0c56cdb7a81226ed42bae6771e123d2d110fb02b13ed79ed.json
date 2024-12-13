@@ -1,0 +1,1 @@
+"```sql\nSELECT c.name\nFROM cards c\nINNER JOIN foreign_data fd ON c.uuid = fd.uuid\nWHERE c.availability = 'paper' AND fd.language = 'Japanese';\n```"

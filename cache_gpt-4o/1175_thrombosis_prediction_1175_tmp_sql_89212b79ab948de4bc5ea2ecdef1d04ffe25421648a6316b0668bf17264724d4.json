@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    strftime('%Y', Examination.`Examination Date`) - strftime('%Y', Patient.Birthday) AS Age,\n    Examination.Diagnosis\nFROM \n    Laboratory\nINNER JOIN \n    Examination ON Laboratory.ID = Examination.ID\nINNER JOIN \n    Patient ON Laboratory.ID = Patient.ID\nORDER BY \n    Laboratory.HGB DESC\nLIMIT 1;\n```"

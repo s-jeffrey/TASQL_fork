@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE availability LIKE '%paper%'\n  AND hand > 0;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM cards\nWHERE faceConvertedManaCost = (\n    SELECT MAX(faceConvertedManaCost)\n    FROM cards\n);\n```"

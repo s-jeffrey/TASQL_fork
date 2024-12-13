@@ -1,0 +1,1 @@
+"`CreationDate` FROM `users` WHERE `DisplayName` = 'IrishStat';\""

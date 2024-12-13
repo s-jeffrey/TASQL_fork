@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(cards.uuid).having(element = count(rulings.uuid), filter = max(count(rulings.uuid)))\nres = df1.select(cards.name, cards.artist, cards.isPromo)\n```"

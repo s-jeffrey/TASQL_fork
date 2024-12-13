@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(r.year)\nFROM races r\nJOIN circuits c ON r.circuitId = c.circuitId\nWHERE c.name = 'Brands Hatch' AND r.name = 'British Grand Prix';\n```"

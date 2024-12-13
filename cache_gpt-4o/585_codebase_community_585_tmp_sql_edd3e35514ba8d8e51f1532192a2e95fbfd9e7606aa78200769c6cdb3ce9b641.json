@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(votes.BountyAmount) \nFROM posts \nINNER JOIN votes ON posts.Id = votes.PostId \nWHERE posts.Title LIKE '%data%'\n```"

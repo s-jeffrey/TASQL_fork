@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Birthday\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.GLU > 180\nORDER BY Patient.Birthday ASC\nLIMIT 1;\n```"

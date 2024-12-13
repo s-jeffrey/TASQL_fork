@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(CASE WHEN SEX = 'F' THEN 1 END) * 100.0 / COUNT(*)) AS percentage\nFROM Patient\nWHERE YEAR(Birthday) = '1980' AND Diagnosis = 'RA';\n```"

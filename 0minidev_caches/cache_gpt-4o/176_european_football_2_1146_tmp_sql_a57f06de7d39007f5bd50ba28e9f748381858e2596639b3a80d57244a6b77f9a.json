@@ -1,0 +1,1 @@
+"```sql\nSELECT Team.team_long_name\nFROM Match\nINNER JOIN Team ON Match.away_team_api_id = Team.team_api_id\nORDER BY Match.away_team_goal DESC\nLIMIT 1;\n```"

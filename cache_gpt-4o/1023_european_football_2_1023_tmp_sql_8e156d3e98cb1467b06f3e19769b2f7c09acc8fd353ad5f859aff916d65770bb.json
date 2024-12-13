@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player_Attributes\nWHERE overall_rating >= 60 \n  AND overall_rating < 65\n  AND defensive_work_rate = 'low';\n```"

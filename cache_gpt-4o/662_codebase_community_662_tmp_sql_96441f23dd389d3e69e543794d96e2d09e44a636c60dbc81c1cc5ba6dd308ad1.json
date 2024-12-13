@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT posts.Id)\nFROM posts\nINNER JOIN votes ON posts.Id = votes.PostId\nWHERE YEAR(votes.CreationDate) = 2011 AND votes.BountyAmount = 50;\n```"

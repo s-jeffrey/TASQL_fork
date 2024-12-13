@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = yearmonth.Date, filter = 'Between 201201 And 201212')\n    df2 = df1.where(element = customers.Segment, filter = 'LAM')\n    df3 = df2.orderby(by = yearmonth.Consumption, asc).limit(1)\n    res = df3.select(customers.CustomerID)\""

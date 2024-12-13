@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = postLinks.RelatedPostId, filter = 61217)\nres = df1.select(posts.Id, posts.ViewCount)\n```"

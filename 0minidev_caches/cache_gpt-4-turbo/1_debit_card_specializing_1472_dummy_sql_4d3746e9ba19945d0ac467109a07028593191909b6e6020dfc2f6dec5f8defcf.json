@@ -1,0 +1,1 @@
+"CustomerID FROM yearmonth WHERE Date BETWEEN '201201' AND '201212' AND CustomerID IN (SELECT CustomerID FROM customers WHERE Segment = 'LAM') ORDER BY Consumption ASC LIMIT 1;\"\n  "

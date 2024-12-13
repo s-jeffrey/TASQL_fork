@@ -1,0 +1,1 @@
+"```sql\nSELECT (frpm.`Free Meal Count (K-12)` / frpm.`Enrollment (K-12)`) AS eligible_free_rate\nFROM frpm\nORDER BY frpm.`Enrollment (K-12)` DESC\nLIMIT 11\nOFFSET 9;\n```"

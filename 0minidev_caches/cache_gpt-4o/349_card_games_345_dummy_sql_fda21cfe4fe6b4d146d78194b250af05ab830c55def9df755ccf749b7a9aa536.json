@@ -1,0 +1,1 @@
+"`legalities.status` FROM `cards` JOIN `legalities` ON `cards`.`uuid` = `legalities`.`uuid` WHERE `cards`.`types` = 'Artifact' AND `cards`.`side` IS NULL AND `legalities`.`format` = 'vintage';\"\n  "

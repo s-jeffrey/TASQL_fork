@@ -1,0 +1,1 @@
+"COUNT(DISTINCT molecule.molecule_id) FROM bond JOIN molecule ON bond.molecule_id = molecule.molecule_id WHERE bond.bond_type = '#';\""

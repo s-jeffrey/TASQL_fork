@@ -1,0 +1,1 @@
+"```sql\nSELECT p.Title, c.UserDisplayName\nFROM posts p\nJOIN comments c ON p.Id = c.PostId\nWHERE c.Score > 60;\n```\n\nThis SQL query selects the post titles and the display names of users who posted comments with a score greater than 60, indicating positive comments. The query joins the `posts` and `comments` tables using the `PostId` foreign key relationship."

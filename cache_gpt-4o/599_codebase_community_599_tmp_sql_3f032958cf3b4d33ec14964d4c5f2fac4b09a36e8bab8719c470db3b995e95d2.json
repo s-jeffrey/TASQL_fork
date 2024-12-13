@@ -1,0 +1,1 @@
+"```sql\nSELECT ph.PostHistoryTypeId, COUNT(DISTINCT c.UserId) AS UniqueUserCount\nFROM postHistory ph\nLEFT JOIN comments c ON ph.PostId = c.PostId\nWHERE ph.PostId = 3720\nGROUP BY ph.PostHistoryTypeId;\n```"

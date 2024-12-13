@@ -1,0 +1,1 @@
+"```sql\nSELECT language\nFROM foreign_data\nWHERE multiverseid = 149934;\n```"

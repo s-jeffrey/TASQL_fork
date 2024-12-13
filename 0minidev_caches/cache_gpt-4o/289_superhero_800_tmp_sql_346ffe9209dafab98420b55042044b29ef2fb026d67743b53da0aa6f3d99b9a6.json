@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100.0 / (SELECT COUNT(*) FROM superhero)) AS percentage\nFROM superhero\nINNER JOIN colour ON superhero.eye_colour_id = colour.id\nWHERE colour.colour = 'Blue' AND colour.id = 7;\n```"

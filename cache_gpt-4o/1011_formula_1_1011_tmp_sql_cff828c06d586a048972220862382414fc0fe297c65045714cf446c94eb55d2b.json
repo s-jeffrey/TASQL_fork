@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname\nFROM lapTimes\nINNER JOIN drivers ON lapTimes.driverId = drivers.driverId\nORDER BY CAST(SUBSTR(lapTimes.time, 1, INSTR(lapTimes.time, ':') - 1) AS INTEGER) * 60 + \n         CAST(SUBSTR(lapTimes.time, INSTR(lapTimes.time, ':') + 1) AS FLOAT) ASC\nLIMIT 20;\n```"

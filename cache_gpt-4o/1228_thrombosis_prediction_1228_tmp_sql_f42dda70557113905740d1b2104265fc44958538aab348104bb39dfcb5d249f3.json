@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID, Patient.Diagnosis\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.TG > 300;\n```"

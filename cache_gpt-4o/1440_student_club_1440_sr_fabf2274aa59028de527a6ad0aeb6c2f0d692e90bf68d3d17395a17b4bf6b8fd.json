@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.expense_date, filter = \"BETWEEN '2019-09-10' AND '2019-11-19'\")\ndf2 = df1.where(element = expense.cost, filter = '> 20')\nres = df2.select(member.email)\n```"

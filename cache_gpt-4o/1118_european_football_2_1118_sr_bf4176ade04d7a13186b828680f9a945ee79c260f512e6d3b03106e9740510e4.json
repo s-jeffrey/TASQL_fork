@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.birthday, filter = \"datetime(CURRENT_TIMESTAMP,'localtime') - datetime(birthday) > 34\")\nres = df1.select(Player.player_name)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.CharterNum\nFROM satscores\nINNER JOIN schools ON satscores.cds = schools.CDSCode\nWHERE satscores.AvgScrWrite > 499 AND schools.CharterNum IS NOT NULL\nORDER BY satscores.AvgScrWrite DESC;\n```"

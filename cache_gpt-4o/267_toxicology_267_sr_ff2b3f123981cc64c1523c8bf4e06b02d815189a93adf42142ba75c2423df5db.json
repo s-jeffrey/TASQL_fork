@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.molecule_id, filter = '>= TR000').where(element = bond.molecule_id, filter = '<= TR050')\nres = df1.select(bond.bond_type)\n```"

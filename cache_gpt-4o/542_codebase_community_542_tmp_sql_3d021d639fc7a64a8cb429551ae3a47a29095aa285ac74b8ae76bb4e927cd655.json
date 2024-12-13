@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(posts.CommentCount) AS TotalComments\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE users.DisplayName = 'csgillespie';\n```"

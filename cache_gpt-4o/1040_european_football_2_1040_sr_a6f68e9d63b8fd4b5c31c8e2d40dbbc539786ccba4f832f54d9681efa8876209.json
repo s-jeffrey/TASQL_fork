@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.height, filter = '> 180')\ndf2 = df1.groupby(Player.player_fifa_api_id).select(Player.player_name, avg(Player_Attributes.heading_accuracy).alias('avg_heading_accuracy'))\ndf3 = df2.orderby(by = 'avg_heading_accuracy', desc).limit(10)\nres = df3.select(Player.player_name)\n```"

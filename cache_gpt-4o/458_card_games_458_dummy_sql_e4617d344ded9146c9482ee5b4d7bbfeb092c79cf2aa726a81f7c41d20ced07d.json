@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT artist)\nFROM cards\nWHERE borderColor = 'black'\n  AND availability LIKE '%arena,mtgo%';\n```"

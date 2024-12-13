@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(loan.amount) AS average_loan_amount\nFROM client\nINNER JOIN disp ON client.client_id = disp.client_id\nINNER JOIN loan ON disp.account_id = loan.account_id\nWHERE client.gender = 'M';\n```"

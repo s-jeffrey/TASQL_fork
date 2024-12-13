@@ -1,0 +1,1 @@
+"```sql\nSELECT purchaseUrls\nFROM cards\nWHERE promoTypes LIKE '%bundle%';\n```\n\nThis SQL query selects the `purchaseUrls` from the `cards` table where the `promoTypes` column includes the value 'bundle'. This will list the websites where you can purchase cards with the promotional type of \"bundle\"."

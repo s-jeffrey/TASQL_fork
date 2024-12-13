@@ -1,0 +1,1 @@
+"`amount` FROM `income` JOIN `member` ON `income`.`link_to_member` = `member`.`member_id` WHERE `member`.`position` = 'Vice President';\""

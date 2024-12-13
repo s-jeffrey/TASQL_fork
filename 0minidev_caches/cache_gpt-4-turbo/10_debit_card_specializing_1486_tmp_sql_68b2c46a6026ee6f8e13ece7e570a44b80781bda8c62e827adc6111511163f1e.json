@@ -1,0 +1,1 @@
+"(SELECT COUNT(*) FROM customers WHERE Segment = 'SME' AND Currency = 'CZK') -\n(SELECT COUNT(*) FROM customers WHERE Segment = 'SME' AND Currency = 'EUR') AS Difference\nFROM customers\nWHERE Segment = 'SME' AND (Currency = 'CZK' OR Currency = 'EUR')\""

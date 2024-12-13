@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.name, sets.id\nFROM sets\nJOIN set_translations ON sets.code = set_translations.setCode\nWHERE set_translations.language = 'Italian'\nAND sets.block = 'Shadowmoor'\nORDER BY sets.name\nLIMIT 2;\n```"

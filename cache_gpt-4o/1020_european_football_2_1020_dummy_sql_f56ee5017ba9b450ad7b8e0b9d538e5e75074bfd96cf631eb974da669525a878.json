@@ -1,0 +1,1 @@
+"```sql\nSELECT player_api_id\nFROM Player_Attributes\nORDER BY overall_rating DESC\nLIMIT 1;\n```"

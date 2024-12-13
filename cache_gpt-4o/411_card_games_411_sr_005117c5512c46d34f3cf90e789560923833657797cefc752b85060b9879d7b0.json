@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = foreign_data.text, filter = 'Das perfekte Gegenmittel zu einer dichten Formation')\nres = df1.select(cards.artist)\n```"

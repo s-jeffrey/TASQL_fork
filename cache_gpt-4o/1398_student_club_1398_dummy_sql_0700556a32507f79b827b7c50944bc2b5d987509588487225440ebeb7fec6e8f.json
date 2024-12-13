@@ -1,0 +1,1 @@
+"```sql\nSELECT e.event_name\nFROM event e\nJOIN budget b ON e.event_id = b.link_to_event\nWHERE b.category = 'Advertisement'\nORDER BY b.spent DESC\nLIMIT 1;\n```"

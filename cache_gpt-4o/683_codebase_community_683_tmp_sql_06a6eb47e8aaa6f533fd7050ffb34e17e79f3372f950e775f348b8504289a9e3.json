@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(posts.Id) AS REAL) * 100 / (SELECT COUNT(posts.Id) FROM posts)) AS percentage\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE strftime('%Y', users.CreationDate) = '2011' AND users.Reputation > 1000;\n```"

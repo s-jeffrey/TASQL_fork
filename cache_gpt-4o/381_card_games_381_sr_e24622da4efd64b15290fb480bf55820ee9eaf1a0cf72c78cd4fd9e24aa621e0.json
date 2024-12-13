@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = foreign_data.language, filter = 'Chinese Simplified')\nres = df1.select(cards.artist)\n```"

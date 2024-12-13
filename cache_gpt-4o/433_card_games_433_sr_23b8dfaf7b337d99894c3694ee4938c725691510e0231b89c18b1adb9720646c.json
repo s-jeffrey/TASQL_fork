@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.language, filter = 'Chinese Simplified').where(element = cards.isOnlineOnly, filter = 1)\nres = df.select(cast(df1.count(), real) * 100 / df.count())\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(YEAR(`First Date`) - YEAR(Birthday)) AS youngest_age\nFROM Patient;\n```"

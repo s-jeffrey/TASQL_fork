@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = year(Patient.Birthday), filter = 'BETWEEN 1936 AND 1956')\ndf2 = df1.where(element = Patient.SEX, filter = 'M')\ndf3 = df2.where(element = Laboratory.CPK, filter = '>= 250')\nres = df3.select(distinct(Patient.ID)).count()\n```"

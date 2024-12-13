@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.molecule_id, filter = 'TR010')\ndf2 = df1.groupby(bond.bond_type).count().orderby(by = 'count', desc).limit(1)\ndf3 = df.where(element = molecule.molecule_id, filter = 'TR010')\nres = df2.select(bond.bond_type).join(df3.select(molecule.label))\n```"

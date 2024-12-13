@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT account.account_id)\nFROM account\nJOIN district ON account.district_id = district.district_id\nJOIN loan ON account.account_id = loan.account_id\nWHERE district.A3 = 'Prague';\n```"

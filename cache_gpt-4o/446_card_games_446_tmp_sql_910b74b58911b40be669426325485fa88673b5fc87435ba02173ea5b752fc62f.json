@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM cards INNER JOIN sets ON cards.setCode = sets.code WHERE sets.name = 'Abyssal Horror')) AS percentage\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE sets.name = 'Abyssal Horror' AND cards.convertedManaCost = 10;\n```"

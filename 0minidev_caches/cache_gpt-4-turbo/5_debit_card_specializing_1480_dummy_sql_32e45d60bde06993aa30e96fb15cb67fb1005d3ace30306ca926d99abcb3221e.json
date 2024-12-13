@@ -1,0 +1,1 @@
+"Date, MAX(Consumption) AS PeakConsumption FROM yearmonth JOIN customers ON yearmonth.CustomerID = customers.CustomerID WHERE customers.Segment = 'SME' AND SUBSTR(Date, 1, 4) = '2013' GROUP BY Date ORDER BY PeakConsumption DESC LIMIT 1;\"\n  "

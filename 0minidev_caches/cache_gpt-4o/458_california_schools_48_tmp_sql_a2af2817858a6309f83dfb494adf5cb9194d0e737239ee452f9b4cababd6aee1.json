@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) \n     FROM schools \n     WHERE County = 'Orange' \n       AND DOC = '54' \n       AND StatusType = 'Merged') / \n    (SELECT COUNT(*) \n     FROM schools \n     WHERE DOC = '52' \n       AND StatusType = 'Merged') AS ratio\n```"

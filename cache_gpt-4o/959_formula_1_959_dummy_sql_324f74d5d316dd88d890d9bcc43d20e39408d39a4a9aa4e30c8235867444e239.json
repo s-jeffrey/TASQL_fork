@@ -1,0 +1,1 @@
+"`fastestLap` FROM `results` JOIN `races` ON `results`.`raceId` = `races`.`raceId` WHERE `races`.`year` = 2009 AND `results`.`positionOrder` = 1;\"\n"

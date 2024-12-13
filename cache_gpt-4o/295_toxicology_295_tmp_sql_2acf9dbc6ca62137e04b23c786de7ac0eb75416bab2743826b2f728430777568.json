@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM atom\nINNER JOIN molecule ON atom.molecule_id = molecule.molecule_id\nWHERE atom.element = 'h' AND molecule.label = '+'\n```"

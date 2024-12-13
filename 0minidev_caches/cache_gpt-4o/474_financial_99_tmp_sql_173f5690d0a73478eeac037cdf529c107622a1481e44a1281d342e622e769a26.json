@@ -1,0 +1,1 @@
+"```sql\nSELECT account.account_id\nFROM loan\nINNER JOIN account ON loan.account_id = account.account_id\nWHERE loan.duration > 12\n  AND strftime('%Y', account.date) = '1993'\nORDER BY loan.amount DESC\nLIMIT 1;\n```"

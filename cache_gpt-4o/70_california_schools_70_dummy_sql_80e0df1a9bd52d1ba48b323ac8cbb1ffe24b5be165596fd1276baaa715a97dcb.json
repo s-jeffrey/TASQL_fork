@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nWHERE County = 'Alpine'\n  AND StatusType IN ('Active', 'Closed')\n  AND EdOpsCode = 'COMMDAY';\n```\n\nThis SQL query counts the number of active and closed District Community Day Schools in the county of Alpine by filtering the `schools` table based on the `County`, `StatusType`, and `EdOpsCode` columns."

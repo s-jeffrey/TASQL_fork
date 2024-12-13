@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = Laboratory.HGB, desc).limit(1)\ndf2 = df1.select(SUBTRACT(year(Examination.`Examination Date`), year(Patient.Birthday)), Examination.Diagnosis)\nres = df2\n```"

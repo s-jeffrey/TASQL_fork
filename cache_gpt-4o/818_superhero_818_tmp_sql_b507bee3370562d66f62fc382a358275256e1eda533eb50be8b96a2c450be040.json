@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100.0 / (SELECT COUNT(*) FROM superhero WHERE alignment_id = 2)) AS percentage_female_bad_superheroes\nFROM superhero\nWHERE alignment_id = 2 AND gender_id = 2;\n```"

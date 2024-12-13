@@ -1,0 +1,1 @@
+"```sql\nSELECT superpower.id\nFROM superpower\nWHERE superpower.power_name = 'cryokinesis';\n```"

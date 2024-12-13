@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.cardKingdomFoilId, filter = 'is not null').where(element = cards.cardKingdomId, filter = 'is not null')\nres = df1.select(cards.name)\n```"

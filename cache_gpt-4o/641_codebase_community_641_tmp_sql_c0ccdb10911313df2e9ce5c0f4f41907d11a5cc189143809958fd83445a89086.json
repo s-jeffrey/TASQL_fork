@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT badges.UserId) \nFROM badges \nWHERE badges.Name = 'Commentator' \nAND strftime('%Y', badges.Date) = '2014';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = tags.TagName, filter = 'humor')\ndf2 = df1.groupby(posts.Id).select(avg(posts.ViewCount), posts.Title, comments.Text)\nres = df2\n```"

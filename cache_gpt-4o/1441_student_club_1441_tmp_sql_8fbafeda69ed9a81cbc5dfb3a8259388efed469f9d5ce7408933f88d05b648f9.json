@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM member\nINNER JOIN major ON member.link_to_major = major.major_id\nWHERE major.college = 'College of Education & Human Services'\nAND major.major_name = 'Education';\n```"

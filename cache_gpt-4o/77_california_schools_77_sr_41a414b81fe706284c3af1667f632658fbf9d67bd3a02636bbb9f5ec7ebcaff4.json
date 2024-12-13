@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.County, filter = 'Los Angeles')\ndf2 = df1.where(element = schools.GSserved, filter = 'K-9')\nres = df2.select(schools.School, frpm.`Percent (%) Eligible FRPM (Ages 5-17)`)\n```"

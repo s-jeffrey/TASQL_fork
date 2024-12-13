@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(oxygen_count) \nFROM (\n    SELECT atom.molecule_id, COUNT(atom.atom_id) AS oxygen_count\n    FROM atom\n    INNER JOIN bond ON atom.molecule_id = bond.molecule_id\n    WHERE bond.bond_type = '-' AND atom.element = 'o'\n    GROUP BY atom.molecule_id\n) AS oxygen_counts;\n```"

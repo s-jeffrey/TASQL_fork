@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.LastEditorDisplayName\nFROM posts\nWHERE posts.Title = 'Open source tools for visualizing multi-dimensional data'\n```"

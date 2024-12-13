@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = publisher.publisher_name, filter = 'Dark Horse Comics')\ndf2 = df1.where(element = race.race, filter = '<> Human')\nres = df2.select(avg(superhero.height_cm))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.defensive_work_rate\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nWHERE p.player_name = 'Kevin Berigaud' AND pa.date = '2013-02-22 00:00:00';\n```"

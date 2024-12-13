@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.name, filter = 'Singapore Grand Prix')\nres = df1.orderby(by = races.year, asc).limit(1).select(races.year)\n```"

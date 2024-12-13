@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN results.time IS NOT NULL THEN 1 END) * 100.0 / COUNT(results.driverId)) AS percentage\nFROM \n    races\nINNER JOIN \n    results ON races.raceId = results.raceId\nWHERE \n    races.date = '1983-07-16';\n```"

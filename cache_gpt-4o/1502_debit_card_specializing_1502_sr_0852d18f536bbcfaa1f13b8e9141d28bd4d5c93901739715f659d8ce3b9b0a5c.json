@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Currency, filter = 'EUR')\nres = df1.select(gasstations.ChainID)\n```"

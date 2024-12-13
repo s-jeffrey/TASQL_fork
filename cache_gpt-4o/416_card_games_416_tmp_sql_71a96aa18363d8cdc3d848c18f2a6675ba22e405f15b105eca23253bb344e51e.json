@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(COUNT(*) AS REAL) * 100.0 / \n    (SELECT COUNT(*) FROM cards WHERE power IS NULL OR power = '*')) AS percentage\nFROM \n    cards\nINNER JOIN \n    foreign_data ON cards.uuid = foreign_data.uuid\nWHERE \n    (cards.power IS NULL OR cards.power = '*') \n    AND foreign_data.language = 'French';\n```"

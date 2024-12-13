@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.type, filter = 'Meeting')\ndf2 = df1.where(element = year(event.event_date), filter = 2020)\nres = df2.count()\n```"

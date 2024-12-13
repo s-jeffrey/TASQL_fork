@@ -1,0 +1,1 @@
+"```sql\nSELECT preferred_foot\nFROM Player_Attributes\nORDER BY potential ASC\nLIMIT 1;\n```"

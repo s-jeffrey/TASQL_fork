@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(CAST(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cards.manaCost, '{', ''), '}', ''), 'W', ''), 'U', ''), 'B', ''), 'R', ''), 'G', ''), '/', ''), '2', '2'), '3', '3') AS INTEGER)) AS total_mana_cost\nFROM cards\nWHERE cards.artist = 'Rob Alexander';\n```"

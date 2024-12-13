@@ -1,0 +1,1 @@
+"SUM(Consumption) FROM yearmonth WHERE CustomerID = 6 AND Date BETWEEN '201308' AND '201311';\""

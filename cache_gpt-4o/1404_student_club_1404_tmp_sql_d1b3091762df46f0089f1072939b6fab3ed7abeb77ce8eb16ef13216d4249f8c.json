@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    e.expense_description, \n    SUM(e.cost) AS total_value\nFROM \n    event ev\nINNER JOIN \n    budget b ON ev.event_id = b.link_to_event\nINNER JOIN \n    expense e ON b.budget_id = e.link_to_budget\nWHERE \n    ev.event_name = 'October Meeting' \n    AND e.approved = 'true'\nGROUP BY \n    e.expense_description;\n```"

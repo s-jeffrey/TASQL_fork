@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.artist, filter = 'Daren Bader')\nres = df1.select(cards.availability)\n```"

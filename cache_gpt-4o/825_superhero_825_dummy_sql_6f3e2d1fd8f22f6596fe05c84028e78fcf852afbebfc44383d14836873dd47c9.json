@@ -1,0 +1,1 @@
+"`gender`.`gender` FROM `superhero` JOIN `hero_power` ON `superhero`.`id` = `hero_power`.`hero_id` JOIN `superpower` ON `hero_power`.`power_id` = `superpower`.`id` JOIN `gender` ON `superhero`.`gender_id` = `gender`.`id` WHERE `superpower`.`power_name` = 'Phoenix Force';\""

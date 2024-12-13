@@ -1,0 +1,1 @@
+"`Phone` FROM `schools` WHERE `CDSCode` = (SELECT `cds` FROM `satscores` WHERE `dname` = 'Fresno Unified' ORDER BY `AvgScrRead` ASC LIMIT 1);\""

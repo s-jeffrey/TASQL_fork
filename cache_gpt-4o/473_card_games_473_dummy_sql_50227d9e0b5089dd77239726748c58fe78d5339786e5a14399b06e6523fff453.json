@@ -1,0 +1,1 @@
+"```sql\nSELECT s.isForeignOnly\nFROM cards c\nJOIN sets s ON c.setCode = s.code\nWHERE c.name = 'Adarkar Valkyrie';\n```\n\nThis SQL query checks if the card \"Adarkar Valkyrie\" is part of a set that is only available outside the United States by looking at the `isForeignOnly` column in the `sets` table."

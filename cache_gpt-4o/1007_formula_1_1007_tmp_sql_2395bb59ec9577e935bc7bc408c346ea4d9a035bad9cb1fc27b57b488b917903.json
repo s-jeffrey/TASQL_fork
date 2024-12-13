@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(CAST(pitStops.duration AS FLOAT)) AS longest_duration\nFROM drivers\nINNER JOIN pitStops ON drivers.driverId = pitStops.driverId\nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton';\n```"

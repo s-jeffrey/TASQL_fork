@@ -1,0 +1,1 @@
+"```sql\nSELECT r.time\nFROM drivers d\nINNER JOIN results r ON d.driverId = r.driverId\nWHERE d.forename = 'Bruce' AND d.surname = 'McLaren' AND r.raceId = 743;\n```"

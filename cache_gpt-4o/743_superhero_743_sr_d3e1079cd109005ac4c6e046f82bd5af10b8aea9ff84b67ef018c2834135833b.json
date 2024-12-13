@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = alignment.alignment, filter = 'Neutral')\ntotal_neutral = df1.count()\n\ndf2 = df1.where(element = publisher.publisher_name, filter = 'Marvel Comics')\nmarvel_neutral = df2.count()\n\npercentage_neutral = (marvel_neutral / total_neutral) * 100\n\nres = df.select(percentage_neutral, marvel_neutral)\n```"

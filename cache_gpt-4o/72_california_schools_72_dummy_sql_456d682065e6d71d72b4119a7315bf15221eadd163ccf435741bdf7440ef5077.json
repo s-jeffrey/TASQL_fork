@@ -1,0 +1,1 @@
+"`Enrollment (Ages 5-17)` FROM frpm JOIN schools ON frpm.CDSCode = schools.CDSCode WHERE schools.City = 'Fremont' AND frpm.Academic Year = 2014 AND schools.EdOpsCode = 'SSS';\""

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_date, filter = '>= 2019-01-01').where(element = event.event_date, filter = '<= 2019-12-31')\ndf2 = df1.where(element = event.type, filter = 'Community Service')\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

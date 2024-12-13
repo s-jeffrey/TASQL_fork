@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT m.molecule_id\nFROM atom a\nJOIN molecule m ON a.molecule_id = m.molecule_id\nWHERE SUBSTR(a.atom_id, 7, 2) BETWEEN '21' AND '25'\nAND m.label = '+';\n```"

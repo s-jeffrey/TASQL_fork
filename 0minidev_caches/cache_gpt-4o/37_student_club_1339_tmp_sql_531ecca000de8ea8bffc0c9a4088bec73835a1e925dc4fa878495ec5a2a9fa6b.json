@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(expense.cost) AS total_average_cost\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nWHERE member.first_name = 'Elijah'\n  AND member.last_name = 'Allen'\n  AND (strftime('%m', expense.expense_date) = '09' OR strftime('%m', expense.expense_date) = '10');\n```"

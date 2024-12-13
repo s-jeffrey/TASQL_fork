@@ -1,0 +1,1 @@
+"```sql\nSELECT molecule.label\nFROM atom\nINNER JOIN molecule ON atom.molecule_id = molecule.molecule_id\nWHERE atom.element = 'ca'\nGROUP BY molecule.label\nORDER BY COUNT(molecule.label) DESC\nLIMIT 1;\n```"

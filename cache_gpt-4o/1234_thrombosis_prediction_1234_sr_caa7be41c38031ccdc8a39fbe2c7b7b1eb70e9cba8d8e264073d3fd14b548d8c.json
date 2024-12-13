@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.WBC, filter = '<= 3.5 or >= 9.0')\ndf2 = df1.groupby(Patient.SEX)\nres = df2.orderby(by = Patient.Birthday, asc).select(Patient.ID, Patient.SEX, Patient.Birthday)\n```"

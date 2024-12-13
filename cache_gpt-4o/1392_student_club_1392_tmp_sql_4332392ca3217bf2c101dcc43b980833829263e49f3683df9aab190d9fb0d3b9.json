@@ -1,0 +1,1 @@
+"```sql\nSELECT income.source\nFROM income\nWHERE income.date_received BETWEEN '2019-09-01' AND '2019-09-30'\nGROUP BY income.source\nORDER BY SUM(income.amount) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School\nFROM satscores\nINNER JOIN schools ON satscores.cds = schools.CDSCode\nWHERE satscores.NumTstTakr > 500 AND schools.Magnet = 1;\n```"

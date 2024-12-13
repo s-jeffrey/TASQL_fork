@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.potential\nFROM Player p\nINNER JOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id\nWHERE p.player_name = 'Francesco Parravicini' \nAND pa.date = '2010-08-30 00:00:00';\n```"

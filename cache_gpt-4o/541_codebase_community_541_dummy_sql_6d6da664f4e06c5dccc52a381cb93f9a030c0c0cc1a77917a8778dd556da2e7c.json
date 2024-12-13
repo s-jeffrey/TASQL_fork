@@ -1,0 +1,1 @@
+"```sql\nSELECT u.DisplayName\nFROM posts p\nJOIN users u ON p.OwnerUserId = u.Id\nORDER BY p.FavoriteCount DESC\nLIMIT 1;\n```\n\nThis SQL query selects the display name of the user who owns the post with the highest favorite count, which is considered the most valuable post according to the given evidence."

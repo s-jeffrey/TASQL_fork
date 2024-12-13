@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.CreationDate, filter = max(users.CreationDate))\ndf2 = df.where(element = posts.OwnerUserId, filter = df1.select(users.Id))\ndf3 = df.where(element = comments.UserId, filter = df1.select(users.Id))\nres = df.select(df2.count() + df3.count())\n```"

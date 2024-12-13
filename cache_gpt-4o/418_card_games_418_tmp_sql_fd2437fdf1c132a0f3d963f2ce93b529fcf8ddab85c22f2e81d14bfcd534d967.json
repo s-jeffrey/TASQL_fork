@@ -1,0 +1,1 @@
+"```sql\nSELECT availability\nFROM cards\nWHERE artist = 'Daren Bader';\n```"

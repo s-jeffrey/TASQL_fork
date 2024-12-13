@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT races.year\nFROM races\nINNER JOIN circuits ON races.circuitId = circuits.circuitId\nWHERE circuits.location = 'Shanghai';\n```"

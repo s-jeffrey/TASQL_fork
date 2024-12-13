@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT schools.School\nFROM frpm\nINNER JOIN satscores ON frpm.CDSCode = satscores.cds\nINNER JOIN schools ON frpm.CDSCode = schools.CDSCode\nWHERE (frpm.`Free Meal Count (K-12)` / frpm.`Enrollment (K-12)`) > 0.1\n  AND satscores.NumGE1500 > 0;\n```"

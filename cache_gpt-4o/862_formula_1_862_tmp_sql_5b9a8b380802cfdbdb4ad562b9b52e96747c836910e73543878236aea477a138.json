@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nWHERE races.name = 'Bahrain Grand Prix'\n  AND races.year = 2007\n  AND results.time IS NULL;\n```"

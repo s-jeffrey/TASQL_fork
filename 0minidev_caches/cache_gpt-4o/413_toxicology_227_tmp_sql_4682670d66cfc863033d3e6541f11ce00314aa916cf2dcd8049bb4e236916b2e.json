@@ -1,0 +1,1 @@
+"```sql\nSELECT ROUND(CAST(SUM(CASE WHEN molecule.label = '+' THEN 1 ELSE 0 END) AS REAL) * 100.0 / COUNT(molecule.molecule_id), 3) AS percent\nFROM molecule;\n```"

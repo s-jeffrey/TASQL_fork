@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Computer Game Datasets')\nres = df1.select(posts.ViewCount, users.DisplayName)\n```"

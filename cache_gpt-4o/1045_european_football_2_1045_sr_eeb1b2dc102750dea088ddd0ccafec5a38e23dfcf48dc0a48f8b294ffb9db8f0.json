@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Franco Zennaro')\nres = df1.select(Player_Attributes.attacking_work_rate)\n```"

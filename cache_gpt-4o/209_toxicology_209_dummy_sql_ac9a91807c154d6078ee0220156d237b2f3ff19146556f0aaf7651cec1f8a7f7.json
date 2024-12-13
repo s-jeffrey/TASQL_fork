@@ -1,0 +1,1 @@
+"`bond.bond_type` FROM `bond` JOIN `connected` ON `bond.bond_id` = `connected.bond_id` JOIN `atom` ON `connected.atom_id` = `atom.atom_id` WHERE `atom.element` = 'cl';\""

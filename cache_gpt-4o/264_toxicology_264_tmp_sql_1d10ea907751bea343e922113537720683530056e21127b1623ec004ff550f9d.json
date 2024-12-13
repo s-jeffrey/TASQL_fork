@@ -1,0 +1,1 @@
+"```sql\nSELECT molecule.label\nFROM molecule\nWHERE molecule.molecule_id IN ('TR000', 'TR001', 'TR002');\n```"

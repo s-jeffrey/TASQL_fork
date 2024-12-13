@@ -1,0 +1,1 @@
+"```sql\nSELECT races.name, races.year\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nWHERE results.milliseconds IS NOT NULL\nORDER BY results.milliseconds ASC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT trans.account\nFROM trans\nWHERE trans.date >= '1995-01-01' AND trans.date <= '1995-12-31'\nORDER BY trans.date ASC\nLIMIT 1;\n```"

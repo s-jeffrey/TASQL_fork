@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT posts.Title, comments.UserDisplayName\nFROM comments\nINNER JOIN posts ON comments.PostId = posts.Id\nWHERE comments.Score > 60;\n```"

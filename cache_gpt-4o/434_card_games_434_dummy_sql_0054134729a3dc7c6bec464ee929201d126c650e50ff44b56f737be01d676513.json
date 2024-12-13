@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM sets\nJOIN set_translations ON sets.code = set_translations.setCode\nWHERE set_translations.language = 'Japanese'\n  AND (sets.mtgoCode IS NULL OR sets.mtgoCode = '');\n```\n"

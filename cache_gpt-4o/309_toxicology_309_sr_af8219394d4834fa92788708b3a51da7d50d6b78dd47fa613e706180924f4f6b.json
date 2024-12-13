@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.molecule_id, filter = 'TR346')\nres1 = df1.select(atom.atom_id)\n\ndf2 = df.where(element = bond.molecule_id, filter = 'TR346')\nres2 = df2.select(bond.bond_type).distinct().count()\n```"

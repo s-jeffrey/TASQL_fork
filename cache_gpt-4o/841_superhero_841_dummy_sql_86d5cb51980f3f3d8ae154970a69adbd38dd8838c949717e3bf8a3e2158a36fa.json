@@ -1,0 +1,1 @@
+"`weight_kg`, `race`.`race` FROM `superhero` JOIN `race` ON `superhero`.`race_id` = `race`.`id` WHERE `superhero`.`id` = 40;\""

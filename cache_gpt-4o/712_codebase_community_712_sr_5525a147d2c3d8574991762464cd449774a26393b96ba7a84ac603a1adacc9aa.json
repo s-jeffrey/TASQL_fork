@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Group differences on a five point Likert item')\nres = df1.select(posts.Id, comments.Text)\n```"

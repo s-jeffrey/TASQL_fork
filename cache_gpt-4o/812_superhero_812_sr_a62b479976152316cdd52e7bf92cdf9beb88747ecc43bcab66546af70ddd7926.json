@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = colour.colour, filter = 'Blue').where(element = superhero.eye_colour_id, filter = colour.id)\nres = df1.select(superhero.full_name).limit(5)\n```"

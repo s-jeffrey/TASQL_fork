@@ -1,0 +1,1 @@
+"ROUND((COUNT(DISTINCT t.CustomerID) * 100.0 / (SELECT COUNT(DISTINCT CustomerID) FROM customers WHERE Currency = 'EUR')), 2) AS Percentage_EUR_Customers_20120825 \\\nFROM transactions_1k t \\\nJOIN customers c ON t.CustomerID = c.CustomerID \\\nWHERE c.Currency = 'EUR' AND t.Date = '2012-08-25';\"\n\n"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Match\nINNER JOIN League ON Match.league_id = League.id\nWHERE League.name = 'Belgium Jupiler League'\n  AND SUBSTR(Match.date, 1, 7) = '2009-04';\n```"

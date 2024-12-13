@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Location\nFROM posts\nJOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.Title = 'Eliciting priors from experts';\n```"

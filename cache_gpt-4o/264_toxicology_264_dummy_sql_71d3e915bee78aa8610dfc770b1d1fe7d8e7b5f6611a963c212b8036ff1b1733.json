@@ -1,0 +1,1 @@
+"label FROM molecule WHERE molecule_id IN ('TR000', 'TR001', 'TR002');\""

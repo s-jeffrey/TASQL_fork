@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT gasstations.Country\nFROM gasstations\nINNER JOIN transactions_1k ON gasstations.GasStationID = transactions_1k.GasStationID\nINNER JOIN yearmonth ON transactions_1k.CustomerID = yearmonth.CustomerID\nWHERE yearmonth.Date = '201306';\n```"

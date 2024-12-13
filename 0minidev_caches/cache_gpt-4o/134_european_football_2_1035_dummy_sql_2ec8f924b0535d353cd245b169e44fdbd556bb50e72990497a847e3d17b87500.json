@@ -1,0 +1,1 @@
+"```sql\nSELECT team_fifa_api_id\nFROM Team_Attributes\nWHERE buildUpPlaySpeed > 50 AND buildUpPlaySpeed < 60;\n```"

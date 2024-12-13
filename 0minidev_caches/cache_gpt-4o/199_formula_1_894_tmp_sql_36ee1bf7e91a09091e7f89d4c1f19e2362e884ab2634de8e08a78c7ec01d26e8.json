@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname, races.name\nFROM lapTimes\nINNER JOIN drivers ON lapTimes.driverId = drivers.driverId\nINNER JOIN races ON lapTimes.raceId = races.raceId\nORDER BY lapTimes.milliseconds ASC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT expense.expense_description\nFROM expense\nGROUP BY expense.expense_description\nHAVING SUM(expense.cost) / COUNT(expense.expense_description) > 50\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT badges.UserId) \nFROM badges \nGROUP BY badges.UserId \nHAVING COUNT(badges.Name) > 5;\n```"

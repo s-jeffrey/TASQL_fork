@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(t.Amount * t.Price) AS average_total_price\nFROM transactions_1k t\nJOIN gasstations g ON t.GasStationID = g.GasStationID\nWHERE g.Country = 'CZE';\n```"

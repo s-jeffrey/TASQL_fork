@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT atom.molecule_id\nFROM atom\nWHERE atom.element = 'c';\n```"

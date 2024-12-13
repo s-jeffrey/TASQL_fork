@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.date, filter = '>= 1997-01-01').where(element = loan.date, filter = '<= 1997-12-31')\ndf2 = df1.where(element = account.frequency, filter = 'POPLATEK TYDNE')\ndf3 = df2.orderby(by = loan.amount, asc).limit(1)\nres = df3.select(account.account_id)\n```"

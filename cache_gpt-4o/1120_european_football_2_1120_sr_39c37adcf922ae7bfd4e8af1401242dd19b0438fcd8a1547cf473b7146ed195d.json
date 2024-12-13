@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Daan Smith')\ndf2 = df.where(element = Player.player_name, filter = 'Filipe Ferreira')\ndf3 = df1.union(df2)\nres = df3.select(Match.away_team_goal).sum()\n```"

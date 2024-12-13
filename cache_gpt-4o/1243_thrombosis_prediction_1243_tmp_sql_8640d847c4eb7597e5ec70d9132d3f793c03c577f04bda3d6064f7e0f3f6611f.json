@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CAST(SUM(CASE WHEN Patient.SEX = 'F' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) AS percentage_female_with_abnormal_PT\nFROM \n    Patient\nINNER JOIN \n    Laboratory ON Patient.ID = Laboratory.ID\nWHERE \n    (strftime('%Y', 'now') - strftime('%Y', Patient.Birthday)) > 55\n    AND Laboratory.PT >= 14;\n```"

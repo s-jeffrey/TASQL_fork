@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    Laboratory.Date, \n    (strftime('%Y', Patient.`First Date`) - strftime('%Y', Patient.Birthday)) AS AgeAtFirstVisit\nFROM \n    Patient\nINNER JOIN \n    Laboratory ON Patient.ID = Laboratory.ID\nWHERE \n    Patient.Diagnosis LIKE '%SJS%'\nORDER BY \n    Patient.Birthday ASC\nLIMIT 1;\n```"

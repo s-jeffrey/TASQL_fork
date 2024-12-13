@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.gender, filter = 'M')\ndf2 = df1.where(element = client.birth_date, filter = '>= 1974-01-01').where(element = client.birth_date, filter = '<= 1976-12-31')\ndf3 = df2.where(element = trans.k_symbol, filter = 'SIPO').where(element = trans.amount, filter = '> 4000')\nres = df3.count()\n```"

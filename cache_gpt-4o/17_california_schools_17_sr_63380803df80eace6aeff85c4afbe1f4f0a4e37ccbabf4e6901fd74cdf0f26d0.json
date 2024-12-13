@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = satscores.AvgScrWrite, filter = '> 499')\ndf2 = df1.where(element = schools.CharterNum, filter = 'not null')\ndf3 = df2.orderby(by = satscores.AvgScrWrite, desc)\nres = df3.select(schools.CharterNum)\n```"

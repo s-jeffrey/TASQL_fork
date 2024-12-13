@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.Score, filter = '>= 5').where(element = comments.Score, filter = '<= 10')\ndf2 = df1.where(element = users.UpVotes, filter = 0)\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

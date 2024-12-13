@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Website\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.County = 'Los Angeles'\nAND satscores.NumTstTakr BETWEEN 2000 AND 3000;\n```"

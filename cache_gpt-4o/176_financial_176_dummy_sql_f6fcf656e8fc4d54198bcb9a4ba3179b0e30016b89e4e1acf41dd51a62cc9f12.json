@@ -1,0 +1,1 @@
+"```sql\nSELECT l.amount, l.status\nFROM loan l\nJOIN disp d ON l.account_id = d.account_id\nWHERE d.client_id = 992;\n```\n\nThis SQL query retrieves the amount of debt and the payment status for client number 992 by joining the `loan` and `disp` tables using the `account_id` as the foreign key. The `client_id` is used to filter the results for the specific client."

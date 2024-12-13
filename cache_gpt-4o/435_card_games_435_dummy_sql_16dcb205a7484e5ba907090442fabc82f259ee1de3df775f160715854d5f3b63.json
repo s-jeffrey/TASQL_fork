@@ -1,0 +1,1 @@
+"```sql\nSELECT id\nFROM cards\nWHERE borderColor = 'black';\n```\n\nThis SQL query selects the `id` of cards from the `cards` table where the `borderColor` is 'black', as per the evidence provided."

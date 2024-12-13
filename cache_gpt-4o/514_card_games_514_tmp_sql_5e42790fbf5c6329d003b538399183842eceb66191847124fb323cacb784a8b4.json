@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nINNER JOIN legalities ON cards.uuid = legalities.uuid\nWHERE legalities.format = 'duel'\nORDER BY cards.manaCost DESC\nLIMIT 10;\n```"

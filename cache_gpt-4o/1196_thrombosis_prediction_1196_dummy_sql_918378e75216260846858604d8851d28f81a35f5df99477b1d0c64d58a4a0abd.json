@@ -1,0 +1,1 @@
+"```sql\nSELECT Symptoms\nFROM Examination\nWHERE Diagnosis = 'SLE'\nGROUP BY Symptoms\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

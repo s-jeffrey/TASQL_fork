@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM client\nINNER JOIN district ON client.district_id = district.district_id\nWHERE client.gender = 'M'\nAND district.district_id = (\n    SELECT district_id\n    FROM district\n    ORDER BY A15 DESC\n    LIMIT 1 OFFSET 1\n);\n```"

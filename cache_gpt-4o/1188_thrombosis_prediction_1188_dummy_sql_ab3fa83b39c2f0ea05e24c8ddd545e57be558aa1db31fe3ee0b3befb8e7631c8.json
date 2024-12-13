@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID\nFROM Patient\nWHERE SEX = 'F'\n  AND YEAR(Birthday) = 1964\n  AND Admission = '+';\n```\n\nThis SQL query selects the IDs of female patients who were born in 1964 and were admitted to the hospital, based on the conditions provided in the evidence."

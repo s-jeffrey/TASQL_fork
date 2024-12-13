@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(single_bond_count) \nFROM (\n    SELECT COUNT(b.bond_id) AS single_bond_count\n    FROM bond b\n    INNER JOIN molecule m ON b.molecule_id = m.molecule_id\n    WHERE m.label = '+' AND b.bond_type = '-'\n    GROUP BY b.molecule_id\n) AS subquery;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN posts.ClosedDate IS NULL THEN 'No' \n        ELSE 'Yes' \n    END AS WellFinished\nFROM \n    comments\nINNER JOIN \n    posts ON comments.PostId = posts.Id\nWHERE \n    comments.UserId = '23853' \n    AND comments.CreationDate = '2013-07-12 09:08:18.0';\n```"

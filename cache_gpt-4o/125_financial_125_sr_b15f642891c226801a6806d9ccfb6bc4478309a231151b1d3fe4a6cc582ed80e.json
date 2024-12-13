@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.status, filter = 'D')\ndf2 = df1.select(account.district_id, district.A12, district.A13)\nres = df2.select(district.A2, ((district.A13 - district.A12) / district.A12) * 100)\n```"

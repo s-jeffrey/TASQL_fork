@@ -1,0 +1,1 @@
+"```sql\nSELECT p.AnswerCount\nFROM posts p\nINNER JOIN users u ON p.OwnerUserId = u.Id\nWHERE u.DisplayName = 'csgillespie'\nORDER BY p.AnswerCount DESC\nLIMIT 1;\n```"

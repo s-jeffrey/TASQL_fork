@@ -1,0 +1,1 @@
+"```sql\nSELECT major.college\nFROM major\nWHERE major.major_id = 'rec1N0upiVLy5esTO'\n```\n"

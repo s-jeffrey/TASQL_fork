@@ -1,0 +1,1 @@
+"```sql\nSELECT id, name\nFROM cards\nWHERE borderColor = 'borderless'\n  AND cardKingdomFoilId IS NULL\n  AND cardKingdomId IS NOT NULL;\n```\n\nThis SQL query selects the `id` and `name` of cards from the `cards` table where the `borderColor` is 'borderless', the `cardKingdomFoilId` is NULL (indicating the absence of powerful foils), and the `cardKingdomId` is not NULL."

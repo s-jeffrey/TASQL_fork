@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE sets.name = 'Coldsnap'\n  AND cards.convertedManaCost > 5\n  AND (cards.power = '*' OR cards.power IS NULL);\n```"

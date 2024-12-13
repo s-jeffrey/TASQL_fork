@@ -1,0 +1,1 @@
+"`superhero_name` FROM `superhero` INNER JOIN `hero_power` ON `superhero`.`id` = `hero_power`.`hero_id` INNER JOIN `superpower` ON `hero_power`.`power_id` = `superpower`.`id` WHERE `superpower`.`power_name` = 'Death Touch';\""

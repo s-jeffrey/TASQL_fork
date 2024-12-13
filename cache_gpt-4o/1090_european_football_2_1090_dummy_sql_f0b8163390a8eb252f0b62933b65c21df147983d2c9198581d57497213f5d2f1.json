@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.long_passing\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nORDER BY p.birthday ASC\nLIMIT 1;\n```"

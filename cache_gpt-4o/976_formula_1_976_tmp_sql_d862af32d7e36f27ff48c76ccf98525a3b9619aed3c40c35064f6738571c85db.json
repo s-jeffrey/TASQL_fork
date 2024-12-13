@@ -1,0 +1,1 @@
+"```sql\nSELECT lapTimes.driverId\nFROM lapTimes\nWHERE lapTimes.lap = 1\nORDER BY lapTimes.time ASC\nLIMIT 5;\n```"

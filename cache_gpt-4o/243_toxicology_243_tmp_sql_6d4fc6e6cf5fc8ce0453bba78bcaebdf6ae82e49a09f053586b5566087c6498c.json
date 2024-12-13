@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT c.bond_id\nFROM connected c\nINNER JOIN atom a1 ON c.atom_id = a1.atom_id\nINNER JOIN atom a2 ON c.atom_id2 = a2.atom_id\nWHERE a1.element = 'p' AND a2.element = 'n'\n   OR a1.element = 'n' AND a2.element = 'p';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(posts.FavoriteCount)\nFROM posts\nWHERE posts.OwnerUserId = 686 AND strftime('%Y', posts.CreationDate) = '2011';\n```"

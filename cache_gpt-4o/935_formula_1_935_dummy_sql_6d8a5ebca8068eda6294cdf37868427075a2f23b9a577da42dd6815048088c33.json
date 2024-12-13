@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM results\nJOIN races ON results.raceId = races.raceId\nWHERE races.year = 2008\nAND races.name = 'Australian Grand Prix'\nAND results.time IS NOT NULL;\n```\n\nThis SQL query counts the number of drivers who finished the race in the 2008 Australian Grand Prix by checking for non-null values in the `time` column of the `results` table."

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN DOC = '54' THEN 1 END) * 1.0 / COUNT(CASE WHEN DOC = '52' THEN 1 END)) AS ratio\nFROM \n    schools\nWHERE \n    StatusType = 'Merged' AND \n    County = 'Orange';\n```"

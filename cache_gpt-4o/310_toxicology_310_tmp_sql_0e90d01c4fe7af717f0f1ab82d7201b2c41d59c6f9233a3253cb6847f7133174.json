@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(DISTINCT m.molecule_id) AS total_molecules_with_double_bond,\n    COUNT(DISTINCT CASE WHEN m.label = '+' THEN m.molecule_id END) AS carcinogenic_molecules\nFROM \n    bond b\nINNER JOIN \n    molecule m ON b.molecule_id = m.molecule_id\nWHERE \n    b.bond_type = '='\n```\n"

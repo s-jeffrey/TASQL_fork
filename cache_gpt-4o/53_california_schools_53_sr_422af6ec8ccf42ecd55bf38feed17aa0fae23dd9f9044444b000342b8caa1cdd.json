@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.MailCity, filter = 'Fresno')\nres = df1.select(satscores.NumTstTakr).sum()\n```"

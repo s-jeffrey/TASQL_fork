@@ -1,0 +1,1 @@
+"```sql\nSELECT frpm.`FRPM Count (Ages 5-17)`\nFROM satscores\nINNER JOIN schools ON satscores.cds = schools.CDSCode\nINNER JOIN frpm ON frpm.CDSCode = schools.CDSCode\nORDER BY satscores.AvgScrRead DESC\nLIMIT 1;\n```"

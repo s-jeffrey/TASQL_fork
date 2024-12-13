@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.gender, filter = 'F')\ndf2 = df1.where(element = client.birth_date, filter = '1976-01-29')\ndf3 = df2.join(disp, on = client.client_id == disp.client_id)\ndf4 = df3.join(account, on = disp.account_id == account.account_id)\ndf5 = df4.join(district, on = account.district_id == district.district_id)\nres = df5.select(district.A2)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.name, filter = 'Canadian Grand Prix')\ndf2 = df1.where(element = results.statusId, filter = 3)\ndf3 = df2.groupby(results.driverId).count()\ndf4 = df3.orderby(by = 'count', desc).limit(1)\nres = df4.select('count')\n```"

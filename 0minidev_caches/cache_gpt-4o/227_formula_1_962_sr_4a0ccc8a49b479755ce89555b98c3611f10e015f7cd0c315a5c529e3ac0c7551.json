@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = races.year, filter = '>= 2000').where(element = races.year, filter = '<= 2005')\ndf2 = df1.where(element = drivers.dob, filter = '< 1985-01-01').where(element = results.laps, filter = '> 50')\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

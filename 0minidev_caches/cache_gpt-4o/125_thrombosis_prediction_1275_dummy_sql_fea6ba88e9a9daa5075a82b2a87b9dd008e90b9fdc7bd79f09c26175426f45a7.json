@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID)\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.CENTROMEA IN ('-', '+-')\n  AND Laboratory.SSB IN ('-', '+-')\n  AND Patient.SEX = 'M';\n```\n\nThis SQL query counts the number of distinct male patients who have normal levels of anti-centromere and anti-SSB, as defined by the given conditions."

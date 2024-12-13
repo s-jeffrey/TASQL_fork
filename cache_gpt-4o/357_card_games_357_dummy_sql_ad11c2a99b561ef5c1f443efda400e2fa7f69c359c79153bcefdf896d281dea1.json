@@ -1,0 +1,1 @@
+"```sql\nSELECT promoTypes\nFROM cards\nWHERE name = 'Duress';\n```"

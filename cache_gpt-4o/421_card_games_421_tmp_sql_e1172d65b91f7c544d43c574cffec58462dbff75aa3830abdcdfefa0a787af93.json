@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nWHERE (cards.power IS NULL OR cards.power = '*') \n  AND cards.promoTypes LIKE '%arenaleague%'\nORDER BY cards.name ASC\nLIMIT 3;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = users.Reputation, desc).limit(1)\ndf2 = df.where(element = posts.OwnerUserId, filter = df1.select(users.Id))\ndf3 = df2.where(element = posts.Score, filter = '> 50')\nres = df.select(cast(df3.count(), real) * 100 / df2.count())\n```"

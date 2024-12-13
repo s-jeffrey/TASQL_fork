@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT posts.Id AS PostId, posts.OwnerUserId AS UserId\nFROM posts\nWHERE posts.Score > 60;\n```\n\nThis SQL query selects distinct post IDs and their corresponding user IDs from the `posts` table where the score of the post is greater than 60. The query uses the condition provided in the evidence to filter the posts based on their score."

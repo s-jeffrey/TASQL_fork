@@ -1,0 +1,1 @@
+"```sql\nSELECT connected.atom_id, connected.atom_id2\nFROM connected\nWHERE connected.bond_id = 'TR001_2_6';\n```"

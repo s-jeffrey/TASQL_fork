@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Patient.ID\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.Admission = '-'\n  AND Laboratory.Date LIKE '1991-10%'\n  AND Laboratory.T-BIL < 2.0;\n```"

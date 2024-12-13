@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = expense.cost, asc).limit(1)\nres = df1.select(event.event_name)\n```"

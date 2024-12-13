@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nWHERE Charter = 1\n  AND City = 'Hickman'\n  AND DOC = 52;\n```"

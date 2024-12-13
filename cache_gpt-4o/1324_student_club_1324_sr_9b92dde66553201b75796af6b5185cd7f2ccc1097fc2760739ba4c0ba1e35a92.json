@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.type, filter = 'Meeting').where(element = event.event_date, filter = '2020')\nres = df1.groupby(event.event_id).count(attendance.link_to_member).mean()\n```"

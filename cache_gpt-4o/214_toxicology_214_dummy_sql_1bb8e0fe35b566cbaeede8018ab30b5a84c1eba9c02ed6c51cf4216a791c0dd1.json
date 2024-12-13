@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT m.label\nFROM molecule m\nJOIN atom a ON m.molecule_id = a.molecule_id\nWHERE a.element = 'sn' AND m.label = '-';\n```\n\nThis SQL query selects the distinct labels from the `molecule` table for molecules that have atoms with the element 'sn' (tin) and are labeled as non-carcinogenic ('-')."

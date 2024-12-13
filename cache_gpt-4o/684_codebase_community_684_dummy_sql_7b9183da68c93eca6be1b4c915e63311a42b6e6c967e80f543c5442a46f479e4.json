@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(Id) FILTER (WHERE Age BETWEEN 13 AND 18) * 100.0 / COUNT(Id)) AS percentage\nFROM users;\n```"

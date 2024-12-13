@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = satscores.NumGE1500, desc).limit(1)\nres = df1.select(schools.AdmFName1, schools.AdmLName1, schools.AdmFName2, schools.AdmLName2, schools.AdmFName3, schools.AdmLName3)\n```"

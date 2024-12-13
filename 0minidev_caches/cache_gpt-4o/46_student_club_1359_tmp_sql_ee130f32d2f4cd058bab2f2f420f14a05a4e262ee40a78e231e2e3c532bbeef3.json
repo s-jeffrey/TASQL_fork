@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    SUM(CASE WHEN event.event_name = 'Yearly Kickoff' THEN budget.amount ELSE 0 END) / \n    SUM(CASE WHEN event.event_name = 'October Meeting' THEN budget.amount ELSE 0 END) AS times_more\nFROM \n    budget\nINNER JOIN \n    event ON budget.link_to_event = event.event_id\nWHERE \n    budget.category = 'Advertisement';\n```"

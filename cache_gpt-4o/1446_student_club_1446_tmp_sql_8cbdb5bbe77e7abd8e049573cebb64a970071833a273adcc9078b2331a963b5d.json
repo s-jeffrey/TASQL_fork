@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(CASE WHEN type = 'PO Box' THEN 1 ELSE 0 END) * 100.0 / COUNT(zip_code)) AS percentage_po_box\nFROM zip_code;\n```"

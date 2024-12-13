@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Hematoclit) \nFROM Laboratory \nWHERE Date LIKE '1991%' AND Hematoclit < 29;\n```"

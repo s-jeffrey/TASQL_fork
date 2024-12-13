@@ -1,0 +1,1 @@
+"```sql\nSELECT p.Diagnosis\nFROM Examination e\nJOIN Patient p ON e.ID = p.ID\nWHERE e.Diagnosis = 'SLE' AND e.Examination_Date = '1997-01-27'\n```\nThis SQL query selects the original diagnosis of a patient from the `Patient` table who was diagnosed with SLE on January 27, 1997, by joining the `Examination` and `Patient` tables using the patient ID."

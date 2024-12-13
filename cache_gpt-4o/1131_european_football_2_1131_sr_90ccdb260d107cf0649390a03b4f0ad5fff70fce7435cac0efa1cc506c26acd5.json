@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Country.name, filter = 'Italy')\nres = df1.select(avg(Player.height))\n```"

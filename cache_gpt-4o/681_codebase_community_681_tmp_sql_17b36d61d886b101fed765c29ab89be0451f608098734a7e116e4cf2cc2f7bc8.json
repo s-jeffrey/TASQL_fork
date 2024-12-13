@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT users.DisplayName\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.ViewCount > 20000 AND YEAR(users.CreationDate) = 2011;\n```"

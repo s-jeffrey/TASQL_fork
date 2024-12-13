@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = gasstations.Country, filter = 'CZE')\n    res = df1.select(products.Description)\""

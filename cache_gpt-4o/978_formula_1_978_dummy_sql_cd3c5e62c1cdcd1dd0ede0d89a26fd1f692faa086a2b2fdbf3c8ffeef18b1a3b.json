@@ -1,0 +1,1 @@
+"```sql\nSELECT location, lat, lng\nFROM circuits\nWHERE country = 'Austria';\n```\n\nThis SQL query selects the location and coordinates (latitude and longitude) of circuits that were held in Austria from the `circuits` table. The condition `country = 'Austria'` filters the results to only include circuits located in Austria."

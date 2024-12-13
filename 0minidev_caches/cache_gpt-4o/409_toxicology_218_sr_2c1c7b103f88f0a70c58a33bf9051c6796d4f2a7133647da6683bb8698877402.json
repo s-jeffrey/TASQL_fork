@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = molecule.label, filter = '+')\ndf2 = df1.where(element = atom.element, filter = 'f')\nres = df.select((df1.count(distinct = atom.molecule_id) - df2.count(distinct = atom.molecule_id)) * 100 / df1.count(distinct = atom.molecule_id))\n```"

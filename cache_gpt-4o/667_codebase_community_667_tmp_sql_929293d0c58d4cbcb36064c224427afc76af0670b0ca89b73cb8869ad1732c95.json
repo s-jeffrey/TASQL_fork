@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Title\nFROM postLinks\nINNER JOIN posts ON postLinks.PostId = posts.Id\nORDER BY postLinks.CreationDate ASC\nLIMIT 1;\n```"

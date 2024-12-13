@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.types, filter = 'Artifact')\ndf2 = df1.where(element = cards.side, filter = None)\ndf3 = df2.where(element = legalities.format, filter = 'vintage')\nres = df3.select(legalities.status)\n```"

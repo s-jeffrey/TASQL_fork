@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(bond.bond_type).count()\nres = df1.orderby(by = 'count', desc).limit(1).select(bond.bond_type)\n```"

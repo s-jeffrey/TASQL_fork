@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = transactions_1k.Date, filter = '2012-08-25')\n    df2 = df1.where(element = customers.Currency, filter = 'EUR')\n    res = df.select(cast(df2.count(), real) * 100 / df1.count())\""

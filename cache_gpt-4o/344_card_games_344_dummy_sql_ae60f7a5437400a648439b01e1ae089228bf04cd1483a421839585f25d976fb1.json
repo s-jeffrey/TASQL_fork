@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nJOIN legalities ON cards.uuid = legalities.uuid\nWHERE cards.rarity = 'mythic'\n  AND legalities.status = 'banned'\n  AND legalities.format = 'gladiator';\n```\n\nThis SQL query selects the names of cards from the `cards` table that have a mythic rarity and are banned in the gladiator format, as specified in the `legalities` table."

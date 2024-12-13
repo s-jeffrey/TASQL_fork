@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = postHistory.PostId, filter = 3720)\nres1 = df1.select(postHistory.PostHistoryTypeId)\n\ndf2 = df.where(element = comments.PostId, filter = 3720)\nres2 = df2.select(comments.UserId).distinct().count()\n```"

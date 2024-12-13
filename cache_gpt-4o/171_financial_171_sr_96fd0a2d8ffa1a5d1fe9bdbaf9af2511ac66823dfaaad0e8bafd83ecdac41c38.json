@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = district.A3, filter = 'north Bohemia')\ndf2 = df.where(element = district.A3, filter = 'east Bohemia')\nres = df.select(df1.sum(district.A16) - df2.sum(district.A16))\n```"

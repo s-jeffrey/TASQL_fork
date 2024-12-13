@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = badges.Name, filter = 'Supporter')\ndf2 = df1.where(element = year(badges.Date), filter = 2011)\nres = df2.select(badges.UserId).distinct().count()\n```"

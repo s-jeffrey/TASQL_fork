@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.SEX, filter = 'M')\ndf2 = df1.where(element = Laboratory.ALB, filter = '<= 3.5').union(df1.where(element = Laboratory.ALB, filter = '>= 5.5'))\nres = df2.orderby(by = Patient.Birthday, desc).select(Patient.ID)\n```"

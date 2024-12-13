@@ -1,0 +1,1 @@
+"```sql\nSELECT college\nFROM member\nJOIN major ON member.link_to_major = major.major_id\nWHERE first_name = 'Tyler' AND last_name = 'Hewitt';\n```"

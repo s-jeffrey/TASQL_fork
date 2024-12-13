@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT users.DisplayName\nFROM postHistory\nINNER JOIN posts ON postHistory.PostId = posts.Id\nINNER JOIN users ON postHistory.UserId = users.Id\nGROUP BY postHistory.PostId, postHistory.UserId\nHAVING COUNT(postHistory.Id) = 1\nAND MAX(posts.ViewCount) >= 1000;\n```"

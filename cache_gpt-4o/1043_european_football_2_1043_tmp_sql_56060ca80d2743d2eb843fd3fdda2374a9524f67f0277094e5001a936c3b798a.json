@@ -1,0 +1,1 @@
+"```sql\nSELECT Team.team_short_name\nFROM Team\nWHERE Team.team_long_name = 'Queens Park Rangers';\n```"

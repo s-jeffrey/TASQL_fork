@@ -1,0 +1,1 @@
+"AVG(home_team_goal) FROM Match JOIN League ON Match.league_id = League.id JOIN Country ON League.country_id = Country.id WHERE Country.name = 'Poland' AND Match.season = '2010/2011';\""

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.trans_id, filter = 851).where(element = disp.client_id, filter = 4)\ntmp_res = df1.select(trans.balance).sum()\n\ndf2 = df.where(element = disp.client_id, filter = 4)\nres = df2.select(client.gender)\n```"

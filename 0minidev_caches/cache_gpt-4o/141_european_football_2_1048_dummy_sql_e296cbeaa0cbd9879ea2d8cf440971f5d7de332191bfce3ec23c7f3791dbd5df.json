@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.overall_rating\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nWHERE p.player_name = 'Gabriel Tamas' AND strftime('%Y', pa.date) = '2011';\n```"

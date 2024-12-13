@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = 'Yearly Kickoff')\nres = df1.select(expense.cost).sum()\n```"

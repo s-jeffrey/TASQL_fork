@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = strftime('%Y', Player.birthday), filter = '< 1986')\nres = df1.select(avg(Player_Attributes.overall_rating))\n```"

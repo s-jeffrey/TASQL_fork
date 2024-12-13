@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.Birthday, filter = '1959-02-18')\n\ndf_nov = df1.where(element = Laboratory.Date, filter = '1981-11-%')\nsum_nov = df_nov.select(Laboratory.T-CHO).sum()\n\ndf_dec = df1.where(element = Laboratory.Date, filter = '1981-12-%')\nsum_dec = df_dec.select(Laboratory.T-CHO).sum()\n\nres = df.select((sum_nov - sum_dec) / sum_dec)\n```"

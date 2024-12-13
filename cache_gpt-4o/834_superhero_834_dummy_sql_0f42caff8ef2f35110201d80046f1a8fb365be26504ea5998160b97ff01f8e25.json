@@ -1,0 +1,1 @@
+"`(SUM(CASE WHEN gender.gender = 'Female' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS female_percentage FROM superhero JOIN publisher ON superhero.publisher_id = publisher.id JOIN gender ON superhero.gender_id = gender.id WHERE publisher.publisher_name = 'George Lucas';`"

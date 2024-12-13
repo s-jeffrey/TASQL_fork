@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM molecule\nWHERE molecule_id BETWEEN 'TR000' AND 'TR099'\nAND label = '+';\n```"

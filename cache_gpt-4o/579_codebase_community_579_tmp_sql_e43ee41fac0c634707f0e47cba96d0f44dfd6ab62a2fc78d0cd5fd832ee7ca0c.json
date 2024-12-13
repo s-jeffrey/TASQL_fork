@@ -1,0 +1,1 @@
+"```sql\nSELECT comments.Text\nFROM comments\nINNER JOIN posts ON comments.PostId = posts.Id\nWHERE posts.Title = 'How does gentle boosting differ from AdaBoost?'\n```"

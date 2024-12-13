@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (CAST(COUNT(results.driverId) FILTER (WHERE results.time IS NOT NULL) AS REAL) * 100 / COUNT(results.driverId)) AS percentage\nFROM \n    races\nINNER JOIN \n    results ON races.raceId = results.raceId\nWHERE \n    races.date = '1983-07-16';\n```"

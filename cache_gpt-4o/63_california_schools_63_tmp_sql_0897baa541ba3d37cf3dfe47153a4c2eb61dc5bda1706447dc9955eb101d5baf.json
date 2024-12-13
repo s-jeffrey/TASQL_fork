@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    schools.AdmFName1, \n    schools.AdmLName1, \n    schools.AdmFName2, \n    schools.AdmLName2, \n    schools.School, \n    schools.City\nFROM \n    schools\nWHERE \n    schools.Charter = 1 \n    AND schools.CharterNum = '00D2';\n```"

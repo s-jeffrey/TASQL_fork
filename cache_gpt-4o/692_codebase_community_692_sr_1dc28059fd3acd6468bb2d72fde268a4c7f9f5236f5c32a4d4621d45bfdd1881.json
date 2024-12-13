@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Zolomon')\ndf2 = df1.select(badges.Date, users.CreationDate)\nres = df2.select(df2.badges.Date - df2.users.CreationDate)\n```"

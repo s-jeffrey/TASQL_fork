@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    COUNT(attendance.link_to_event) AS event_count, \n    major.major_name \nFROM \n    member \nINNER JOIN \n    attendance ON member.member_id = attendance.link_to_member \nINNER JOIN \n    major ON member.link_to_major = major.major_id \nWHERE \n    member.first_name = 'Luisa' \n    AND member.last_name = 'Guidi';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT s.District, s.County, s.School, s.AdmLName1\nFROM schools s\nWHERE s.CharterNum = '40';\n```\n\nThis SQL query selects the district, county, school name, and the administrator's last name for the school with the charter number 40 from the `schools` table."

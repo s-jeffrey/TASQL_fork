@@ -1,0 +1,1 @@
+"```sql\nSELECT superpower.power_name\nFROM hero_power\nINNER JOIN superpower ON hero_power.power_id = superpower.id\nGROUP BY superpower.power_name\nORDER BY COUNT(hero_power.power_id) DESC\nLIMIT 1;\n```"

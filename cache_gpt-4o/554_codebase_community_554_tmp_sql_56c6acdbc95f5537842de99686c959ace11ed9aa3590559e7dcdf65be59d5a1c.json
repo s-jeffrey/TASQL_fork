@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM badges\nINNER JOIN users ON badges.UserId = users.Id\nGROUP BY badges.UserId\nORDER BY COUNT(badges.Id) DESC\nLIMIT 1;\n```"

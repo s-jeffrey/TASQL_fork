@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.Date, filter = '2012-08-24').where(element = transactions_1k.Time, filter = '12:42:00')\nres = df1.select(gasstations.Country)\n```"

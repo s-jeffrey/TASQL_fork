@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nWHERE Reputation > 2000 AND Views > 1000;\n```"

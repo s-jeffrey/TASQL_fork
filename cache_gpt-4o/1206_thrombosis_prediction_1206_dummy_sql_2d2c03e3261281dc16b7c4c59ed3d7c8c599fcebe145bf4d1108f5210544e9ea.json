@@ -1,0 +1,1 @@
+"```sql\nSELECT Date\nFROM Laboratory\nWHERE ID = 48473 AND GOT >= 60;\n```"

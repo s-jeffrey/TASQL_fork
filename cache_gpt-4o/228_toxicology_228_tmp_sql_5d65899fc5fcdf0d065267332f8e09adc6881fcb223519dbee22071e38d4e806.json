@@ -1,0 +1,1 @@
+"```sql\nSELECT ROUND(CAST(COUNT(*) AS REAL) * 100.0 / (SELECT COUNT(*) FROM atom WHERE molecule_id = 'TR206'), 4) AS percent\nFROM atom\nWHERE molecule_id = 'TR206' AND element = 'h';\n```"

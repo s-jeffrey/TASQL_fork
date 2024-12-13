@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.type, filter = 'VYDAJ')\ndf2 = df1.where(element = trans.operation, filter = 'VYBER')\ndf3 = df2.where(element = trans.date, filter = '1996-01%')\ndf4 = df3.orderby(by = trans.amount, desc).limit(10)\nres = df4.select(district.A2)\n```"

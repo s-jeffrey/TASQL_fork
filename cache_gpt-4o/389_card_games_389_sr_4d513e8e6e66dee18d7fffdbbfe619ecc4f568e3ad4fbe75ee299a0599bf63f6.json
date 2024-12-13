@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.originalType, filter = 'Creature - Elf')\nres = df1.select(cards.name, rulings.date)\n```"

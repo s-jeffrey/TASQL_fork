@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT event.type\nFROM budget\nINNER JOIN event ON budget.link_to_event = event.event_id\nWHERE budget.remaining > 30;\n```"

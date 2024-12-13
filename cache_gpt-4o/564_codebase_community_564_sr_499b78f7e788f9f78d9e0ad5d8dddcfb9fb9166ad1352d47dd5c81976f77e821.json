@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.ParentId, filter = 107829).where(element = posts.CommentCount, filter = 1)\nres = df1.select(comments.Text)\n```"

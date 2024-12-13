@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.url\nFROM lapTimes\nINNER JOIN drivers ON lapTimes.driverId = drivers.driverId\nWHERE lapTimes.raceId = 161\nAND lapTimes.time LIKE '1:27%'\n```"

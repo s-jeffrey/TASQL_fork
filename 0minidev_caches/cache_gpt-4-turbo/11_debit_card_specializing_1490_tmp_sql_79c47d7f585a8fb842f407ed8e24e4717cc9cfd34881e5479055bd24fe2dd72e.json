@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(DISTINCT ym.CustomerID) AS REAL) / COUNT(DISTINCT c.CustomerID)) * 100 AS Percentage\nFROM customers c\nJOIN yearmonth ym ON c.CustomerID = ym.CustomerID\nWHERE c.Segment = 'LAM'\nAND ym.Consumption > 46.73;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT OwnerUserId\nFROM posts\nORDER BY FavoriteCount DESC\nLIMIT 1;\n```\n\nThis SQL query selects the `OwnerUserId` of the post with the highest `FavoriteCount`, which is considered the most valuable post according to the given evidence. The query orders the posts by `FavoriteCount` in descending order and limits the result to the top entry."

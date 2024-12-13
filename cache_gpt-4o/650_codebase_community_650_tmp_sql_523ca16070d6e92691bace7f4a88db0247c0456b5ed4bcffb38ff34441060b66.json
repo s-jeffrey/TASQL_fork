@@ -1,0 +1,1 @@
+"```sql\nSELECT users.LastAccessDate, users.Location\nFROM badges\nINNER JOIN users ON badges.UserId = users.Id\nWHERE badges.Name = 'Outliers';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = year(Patient.Birthday), filter = '< 18')\ndf2 = df1.where(element = year(Examination.`Examination Date`), filter = 'between 1990 and 1993')\nres = df2.count()\n```"

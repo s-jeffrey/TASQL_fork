@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (COUNT(CASE WHEN customers.Currency = 'CZK' THEN 1 END) - \n     COUNT(CASE WHEN customers.Currency = 'EUR' THEN 1 END)) AS difference\nFROM \n    customers\nWHERE \n    customers.Segment = 'SME';\n```"

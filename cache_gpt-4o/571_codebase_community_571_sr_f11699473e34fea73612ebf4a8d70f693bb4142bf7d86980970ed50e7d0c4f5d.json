@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.OwnerUserId, filter = '24')\npost_count = df1.count()\n\ndf2 = df.where(element = votes.UserId, filter = '24')\nvote_count = df2.count()\n\nres = df.select(cast(post_count, real) / vote_count)\n```"

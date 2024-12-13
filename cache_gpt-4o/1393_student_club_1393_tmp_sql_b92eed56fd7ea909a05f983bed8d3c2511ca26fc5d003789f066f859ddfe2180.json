@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(member.first_name, ' ', member.last_name) AS full_name, member.email\nFROM member\nWHERE member.position = 'Secretary';\n```"

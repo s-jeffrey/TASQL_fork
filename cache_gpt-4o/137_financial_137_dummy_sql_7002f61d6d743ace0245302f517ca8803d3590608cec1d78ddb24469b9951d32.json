@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM account\nJOIN loan ON account.account_id = loan.account_id\nWHERE loan.status IN ('C', 'D') AND account.district_id = 1;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(attendance.link_to_event).having(element = count(attendance.link_to_member), filter = '> 10')\ndf2 = df1.where(element = event.type, filter = 'Meeting')\nres = df2.count()\n```"

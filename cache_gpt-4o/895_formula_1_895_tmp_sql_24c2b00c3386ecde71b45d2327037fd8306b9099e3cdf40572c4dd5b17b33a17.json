@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(lapTimes.milliseconds) AS average_lap_time\nFROM lapTimes\nINNER JOIN drivers ON lapTimes.driverId = drivers.driverId\nINNER JOIN races ON lapTimes.raceId = races.raceId\nWHERE drivers.forename = 'Lewis'\nAND drivers.surname = 'Hamilton'\nAND races.name = 'Malaysian Grand Prix'\nAND races.year = 2009;\n```"

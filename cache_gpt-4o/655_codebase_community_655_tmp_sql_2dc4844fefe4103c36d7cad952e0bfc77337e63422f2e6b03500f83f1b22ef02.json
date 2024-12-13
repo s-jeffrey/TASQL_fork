@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Title, postLinks.LinkTypeId\nFROM posts\nINNER JOIN postLinks ON posts.Id = postLinks.RelatedPostId\nWHERE postLinks.PostId = (\n    SELECT Id\n    FROM posts\n    WHERE Title = 'What are principal component scores?'\n);\n```"

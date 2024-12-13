@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.frameVersion, filter = '2003')\ndf2 = df1.orderby(by = cards.convertedManaCost, desc).limit(3)\nres = df2.select(cards.name)\n```"

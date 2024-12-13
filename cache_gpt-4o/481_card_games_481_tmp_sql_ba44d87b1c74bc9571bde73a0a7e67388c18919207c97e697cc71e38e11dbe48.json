@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT foreign_data.language\nFROM cards\nINNER JOIN foreign_data ON cards.uuid = foreign_data.uuid\nWHERE cards.name = 'Ancestor''s Chosen' AND foreign_data.flavorText IS NOT NULL;\n```"

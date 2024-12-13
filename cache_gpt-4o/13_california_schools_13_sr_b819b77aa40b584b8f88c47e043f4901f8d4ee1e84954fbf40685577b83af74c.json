@@ -1,0 +1,1 @@
+"```python\ndf1 = df.select(satscores.cds, (satscores.NumGE1500 / satscores.NumTstTakr).alias('ExcellenceRate'))\ndf2 = df1.orderby(by = 'ExcellenceRate', desc).limit(3)\nres = df2.join(df, on = (satscores.cds == schools.CDSCode)).select(schools.Phone)\n```"

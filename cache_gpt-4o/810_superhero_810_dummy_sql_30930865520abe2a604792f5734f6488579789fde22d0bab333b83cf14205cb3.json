@@ -1,0 +1,1 @@
+"`race.race` FROM `hero_attribute` JOIN `superhero` ON `hero_attribute.hero_id` = `superhero.id` JOIN `race` ON `superhero.race_id` = `race.id` WHERE `hero_attribute.attribute_value` = (SELECT MAX(`attribute_value`) FROM `hero_attribute`);\""

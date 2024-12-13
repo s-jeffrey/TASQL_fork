@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Patient\nINNER JOIN Examination ON Patient.ID = Examination.ID\nWHERE Patient.SEX = 'M'\n  AND Examination.`Examination Date` BETWEEN '1995-01-01' AND '1997-12-31'\n  AND Patient.Diagnosis LIKE '%Behcet%'\n  AND Patient.Admission = '-'\n```\n"

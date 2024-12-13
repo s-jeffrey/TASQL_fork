@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.name, filter = 'Coldsnap')\ndf2 = df1.where(element = cards.number, filter = '4')\nres = df2.select(cards.name)\n```"

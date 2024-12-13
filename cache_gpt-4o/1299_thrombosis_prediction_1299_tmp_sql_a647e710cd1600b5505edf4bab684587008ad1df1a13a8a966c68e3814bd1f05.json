@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Examination.ID)\nFROM Laboratory\nINNER JOIN Examination ON Laboratory.ID = Examination.ID\nWHERE Laboratory.TG < 200 AND Examination.Symptoms IS NOT NULL;\n```"

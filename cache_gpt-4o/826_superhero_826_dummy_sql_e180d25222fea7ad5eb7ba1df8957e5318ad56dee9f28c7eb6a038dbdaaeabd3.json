@@ -1,0 +1,1 @@
+"`superhero_name` FROM `superhero` INNER JOIN `publisher` ON `superhero`.`publisher_id` = `publisher`.`id` WHERE `publisher`.`publisher_name` = 'DC Comics' ORDER BY `weight_kg` DESC LIMIT 1;\"\n"

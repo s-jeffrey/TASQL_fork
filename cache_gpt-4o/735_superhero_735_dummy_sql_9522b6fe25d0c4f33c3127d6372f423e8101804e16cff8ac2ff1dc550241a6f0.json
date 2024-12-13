@@ -1,0 +1,1 @@
+"COUNT(*) FROM superhero WHERE hair_colour_id = (SELECT id FROM colour WHERE colour = 'Blond');\""

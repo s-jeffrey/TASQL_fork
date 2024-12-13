@@ -1,0 +1,1 @@
+"`Consumption` FROM `yearmonth` WHERE SUBSTR(`Date`, 1, 4) = '2012' ORDER BY `Consumption` DESC LIMIT 1;\"\n"

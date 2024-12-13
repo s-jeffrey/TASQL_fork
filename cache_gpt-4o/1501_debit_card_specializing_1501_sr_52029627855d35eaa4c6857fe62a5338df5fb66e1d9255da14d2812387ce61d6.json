@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = yearmonth.Date, filter = '201306')\nres = df1.select(gasstations.Country)\n```"

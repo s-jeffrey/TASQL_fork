@@ -1,0 +1,1 @@
+"```sql\nSELECT atom.molecule_id\nFROM atom\nINNER JOIN molecule ON atom.molecule_id = molecule.molecule_id\nWHERE molecule.label = '-'\nGROUP BY atom.molecule_id\nHAVING COUNT(atom.atom_id) > 5;\n```"

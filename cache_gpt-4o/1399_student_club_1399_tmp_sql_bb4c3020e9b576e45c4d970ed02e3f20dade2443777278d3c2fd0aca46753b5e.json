@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) > 0 AS attended\nFROM attendance\nINNER JOIN member ON attendance.link_to_member = member.member_id\nINNER JOIN event ON attendance.link_to_event = event.event_id\nWHERE member.first_name = 'Maya'\n  AND member.last_name = 'Mclean'\n  AND event.event_name = 'Women''s Soccer';\n```"

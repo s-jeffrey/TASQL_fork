@@ -1,0 +1,1 @@
+"COUNT(*) FROM superhero WHERE alignment_id = 3;\""

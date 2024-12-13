@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT UserId)\nFROM badges\nGROUP BY UserId\nHAVING COUNT(Name) > 5;\n```\n\nThis SQL query counts the number of distinct users (`UserId`) who have been awarded more than 5 badges. It groups the data by `UserId` and uses the `HAVING` clause to filter groups where the count of `Name` (badges) is greater than 5."

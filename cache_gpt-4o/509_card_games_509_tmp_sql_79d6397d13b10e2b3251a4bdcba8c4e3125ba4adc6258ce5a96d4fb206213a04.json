@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.id\nFROM sets\nORDER BY sets.baseSetSize DESC\nLIMIT 1\n```"

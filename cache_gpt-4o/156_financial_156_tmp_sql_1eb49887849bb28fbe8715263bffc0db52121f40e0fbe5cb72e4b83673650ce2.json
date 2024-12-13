@@ -1,0 +1,1 @@
+"```sql\nSELECT disp.client_id\nFROM loan\nINNER JOIN disp ON loan.account_id = disp.account_id\nWHERE disp.type = 'OWNER'\nORDER BY loan.amount DESC\nLIMIT 1;\n```"

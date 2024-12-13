@@ -1,0 +1,1 @@
+"```sql\nSELECT bond.molecule_id\nFROM bond\nINNER JOIN molecule ON bond.molecule_id = molecule.molecule_id\nWHERE molecule.label = '+' AND bond.bond_type = '='\nGROUP BY bond.molecule_id\nORDER BY COUNT(bond.bond_id) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.name\nFROM circuits\nWHERE circuits.name IN ('Silverstone Circuit', 'Hockenheimring', 'Hungaroring')\nORDER BY circuits.lat DESC\nLIMIT 1;\n```"

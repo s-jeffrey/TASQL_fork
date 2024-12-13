@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player_Attributes\nWHERE crossing = (SELECT MAX(crossing) FROM Player_Attributes)\n  AND preferred_foot = 'left';\n```\n\nThis SQL query counts the number of players who have the highest crossing score and prefer to use their left foot while attacking."

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nWHERE City = 'San Francisco'\n  AND District = 'Community College District'\n  AND strftime('%Y', ClosedDate) = '1989';\n```"

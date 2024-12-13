@@ -1,0 +1,1 @@
+"```sql\nSELECT language\nFROM set_translations\nJOIN sets ON set_translations.setCode = sets.code\nWHERE sets.baseSetSize = 309;\n```"

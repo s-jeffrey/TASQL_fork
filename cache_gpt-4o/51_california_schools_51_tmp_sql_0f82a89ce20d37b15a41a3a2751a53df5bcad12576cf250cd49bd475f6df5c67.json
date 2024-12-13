@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.MailStreet, schools.School\nFROM satscores\nINNER JOIN schools ON satscores.cds = schools.CDSCode\nORDER BY satscores.AvgScrRead ASC\nLIMIT 1;\n```"

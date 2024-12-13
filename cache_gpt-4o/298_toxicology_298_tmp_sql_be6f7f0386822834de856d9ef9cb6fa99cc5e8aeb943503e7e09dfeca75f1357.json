@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(DISTINCT a.molecule_id) * 100.0 / COUNT(DISTINCT m.molecule_id)) AS percentage\nFROM molecule m\nINNER JOIN atom a ON m.molecule_id = a.molecule_id\nWHERE m.label = '+' AND a.element = 'h';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.Virtual, filter = 'P')\ndf2 = df1.where(element = schools.Charter, filter = 1)\ndf3 = df2.where(element = schools.County, filter = 'San Joaquin')\nres = df3.select(schools.Website)\n```"

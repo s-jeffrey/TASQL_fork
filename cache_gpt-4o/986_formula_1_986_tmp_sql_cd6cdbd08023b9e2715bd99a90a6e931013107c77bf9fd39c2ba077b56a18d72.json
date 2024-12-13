@@ -1,0 +1,1 @@
+"```sql\nSELECT r.name, r.milliseconds\nFROM results r\nINNER JOIN races ra ON r.raceId = ra.raceId\nWHERE r.fastestLap = 1\nORDER BY r.milliseconds ASC\nLIMIT 1;\n```"

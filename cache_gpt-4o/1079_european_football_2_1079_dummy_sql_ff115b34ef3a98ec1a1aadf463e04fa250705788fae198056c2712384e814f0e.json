@@ -1,0 +1,1 @@
+"`player_name` FROM `Player` WHERE `height` = (SELECT MAX(`height`) FROM `Player`);\""

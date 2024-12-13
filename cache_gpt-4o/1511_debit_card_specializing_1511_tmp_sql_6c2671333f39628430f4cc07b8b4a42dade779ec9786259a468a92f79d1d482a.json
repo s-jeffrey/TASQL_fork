@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(transactions_1k.Amount * transactions_1k.Price) AS average_total_price\nFROM customers\nINNER JOIN transactions_1k ON customers.CustomerID = transactions_1k.CustomerID\nWHERE customers.Currency = 'EUR';\n```"

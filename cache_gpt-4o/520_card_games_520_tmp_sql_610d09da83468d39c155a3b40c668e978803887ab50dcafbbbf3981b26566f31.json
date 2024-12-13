@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT legalities.format\nFROM cards\nINNER JOIN legalities ON cards.uuid = legalities.uuid\nWHERE cards.artist = (\n    SELECT cards.artist\n    FROM cards\n    GROUP BY cards.artist\n    ORDER BY COUNT(cards.id) ASC\n    LIMIT 1\n)\n```"

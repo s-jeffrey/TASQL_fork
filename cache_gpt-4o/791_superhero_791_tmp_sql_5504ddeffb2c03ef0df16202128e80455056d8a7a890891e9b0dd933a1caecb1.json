@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name, AVG(superhero.height_cm) AS average_height\nFROM superhero\nGROUP BY superhero.superhero_name;\n```"

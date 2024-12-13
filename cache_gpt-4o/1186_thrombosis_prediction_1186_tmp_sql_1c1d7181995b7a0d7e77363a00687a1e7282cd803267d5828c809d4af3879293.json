@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Examination.ID\nFROM Examination\nWHERE Examination.Diagnosis = 'Behcet'\n  AND Examination.`Examination Date` >= '1997-01-01'\n  AND Examination.`Examination Date` < '1998-01-01';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = satscores.dname, filter = 'Fresno Unified')\ndf2 = df1.orderby(by = satscores.AvgScrRead, asc).limit(1)\nres = df2.select(schools.Phone)\n```"

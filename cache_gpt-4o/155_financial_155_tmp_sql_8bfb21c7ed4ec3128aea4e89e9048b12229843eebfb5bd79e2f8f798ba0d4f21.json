@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM card)) AS percent_gold_issued_prior_1998\nFROM card\nWHERE type = 'gold' AND issued < '1998-01-01';\n```"

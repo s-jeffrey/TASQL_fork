@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(Amount) \nFROM transactions_1k \nWHERE CustomerID = 38508 \nAND strftime('%Y-%m', Date) = '2012-01';\n```"

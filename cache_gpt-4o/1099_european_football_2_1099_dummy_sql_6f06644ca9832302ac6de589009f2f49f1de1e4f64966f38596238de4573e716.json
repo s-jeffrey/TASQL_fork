@@ -1,0 +1,1 @@
+"`preferred_foot` FROM `Player_Attributes` JOIN `Player` ON `Player_Attributes`.`player_api_id` = `Player`.`player_api_id` WHERE `Player`.`player_name` = 'Abdou Diallo';\""

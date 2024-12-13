@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT badges.Name\nFROM badges\nINNER JOIN users ON badges.UserId = users.Id\nWHERE users.Location = 'North Pole' AND strftime('%Y', badges.Date) = '2011';\n```"

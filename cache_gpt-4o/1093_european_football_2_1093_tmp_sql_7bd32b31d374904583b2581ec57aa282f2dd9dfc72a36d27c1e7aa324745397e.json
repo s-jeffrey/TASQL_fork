@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Player_Attributes.overall_rating) \nFROM Player \nINNER JOIN Player_Attributes \nON Player.player_api_id = Player_Attributes.player_api_id \nWHERE strftime('%Y', Player.birthday) < '1986';\n```"

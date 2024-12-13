@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Match.season, filter = '2015/2016')\ndf2 = df1.where(element = (Match.home_team_goal == Match.away_team_goal))\ndf3 = df2.groupby(Match.league_id).agg(count(Match.id).alias('draw_count'))\ndf4 = df3.orderby(by = 'draw_count', desc).limit(1)\nres = df4.select(League.name)\n```"

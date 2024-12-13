@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN major.major_name = 'Finance' THEN 1 ELSE 0 END) * 1.0) / \n    (SUM(CASE WHEN major.major_name = 'Physics' THEN 1 ELSE 0 END)) AS ratio\nFROM \n    major\nJOIN \n    member ON major.major_id = member.link_to_major;\n```"

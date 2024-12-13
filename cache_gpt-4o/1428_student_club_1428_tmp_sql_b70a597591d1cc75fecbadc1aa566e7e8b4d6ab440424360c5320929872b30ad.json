@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT zip_code.city, zip_code.state\nFROM member\nINNER JOIN major ON member.link_to_major = major.major_id\nINNER JOIN zip_code ON member.zip = zip_code.zip_code\nWHERE major.department = 'Electrical and Computer Engineering Department'\n  AND member.position = 'Member';\n```"

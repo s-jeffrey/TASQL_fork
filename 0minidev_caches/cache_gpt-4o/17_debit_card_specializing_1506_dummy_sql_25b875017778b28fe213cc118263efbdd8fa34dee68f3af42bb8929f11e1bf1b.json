@@ -1,0 +1,1 @@
+"```sql\nSELECT p.Description\nFROM transactions_1k t\nJOIN gasstations g ON t.GasStationID = g.GasStationID\nJOIN products p ON t.ProductID = p.ProductID\nWHERE g.Country = 'CZE';\n```"

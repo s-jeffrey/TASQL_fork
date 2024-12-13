@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(CASE WHEN strftime('%Y', Birthday) > '1930' THEN ID END) AS REAL) * 100.0 / COUNT(ID) AS percentage\nFROM Patient\nWHERE SEX = 'F';\n```"

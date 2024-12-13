@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT drivers.driverId)\nFROM drivers\nINNER JOIN lapTimes ON drivers.driverId = lapTimes.driverId\nWHERE drivers.nationality = 'French' AND CAST(SUBSTR(lapTimes.time, 1, INSTR(lapTimes.time, ':') - 1) AS INTEGER) * 60 + CAST(SUBSTR(lapTimes.time, INSTR(lapTimes.time, ':') + 1) AS FLOAT) < 120;\n```"

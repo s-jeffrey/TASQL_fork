@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT sets.mtgoCode\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE cards.name = 'Angel of Mercy' AND sets.mtgoCode IS NOT NULL;\n```"

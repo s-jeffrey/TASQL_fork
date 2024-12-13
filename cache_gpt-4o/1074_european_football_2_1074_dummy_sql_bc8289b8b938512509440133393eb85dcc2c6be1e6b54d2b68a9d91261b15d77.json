@@ -1,0 +1,1 @@
+"`Team.team_short_name` FROM `Match` JOIN `Team` ON `Match.home_team_api_id` = `Team.team_api_id` WHERE `Match.home_team_goal` = 10;\"\n"

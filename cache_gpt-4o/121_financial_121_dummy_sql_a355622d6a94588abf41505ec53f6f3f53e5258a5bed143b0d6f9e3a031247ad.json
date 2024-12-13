@@ -1,0 +1,1 @@
+"```sql\nSELECT account.account_id, account.date\nFROM account\nJOIN district ON account.district_id = district.district_id\nWHERE district.A2 = 'Prachatice';\n```"

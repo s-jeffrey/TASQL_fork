@@ -1,0 +1,1 @@
+"```sql\nSELECT GasStationID\nFROM transactions_1k\nGROUP BY GasStationID\nORDER BY SUM(Amount) DESC\nLIMIT 1;\n```"

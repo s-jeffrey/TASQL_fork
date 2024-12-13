@@ -1,0 +1,1 @@
+"```sql\nSELECT P.player_name\nFROM Player P\nJOIN Player_Attributes PA ON P.player_fifa_api_id = PA.player_fifa_api_id\nWHERE P.height > 180\nGROUP BY P.player_name\nORDER BY AVG(PA.heading_accuracy) DESC\nLIMIT 10;\n```"

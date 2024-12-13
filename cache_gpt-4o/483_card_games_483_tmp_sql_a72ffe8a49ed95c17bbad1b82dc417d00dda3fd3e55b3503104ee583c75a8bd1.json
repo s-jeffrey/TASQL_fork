@@ -1,0 +1,1 @@
+"```sql\nSELECT rulings.text\nFROM cards\nINNER JOIN rulings ON cards.uuid = rulings.uuid\nINNER JOIN set_translations ON cards.setCode = set_translations.setCode\nWHERE cards.setCode = 'CSP' AND set_translations.language = 'Italian';\n```"

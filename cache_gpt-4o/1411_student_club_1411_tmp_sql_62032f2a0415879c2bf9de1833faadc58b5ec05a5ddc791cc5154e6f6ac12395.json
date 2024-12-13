@@ -1,0 +1,1 @@
+"```sql\nSELECT expense.expense_description\nFROM member\nINNER JOIN expense ON member.member_id = expense.link_to_member\nWHERE member.first_name = 'Sacha' AND member.last_name = 'Harrison';\n```"

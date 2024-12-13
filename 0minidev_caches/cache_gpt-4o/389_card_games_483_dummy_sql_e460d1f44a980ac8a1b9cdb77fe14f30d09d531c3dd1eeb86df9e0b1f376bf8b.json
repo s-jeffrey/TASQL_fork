@@ -1,0 +1,1 @@
+"```sql\nSELECT fd.text\nFROM foreign_data fd\nJOIN cards c ON fd.uuid = c.uuid\nJOIN sets s ON c.setCode = s.code\nWHERE s.name = 'Coldsnap' AND fd.language = 'Italian';\n```"

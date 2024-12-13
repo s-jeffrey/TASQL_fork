@@ -1,0 +1,1 @@
+"```sql\nSELECT lapTimes.time\nFROM lapTimes\nORDER BY lapTimes.time ASC\nLIMIT 1;\n```"

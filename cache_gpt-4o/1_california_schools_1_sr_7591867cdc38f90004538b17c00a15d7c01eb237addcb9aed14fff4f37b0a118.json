@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.EdOpsCode, filter = 'CON')\ndf2 = df1.select((frpm.`Free Meal Count (Ages 5-17)` / frpm.`Enrollment (Ages 5-17)`).alias('eligible_free_rate'))\nres = df2.orderby(by = 'eligible_free_rate', asc).limit(3)\n```"

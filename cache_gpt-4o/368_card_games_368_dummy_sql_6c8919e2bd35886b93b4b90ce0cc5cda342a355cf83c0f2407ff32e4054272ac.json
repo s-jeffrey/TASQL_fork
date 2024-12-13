@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(id) FILTER (WHERE borderColor = 'borderless')::float / COUNT(id) * 100) AS percentage_of_borderless_cards\nFROM cards;\n```"

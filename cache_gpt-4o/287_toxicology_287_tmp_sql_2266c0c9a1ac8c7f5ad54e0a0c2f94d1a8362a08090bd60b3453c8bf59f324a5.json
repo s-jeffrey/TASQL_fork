@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM bond WHERE molecule_id = 'TR047')) AS percent\nFROM bond\nWHERE molecule_id = 'TR047' AND bond_type = '='\n```"

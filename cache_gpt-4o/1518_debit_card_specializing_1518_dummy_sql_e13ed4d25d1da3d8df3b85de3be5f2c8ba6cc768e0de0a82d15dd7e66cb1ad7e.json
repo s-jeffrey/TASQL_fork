@@ -1,0 +1,1 @@
+"`Country` FROM `transactions_1k` T1 JOIN `gasstations` G ON T1.`GasStationID` = G.`GasStationID` WHERE T1.`Date` = '2012-08-24' AND T1.`Time` = '12:42:00';\""

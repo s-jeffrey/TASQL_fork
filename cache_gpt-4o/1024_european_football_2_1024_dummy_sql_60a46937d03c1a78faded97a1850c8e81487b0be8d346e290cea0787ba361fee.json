@@ -1,0 +1,1 @@
+"```sql\nSELECT player_api_id\nFROM Player_Attributes\nORDER BY crossing DESC\nLIMIT 5;\n```\n\nThis SQL query selects the `player_api_id` of the top 5 players who perform better in crossing actions by ordering the players based on their `crossing` score in descending order and limiting the results to 5."

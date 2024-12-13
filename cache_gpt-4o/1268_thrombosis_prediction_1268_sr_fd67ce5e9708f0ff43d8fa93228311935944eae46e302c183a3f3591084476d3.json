@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.SM, filter = \"NOT IN ('negative', '0')\")\ndf2 = df1.orderby(by = Patient.Birthday, desc).limit(3)\nres = df2.select(Patient.ID)\n```"

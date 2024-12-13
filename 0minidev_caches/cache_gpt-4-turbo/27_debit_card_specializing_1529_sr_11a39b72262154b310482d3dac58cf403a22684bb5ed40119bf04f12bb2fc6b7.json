@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = transactions_1k.CustomerID, filter = 38508)\n    df2 = df1.where(element = transactions_1k.Date, filter = '201201')\n    res = df2.select(transactions_1k.Amount * transactions_1k.Price)\""

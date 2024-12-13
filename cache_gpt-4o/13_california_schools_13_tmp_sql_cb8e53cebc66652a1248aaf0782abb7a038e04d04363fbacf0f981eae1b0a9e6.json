@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.Phone\nFROM (\n    SELECT satscores.cds, (satscores.NumGE1500 / satscores.NumTstTakr) AS ExcellenceRate\n    FROM satscores\n    ORDER BY ExcellenceRate DESC\n    LIMIT 3\n) AS top_schools\nINNER JOIN schools ON top_schools.cds = schools.CDSCode;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.borderColor, filter = 'borderless')\ndf2 = df1.where(element = cards.edhrecRank, filter = '> 12000')\nres = df2.count()\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Analysing wind data with R')\ndf2 = df1.orderby(by = comments.CreationDate, desc).limit(10)\nres = df2.select(comments.Text, comments.UserDisplayName)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.nationality, filter = 'British')\ndf2 = df1.where(element = races.year, filter = 2008).where(element = races.name, filter = 'Australian Grand Prix')\nres = df2.select(results.driverId).distinct().count()\n```"

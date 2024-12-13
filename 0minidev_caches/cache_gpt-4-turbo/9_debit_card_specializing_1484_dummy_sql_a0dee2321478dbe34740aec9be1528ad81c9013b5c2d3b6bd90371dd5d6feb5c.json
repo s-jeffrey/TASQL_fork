@@ -1,0 +1,1 @@
+"(SUM(CASE WHEN Country = 'CZE' AND Segment = 'Discount' THEN 1 ELSE 0 END) - SUM(CASE WHEN Country = 'SVK' AND Segment = 'Discount' THEN 1 ELSE 0 END)) AS More_Discount_Stations FROM gasstations;\"\n  "

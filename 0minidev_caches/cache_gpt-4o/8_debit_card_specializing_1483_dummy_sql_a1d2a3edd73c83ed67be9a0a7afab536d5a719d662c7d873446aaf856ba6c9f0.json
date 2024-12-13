@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(Consumption) \nFROM yearmonth \nWHERE CustomerID = 6 \nAND Date BETWEEN '201308' AND '201311';\n```"

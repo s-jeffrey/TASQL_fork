@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN sets.isNonFoilOnly = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*)) AS percentage_non_foil\nFROM \n    set_translations\nINNER JOIN \n    sets ON set_translations.setCode = sets.code\nWHERE \n    set_translations.language = 'Japanese';\n```"

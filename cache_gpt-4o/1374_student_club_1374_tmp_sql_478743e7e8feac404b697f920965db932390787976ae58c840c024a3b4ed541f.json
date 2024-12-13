@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) \nFROM attendance \nINNER JOIN member ON attendance.link_to_member = member.member_id \nWHERE member.phone = '954-555-6240';\n```"

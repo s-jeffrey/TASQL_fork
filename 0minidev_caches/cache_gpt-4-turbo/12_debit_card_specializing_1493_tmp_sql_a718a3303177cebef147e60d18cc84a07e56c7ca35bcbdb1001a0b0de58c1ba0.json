@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) / (SELECT COUNT(*) FROM yearmonth WHERE Date = '201202')) * 100 AS percentage\nFROM yearmonth\nWHERE Date = '201202' AND Consumption > 528.3;\n```"

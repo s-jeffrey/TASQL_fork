@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM set_translations WHERE language = 'Japanese')\nFROM set_translations\nINNER JOIN sets ON set_translations.setCode = sets.code\nWHERE set_translations.language = 'Japanese' AND sets.type = 'expansion';\n```"

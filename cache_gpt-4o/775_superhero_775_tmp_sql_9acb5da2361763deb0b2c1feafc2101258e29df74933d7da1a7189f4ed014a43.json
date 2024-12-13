@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM superhero WHERE gender_id = (SELECT id FROM gender WHERE gender = 'Female')))\nFROM superhero\nWHERE skin_colour_id = (SELECT id FROM colour WHERE colour = 'Blue') \nAND gender_id = (SELECT id FROM gender WHERE gender = 'Female');\n```"

@@ -1,0 +1,1 @@
+"`AVG(superhero.height_cm)` AS average_height FROM superhero JOIN race ON superhero.race_id = race.id JOIN publisher ON superhero.publisher_id = publisher.id WHERE race.race <> 'Human' AND publisher.publisher_name = 'Dark Horse Comics';\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM client\nJOIN district ON client.district_id = district.district_id\nWHERE client.gender = 'M' AND district.A2 = 'Hl.m. Praha';\n```"

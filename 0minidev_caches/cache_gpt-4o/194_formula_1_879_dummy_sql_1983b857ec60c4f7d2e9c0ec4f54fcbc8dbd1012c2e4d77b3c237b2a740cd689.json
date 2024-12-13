@@ -1,0 +1,1 @@
+"```sql\nSELECT d.nationality\nFROM results r\nJOIN drivers d ON r.driverId = d.driverId\nWHERE r.fastestLapSpeed = (\n    SELECT MAX(fastestLapSpeed)\n    FROM results\n);\n```\n\nThis SQL query retrieves the nationality of the driver who set the fastest lap speed by joining the `results` and `drivers` tables and filtering for the maximum `fastestLapSpeed`."

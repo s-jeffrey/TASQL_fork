@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM posts\nWHERE ViewCount > (SELECT AVG(ViewCount) FROM posts);\n```\n\nThis SQL query calculates the total number of posts with a `ViewCount` above the average `ViewCount` of all posts. It uses a subquery to determine the average `ViewCount` and then filters the posts that have a `ViewCount` greater than this average."

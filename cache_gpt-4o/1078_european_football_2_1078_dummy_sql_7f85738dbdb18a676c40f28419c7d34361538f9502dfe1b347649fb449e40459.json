@@ -1,0 +1,1 @@
+"```sql\nSELECT player_name\nFROM Player\nWHERE player_name IN ('Aaron Lennon', 'Abdelaziz Barrada')\nORDER BY birthday ASC\nLIMIT 1;\n```\n\nThis SQL query selects the player who is older by ordering the players by their birthday in ascending order (earliest birthday first) and limiting the result to one player."

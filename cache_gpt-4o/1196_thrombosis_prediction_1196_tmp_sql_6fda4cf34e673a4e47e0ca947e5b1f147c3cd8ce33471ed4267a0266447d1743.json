@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.Symptoms\nFROM Examination\nWHERE Examination.Diagnosis = 'SLE'\nGROUP BY Examination.Symptoms\nORDER BY COUNT(Examination.Symptoms) DESC\nLIMIT 1;\n```"

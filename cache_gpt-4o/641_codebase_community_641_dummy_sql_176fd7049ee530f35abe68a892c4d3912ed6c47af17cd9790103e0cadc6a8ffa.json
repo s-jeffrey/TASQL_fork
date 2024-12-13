@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT badges.UserId)\nFROM badges\nJOIN users ON badges.UserId = users.Id\nWHERE badges.Name = 'Commentator' AND YEAR(badges.Date) = 2014;\n```"

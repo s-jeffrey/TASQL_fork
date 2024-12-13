@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.SSA, filter = ['-', '+-'])\ndf2 = df1.where(element = Patient.`First Date`, filter = '< 2000-01-01')\nres = df2.select(Patient.ID).distinct().count()\n```"

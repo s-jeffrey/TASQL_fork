@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(spent) / COUNT(spent) AS average_spent\nFROM budget\nWHERE category = 'Food' AND event_status = 'Closed';\n```"

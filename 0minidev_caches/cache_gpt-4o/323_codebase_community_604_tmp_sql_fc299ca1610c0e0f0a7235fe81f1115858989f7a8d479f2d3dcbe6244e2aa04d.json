@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    SUM(users.UpVotes) / COUNT(users.Id) AS average_upvotes,\n    SUM(users.Age) / COUNT(users.Id) AS average_age\nFROM \n    users\nINNER JOIN \n    posts ON users.Id = posts.OwnerUserId\nGROUP BY \n    users.Id\nHAVING \n    COUNT(posts.OwnerUserId) > 10;\n```"

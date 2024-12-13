@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Laboratory\nINNER JOIN Examination ON Laboratory.ID = Examination.ID\nWHERE Laboratory.`T-BIL` >= 2.0\nAND Examination.`ANA Pattern` LIKE '%P%'\n```"

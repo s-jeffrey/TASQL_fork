@@ -1,0 +1,1 @@
+"```sql\nSELECT c.artist\nFROM cards c\nJOIN foreign_data fd ON c.uuid = fd.uuid\nWHERE fd.text LIKE '%Das perfekte Gegenmittel zu einer dichten Formation%';\n```"

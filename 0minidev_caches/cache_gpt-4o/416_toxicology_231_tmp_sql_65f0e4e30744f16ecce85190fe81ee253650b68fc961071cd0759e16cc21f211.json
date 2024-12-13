@@ -1,0 +1,1 @@
+"```sql\nSELECT b.bond_type, m.label\nFROM bond b\nINNER JOIN molecule m ON b.molecule_id = m.molecule_id\nWHERE b.molecule_id = 'TR010'\nGROUP BY b.bond_type\nORDER BY COUNT(b.bond_type) DESC\nLIMIT 1;\n```"

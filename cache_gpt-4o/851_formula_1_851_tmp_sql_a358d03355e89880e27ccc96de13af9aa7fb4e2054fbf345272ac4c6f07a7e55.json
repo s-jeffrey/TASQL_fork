@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT circuits.circuitId\nFROM circuits\nINNER JOIN races ON races.circuitId = circuits.circuitId\nINNER JOIN results ON results.raceId = races.raceId\nINNER JOIN constructors ON constructors.constructorId = results.constructorId\nWHERE constructors.name = 'Renault';\n```"

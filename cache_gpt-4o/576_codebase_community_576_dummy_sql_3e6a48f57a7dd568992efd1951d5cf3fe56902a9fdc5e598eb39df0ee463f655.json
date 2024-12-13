@@ -1,0 +1,1 @@
+"```sql\nSELECT u.DisplayName\nFROM comments c\nJOIN users u ON c.UserId = u.Id\nWHERE c.Text = 'thank you user93!';\n```\n\nThis SQL query selects the `DisplayName` of the user who made a comment with the text \"thank you user93!\" by joining the `comments` table with the `users` table using the foreign key relationship `comments.UserId = users.Id`."

@@ -1,0 +1,1 @@
+"```sql\nSELECT zip_code.city, zip_code.state\nFROM member\nINNER JOIN zip_code ON member.zip = zip_code.zip_code\nWHERE member.position = 'President';\n```"

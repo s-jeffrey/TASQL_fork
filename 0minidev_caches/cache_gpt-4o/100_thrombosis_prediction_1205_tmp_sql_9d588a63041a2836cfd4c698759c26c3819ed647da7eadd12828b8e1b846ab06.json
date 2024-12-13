@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) > 0 AS is_within_normal_range\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.ID = 57266\nAND (\n    (Laboratory.UA > 8.0 AND Patient.SEX = 'M')\n    OR (Laboratory.UA > 6.5 AND Patient.SEX = 'F')\n);\n```"

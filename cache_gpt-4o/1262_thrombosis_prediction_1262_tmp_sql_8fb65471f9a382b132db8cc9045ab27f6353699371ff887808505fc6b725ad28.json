@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Examination.ID)\nFROM Examination\nINNER JOIN Laboratory ON Examination.ID = Laboratory.ID\nWHERE Laboratory.C3 > 35 AND Examination.`ANA Pattern` = 'P';\n```"

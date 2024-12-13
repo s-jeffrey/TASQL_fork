@@ -1,0 +1,1 @@
+"distinct gasstations.Country\nfrom gasstations\ninner join transactions_1k on gasstations.GasStationID = transactions_1k.GasStationID\ninner join yearmonth on transactions_1k.CustomerID = yearmonth.CustomerID\nwhere yearmonth.Date = '201306'\""

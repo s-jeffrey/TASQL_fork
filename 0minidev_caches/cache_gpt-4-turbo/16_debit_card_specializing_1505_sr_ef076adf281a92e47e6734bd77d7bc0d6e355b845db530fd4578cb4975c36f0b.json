@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = customers.Currency, filter = 'EUR')\n    df2 = df1.where(element = yearmonth.Consumption, filter = '> 1000')\n    res = df2.count()\""

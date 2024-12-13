@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT bond.bond_type\nFROM bond\nWHERE bond.molecule_id = 'TR000';\n```"

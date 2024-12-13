@@ -1,0 +1,1 @@
+"```sql\nSELECT c.atom_id, c.atom_id2\nFROM connected c\nJOIN bond b ON c.bond_id = b.bond_id\nWHERE b.bond_type = '#';\n```\n\nThis SQL query selects the IDs of all connected atoms that have a triple bond. It joins the `connected` table with the `bond` table using the `bond_id` and filters the results where the `bond_type` is a triple bond, represented by `'#'`."

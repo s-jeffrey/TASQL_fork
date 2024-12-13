@@ -1,0 +1,1 @@
+"```sql\nSELECT pa.finishing, pa.curve\nFROM Player p\nINNER JOIN Player_Attributes pa ON p.player_api_id = pa.player_api_id\nORDER BY p.weight DESC\nLIMIT 1;\n```"

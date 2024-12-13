@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Team.team_short_name\nFROM Match\nINNER JOIN Team ON Match.home_team_api_id = Team.team_api_id\nWHERE Match.home_team_goal = 10;\n```"

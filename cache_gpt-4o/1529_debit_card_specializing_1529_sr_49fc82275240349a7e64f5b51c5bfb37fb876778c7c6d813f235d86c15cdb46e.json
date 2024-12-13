@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = transactions_1k.CustomerID, filter = 38508)\ndf2 = df1.where(element = transactions_1k.Date, filter = '2012-01')\nres = df2.select(transactions_1k.Amount).sum()\n```"

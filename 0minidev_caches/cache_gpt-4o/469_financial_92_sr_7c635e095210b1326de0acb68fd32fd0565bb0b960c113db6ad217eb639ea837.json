@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = client.gender, filter = 'F')\ndf2 = df1.where(element = district.A11, filter = '> 6000').where(element = district.A11, filter = '< 10000')\nres = df2.select(client.district_id).distinct().count()\n```"

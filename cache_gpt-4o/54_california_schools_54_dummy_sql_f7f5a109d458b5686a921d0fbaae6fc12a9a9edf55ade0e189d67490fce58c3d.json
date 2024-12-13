@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.School, schools.MailZip\nFROM schools\nWHERE schools.AdmFName1 = 'Avetik' AND schools.AdmLName1 = 'Atoian';\n```\n\nThis SQL query selects the names of schools and their related mailing zip codes from the `schools` table where the first and last names of the administrator match \"Avetik Atoian\"."

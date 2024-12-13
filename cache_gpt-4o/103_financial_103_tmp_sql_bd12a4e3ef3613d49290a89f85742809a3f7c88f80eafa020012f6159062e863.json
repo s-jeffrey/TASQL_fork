@@ -1,0 +1,1 @@
+"```sql\nSELECT client.client_id\nFROM card\nINNER JOIN disp ON card.disp_id = disp.disp_id\nINNER JOIN client ON disp.client_id = client.client_id\nWHERE card.issued = '1994-03-03';\n```"

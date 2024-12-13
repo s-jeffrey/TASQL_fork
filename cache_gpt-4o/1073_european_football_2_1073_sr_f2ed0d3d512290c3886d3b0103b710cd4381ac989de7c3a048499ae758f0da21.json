@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = League.name, filter = 'Germany 1. Bundesliga')\ndf2 = df1.where(element = strftime('%Y-%m', Match.date), filter = 'BETWEEN 2008-08 AND 2008-10')\nres = df2.count()\n```"

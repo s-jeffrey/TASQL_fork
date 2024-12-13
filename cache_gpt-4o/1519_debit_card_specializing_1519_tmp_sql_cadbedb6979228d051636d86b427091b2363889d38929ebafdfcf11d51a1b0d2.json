@@ -1,0 +1,1 @@
+"```sql\nSELECT ProductID\nFROM transactions_1k\nWHERE Date = '2012-08-23' AND Time = '21:20:00';\n```"

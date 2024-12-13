@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = set_translations.language, filter = 'Portuguese (Brazil)')\ndf2 = df1.where(element = cards.isOnlineOnly, filter = 1)\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

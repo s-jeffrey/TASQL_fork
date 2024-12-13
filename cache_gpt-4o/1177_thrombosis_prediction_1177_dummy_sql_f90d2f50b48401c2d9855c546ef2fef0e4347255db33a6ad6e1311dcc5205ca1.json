@@ -1,0 +1,1 @@
+"```sql\nSELECT \n  CASE \n    WHEN T-CHO < 250 THEN 'Normal' \n    ELSE 'Abnormal' \n  END AS Cholesterol_Status\nFROM \n  Laboratory\nWHERE \n  ID = 2927464 \n  AND Date = '1995-09-04';\n```\n\nThis SQL query checks the total cholesterol level for the patient with ID 2927464 on the specified date and determines if it is within the normal range (less than 250)."

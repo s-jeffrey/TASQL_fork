@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    SUM(expense.cost) * 100.0 / COUNT(DISTINCT event.event_id) AS percentage_cost\nFROM \n    event\nINNER JOIN \n    budget ON event.event_id = budget.link_to_event\nINNER JOIN \n    expense ON budget.budget_id = expense.link_to_budget\nWHERE \n    event.type = 'Meeting';\n```"

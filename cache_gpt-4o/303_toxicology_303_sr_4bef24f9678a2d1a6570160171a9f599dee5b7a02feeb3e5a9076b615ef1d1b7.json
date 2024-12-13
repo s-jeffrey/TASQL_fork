@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.molecule_id, filter = 'TR006')\ndf2 = df1.where(element = bond.bond_type, filter = '=')\ncount_double_bonds = df2.count()\n\ndf3 = df.where(element = molecule.molecule_id, filter = 'TR006')\ncarcinogenic_status = df3.select(molecule.label)\n\nres = df.select(count_double_bonds, carcinogenic_status)\n```"

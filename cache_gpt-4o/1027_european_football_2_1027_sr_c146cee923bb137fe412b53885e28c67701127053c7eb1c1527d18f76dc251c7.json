@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = Player_Attributes.penalties, desc).limit(10)\nres = df1.select(Player.player_name)\n```"

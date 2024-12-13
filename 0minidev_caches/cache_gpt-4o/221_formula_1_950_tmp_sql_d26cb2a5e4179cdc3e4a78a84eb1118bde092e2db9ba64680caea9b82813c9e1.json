@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.name\nFROM constructorResults\nINNER JOIN constructors ON constructorResults.constructorId = constructors.constructorId\nWHERE constructorResults.raceId = 291 AND constructorResults.points = 0;\n```"

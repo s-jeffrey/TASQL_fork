@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM superhero\nINNER JOIN gender ON superhero.gender_id = gender.id\nINNER JOIN publisher ON superhero.publisher_id = publisher.id\nWHERE gender.gender = 'Female' AND publisher.publisher_name = 'Marvel Comics';\n```"

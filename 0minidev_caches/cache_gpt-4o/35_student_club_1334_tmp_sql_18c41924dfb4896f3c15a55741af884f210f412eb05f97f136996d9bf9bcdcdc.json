@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(member.first_name, ' ', member.last_name) AS full_name\nFROM member\nINNER JOIN zip_code ON member.zip = zip_code.zip_code\nWHERE zip_code.state = 'Illinois';\n```"

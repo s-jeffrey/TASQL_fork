@@ -1,0 +1,1 @@
+"```sql\nSELECT T.team_long_name\nFROM Match M\nINNER JOIN League L ON M.league_id = L.id\nINNER JOIN Team T ON M.away_team_api_id = T.team_api_id\nWHERE L.name = 'Scotland Premier League'\n  AND M.season = '2009/2010'\n  AND M.away_team_goal > M.home_team_goal\nGROUP BY M.away_team_api_id\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

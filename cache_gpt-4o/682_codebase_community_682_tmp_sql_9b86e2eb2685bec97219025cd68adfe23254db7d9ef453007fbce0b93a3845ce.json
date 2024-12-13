@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Id, posts.OwnerDisplayName\nFROM posts\nWHERE strftime('%Y', posts.CreationDate) = '2010'\nORDER BY posts.FavoriteCount DESC\nLIMIT 1;\n```"

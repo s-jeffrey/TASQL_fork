@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = Laboratory.T-BIL, desc).limit(1)\nres = df1.select(Patient.ID, Patient.SEX, Patient.Birthday)\n```"

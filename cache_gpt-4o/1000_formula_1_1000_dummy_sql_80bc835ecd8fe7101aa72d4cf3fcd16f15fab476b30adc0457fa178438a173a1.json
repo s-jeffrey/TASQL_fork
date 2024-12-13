@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(circuits.location, ', ', circuits.country) AS full_location\nFROM races\nJOIN circuits ON races.circuitId = circuits.circuitId\nWHERE races.date = (SELECT MAX(date) FROM races);\n```"

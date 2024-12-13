@@ -1,0 +1,1 @@
+"```sql\nSELECT a.molecule_id, m.label\nFROM atom a\nINNER JOIN molecule m ON a.molecule_id = m.molecule_id\nWHERE a.atom_id = 'TR001_10';\n```"

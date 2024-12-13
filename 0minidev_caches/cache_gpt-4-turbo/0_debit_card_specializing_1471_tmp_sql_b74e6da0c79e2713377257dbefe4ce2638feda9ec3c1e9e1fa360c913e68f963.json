@@ -1,0 +1,1 @@
+"(SELECT COUNT(*) FROM customers WHERE Currency = 'EUR') / (SELECT COUNT(*) FROM customers WHERE Currency = 'CZK') AS ratio FROM customers;"

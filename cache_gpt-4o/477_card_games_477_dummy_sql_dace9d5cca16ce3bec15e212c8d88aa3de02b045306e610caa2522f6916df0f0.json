@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT artist\nFROM cards\nWHERE setCode = 'CSP' AND artist IN ('Jeremy Jarvis', 'Aaron Miller', 'Chippy');\n```\n\nThis SQL query selects the distinct artists from the `cards` table who have designed a card in the set \"Coldsnap\" (set code 'CSP') and whose names are either Jeremy Jarvis, Aaron Miller, or Chippy."

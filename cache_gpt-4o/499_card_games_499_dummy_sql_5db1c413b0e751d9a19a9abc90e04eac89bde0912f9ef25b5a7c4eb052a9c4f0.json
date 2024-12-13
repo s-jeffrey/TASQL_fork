@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(translation)\nFROM set_translations\nWHERE setCode = (\n  SELECT code\n  FROM sets\n  WHERE name = 'Tenth Edition'\n) AND translation IS NOT NULL;\n```"

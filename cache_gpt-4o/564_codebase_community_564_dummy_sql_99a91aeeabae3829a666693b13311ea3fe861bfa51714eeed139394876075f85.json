@@ -1,0 +1,1 @@
+"`Text` FROM `comments` WHERE `PostId` = (SELECT `Id` FROM `posts` WHERE `ParentId` = 107829 AND `CommentCount` = 1);\"\n"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM major\nWHERE college = 'College of Agriculture and Applied Sciences'\n  AND department = 'School of Applied Sciences, Technology and Education';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Player\nWHERE Player.birthday > '1990-01-01'\nAND Player.player_name LIKE 'Aaron%'\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Currency, filter = 'EUR')\ndf2 = df1.select(transactions_1k.Amount * transactions_1k.Price)\nres = df2.mean()\n```"

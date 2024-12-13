@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_type, filter = '=').where(element = bond.molecule_id, filter = 'TR024')\ndf2 = df1.select(connected.atom_id, connected.atom_id2)\ndf3 = df2.join(df, on = (df.atom_id == df2.atom_id) | (df.atom_id == df2.atom_id2))\nres = df3.select(atom.element)\n```"

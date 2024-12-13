@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Samuel')\ndf2 = df1.where(element = YEAR(users.CreationDate), filter = 2013)\ndf3 = df1.where(element = YEAR(badges.Date), filter = 2013)\nres = df2.select(posts.Id).union(df3.select(badges.Name))\n```"

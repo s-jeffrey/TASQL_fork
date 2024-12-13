@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.TG, filter = '< 200')\ndf2 = df1.select(Patient.Birthday)\nres = df.select(max(year(df2)) - min(year(df2)))\n```"

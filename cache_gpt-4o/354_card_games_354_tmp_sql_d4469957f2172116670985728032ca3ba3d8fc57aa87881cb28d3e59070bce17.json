@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT type)\nFROM cards\nWHERE artist = 'Aaron Boyd';\n```"

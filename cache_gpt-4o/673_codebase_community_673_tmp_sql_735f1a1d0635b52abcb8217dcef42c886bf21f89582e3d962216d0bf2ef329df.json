@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(post_count) \nFROM (\n    SELECT COUNT(DISTINCT votes.PostId) AS post_count\n    FROM users\n    INNER JOIN votes ON users.Id = votes.UserId\n    WHERE users.Age = (SELECT MAX(Age) FROM users)\n    GROUP BY votes.UserId\n) AS user_post_counts;\n```"

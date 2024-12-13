@@ -1,0 +1,1 @@
+"`superhero.full_name` FROM `superhero` INNER JOIN `colour` ON `superhero.eye_colour_id` = `colour.id` WHERE `superhero.weight_kg` < 100 AND `colour.colour` = 'Brown';\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Match.away_team_goal) \nFROM Match\nINNER JOIN Team ON Match.away_team_api_id = Team.team_api_id\nINNER JOIN League ON Match.league_id = League.id\nINNER JOIN Country ON League.country_id = Country.id\nWHERE Team.team_long_name = 'Parma' AND Country.name = 'Italy';\n```"

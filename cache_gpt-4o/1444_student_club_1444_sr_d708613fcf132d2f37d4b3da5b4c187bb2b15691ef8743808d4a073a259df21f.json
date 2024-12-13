@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(expense.expense_description).having(element = (df.sum(expense.cost) / df.count()), filter = '> 50')\nres = df1.select(expense.expense_description)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(Country.id).agg(avg_weight=('Player.weight', 'mean'))\ndf2 = df1.orderby(by='avg_weight', desc=True).limit(1)\nres = df2.select(Country.name)\n```"

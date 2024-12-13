@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.code, filter = 'is null')\nres = df1.count()\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.County, filter = 'Fresno')\ndf2 = df1.where(element = year(schools.OpenDate), filter = 1980)\nres = df2.select(avg(satscores.NumTstTakr))\n```"

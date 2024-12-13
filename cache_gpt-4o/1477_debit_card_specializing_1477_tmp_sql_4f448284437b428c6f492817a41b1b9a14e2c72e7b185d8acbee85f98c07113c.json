@@ -1,0 +1,1 @@
+"```sql\nSELECT strftime('%Y', t.Date) AS Year\nFROM transactions_1k t\nJOIN customers c ON t.CustomerID = c.CustomerID\nJOIN products p ON t.ProductID = p.ProductID\nWHERE c.Currency = 'EUR' AND p.Description LIKE '%Gas%'\nGROUP BY Year\nORDER BY SUM(t.Amount) DESC\nLIMIT 1;\n```"

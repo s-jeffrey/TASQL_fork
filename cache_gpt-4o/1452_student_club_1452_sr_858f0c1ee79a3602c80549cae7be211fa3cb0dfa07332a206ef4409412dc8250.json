@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = member.position, filter = '!= Member')\nres = df1.select(df1.avg(expense.cost))\n```"

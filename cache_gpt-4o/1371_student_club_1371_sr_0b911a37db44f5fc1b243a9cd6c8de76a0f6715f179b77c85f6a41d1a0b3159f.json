@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.event_name, filter = \"Women's Soccer\")\nres = df1.select(attendance.link_to_member).count()\n```"

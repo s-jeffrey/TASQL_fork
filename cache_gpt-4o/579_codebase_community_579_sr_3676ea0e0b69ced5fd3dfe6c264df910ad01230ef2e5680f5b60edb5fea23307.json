@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'How does gentle boosting differ from AdaBoost?')\ndf2 = df1.select(posts.Id)\nres = df.where(element = comments.PostId, filter = df2).select(comments.Text)\n```"

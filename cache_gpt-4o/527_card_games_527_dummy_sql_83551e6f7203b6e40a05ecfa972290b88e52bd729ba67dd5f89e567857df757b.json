@@ -1,0 +1,1 @@
+"```sql\nSELECT r.text\nFROM rulings r\nJOIN cards c ON r.uuid = c.uuid\nWHERE c.artist = 'Kev Walker'\nORDER BY r.date DESC;\n```"

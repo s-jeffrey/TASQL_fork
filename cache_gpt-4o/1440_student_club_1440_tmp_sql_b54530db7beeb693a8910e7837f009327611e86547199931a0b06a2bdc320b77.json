@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT member.email\nFROM expense\nINNER JOIN member ON expense.link_to_member = member.member_id\nWHERE expense.expense_date BETWEEN '2019-09-10' AND '2019-11-19'\nAND expense.cost > 20;\n```"

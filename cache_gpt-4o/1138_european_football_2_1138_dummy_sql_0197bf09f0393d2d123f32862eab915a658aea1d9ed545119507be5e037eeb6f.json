@@ -1,0 +1,1 @@
+"country.name FROM League JOIN Country ON League.country_id = Country.id WHERE League.name = 'Poland Ekstraklasa';\""

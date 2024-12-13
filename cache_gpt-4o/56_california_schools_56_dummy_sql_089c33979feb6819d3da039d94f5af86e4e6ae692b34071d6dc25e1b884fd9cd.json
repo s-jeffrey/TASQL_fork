@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nWHERE MailState = 'CA' AND City = 'San Joaquin' AND StatusType = 'Active';\n```\n\nThis SQL query counts the number of active schools located in San Joaquin city with a mailing state address in California. It uses the `schools` table and filters based on the `MailState`, `City`, and `StatusType` columns."

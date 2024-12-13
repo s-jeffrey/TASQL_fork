@@ -1,0 +1,1 @@
+"`ANA` FROM Examination JOIN Laboratory ON Examination.ID = Laboratory.ID WHERE `T-BIL` < 2.0 ORDER BY `T-BIL` DESC LIMIT 1;\"\n"

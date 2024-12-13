@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = badges.Name, filter = 'Necromancer')\nres = df1.select(users.DisplayName).limit(10)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT account_id\nFROM trans\nWHERE date = (\n  SELECT MIN(date)\n  FROM trans\n  WHERE date LIKE '1995%'\n);\n```\n\nThis SQL query selects the `account_id` from the `trans` table where the transaction date is the earliest in 1995. It uses a subquery to find the minimum date in 1995 and then retrieves the account IDs associated with that date."

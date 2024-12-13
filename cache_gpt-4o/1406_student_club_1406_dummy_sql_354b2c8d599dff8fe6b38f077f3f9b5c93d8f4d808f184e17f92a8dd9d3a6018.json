@@ -1,0 +1,1 @@
+"`budget_id`, `amount` FROM `budget` WHERE `category` = 'Food' ORDER BY `amount` DESC LIMIT 1;\"\n"

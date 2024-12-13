@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superpower.power_name, filter = 'Super Strength')\ndf2 = df1.where(element = superhero.height_cm, filter = '> 200')\nres = df2.count()\n```"

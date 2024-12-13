@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(expense.link_to_member).having(element = count(event.event_id), filter = '> 1')\ndf2 = df1.orderby(by = expense.cost, desc).limit(1)\nres = df2.select(member.first_name, member.last_name)\n```"

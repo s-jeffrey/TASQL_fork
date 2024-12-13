@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = event.status, filter = 'Closed')\ndf2 = df1.select(budget.link_to_event, (budget.spent / budget.amount).alias('spend_to_budget_ratio'))\ndf3 = df2.orderby(by = 'spend_to_budget_ratio', desc).limit(1)\nres = df3.select(event.event_name)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM event\nWHERE type = 'Meeting' AND YEAR(event_date) = 2020;\n```"

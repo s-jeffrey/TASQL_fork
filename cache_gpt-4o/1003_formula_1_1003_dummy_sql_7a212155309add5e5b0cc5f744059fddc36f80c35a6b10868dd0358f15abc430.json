@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM results\nJOIN races ON results.raceId = races.raceId\nWHERE races.name = 'Canadian Grand Prix' AND results.statusId = 3\nGROUP BY results.driverId\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```\n\nThis SQL query counts the number of accidents (where `statusId = 3`) for each driver in the Canadian Grand Prix and returns the highest count."

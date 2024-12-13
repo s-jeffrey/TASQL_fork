@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.id\nFROM cards\nWHERE cards.cardKingdomFoilId IS NOT NULL\n  AND cards.cardKingdomId IS NOT NULL\n  AND cards.hasFoil = 1\n  AND cards.hasNonFoil = 1;\n```"

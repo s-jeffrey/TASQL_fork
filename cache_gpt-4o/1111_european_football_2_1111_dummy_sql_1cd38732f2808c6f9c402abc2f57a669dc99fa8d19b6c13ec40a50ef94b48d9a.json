@@ -1,0 +1,1 @@
+"```sql\nSELECT Team_Attributes.chanceCreationPassingClass\nFROM Team_Attributes\nJOIN Team ON Team_Attributes.team_api_id = Team.team_api_id\nWHERE Team.team_long_name = 'PEC Zwolle'\nAND Team_Attributes.date = '2013-09-20 00:00:00';\n```"

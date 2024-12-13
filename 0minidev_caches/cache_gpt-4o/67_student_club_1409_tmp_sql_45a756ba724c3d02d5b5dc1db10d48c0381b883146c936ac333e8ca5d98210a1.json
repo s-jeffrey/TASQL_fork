@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(expense.cost) \nFROM expense \nWHERE expense.expense_date = '2019-08-20';\n```"

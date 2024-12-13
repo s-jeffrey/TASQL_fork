@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN COUNT(DISTINCT a.element) = 2 THEN 'Yes'\n        ELSE 'No'\n    END AS has_both_elements\nFROM \n    connected c\nJOIN \n    atom a ON c.atom_id = a.atom_id\nWHERE \n    c.bond_id = 'TR001_1_8' AND a.element IN ('cl', 'c');\n```"

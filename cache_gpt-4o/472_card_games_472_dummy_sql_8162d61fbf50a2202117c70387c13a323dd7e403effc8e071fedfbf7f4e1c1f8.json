@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT s.id)\nFROM sets s\nJOIN set_translations st ON s.code = st.setCode\nWHERE s.block = 'Ice Age' AND st.language = 'Italian' AND st.translation IS NOT NULL;\n```"

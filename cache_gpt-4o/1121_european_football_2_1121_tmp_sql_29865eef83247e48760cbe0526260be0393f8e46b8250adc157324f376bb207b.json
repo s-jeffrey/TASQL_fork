@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(Match.home_team_goal) AS total_home_team_goals\nFROM Match\nINNER JOIN Player ON Match.home_player_1 = Player.player_api_id\nWHERE (strftime('%Y', 'now') - strftime('%Y', Player.birthday)) <= 30\n```\n"

@@ -1,0 +1,1 @@
+"```sql\nSELECT m.label\nFROM (\n    SELECT b.molecule_id\n    FROM bond b\n    WHERE b.bond_type = '='\n    GROUP BY b.molecule_id\n    ORDER BY COUNT(*) DESC\n    LIMIT 1\n) AS subquery\nINNER JOIN molecule m ON subquery.molecule_id = m.molecule_id;\n```"

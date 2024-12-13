@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT connected.bond_id)\nFROM connected\nINNER JOIN atom ON connected.atom_id = atom.atom_id\nWHERE atom.element = 'i'\n```\n"

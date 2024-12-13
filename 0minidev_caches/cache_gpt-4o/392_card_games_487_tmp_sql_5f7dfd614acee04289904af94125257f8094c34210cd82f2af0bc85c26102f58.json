@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(SUM(CASE WHEN cards.cardKingdomFoilId IS NOT NULL AND cards.cardKingdomId IS NOT NULL THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*)) AS percentage_incredibly_powerful\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE sets.name = 'Coldsnap';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT p.Description\nFROM products p\nINNER JOIN transactions_1k t ON p.ProductID = t.ProductID\nGROUP BY p.ProductID\nORDER BY COUNT(t.ProductID) DESC\nLIMIT 5;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT event.event_name\nFROM member\nINNER JOIN attendance ON member.member_id = attendance.link_to_member\nINNER JOIN event ON attendance.link_to_event = event.event_id\nWHERE member.first_name = 'Maya' AND member.last_name = 'Mclean';\n```"

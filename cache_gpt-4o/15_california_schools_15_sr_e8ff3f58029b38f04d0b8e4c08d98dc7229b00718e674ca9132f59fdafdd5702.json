@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.StatusType, filter = 'Active')\ndf2 = df1.orderby(by = satscores.AvgScrRead, desc).limit(1)\nres = df2.select(schools.District)\n```"

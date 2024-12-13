@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.ALB, filter = '< 3.5')\nres = df1.select(Laboratory.ID, Patient.SEX, Patient.Diagnosis)\n```"

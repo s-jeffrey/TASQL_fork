@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.status, filter = 'A')\ntotal_paid_amount = df1.select(loan.amount).sum()\ntotal_amount = df.select(loan.amount).sum()\nres = df.select(cast(total_paid_amount, real) * 100 / total_amount)\n```"

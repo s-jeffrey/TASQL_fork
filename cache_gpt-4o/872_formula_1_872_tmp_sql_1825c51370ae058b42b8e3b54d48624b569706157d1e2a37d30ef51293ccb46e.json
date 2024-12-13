@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.code\nFROM qualifying\nINNER JOIN drivers ON qualifying.driverId = drivers.driverId\nWHERE qualifying.raceId = 45 AND qualifying.q3 LIKE '1:33%'\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT z.state\nFROM member m\nJOIN zip_code z ON m.zip = z.zip_code\nWHERE m.first_name = 'Sacha' AND m.last_name = 'Harrison';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT fd.name\nFROM cards c\nJOIN set_translations st ON c.setCode = st.setCode\nJOIN foreign_data fd ON c.uuid = fd.uuid\nWHERE st.translation = 'Coldsnap'\n  AND fd.language = 'Italian'\n  AND c.convertedManaCost = (\n    SELECT MAX(convertedManaCost)\n    FROM cards\n    WHERE setCode = 'CSP'\n  );\n```\n"

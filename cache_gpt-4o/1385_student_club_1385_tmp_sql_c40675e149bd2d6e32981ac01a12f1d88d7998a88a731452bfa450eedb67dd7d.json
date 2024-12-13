@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(member.first_name, ' ', member.last_name) AS full_name\nFROM income\nINNER JOIN member ON income.link_to_member = member.member_id\nWHERE income.amount > 40;\n```"

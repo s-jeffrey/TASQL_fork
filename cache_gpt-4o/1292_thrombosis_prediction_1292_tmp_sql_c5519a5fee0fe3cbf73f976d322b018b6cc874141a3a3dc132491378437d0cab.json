@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.`aCL IgA`, Examination.`aCL IgG`, Examination.`aCL IgM`\nFROM Examination\nINNER JOIN Laboratory ON Examination.ID = Laboratory.ID\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Patient.SEX = 'F' AND Laboratory.UA > 6.5\nORDER BY Laboratory.UA DESC\nLIMIT 1;\n```"

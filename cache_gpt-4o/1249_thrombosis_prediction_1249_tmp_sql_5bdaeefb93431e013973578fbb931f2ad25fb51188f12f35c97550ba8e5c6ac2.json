@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Patient.Diagnosis\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE CAST(Laboratory.`U-PRO` AS INTEGER) >= 30;\n```"

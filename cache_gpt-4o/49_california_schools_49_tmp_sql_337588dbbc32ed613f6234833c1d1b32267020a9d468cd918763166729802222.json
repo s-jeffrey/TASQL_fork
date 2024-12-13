@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.County, schools.School, schools.ClosedDate\nFROM schools\nWHERE schools.StatusType = 'Closed'\nAND schools.County = (\n    SELECT schools.County\n    FROM schools\n    WHERE schools.StatusType = 'Closed'\n    GROUP BY schools.County\n    ORDER BY COUNT(*) DESC\n    LIMIT 1\n)\n```\n"

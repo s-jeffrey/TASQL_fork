@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.superhero_name, filter = 'Hawkman')\ndf2 = df.where(element = superhero.superhero_name, filter = 'Karate Kid')\ndf3 = df.where(element = superhero.superhero_name, filter = 'Speedy')\ndf4 = df1.union(df2).union(df3)\nres = df4.select(publisher.publisher_name)\n```"

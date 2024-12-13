@@ -1,0 +1,1 @@
+"`FavoriteCount` FROM `posts` WHERE `Id` = (SELECT `PostId` FROM `comments` WHERE `UserId` = '3025' AND `CreationDate` = '2014-04-23 20:29:39.0');\""

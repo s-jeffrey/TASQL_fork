@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Patient.ID)\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.SEX = 'M' AND Laboratory.`T-BIL` >= 2.0;\n```\n\nThis SQL query counts the number of distinct male patients (`SEX = 'M'`) who have an elevated total bilirubin count (`T-BIL` >= 2.0) by joining the `Patient` and `Laboratory` tables on the `ID` column."

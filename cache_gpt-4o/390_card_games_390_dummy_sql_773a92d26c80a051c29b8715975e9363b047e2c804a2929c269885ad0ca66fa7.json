@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.id, cards.colors, legalities.format\nFROM cards\nLEFT JOIN legalities ON cards.uuid = legalities.uuid\nWHERE cards.id BETWEEN 1 AND 20;\n```"

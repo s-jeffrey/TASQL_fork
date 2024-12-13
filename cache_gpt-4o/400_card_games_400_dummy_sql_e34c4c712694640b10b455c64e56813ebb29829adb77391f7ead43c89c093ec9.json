@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT st.setCode\nFROM set_translations st\nWHERE st.language = 'Spanish';\n```"

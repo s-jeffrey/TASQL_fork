@@ -1,0 +1,1 @@
+"customers.CustomerID\nFROM customers\nINNER JOIN yearmonth ON customers.CustomerID = yearmonth.CustomerID\nWHERE substr(yearmonth.Date, 1, 4) = '2012'\nAND customers.Segment = 'LAM'\nORDER BY yearmonth.Consumption ASC\nLIMIT 1;"

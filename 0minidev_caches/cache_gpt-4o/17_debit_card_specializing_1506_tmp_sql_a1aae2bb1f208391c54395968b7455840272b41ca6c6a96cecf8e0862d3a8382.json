@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT products.Description\nFROM gasstations\nINNER JOIN transactions_1k ON gasstations.GasStationID = transactions_1k.GasStationID\nINNER JOIN products ON transactions_1k.ProductID = products.ProductID\nWHERE gasstations.Country = 'CZE';\n```"

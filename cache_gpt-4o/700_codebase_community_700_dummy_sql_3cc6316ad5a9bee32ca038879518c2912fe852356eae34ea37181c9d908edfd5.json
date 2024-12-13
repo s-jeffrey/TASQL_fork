@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM votes\nWHERE BountyAmount > 30;\n```\n\nThis SQL query counts the number of entries in the `votes` table where the `BountyAmount` is greater than 30, which corresponds to posts offering a bounty amount over 30."

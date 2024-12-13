@@ -1,0 +1,1 @@
+"```sql\nSELECT l.format, c.name\nFROM legalities l\nINNER JOIN cards c ON l.uuid = c.uuid\nWHERE l.status = 'Banned'\nGROUP BY l.format\nHAVING COUNT(l.status) = (\n    SELECT MAX(banned_count)\n    FROM (\n        SELECT COUNT(l2.status) AS banned_count\n        FROM legalities l2\n        WHERE l2.status = 'Banned'\n        GROUP BY l2.format\n    ) AS subquery\n)\n```\n"

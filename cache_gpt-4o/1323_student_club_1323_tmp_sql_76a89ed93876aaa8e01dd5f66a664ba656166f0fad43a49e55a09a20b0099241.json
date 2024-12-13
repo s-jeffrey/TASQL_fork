@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name\nFROM event\nINNER JOIN attendance ON event.event_id = attendance.link_to_event\nWHERE event.type != 'Fundraiser'\nGROUP BY event.event_id\nHAVING COUNT(attendance.link_to_event) > 20;\n```"

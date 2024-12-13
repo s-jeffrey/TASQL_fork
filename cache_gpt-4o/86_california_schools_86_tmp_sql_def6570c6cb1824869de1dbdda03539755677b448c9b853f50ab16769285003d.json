@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.AdmLName1, schools.District, schools.County, schools.School\nFROM schools\nWHERE schools.CharterNum = '40';\n```"

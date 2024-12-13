@@ -1,0 +1,1 @@
+"```sql\nSELECT LastEditDate, LastEditorUserId\nFROM posts\nWHERE Title = 'Detecting a given face in a database of facial images';\n```"

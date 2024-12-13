@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    Patient.ID, \n    Patient.SEX, \n    (strftime('%Y', 'now') - strftime('%Y', Patient.Birthday)) AS age\nFROM \n    Laboratory\nINNER JOIN \n    Patient ON Laboratory.ID = Patient.ID\nWHERE \n    Laboratory.GLU >= 180 \n    AND Laboratory.T-CHO < 250;\n```"

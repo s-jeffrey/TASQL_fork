@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT element\nFROM atom\nWHERE molecule_id = 'TR000'\nORDER BY element\nLIMIT 3;\n```"

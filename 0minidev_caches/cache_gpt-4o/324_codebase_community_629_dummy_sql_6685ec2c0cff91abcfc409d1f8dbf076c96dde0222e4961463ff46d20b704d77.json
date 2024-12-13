@@ -1,0 +1,1 @@
+"`SELECT COUNT(Id WHERE YEAR(CreationDate) = 2010) / COUNT(Id WHERE YEAR(CreationDate) = 2011) AS vote_ratio FROM votes;`"

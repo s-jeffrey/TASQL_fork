@@ -1,0 +1,1 @@
+"`ROUND((SUM(CASE WHEN bond_type = '=' THEN 1 ELSE 0 END) / COUNT(bond_id)) * 100, 5) AS percent FROM bond WHERE molecule_id = 'TR008';`"

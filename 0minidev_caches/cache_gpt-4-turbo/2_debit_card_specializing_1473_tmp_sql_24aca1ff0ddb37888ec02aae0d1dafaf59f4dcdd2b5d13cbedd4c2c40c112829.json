@@ -1,0 +1,1 @@
+"AVG(yearmonth.Consumption) / 12 AS Average_Monthly_Consumption\nFROM customers\nINNER JOIN yearmonth ON customers.CustomerID = yearmonth.CustomerID\nWHERE customers.Segment = 'SME'\nAND substr(yearmonth.Date, 1, 4) = '2013';"

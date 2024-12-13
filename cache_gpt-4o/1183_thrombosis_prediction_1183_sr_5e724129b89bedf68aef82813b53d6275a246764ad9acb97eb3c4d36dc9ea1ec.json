@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.Diagnosis, filter = 'SLE').where(element = `Examination Date`, filter = '1997-01-27')\nres = df1.select(Patient.Diagnosis)\n```"

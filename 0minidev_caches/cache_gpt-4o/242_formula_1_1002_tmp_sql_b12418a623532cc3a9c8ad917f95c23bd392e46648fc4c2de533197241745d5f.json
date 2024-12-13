@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(d.forename, ' ', d.surname) AS full_name, \n       d.nationality, \n       r.name AS race_name\nFROM drivers d\nJOIN results res ON d.driverId = res.driverId\nJOIN races r ON res.raceId = r.raceId\nWHERE d.dob = (SELECT MAX(dob) FROM drivers)\nORDER BY r.date\nLIMIT 1;\n```"

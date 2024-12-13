@@ -1,0 +1,1 @@
+"```sql\nSELECT Match.home_team_goal, Match.away_team_goal\nFROM Match\nINNER JOIN League ON Match.league_id = League.id\nWHERE Match.date LIKE '2008-09-24%' AND League.name = 'Belgium Jupiler League';\n```"

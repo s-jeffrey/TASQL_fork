@@ -1,0 +1,1 @@
+"```sql\nSELECT artist\nFROM cards\nWHERE flavorName = 'Battra, Dark Destroyer';\n```"

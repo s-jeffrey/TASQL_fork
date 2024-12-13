@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nWHERE cards.borderColor = 'black' AND cards.isFullArt = 1;\n```"

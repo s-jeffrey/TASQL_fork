@@ -1,0 +1,1 @@
+"`superhero.superhero_name` FROM `superhero` JOIN `alignment` ON `superhero.alignment_id` = `alignment.id` WHERE `alignment.alignment` = 'Neutral';\""

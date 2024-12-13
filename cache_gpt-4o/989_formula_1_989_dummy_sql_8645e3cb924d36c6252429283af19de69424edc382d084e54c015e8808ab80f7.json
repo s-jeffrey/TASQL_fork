@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname, r.time\nFROM results r\nJOIN races ra ON r.raceId = ra.raceId\nJOIN drivers d ON r.driverId = d.driverId\nWHERE ra.name = 'Canadian Grand Prix' AND ra.year = 2008 AND r.positionOrder = 1;\n```"

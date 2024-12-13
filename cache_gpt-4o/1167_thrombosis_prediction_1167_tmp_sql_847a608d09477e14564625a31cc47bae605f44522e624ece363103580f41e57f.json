@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Laboratory.ID) / 12 AS average_male_patients_per_month\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.Date BETWEEN '1998-01-01' AND '1998-12-31'\nAND Patient.SEX = 'M';\n```"

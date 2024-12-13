@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name\nFROM superhero\nJOIN gender ON superhero.gender_id = gender.id\nWHERE gender.gender = 'Male'\nAND superhero.weight_kg > (\n  SELECT AVG(weight_kg) * 0.79\n  FROM superhero\n);\n```"

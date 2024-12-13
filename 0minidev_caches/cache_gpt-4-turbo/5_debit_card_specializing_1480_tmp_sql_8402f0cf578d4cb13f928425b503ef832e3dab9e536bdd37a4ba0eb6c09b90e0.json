@@ -1,0 +1,1 @@
+"SUBSTR(yearmonth.Date, 5, 2) AS PeakMonth\nFROM yearmonth\nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Segment = 'SME'\nAND SUBSTR(yearmonth.Date, 1, 4) = '2013'\nORDER BY yearmonth.Consumption DESC\nLIMIT 1;"

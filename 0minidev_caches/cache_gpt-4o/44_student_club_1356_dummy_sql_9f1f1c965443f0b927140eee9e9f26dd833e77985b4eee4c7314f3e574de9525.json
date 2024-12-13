@@ -1,0 +1,1 @@
+"`department` FROM `major` WHERE `major_id` = (SELECT `link_to_major` FROM `member` WHERE `position` = 'President');\""

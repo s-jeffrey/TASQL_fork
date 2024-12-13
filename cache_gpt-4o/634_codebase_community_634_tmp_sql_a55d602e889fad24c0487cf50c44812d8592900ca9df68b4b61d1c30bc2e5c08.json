@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM users\nINNER JOIN posts ON users.Id = posts.OwnerUserId\nWHERE users.DisplayName IN ('Harvey Motulsky', 'Noah Snyder')\nGROUP BY users.DisplayName\nORDER BY SUM(posts.ViewCount) DESC\nLIMIT 1;\n```"

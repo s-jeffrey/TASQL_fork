@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT connected.atom_id2\nFROM connected\nINNER JOIN atom ON connected.atom_id = atom.atom_id\nWHERE atom.molecule_id = 'TR181';\n```"

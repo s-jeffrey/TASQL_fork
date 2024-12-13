@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.name\nFROM cards\nINNER JOIN sets ON cards.setCode = sets.code\nWHERE sets.name = 'Journey into Nyx Hero''s Path'\nORDER BY cards.convertedManaCost DESC\nLIMIT 1;\n```"

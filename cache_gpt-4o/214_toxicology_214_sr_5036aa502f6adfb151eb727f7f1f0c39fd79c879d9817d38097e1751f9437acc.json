@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 'sn')\ndf2 = df.where(element = molecule.molecule_id, filter = df1.select(atom.molecule_id))\nres = df2.select(molecule.label).distinct().where(element = molecule.label, filter = '-')\n```"

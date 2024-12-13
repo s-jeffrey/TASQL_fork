@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.amount, filter = '> 10000')\ndf2 = df1.where(element = trans.date, filter = '>= 1997-01-01').where(element = trans.date, filter = '<= 1997-12-31')\nres = df2.select(district.A2)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT availability\nFROM cards\nWHERE artist = 'Aleksi Briclot' AND isTextless = 1;\n```"

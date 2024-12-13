@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(DISTINCT Laboratory.ID) AS REAL) * 100.0 / COUNT(DISTINCT Patient.ID)) AS percentage\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.SEX = 'F' AND (Laboratory.TP < 6.0 OR Laboratory.TP > 8.5);\n```"

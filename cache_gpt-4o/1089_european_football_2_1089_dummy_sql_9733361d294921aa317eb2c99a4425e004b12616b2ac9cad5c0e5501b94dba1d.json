@@ -1,0 +1,1 @@
+"COUNT(*) FROM Match INNER JOIN League ON Match.league_id = League.id INNER JOIN Country ON League.country_id = Country.id WHERE Match.season = '2008/2009' AND Country.name = 'Belgium';\""

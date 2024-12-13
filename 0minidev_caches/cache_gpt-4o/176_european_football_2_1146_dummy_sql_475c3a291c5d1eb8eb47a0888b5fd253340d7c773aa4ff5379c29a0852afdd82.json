@@ -1,0 +1,1 @@
+"`team_long_name` FROM `Team` JOIN `Match` ON `Team`.`team_api_id` = `Match`.`away_team_api_id` GROUP BY `away_team_api_id` ORDER BY MAX(`away_team_goal`) DESC LIMIT 1;\"\n"

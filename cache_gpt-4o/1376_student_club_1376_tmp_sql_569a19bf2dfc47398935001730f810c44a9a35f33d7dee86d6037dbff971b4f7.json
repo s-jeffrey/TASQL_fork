@@ -1,0 +1,1 @@
+"```sql\nSELECT e.event_name\nFROM event e\nINNER JOIN budget b ON e.event_id = b.link_to_event\nWHERE e.status = 'Closed'\nORDER BY (b.spent / b.amount) DESC\nLIMIT 1;\n```"

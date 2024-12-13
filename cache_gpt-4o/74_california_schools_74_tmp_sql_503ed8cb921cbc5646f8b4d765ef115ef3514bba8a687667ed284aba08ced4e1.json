@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(frpm.CDSCode)\nFROM schools\nINNER JOIN frpm ON schools.CDSCode = frpm.CDSCode\nWHERE schools.EdOpsCode = 'SPECON'\n  AND schools.NCESDist = '0613360';\n```"

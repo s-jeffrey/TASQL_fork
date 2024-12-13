@@ -1,0 +1,1 @@
+"```sql\nSELECT d.nationality\nFROM results r\nINNER JOIN drivers d ON r.driverId = d.driverId\nWHERE r.raceId = 933\nORDER BY CAST(r.fastestLapSpeed AS FLOAT) DESC\nLIMIT 1;\n```"

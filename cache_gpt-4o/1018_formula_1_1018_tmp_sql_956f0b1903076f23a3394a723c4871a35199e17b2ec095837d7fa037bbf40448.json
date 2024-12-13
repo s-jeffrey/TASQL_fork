@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(pitStops.milliseconds) AS average_pit_stop_time\nFROM drivers\nINNER JOIN pitStops ON drivers.driverId = pitStops.driverId\nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton';\n```"

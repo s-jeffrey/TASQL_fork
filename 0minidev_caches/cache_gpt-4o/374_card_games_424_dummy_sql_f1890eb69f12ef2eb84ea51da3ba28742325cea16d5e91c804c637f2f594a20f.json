@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(*) FILTER (WHERE isTextless = 1 AND layout = 'normal')::float / COUNT(*)) * 100 AS proportion_of_textless_normal_layout_cards\nFROM cards;\n```"

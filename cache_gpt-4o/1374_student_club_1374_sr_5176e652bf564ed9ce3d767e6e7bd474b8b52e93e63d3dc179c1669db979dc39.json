@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = member.phone, filter = '954-555-6240')\ndf2 = df.where(element = attendance.link_to_member, filter = df1.select(member.member_id))\nres = df2.count()\n```"

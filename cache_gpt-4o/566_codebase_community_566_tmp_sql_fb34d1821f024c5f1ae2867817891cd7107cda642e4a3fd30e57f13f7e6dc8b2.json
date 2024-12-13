@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Reputation\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.Id = 65041;\n```"

@@ -1,0 +1,1 @@
+"`ExcerptPostId`, `WikiPostId` FROM `tags` WHERE `TagName` = 'sample';\""

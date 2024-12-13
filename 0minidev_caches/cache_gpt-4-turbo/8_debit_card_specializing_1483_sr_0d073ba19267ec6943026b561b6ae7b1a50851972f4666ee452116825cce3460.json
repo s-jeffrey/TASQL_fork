@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = yearmonth.CustomerID, filter = 6)\n    df2 = df1.where(element = yearmonth.Date, filter = '>= 201308').where(element = yearmonth.Date, filter = '<= 201311')\n    res = df2.select(yearmonth.Consumption).sum()\""

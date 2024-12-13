@@ -1,0 +1,1 @@
+"SUM(t.Amount * t.Price) AS TotalSpent\nFROM transactions_1k t\nJOIN yearmonth ym ON t.CustomerID = ym.CustomerID\nWHERE t.CustomerID = 38508 AND ym.Date = '201201';\"\n"

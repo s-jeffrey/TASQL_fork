@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.ViewCount, filter = '> AVG(posts.ViewCount)')\nres = df1.count()\n```"

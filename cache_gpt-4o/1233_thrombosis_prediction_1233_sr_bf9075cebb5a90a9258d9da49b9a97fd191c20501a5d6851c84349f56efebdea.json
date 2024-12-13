@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.Description, filter = '1991')\ndf2 = df1.where(element = Laboratory.GLU, filter = '< 180')\nres = df2.select(Patient.ID, Laboratory.GLU)\n```"

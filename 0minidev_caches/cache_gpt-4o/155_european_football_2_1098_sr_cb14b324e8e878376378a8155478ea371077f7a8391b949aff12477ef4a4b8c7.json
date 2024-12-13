@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Team.team_long_name, filter = 'Ajax')\ndf2 = df1.orderby(by = Team_Attributes.chanceCreationPassing, desc).limit(1)\nres = df2.select(Team_Attributes.chanceCreationPassing, Team_Attributes.chanceCreationPassingClass)\n```"

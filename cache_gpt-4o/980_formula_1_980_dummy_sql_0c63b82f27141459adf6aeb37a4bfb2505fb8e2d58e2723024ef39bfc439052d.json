@@ -1,0 +1,1 @@
+"```sql\nSELECT d.driverRef, d.nationality, d.dob\nFROM qualifying q\nJOIN drivers d ON q.driverId = d.driverId\nWHERE q.raceId = 23 AND q.q2 IS NOT NULL;\n```"

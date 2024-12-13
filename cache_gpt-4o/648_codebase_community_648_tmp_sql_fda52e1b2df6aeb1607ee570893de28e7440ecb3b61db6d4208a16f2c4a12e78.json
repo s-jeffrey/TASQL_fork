@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName, users.WebsiteUrl\nFROM posts\nINNER JOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.FavoriteCount > 150;\n```"

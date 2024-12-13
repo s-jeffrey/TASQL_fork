@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT constructors.constructorId)\nFROM constructors\nINNER JOIN results ON constructors.constructorId = results.constructorId\nINNER JOIN lapTimes ON results.driverId = lapTimes.driverId AND results.raceId = lapTimes.raceId\nWHERE constructors.nationality = 'French' AND lapTimes.lap > 50;\n```"

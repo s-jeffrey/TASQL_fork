@@ -1,0 +1,1 @@
+"`player_name` FROM `Player` INNER JOIN `Player_Attributes` ON `Player`.`player_api_id` = `Player_Attributes`.`player_api_id` WHERE `preferred_foot` = 'left';\""

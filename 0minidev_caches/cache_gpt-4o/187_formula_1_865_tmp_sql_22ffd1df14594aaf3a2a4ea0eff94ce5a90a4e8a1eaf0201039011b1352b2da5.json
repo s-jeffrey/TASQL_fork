@@ -1,0 +1,1 @@
+"```sql\nSELECT d.forename, d.surname\nFROM drivers d\nINNER JOIN results r ON d.driverId = r.driverId\nWHERE r.raceId = 592 AND r.time IS NOT NULL\nORDER BY d.dob ASC\nLIMIT 1;\n```"

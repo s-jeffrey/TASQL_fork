@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.name, filter = 'Adarkar Valkyrie')\ndf2 = df1.select(cards.setCode)\ndf3 = df.where(element = sets.code, filter = df2)\nres = df3.select(sets.isForeignOnly)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT T.team_long_name\nFROM Match M\nJOIN Team T ON M.home_team_api_id = T.team_api_id\nWHERE M.season = '2015/2016' AND (M.home_team_goal - M.away_team_goal) < 0\nGROUP BY M.home_team_api_id\nORDER BY COUNT(M.id) ASC\nLIMIT 1;\n```"

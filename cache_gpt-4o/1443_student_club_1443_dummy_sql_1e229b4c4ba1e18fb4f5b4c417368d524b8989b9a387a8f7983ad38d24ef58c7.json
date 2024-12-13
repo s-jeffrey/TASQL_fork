@@ -1,0 +1,1 @@
+"`event_id`, `location`, `status` FROM `event` WHERE `event_date` BETWEEN '2019-11-01' AND '2020-03-31';\""

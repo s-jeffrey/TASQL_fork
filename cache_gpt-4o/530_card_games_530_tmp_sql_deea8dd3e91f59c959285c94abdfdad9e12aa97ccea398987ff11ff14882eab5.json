@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT c.frameVersion, c.name\nFROM cards c\nWHERE c.artist = 'Allen Williams'\n\nUNION\n\nSELECT DISTINCT c.name\nFROM cards c\nINNER JOIN legalities l ON c.uuid = l.uuid\nWHERE l.status = 'Banned';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(*) \n     FROM bond \n     WHERE bond.molecule_id = 'TR006' AND bond.bond_type = '=') AS count_double_bonds,\n    (SELECT molecule.label \n     FROM molecule \n     WHERE molecule.molecule_id = 'TR006') AS carcinogenic_status;\n```"

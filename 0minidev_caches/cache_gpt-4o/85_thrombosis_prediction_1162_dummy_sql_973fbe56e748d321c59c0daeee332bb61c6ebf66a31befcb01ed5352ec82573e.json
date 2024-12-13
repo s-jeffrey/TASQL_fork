@@ -1,0 +1,1 @@
+"COUNT(*) FROM Patient WHERE SEX = 'F' AND YEAR(First Date) = 1997 AND Admission = '-';\""

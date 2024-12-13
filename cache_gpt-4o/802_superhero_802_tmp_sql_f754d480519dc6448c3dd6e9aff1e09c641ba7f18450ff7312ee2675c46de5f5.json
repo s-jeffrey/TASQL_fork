@@ -1,0 +1,1 @@
+"```sql\nSELECT superhero.superhero_name\nFROM superhero\nWHERE superhero.height_cm = (\n    SELECT MAX(superhero.height_cm)\n    FROM superhero\n)\nLIMIT 1;\n```"

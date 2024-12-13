@@ -1,0 +1,1 @@
+"```sql\nSELECT nationality\nFROM drivers\nGROUP BY nationality\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.frameVersion, filter = '2015')\nres = df1.select(cards.edhrecRank)\n```"

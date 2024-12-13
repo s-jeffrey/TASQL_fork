@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(SUM(CASE WHEN gender.gender = 'Male' THEN 1 ELSE 0 END) AS REAL) / \n       SUM(CASE WHEN gender.gender = 'Female' THEN 1 ELSE 0 END) AS ratio\nFROM superhero\nINNER JOIN gender ON superhero.gender_id = gender.id;\n```"

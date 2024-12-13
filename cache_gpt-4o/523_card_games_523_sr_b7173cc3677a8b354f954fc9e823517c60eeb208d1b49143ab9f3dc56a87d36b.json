@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.releaseDate, filter = '>= 2012-01-01').where(element = sets.releaseDate, filter = '<= 2015-12-31')\nannual_avg = df1.groupby(df1.releaseDate.year).count().mean()\ncommon_language = df.groupby(set_translations.language).count().orderBy(desc).limit(1)\nres = df.select(annual_avg, common_language)\n```"

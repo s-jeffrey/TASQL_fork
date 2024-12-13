@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM comments\nWHERE UserId = 13 AND Score < 60;\n```\n\nThis SQL query counts the number of comments made by the user with ID 13 that have a score less than 60, which are considered negative comments according to the provided evidence."

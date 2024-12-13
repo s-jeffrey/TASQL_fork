@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.City, filter = 'Adelanto')\ndf2 = df1.groupby(schools.GSserved).count()\nres = df2.orderby(by = 'count', desc).limit(1).select(schools.GSserved)\n```"

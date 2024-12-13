@@ -1,0 +1,1 @@
+"```sql\nSELECT publisher.publisher_name\nFROM superhero\nINNER JOIN publisher ON superhero.publisher_id = publisher.id\nWHERE superhero.superhero_name = 'Blue Beetle II';\n```"

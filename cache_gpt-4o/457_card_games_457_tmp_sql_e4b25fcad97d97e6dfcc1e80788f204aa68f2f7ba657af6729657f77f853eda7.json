@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.purchaseUrls\nFROM cards\nWHERE cards.promoTypes LIKE '%bundle%'\n```"

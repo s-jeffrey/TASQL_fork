@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = account.district_id, filter = 5)\nres = df1.select(trans.trans_id, trans.account_id, trans.amount, trans.balance, trans.bank, trans.date, trans.k_symbol, trans.operation, trans.type)\n```"

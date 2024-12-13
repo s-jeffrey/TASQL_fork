@@ -1,0 +1,1 @@
+"```sql\nSELECT player_name\nFROM Player\nWHERE (strftime('%Y', 'now') - strftime('%Y', birthday)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birthday)) >= 35;\n```"

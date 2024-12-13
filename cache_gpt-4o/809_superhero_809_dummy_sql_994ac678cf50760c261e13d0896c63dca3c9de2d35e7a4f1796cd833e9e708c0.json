@@ -1,0 +1,1 @@
+"`publisher_name` FROM `publisher` WHERE `id` = (SELECT `publisher_id` FROM `superhero` WHERE `id` = 38);\""

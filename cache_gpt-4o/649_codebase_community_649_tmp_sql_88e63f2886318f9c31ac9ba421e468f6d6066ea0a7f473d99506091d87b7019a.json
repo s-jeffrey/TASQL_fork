@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(postHistory.Id), posts.LastEditDate\nFROM posts\nINNER JOIN postHistory ON posts.Id = postHistory.PostId\nWHERE posts.Title = 'What is the best introductory Bayesian statistics textbook?'\nGROUP BY posts.LastEditDate\n```"

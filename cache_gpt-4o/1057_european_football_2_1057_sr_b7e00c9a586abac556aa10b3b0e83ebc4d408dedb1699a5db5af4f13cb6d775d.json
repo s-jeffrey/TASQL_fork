@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Country.name, filter = 'Poland')\ndf2 = df1.where(element = Match.season, filter = '2010/2011')\nres = df2.select(df2.sum(Match.home_team_goal) / df2.count_distinct(Match.id))\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT customers.Currency\nFROM yearmonth\nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE yearmonth.Date = '201306' AND yearmonth.Consumption = 214582.17;\n```"

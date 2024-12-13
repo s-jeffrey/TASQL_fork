@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname\nFROM drivers\nINNER JOIN lapTimes ON drivers.driverId = lapTimes.driverId\nWHERE drivers.nationality = 'Spanish' \n  AND strftime('%Y', drivers.dob) < '1982'\nGROUP BY drivers.driverId\nORDER BY MAX(lapTimes.time) DESC\nLIMIT 10;\n```"

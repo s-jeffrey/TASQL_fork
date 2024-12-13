@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(set_translations.translation)\nFROM sets\nINNER JOIN set_translations ON sets.code = set_translations.setCode\nWHERE sets.name = 'Tenth Edition' AND set_translations.translation IS NOT NULL;\n```"

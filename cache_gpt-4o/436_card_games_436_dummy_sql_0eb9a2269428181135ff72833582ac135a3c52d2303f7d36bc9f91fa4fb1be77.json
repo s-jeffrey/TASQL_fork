@@ -1,0 +1,1 @@
+"```sql\nSELECT id\nFROM cards\nWHERE frameEffects LIKE '%extendedart%';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = zip_code.county, filter = 'Orange County').where(element = zip_code.state, filter = 'Virginia')\nres = df1.select(zip_code.city).count()\n```"

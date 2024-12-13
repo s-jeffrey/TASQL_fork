@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Examination.`ANA Pattern`, filter = '!= P')\ndf2 = df1.where(element = Patient.SEX, filter = 'F')\ndf3 = df2.where(element = Patient.Birthday, filter = '>= 1980-01-01').where(element = Patient.Birthday, filter = '<= 1989-12-31')\nres = df3.count()\n```"

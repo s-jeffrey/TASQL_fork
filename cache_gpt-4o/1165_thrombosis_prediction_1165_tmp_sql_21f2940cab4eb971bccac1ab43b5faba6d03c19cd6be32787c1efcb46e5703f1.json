@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(YEAR(Patient.Birthday)) - MIN(YEAR(Patient.Birthday)) AS age_gap\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.TG < 200;\n```"

@@ -1,0 +1,1 @@
+"`player_name` FROM `Player` JOIN `Player_Attributes` ON `Player`.`player_api_id` = `Player_Attributes`.`player_api_id` WHERE `overall_rating` = (SELECT MAX(`overall_rating`) FROM `Player_Attributes`);\""

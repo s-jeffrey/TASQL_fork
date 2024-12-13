@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nJOIN rulings ON cards.uuid = rulings.uuid\nWHERE cards.rarity = 'rare' AND rulings.date = '2007-02-01';\n```"

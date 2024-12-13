@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = superhero.weight_kg, filter = '0').or_where(element = superhero.weight_kg, filter = 'NULL')\nres = df1.select(superhero.full_name)\n```"

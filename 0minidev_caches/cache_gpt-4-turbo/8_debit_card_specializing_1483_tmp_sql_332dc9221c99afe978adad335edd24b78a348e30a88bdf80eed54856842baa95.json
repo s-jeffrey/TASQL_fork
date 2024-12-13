@@ -1,0 +1,1 @@
+"SUM(yearmonth.Consumption) AS TotalConsumption\nFROM yearmonth\nWHERE yearmonth.CustomerID = 6\nAND yearmonth.Date >= '201308'\nAND yearmonth.Date <= '201311'\""

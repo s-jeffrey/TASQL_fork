@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = year(races.date), filter = year(min(races.date))).where(element = month(races.date), filter = month(min(races.date)))\nres = df1.select(races.name)\n```"

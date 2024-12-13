@@ -1,0 +1,1 @@
+"```sql\nSELECT s.superhero_name\nFROM superhero s\nJOIN publisher p ON s.publisher_id = p.id\nWHERE p.publisher_name = 'Marvel Comics'\nORDER BY s.height_cm DESC;\n```"

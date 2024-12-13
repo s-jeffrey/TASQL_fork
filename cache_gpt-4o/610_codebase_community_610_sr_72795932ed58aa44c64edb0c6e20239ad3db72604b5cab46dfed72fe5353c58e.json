@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.Reputation, filter = max(users.Reputation))\nres = df1.select(badges.Name)\n```"

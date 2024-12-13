@@ -1,0 +1,1 @@
+"COUNT(*) FROM superhero INNER JOIN publisher ON superhero.publisher_id = publisher.id WHERE publisher.publisher_name = 'Marvel Comics';\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT state\nFROM zip_code\nWHERE type = 'PO Box';\n```"

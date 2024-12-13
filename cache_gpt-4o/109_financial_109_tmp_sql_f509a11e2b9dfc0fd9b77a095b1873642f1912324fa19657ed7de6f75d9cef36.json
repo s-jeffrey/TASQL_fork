@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT client.client_id)\nFROM client\nINNER JOIN disp ON client.client_id = disp.client_id\nINNER JOIN account ON disp.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE district.A2 = 'Jesenik' AND client.gender = 'F';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT trans.date, trans.amount, trans.account_id\nFROM trans\nINNER JOIN disp ON trans.account_id = disp.account_id\nWHERE trans.operation = 'VYBER' AND disp.client_id = 3356;\n```"

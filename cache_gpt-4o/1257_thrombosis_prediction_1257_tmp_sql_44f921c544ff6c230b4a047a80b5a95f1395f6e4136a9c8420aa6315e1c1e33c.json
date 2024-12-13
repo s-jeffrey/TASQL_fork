@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.CRE >= 1.5\nAND (strftime('%Y', 'now') - strftime('%Y', Patient.Birthday)) < 70;\n```"

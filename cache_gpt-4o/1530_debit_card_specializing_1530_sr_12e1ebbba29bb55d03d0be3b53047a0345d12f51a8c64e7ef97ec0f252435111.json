@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(products.ProductID).agg(count=transactions_1k.ProductID.count())\ndf2 = df1.orderby(by='count', desc).limit(5)\nres = df2.select(products.Description)\n```"

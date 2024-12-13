@@ -1,0 +1,1 @@
+"```sql\nSELECT races.year, AVG(STRFTIME('%s', results.time) - STRFTIME('%s', '00:00:00')) AS average_champion_time_seconds\nFROM results\nINNER JOIN races ON results.raceId = races.raceId\nWHERE results.positionOrder = 1 AND races.year < 1975 AND results.time IS NOT NULL\nGROUP BY races.year;\n```"

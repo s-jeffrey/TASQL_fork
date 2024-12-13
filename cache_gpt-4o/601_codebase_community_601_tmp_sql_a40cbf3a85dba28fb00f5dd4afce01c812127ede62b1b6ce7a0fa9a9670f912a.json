@@ -1,0 +1,1 @@
+"```sql\nSELECT comments.Score, postLinks.LinkTypeId\nFROM comments\nINNER JOIN postLinks ON comments.PostId = postLinks.PostId\nWHERE comments.PostId = 395;\n```"

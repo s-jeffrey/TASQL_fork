@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Why square the difference instead of taking the absolute value in standard deviation?')\ndf2 = df1.select(posts.Id)\ndf3 = df.where(element = postHistory.PostId, filter = df2)\ndf4 = df3.select(postHistory.UserId)\ndf5 = df.where(element = comments.UserId, filter = df4)\nres = df5.select(comments.Text)\n```"

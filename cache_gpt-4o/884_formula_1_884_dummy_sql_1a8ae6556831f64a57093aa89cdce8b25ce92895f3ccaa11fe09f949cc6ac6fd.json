@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM races\nWHERE date = (\n  SELECT MIN(date)\n  FROM races\n);\n```"

@@ -1,0 +1,1 @@
+"`COUNT(*)` FROM `major` WHERE `college` = 'College of Humanities and Social Sciences';\""

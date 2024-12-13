@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.availability, filter = 'mtgo,paper')\ndf2 = df1.where(element = cards.frameVersion, filter = '2003')\ndf3 = df2.where(element = cards.borderColor, filter = 'black')\ndf4 = df3.where(element = cards.layout, filter = 'normal')\nres = df4.select(cards.manaCost)\n```"

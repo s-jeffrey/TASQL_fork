@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) FILTER (WHERE borderColor = 'borderless') AS REAL) * 100 / COUNT(*)) AS percentage\nFROM cards;\n```"

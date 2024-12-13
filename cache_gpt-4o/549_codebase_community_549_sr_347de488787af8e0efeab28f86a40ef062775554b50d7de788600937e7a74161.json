@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = tags.TagName, filter = 'bayesian')\ndf2 = df1.select(tags.ExcerptPostId)\nres = df.where(element = posts.Id, filter = df2).select(posts.Body)\n```"

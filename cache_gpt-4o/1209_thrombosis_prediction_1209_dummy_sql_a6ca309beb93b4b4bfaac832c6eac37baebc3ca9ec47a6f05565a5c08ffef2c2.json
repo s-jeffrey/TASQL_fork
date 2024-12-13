@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Diagnosis\nFROM Patient\nJOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Laboratory.GPT > 60\nORDER BY Patient.Birthday ASC;\n```"

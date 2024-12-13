@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(b.bond_id) AS double_bond_count, m.label\nFROM bond b\nJOIN molecule m ON b.molecule_id = m.molecule_id\nWHERE b.molecule_id = 'TR006' AND b.bond_type = '='\nGROUP BY m.label;\n```"

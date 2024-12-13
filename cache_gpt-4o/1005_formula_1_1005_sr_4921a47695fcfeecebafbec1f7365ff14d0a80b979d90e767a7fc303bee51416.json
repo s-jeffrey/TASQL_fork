@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = pitStops.duration, desc).limit(1)\nres = df1.select(pitStops.duration)\n```"

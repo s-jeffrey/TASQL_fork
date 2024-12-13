@@ -1,0 +1,1 @@
+"```sql\nSELECT member.phone\nFROM major\nINNER JOIN member ON major.major_id = member.link_to_major\nWHERE major.college = 'College of Agriculture and Applied Sciences'\nAND major.major_name = 'Business';\n```"

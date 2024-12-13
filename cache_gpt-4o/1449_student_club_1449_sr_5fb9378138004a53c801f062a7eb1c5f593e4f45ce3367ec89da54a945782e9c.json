@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = expense.cost, filter = '> 100')\ndf2 = df1.select(member.first_name, member.last_name, major.major_name)\nres = df2\n```"

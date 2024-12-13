@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.GSserved\nFROM schools\nWHERE schools.City = 'Adelanto'\nGROUP BY schools.GSserved\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

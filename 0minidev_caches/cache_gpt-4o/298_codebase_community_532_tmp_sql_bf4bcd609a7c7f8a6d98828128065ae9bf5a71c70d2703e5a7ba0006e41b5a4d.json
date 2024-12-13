@@ -1,0 +1,1 @@
+"```sql\nSELECT users.DisplayName\nFROM users\nWHERE strftime('%Y', users.CreationDate) = '2011';\n```"

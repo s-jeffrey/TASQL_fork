@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(*) AS REAL) * 100.0 / (SELECT COUNT(*) FROM Player_Attributes) AS percentage\nFROM Player_Attributes\nWHERE stamina > 80 AND strength > 80;\n```"

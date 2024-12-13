@@ -1,0 +1,1 @@
+"`element` FROM `atom` WHERE `molecule_id` IN (SELECT `molecule_id` FROM `molecule` WHERE `label` = '+') GROUP BY `element` ORDER BY COUNT(`element`) ASC LIMIT 1;\"\n"

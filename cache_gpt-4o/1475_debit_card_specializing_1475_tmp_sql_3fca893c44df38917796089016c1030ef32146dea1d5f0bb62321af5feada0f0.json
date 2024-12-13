@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT yearmonth.CustomerID) \nFROM yearmonth \nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID \nWHERE customers.Segment = 'KAM' \nAND yearmonth.Consumption < 30000 \nAND yearmonth.Date BETWEEN '201201' AND '201212';\n```"

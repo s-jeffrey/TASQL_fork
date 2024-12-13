@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.Text, filter = 'R is also lazy evaluated.')\ndf2 = df1.select(comments.UserId)\nres = df.where(element = users.Id, filter = df2).select(users.UpVotes)\n```"

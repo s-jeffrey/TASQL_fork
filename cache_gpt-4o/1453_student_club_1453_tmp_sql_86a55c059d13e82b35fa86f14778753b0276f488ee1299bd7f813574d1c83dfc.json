@@ -1,0 +1,1 @@
+"```sql\nSELECT event.event_name\nFROM event\nINNER JOIN budget ON event.event_id = budget.link_to_event\nINNER JOIN expense ON budget.budget_id = expense.link_to_budget\nWHERE budget.category = 'Parking'\nGROUP BY event.event_id\nHAVING SUM(expense.cost) / COUNT(expense.cost) > AVG(expense.cost)\n```\n"

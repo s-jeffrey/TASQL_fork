@@ -1,0 +1,1 @@
+"m.label FROM molecule m JOIN atom a ON m.molecule_id = a.molecule_id WHERE a.element = 'ca';\""

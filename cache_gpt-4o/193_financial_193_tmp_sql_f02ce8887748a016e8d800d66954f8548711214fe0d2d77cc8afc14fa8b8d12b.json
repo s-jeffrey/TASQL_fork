@@ -1,0 +1,1 @@
+"```sql\nSELECT client.client_id, client.district_id\nFROM disp\nINNER JOIN client ON disp.client_id = client.client_id\nWHERE disp.type = 'OWNER';\n```"

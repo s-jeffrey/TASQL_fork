@@ -1,0 +1,1 @@
+"```sql\nSELECT circuits.name\nFROM circuits\nJOIN races ON circuits.circuitId = races.circuitId\nWHERE races.year BETWEEN 1990 AND 2000\nGROUP BY circuits.circuitId\nHAVING COUNT(races.raceId) = 4;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.AdmFName1, filter = 'Mike').where(element = schools.AdmLName1, filter = 'Larson')\ndf2 = df.where(element = schools.AdmFName1, filter = 'Dante').where(element = schools.AdmLName1, filter = 'Alvarez')\nres = df1.union(df2).select(schools.Website)\n```"

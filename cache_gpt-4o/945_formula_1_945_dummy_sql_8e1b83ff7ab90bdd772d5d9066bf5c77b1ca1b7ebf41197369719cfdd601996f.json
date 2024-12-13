@@ -1,0 +1,1 @@
+"`circuitId` FROM `circuits` WHERE `location` = 'Adelaide' AND `country` = 'Australia';\""

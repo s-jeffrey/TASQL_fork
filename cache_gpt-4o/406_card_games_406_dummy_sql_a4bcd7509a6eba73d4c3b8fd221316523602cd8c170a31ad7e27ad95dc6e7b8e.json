@@ -1,0 +1,1 @@
+"```sql\nSELECT cards.id\nFROM cards\nJOIN legalities ON cards.uuid = legalities.uuid\nWHERE legalities.status = 'legal' AND cards.types LIKE '%Creature%';\n```"

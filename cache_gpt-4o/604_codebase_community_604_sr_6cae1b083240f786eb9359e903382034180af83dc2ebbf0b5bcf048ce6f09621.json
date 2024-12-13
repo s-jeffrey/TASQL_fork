@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(users.Id).having(element = count(posts.OwnerUserId), filter = '> 10')\navg_upvotes = df1.select(users.UpVotes).mean()\navg_age = df1.select(users.Age).mean()\nres = df.select(avg_upvotes, avg_age)\n```"

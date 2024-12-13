@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.driverRef, drivers.nationality, drivers.dob\nFROM qualifying\nINNER JOIN drivers ON qualifying.driverId = drivers.driverId\nWHERE qualifying.raceId = 23 AND qualifying.q2 IS NOT NULL;\n```"

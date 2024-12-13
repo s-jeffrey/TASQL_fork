@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = results.fastestLapTime, filter = '1:29.488')\nres = df1.select(circuits.lat, circuits.lng)\n```"

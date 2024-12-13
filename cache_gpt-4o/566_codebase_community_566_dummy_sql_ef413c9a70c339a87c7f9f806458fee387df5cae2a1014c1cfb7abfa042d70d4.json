@@ -1,0 +1,1 @@
+"```sql\nSELECT users.Reputation\nFROM posts\nJOIN users ON posts.OwnerUserId = users.Id\nWHERE posts.Id = 65041;\n```\n\nThis SQL query retrieves the reputation points of the owner user of the post with ID 65041 by joining the `posts` table with the `users` table using the `OwnerUserId` foreign key relationship."

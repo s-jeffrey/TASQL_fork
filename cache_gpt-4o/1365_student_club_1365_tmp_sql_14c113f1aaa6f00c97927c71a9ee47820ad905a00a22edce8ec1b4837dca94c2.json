@@ -1,0 +1,1 @@
+"```sql\nSELECT expense.expense_description\nFROM budget\nINNER JOIN expense ON budget.budget_id = expense.link_to_budget\nWHERE budget.remaining = (\n    SELECT MIN(remaining)\n    FROM budget\n)\n```\n"

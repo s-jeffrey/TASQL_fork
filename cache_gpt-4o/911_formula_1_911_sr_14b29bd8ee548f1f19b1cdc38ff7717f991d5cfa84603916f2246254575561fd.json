@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = circuits.name, filter = ['Silverstone Circuit', 'Hockenheimring', 'Hungaroring'])\ndf2 = df1.orderby(by = circuits.lat, desc).limit(1)\nres = df2.select(circuits.name)\n```"

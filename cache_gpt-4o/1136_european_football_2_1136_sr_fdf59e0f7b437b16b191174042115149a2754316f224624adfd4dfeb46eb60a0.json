@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player_Attributes.preferred_foot, filter = 'left')\ndf2 = df1.where(element = Player_Attributes.crossing, filter = max(Player_Attributes.crossing))\nres = df2.count()\n```"

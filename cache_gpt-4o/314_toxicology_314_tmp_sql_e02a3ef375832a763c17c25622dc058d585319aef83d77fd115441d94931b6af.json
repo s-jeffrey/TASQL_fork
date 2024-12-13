@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM bond\nWHERE bond_type = '-';\n```"

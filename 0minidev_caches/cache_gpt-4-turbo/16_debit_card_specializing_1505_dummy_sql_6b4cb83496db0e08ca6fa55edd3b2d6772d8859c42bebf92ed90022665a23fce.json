@@ -1,0 +1,1 @@
+"COUNT(DISTINCT ym.CustomerID) \\\nFROM yearmonth ym \\\nJOIN customers c ON ym.CustomerID = c.CustomerID \\\nWHERE c.Currency = 'EUR' AND ym.Consumption > 1000;\"\n  "

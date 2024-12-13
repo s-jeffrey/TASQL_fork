@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(expense.link_to_member).sum(expense.cost)\ndf2 = df1.orderby(by = expense.cost, desc).limit(5)\nres = df2.select(member.first_name, member.last_name)\n```"

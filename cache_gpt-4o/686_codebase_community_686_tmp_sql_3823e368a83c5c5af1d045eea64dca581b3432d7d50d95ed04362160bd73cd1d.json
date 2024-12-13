@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM posts\nWHERE ViewCount > (SELECT AVG(ViewCount) FROM posts);\n```"

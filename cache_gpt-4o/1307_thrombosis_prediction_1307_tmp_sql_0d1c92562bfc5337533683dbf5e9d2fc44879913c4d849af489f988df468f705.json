@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT Patient.ID\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE (Laboratory.RBC <= 3.5 OR Laboratory.RBC >= 6.0)\nAND Patient.Admission = '-';\n```"

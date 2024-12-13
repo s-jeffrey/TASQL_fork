@@ -1,0 +1,1 @@
+"```sql\nSELECT c.id\nFROM cards c\nJOIN legalities l ON c.uuid = l.uuid\nWHERE c.artist = 'Erica Yang'\n  AND c.availability LIKE '%paper%'\n  AND l.format = 'pauper'\n  AND l.status = 'legal';\n```"

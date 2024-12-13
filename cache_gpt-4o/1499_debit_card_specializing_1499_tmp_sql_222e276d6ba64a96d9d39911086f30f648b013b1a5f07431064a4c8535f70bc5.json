@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(monthly_consumption) AS biggest_monthly_consumption\nFROM (\n    SELECT SUM(yearmonth.Consumption) / 12 AS monthly_consumption\n    FROM yearmonth\n    INNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\n    WHERE customers.Currency = 'EUR'\n    GROUP BY yearmonth.CustomerID\n) AS subquery;\n```"

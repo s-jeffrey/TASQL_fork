@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(Laboratory.ID)\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.Diagnosis LIKE '%SJS%'\nAND Laboratory.Date = '1991-06-13'\nAND strftime('%Y', Laboratory.Date) = '1995'\n```\n"

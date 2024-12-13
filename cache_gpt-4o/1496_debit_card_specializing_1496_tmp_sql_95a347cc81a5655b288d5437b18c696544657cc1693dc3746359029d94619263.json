@@ -1,0 +1,1 @@
+"```sql\nSELECT customers.Segment\nFROM yearmonth\nINNER JOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE yearmonth.Date = '201309'\nGROUP BY customers.Segment\nORDER BY SUM(yearmonth.Consumption) ASC\nLIMIT 1;\n```"

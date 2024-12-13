@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*) / 12 AS monthly_average\nFROM schools\nWHERE County = 'Alameda'\n  AND DOC = '52'\n  AND YEAR(OpenDate) = 1980;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT CONCAT(forename, ' ', surname) AS name, \n       YEAR(CURRENT_TIMESTAMP) - YEAR(dob) AS age\nFROM drivers\nWHERE nationality = 'Japanese'\nORDER BY dob DESC\nLIMIT 1;\n```"

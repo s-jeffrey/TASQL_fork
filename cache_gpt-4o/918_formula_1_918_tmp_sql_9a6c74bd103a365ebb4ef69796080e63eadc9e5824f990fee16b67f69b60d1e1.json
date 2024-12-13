@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.driverRef\nFROM drivers\nWHERE drivers.forename = 'Lewis' AND drivers.surname = 'Hamilton';\n```"

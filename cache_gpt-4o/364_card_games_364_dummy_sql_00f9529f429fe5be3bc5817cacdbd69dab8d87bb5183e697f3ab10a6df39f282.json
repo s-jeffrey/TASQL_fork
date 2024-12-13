@@ -1,0 +1,1 @@
+"`status` FROM `legalities` WHERE `uuid` = (SELECT `uuid` FROM `cards` WHERE `name` = 'Cloudchaser Eagle');\""

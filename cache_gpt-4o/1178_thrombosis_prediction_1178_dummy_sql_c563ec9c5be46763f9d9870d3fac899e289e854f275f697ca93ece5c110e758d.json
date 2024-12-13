@@ -1,0 +1,1 @@
+"```sql\nSELECT p.SEX\nFROM Patient p\nJOIN Examination e ON p.ID = e.ID\nWHERE e.Diagnosis = 'AORTITIS'\nORDER BY e.Examination Date ASC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"`Id` FROM `posts` WHERE `ViewCount` > 35000 AND `CommentCount` = 0;\"\n"

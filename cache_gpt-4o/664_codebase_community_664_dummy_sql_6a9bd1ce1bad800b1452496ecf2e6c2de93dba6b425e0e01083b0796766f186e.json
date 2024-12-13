@@ -1,0 +1,1 @@
+"SUM(Score) FROM posts WHERE LastActivityDate LIKE '2010-07-19%';\""

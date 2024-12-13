@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM results\nJOIN races ON results.raceId = races.raceId\nWHERE races.name = 'Bahrain Grand Prix'\n  AND races.year = 2007\n  AND results.time IS NULL;\n```\nThis SQL query counts the number of drivers who did not finish the Bahrain Grand Prix in 2007 by checking for entries where the `time` column is NULL in the `results` table."

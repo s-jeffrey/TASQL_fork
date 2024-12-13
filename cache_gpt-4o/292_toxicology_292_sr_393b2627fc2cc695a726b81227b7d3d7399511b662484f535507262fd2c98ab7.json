@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 'c')\ndf2 = df1.where(element = substr(atom.molecule_id, 3, 3), filter = '>= 10').where(element = substr(atom.molecule_id, 3, 3), filter = '<= 50')\nres = df2.select(atom.atom_id)\n```"

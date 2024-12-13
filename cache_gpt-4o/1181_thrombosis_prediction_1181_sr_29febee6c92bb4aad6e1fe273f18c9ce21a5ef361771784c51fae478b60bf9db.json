@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.UA, filter = '8.4').where(element = Laboratory.Date, filter = '1991-10-21')\ndf2 = df1.select(Laboratory.ID)\ndf3 = df.where(element = Patient.ID, filter = df2)\nres = df3.select(subtract(year('1991-10-21'), year(Patient.Birthday)))\n```"

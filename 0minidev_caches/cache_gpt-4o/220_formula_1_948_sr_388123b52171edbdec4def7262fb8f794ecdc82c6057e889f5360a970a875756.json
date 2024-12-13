@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = constructors.nationality, filter = 'British')\nres = df1.select(max(constructorStandings.points))\n```"

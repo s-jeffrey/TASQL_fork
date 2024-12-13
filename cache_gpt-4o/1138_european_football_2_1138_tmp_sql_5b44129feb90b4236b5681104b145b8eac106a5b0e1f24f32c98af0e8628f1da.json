@@ -1,0 +1,1 @@
+"```sql\nSELECT Country.name\nFROM League\nINNER JOIN Country ON League.country_id = Country.id\nWHERE League.name = 'Poland Ekstraklasa';\n```"

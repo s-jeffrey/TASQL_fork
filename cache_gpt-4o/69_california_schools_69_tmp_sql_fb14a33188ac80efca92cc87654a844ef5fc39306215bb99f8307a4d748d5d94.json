@@ -1,0 +1,1 @@
+"```sql\nSELECT schools.NCESDist\nFROM schools\nWHERE schools.SOC = '31';\n```"

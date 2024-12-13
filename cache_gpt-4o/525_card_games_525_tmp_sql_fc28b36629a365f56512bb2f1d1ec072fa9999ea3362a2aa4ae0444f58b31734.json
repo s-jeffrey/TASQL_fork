@@ -1,0 +1,1 @@
+"```sql\nSELECT legalities.uuid\nFROM legalities\nWHERE legalities.format = 'oldschool' AND (legalities.status = 'Banned' OR legalities.status = 'Restricted');\n```"

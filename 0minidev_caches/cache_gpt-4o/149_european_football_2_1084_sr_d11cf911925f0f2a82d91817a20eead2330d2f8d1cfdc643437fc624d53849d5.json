@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = strftime('%Y', Player.birthday), filter = '< 1986')\ndf2 = df1.where(element = Player_Attributes.defensive_work_rate, filter = 'high')\nres = df2.select(distinct(Player.id)).count()\n```"

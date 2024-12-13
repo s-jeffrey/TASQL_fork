@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = gasstations.Country, filter = 'CZE').where(element = gasstations.Segment, filter = 'Discount')\n    count_cze = df1.count()\n    \n    df2 = df.where(element = gasstations.Country, filter = 'SVK').where(element = gasstations.Segment, filter = 'Discount')\n    count_svk = df2.count()\n    \n    res = df.select(count_cze - count_svk)\""

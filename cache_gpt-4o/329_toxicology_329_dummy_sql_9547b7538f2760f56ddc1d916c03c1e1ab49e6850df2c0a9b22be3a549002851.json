@@ -1,0 +1,1 @@
+"`molecule.molecule_id` FROM `molecule` JOIN `atom` ON `molecule.molecule_id` = `atom.molecule_id` WHERE `molecule.label` = '+' GROUP BY `molecule.molecule_id` ORDER BY COUNT(`atom.atom_id`) DESC LIMIT 1;\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT badges.UserId)\nFROM badges\nWHERE badges.Name = 'Announcer';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Segment, filter = 'KAM')\ndf2 = df1.where(element = yearmonth.Consumption, filter = '< 30000')\ndf3 = df2.where(element = yearmonth.Date, filter = '>= 201201').where(element = yearmonth.Date, filter = '<= 201212')\nres = df3.select(customers.CustomerID).distinct().count()\n```"

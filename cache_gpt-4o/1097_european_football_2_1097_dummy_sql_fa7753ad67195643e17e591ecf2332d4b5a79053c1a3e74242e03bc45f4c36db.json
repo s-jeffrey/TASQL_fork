@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(PA.crossing) AS total_crossing_score\nFROM Player P\nJOIN Player_Attributes PA ON P.player_api_id = PA.player_api_id\nWHERE P.player_name = 'Aaron Lennox';\n```"

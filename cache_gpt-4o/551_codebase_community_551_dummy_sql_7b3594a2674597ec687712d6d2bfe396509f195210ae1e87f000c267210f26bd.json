@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM badges\nJOIN users ON badges.UserId = users.Id\nWHERE users.DisplayName = 'csgillespie';\n```"

@@ -1,0 +1,1 @@
+"COUNT(*) FROM member WHERE position = 'Member' AND t_shirt_size = 'X-Large';\""

@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.surname\nFROM qualifying\nINNER JOIN drivers ON qualifying.driverId = drivers.driverId\nWHERE qualifying.raceId = 19\nORDER BY CAST(SUBSTR(qualifying.q2, 1, INSTR(qualifying.q2, ':') - 1) AS INTEGER) * 60 + \n         CAST(SUBSTR(qualifying.q2, INSTR(qualifying.q2, ':') + 1) AS FLOAT) ASC\nLIMIT 1;\n```"

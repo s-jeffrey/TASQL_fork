@@ -1,0 +1,1 @@
+"SR = \"df1 = df.where(element = gasstations.Country, filter = 'CZE')\n    df2 = df1.where(element = transactions_1k.Date, filter = '> 2012-01-01')\n    res = df2.count()\""

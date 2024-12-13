@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM schools\nINNER JOIN satscores ON schools.CDSCode = satscores.cds\nWHERE schools.County = 'Fresno'\n  AND schools.FundingType = 'Directly funded'\n  AND satscores.NumTstTakr <= 250;\n```"

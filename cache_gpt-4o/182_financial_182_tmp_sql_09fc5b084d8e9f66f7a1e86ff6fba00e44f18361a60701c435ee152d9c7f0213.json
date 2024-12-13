@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT client.client_id)\nFROM client\nINNER JOIN disp ON client.client_id = disp.client_id\nINNER JOIN trans ON disp.account_id = trans.account_id\nWHERE client.gender = 'M'\n  AND client.birth_date BETWEEN '1974-01-01' AND '1976-12-31'\n  AND trans.k_symbol = 'SIPO'\n  AND trans.amount > 4000;\n```"

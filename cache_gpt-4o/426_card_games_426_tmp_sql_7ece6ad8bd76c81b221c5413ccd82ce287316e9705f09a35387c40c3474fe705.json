@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.name\nFROM sets\nWHERE sets.mtgoCode IS NULL OR sets.mtgoCode = ''\nORDER BY sets.name ASC\nLIMIT 3;\n```"

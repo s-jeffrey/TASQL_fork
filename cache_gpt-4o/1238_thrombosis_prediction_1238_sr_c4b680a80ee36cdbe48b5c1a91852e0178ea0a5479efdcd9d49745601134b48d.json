@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.Diagnosis, filter = 'SLE')\ndf2 = df1.where(element = Laboratory.HGB, filter = '> 10').where(element = Laboratory.HGB, filter = '< 17')\ndf3 = df2.orderby(by = Patient.Birthday, asc).limit(1)\nres = df3.select(Patient.ID, Patient.SEX)\n```"

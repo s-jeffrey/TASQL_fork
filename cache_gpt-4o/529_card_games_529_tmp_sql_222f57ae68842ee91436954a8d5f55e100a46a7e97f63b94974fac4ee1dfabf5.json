@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT sets.name\nFROM sets\nINNER JOIN set_translations ON sets.code = set_translations.setCode\nWHERE set_translations.language = 'Korean'\nAND sets.code NOT IN (\n    SELECT set_translations.setCode\n    FROM set_translations\n    WHERE set_translations.language = 'Japanese'\n);\n```"

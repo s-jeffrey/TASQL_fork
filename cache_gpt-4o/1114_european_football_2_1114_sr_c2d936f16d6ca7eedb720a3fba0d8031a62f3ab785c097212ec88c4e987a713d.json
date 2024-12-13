@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Player.player_name, filter = 'Marko Arnautovic')\ndf2 = df1.where(element = Player_Attributes.date, filter = \"BETWEEN '2007-02-22' AND '2016-04-21'\")\nres = df2.select(avg(Player_Attributes.overall_rating))\n```"

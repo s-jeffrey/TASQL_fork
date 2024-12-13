@@ -1,0 +1,1 @@
+"```sql\nSELECT MIN(v.CreationDate)\nFROM votes v\nJOIN users u ON v.UserId = u.Id\nWHERE u.DisplayName = 'chl';\n```\n\nThis SQL query retrieves the earliest date (`MIN(CreationDate)`) when the user with the display name 'chl' cast a vote, by joining the `votes` table with the `users` table using the foreign key relationship `votes.UserId = users.Id`."

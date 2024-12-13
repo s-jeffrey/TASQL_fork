@@ -1,0 +1,1 @@
+"```sql\nSELECT district.A2, \n       ((district.A13 - district.A12) / district.A12) * 100 AS unemployment_increment_percentage\nFROM loan\nINNER JOIN account ON loan.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE loan.status = 'D';\n```"

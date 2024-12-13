@@ -1,0 +1,1 @@
+"(COUNT(*) FILTER (WHERE Consumption > 46.73) / COUNT(*)) * 100 AS Percentage\nFROM yearmonth\nJOIN customers ON yearmonth.CustomerID = customers.CustomerID\nWHERE customers.Segment = 'LAM';\"\n\n"

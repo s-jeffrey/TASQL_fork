@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM users\nINNER JOIN posts ON users.Id = posts.OwnerUserId\nINNER JOIN comments ON posts.Id = comments.PostId\nWHERE users.DisplayName = 'Neil McGuigan' AND comments.Score < 60;\n```"

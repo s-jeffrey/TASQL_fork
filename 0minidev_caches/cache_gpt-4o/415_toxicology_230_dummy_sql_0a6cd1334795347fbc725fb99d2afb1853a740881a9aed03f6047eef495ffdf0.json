@@ -1,0 +1,1 @@
+"```sql\nSELECT a.element, m.label\nFROM atom a\nJOIN molecule m ON a.molecule_id = m.molecule_id\nWHERE m.molecule_id = 'TR060';\n```"

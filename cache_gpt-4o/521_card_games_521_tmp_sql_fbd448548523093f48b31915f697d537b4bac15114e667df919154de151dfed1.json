@@ -1,0 +1,1 @@
+"```sql\nSELECT legalities.status\nFROM cards\nINNER JOIN legalities ON cards.uuid = legalities.uuid\nWHERE cards.frameVersion = '1997'\n  AND cards.artist = 'D. Alexander Gregory'\n  AND cards.hasContentWarning = 1\n  AND legalities.format = 'legacy';\n```"

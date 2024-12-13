@@ -1,0 +1,1 @@
+"```sql\nSELECT team_api_id, buildUpPlaySpeed\nFROM Team_Attributes\nORDER BY buildUpPlaySpeed DESC\nLIMIT 4;\n```\n\nThis SQL query selects the `team_api_id` and `buildUpPlaySpeed` from the `Team_Attributes` table, orders the results by `buildUpPlaySpeed` in descending order to get the highest speeds first, and limits the results to the top 4 teams."

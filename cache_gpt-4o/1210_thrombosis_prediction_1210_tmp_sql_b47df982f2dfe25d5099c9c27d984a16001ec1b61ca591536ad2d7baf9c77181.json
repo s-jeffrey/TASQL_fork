@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Laboratory.LDH) \nFROM Laboratory \nWHERE Laboratory.LDH < 500;\n```"

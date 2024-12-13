@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.artist, filter = 'Rob Alexander')\nres = df1.select(cards.manaCost).sum()\n```"

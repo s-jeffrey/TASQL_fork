@@ -1,0 +1,1 @@
+"```sql\nSELECT Examination.`aCL IgM`\nFROM Patient\nINNER JOIN Examination ON Patient.ID = Examination.ID\nWHERE Patient.Diagnosis = 'SLE'\n  AND Patient.Description = '1994-02-19'\n  AND Examination.`Examination Date` = '1993-11-12';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Segment, filter = 'LAM')\ndf2 = df1.where(element = customers.Currency, filter = 'EUR')\ndf3 = df2.where(element = yearmonth.Date, filter = '201310')\ndf4 = df3.orderby(by = yearmonth.Consumption, desc).limit(1)\nres = df4.select(customers.CustomerID)\n```"

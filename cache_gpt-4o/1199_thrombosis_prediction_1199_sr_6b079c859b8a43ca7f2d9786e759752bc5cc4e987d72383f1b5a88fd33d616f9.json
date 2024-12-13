@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = year(Laboratory.Date), filter = '1997')\ndf2 = df1.where(element = Laboratory.TP, filter = '<= 6 or > 8.5')\nres = df2.select(Laboratory.ID).distinct().count()\n```"

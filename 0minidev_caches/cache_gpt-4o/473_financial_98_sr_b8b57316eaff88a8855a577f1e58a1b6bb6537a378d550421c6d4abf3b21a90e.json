@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = loan.date, filter = '1997')\ndf2 = df1.orderby(by = loan.amount, asc).limit(1)\nres = df2.where(element = account.frequency, filter = 'POPLATEK TYDNE').select(account.account_id)\n```"

@@ -1,0 +1,1 @@
+"`city` FROM `zip_code` WHERE `zip_code` = (SELECT `zip` FROM `member` WHERE `first_name` = 'Garrett' AND `last_name` = 'Gerke');\""

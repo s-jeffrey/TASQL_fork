@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = lapTimes.lap, filter = 1)\ndf2 = df1.orderby(by = lapTimes.time, asc).limit(5)\nres = df2.select(lapTimes.driverId)\n```"

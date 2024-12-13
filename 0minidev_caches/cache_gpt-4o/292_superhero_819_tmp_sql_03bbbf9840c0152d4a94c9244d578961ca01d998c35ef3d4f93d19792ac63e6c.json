@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SUM(CASE WHEN superhero.eye_colour_id = 7 THEN 1 ELSE 0 END) - \n     SUM(CASE WHEN superhero.eye_colour_id = 1 THEN 1 ELSE 0 END)) AS difference\nFROM \n    superhero\nWHERE \n    (superhero.weight_kg = 0 OR superhero.weight_kg IS NULL);\n```"

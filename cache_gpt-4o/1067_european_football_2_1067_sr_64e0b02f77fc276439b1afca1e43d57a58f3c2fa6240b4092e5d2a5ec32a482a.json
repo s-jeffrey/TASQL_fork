@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Team_Attributes.buildUpPlayPassing, filter = '> 70')\nres = df1.select(Team.team_short_name)\n```"

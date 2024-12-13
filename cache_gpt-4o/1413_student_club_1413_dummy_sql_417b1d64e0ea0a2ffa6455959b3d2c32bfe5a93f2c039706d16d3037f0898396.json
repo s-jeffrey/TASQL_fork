@@ -1,0 +1,1 @@
+"```sql\nSELECT z.zip_code\nFROM expense e\nJOIN member m ON e.link_to_member = m.member_id\nJOIN zip_code z ON m.zip = z.zip_code\nWHERE e.cost < 50;\n```"

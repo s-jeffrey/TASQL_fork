@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nJOIN foreign_data ON cards.uuid = foreign_data.uuid\nWHERE cards.artist = 'Volkan Ba\u01f5a' AND foreign_data.language = 'French';\n```"

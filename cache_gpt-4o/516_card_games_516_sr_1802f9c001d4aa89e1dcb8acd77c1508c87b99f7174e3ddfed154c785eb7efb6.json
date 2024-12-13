@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.artist, filter = 'Volkan Ba\u01f5a')\ndf2 = df1.where(element = foreign_data.language, filter = 'French')\nres = df2.count()\n```"

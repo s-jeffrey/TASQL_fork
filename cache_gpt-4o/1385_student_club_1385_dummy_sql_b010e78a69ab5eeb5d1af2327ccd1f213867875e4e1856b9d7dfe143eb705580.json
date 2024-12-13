@@ -1,0 +1,1 @@
+"`first_name`, `last_name` FROM `member` INNER JOIN `income` ON `member`.`member_id` = `income`.`link_to_member` WHERE `income`.`amount` > 40;\"\n"

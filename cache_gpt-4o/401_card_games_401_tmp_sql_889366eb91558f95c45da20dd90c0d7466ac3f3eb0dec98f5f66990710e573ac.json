@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(CASE WHEN cards.isOnlineOnly = 1 THEN 1 END) AS REAL) * 100 / COUNT(cards.id) AS percentage\nFROM cards\nWHERE cards.frameEffects LIKE '%legendary%'\n```\n"

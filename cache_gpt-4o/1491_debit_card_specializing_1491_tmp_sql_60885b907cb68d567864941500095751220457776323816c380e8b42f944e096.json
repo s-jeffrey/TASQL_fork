@@ -1,0 +1,1 @@
+"```sql\nSELECT Country, COUNT(*) AS total_value_for_money_stations\nFROM gasstations\nWHERE Segment = 'Value for money'\nGROUP BY Country\nORDER BY total_value_for_money_stations DESC;\n```"

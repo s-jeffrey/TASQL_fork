@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(v.BountyAmount)\nFROM posts p\nJOIN votes v ON p.Id = v.PostId\nWHERE p.Title LIKE '%data%'\n```\nThis SQL query calculates the total bounty amount for posts with titles containing the word \"data\". It joins the `posts` and `votes` tables using the `PostId` foreign key and filters the results based on the title condition."

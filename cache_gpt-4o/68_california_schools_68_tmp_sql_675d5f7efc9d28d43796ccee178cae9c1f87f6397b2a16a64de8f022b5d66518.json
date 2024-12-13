@@ -1,0 +1,1 @@
+"```sql\nSELECT County\nFROM schools\nWHERE SOC = '11'\n  AND ClosedDate BETWEEN '1980-01-01' AND '1989-12-31'\nGROUP BY County\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```"

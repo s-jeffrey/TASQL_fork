@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = lapTimes.milliseconds, asc).limit(1)\nres = df1.select(drivers.forename, drivers.surname)\n```"

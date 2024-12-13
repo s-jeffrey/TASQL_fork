@@ -1,0 +1,1 @@
+"`id` FROM `publisher` WHERE `publisher_name` = 'Star Trek';\""

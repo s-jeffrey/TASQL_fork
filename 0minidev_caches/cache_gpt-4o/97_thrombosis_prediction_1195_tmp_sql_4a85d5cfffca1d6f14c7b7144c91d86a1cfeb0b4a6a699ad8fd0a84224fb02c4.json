@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(Laboratory.ALB)\nFROM Patient\nINNER JOIN Laboratory ON Patient.ID = Laboratory.ID\nWHERE Patient.SEX = 'F'\n  AND Laboratory.PLT > 400\n  AND Patient.Diagnosis = 'SLE';\n```"

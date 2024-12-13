@@ -1,0 +1,1 @@
+"```sql\nSELECT drivers.forename, drivers.surname, drivers.url\nFROM races\nINNER JOIN results ON races.raceId = results.raceId\nINNER JOIN drivers ON results.driverId = drivers.driverId\nWHERE races.year = 2008\nAND races.name = 'Australian Grand Prix'\nAND results.time LIKE '__:__:___.___'\n```"

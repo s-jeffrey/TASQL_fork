@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = superhero.weight_kg, desc).limit(1)\ndf2 = df1.join(superhero.eye_colour_id == colour.id)\nres = df2.select(colour.colour)\n```"

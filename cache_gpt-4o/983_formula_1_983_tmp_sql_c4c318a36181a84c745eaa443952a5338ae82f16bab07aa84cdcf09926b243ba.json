@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.name, constructors.url\nFROM constructors\nINNER JOIN constructorStandings ON constructors.constructorId = constructorStandings.constructorId\nWHERE constructors.nationality = 'Italian'\nORDER BY constructorStandings.points DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT district.A2\nFROM client\nINNER JOIN disp ON client.client_id = disp.client_id\nINNER JOIN account ON disp.account_id = account.account_id\nINNER JOIN district ON account.district_id = district.district_id\nWHERE client.gender = 'F'\nGROUP BY district.A2\nORDER BY COUNT(client.client_id) DESC\nLIMIT 9;\n```"

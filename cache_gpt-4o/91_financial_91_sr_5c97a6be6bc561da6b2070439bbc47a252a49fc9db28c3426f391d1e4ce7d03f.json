@@ -1,0 +1,1 @@
+"```python\ndf1 = df.select((district.A12 + district.A13) / 2)\nres = df1.orderby(by = (district.A12 + district.A13) / 2, desc).limit(1)\n```"

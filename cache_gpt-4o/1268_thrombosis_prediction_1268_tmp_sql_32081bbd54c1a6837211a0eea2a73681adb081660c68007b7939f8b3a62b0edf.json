@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.ID\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.SM NOT IN ('negative', '0')\nORDER BY Patient.Birthday DESC\nLIMIT 3;\n```"

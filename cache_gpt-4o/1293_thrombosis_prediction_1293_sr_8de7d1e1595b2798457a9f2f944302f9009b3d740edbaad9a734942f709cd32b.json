@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.CRE, filter = '< 1.5')\nres = df1.select(max(Examination.ANA))\n```"

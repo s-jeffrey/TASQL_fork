@@ -1,0 +1,1 @@
+"```sql\nSELECT (SUM(CASE WHEN type = 'Community Service' THEN 1 ELSE 0 END) / COUNT(event_id)) * 100 AS percentage_share\nFROM event\nWHERE event_date BETWEEN '2019-01-01' AND '2019-12-31';\n```"

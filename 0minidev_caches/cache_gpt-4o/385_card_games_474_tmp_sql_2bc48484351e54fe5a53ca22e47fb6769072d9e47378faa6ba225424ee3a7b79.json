@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT sets.id)\nFROM set_translations\nINNER JOIN sets ON set_translations.setCode = sets.code\nWHERE set_translations.language = 'Italian'\n  AND set_translations.translation IS NOT NULL\n  AND sets.baseSetSize < 100;\n```"

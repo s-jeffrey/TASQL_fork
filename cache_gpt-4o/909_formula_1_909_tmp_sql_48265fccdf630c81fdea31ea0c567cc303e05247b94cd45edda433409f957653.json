@@ -1,0 +1,1 @@
+"```sql\nSELECT (CAST(COUNT(*) FILTER (WHERE circuits.country = 'Germany') AS REAL) * 100.0 / COUNT(*)) AS percentage\nFROM races\nINNER JOIN circuits ON races.circuitId = circuits.circuitId\nWHERE races.name = 'European Grand Prix';\n```"

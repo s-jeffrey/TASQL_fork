@@ -1,0 +1,1 @@
+"`Id`, `OwnerDisplayName` FROM `posts` WHERE YEAR(`CreationDate`) = 2010 ORDER BY `FavoriteCount` DESC LIMIT 1;\"\n"

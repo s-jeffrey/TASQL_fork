@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.SOC, filter = '11')\ndf2 = df1.where(element = schools.ClosedDate, filter = '>= 1980-01-01').where(element = schools.ClosedDate, filter = '<= 1989-12-31')\ndf3 = df2.groupby(schools.County).count()\nres = df3.orderby(by = 'count', desc).limit(1).select(schools.County)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM badges\nINNER JOIN users ON badges.UserId = users.Id\nWHERE users.DisplayName = 'csgillespie' AND strftime('%Y', badges.Date) = '2011';\n```"

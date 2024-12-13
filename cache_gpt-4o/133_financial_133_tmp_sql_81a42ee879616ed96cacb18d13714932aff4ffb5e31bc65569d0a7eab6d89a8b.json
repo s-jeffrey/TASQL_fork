@@ -1,0 +1,1 @@
+"```sql\nSELECT district.district_id, district.A2\nFROM district\nORDER BY district.A13 DESC\nLIMIT 1;\n```"

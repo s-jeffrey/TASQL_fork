@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT drivers.code\nFROM drivers\nWHERE drivers.nationality LIKE '%American%'\n```"

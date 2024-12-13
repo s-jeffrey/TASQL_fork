@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.GOT, filter = '>= 60')\ndf2 = df1.orderby(by = Patient.Birthday, desc).limit(1)\nres = df2.select(Patient.Birthday)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = posts.Title, filter = 'Integration of Weka and/or RapidMiner into Informatica PowerCenter/Developer')\nres = df1.select(posts.ViewCount)\n```"

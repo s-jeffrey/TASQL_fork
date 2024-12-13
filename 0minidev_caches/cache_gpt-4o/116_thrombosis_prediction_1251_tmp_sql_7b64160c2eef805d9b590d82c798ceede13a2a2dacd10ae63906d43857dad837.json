@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT Laboratory.ID)\nFROM Laboratory\nWHERE Laboratory.IGG >= 2000;\n```"

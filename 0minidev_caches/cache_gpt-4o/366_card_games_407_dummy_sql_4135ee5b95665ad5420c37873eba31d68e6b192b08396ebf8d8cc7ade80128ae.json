@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT fd.type\nFROM foreign_data fd\nJOIN set_translations st ON fd.uuid = st.setCode\nWHERE st.language = 'German' AND fd.type IS NOT NULL;\n```"

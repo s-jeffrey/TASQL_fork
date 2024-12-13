@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = drivers.dob, desc).limit(1)\ndf2 = df1.join(qualifying, df1.drivers.driverId == qualifying.driverId)\ndf3 = df2.join(races, qualifying.raceId == races.raceId)\ndf4 = df3.orderby(by = races.date).limit(1)\nres = df4.select(races.year, races.name, races.date, races.time)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.nationality\nFROM results\nJOIN constructors ON results.constructorId = constructors.constructorId\nWHERE results.raceId = 24 AND results.points = 1;\n```"

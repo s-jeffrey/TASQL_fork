@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.Score, filter = '> 60')\nres = df1.count()\n```"

@@ -9,7 +9,7 @@ mode_gt='gt'
 mode_predict='gpt'
 
 # not a llm call, just for file name
-engine='gpt-4o-mini'
+engine='gpt-4o'
 
 sql_dialect='sqlite'
 

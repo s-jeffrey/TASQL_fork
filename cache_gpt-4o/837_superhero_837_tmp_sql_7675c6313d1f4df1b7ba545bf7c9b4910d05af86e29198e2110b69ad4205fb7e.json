@@ -1,0 +1,1 @@
+"```sql\nSELECT hero_attribute.hero_id\nFROM hero_attribute\nORDER BY hero_attribute.attribute_value ASC\nLIMIT 1;\n```"

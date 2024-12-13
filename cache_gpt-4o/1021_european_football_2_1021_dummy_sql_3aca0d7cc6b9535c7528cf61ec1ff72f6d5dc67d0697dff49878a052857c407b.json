@@ -1,0 +1,1 @@
+"```sql\nSELECT Player.player_name, Player.height\nFROM Player\nWHERE Player.height = (\n    SELECT MAX(height)\n    FROM Player\n);\n```"

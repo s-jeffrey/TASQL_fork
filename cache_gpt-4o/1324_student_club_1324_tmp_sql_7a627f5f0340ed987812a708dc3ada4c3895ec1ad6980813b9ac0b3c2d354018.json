@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(attendance_count) AS average_attendance\nFROM (\n    SELECT event.event_id, COUNT(attendance.link_to_member) AS attendance_count\n    FROM attendance\n    INNER JOIN event ON attendance.link_to_event = event.event_id\n    WHERE event.type = 'Meeting' AND strftime('%Y', event.event_date) = '2020'\n    GROUP BY event.event_id\n) AS event_attendance;\n```"

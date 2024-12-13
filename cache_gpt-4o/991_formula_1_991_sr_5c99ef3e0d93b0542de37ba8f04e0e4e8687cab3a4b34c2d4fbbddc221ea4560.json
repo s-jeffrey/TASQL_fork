@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.nationality, filter = 'Austrian')\ndf2 = df1.where(element = drivers.dob, filter = \"BETWEEN '1981-01-01' AND '1991-12-31'\")\nres = df2.select(drivers.forename, drivers.surname, drivers.dob)\n```"

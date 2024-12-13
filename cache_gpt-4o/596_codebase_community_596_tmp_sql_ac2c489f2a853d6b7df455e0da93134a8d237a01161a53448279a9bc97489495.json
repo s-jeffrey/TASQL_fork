@@ -1,0 +1,1 @@
+"```sql\nSELECT badges.Name\nFROM badges\nWHERE badges.UserId = (\n    SELECT comments.UserId\n    FROM comments\n    GROUP BY comments.UserId\n    ORDER BY COUNT(comments.Id) DESC\n    LIMIT 1\n)\n```\n"

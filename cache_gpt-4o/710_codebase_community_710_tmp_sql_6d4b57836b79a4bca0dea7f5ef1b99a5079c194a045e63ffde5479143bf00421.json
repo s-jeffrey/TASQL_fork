@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM posts\nINNER JOIN comments ON posts.Id = comments.PostId\nWHERE posts.CommentCount = 1 AND comments.Score = 0;\n```"

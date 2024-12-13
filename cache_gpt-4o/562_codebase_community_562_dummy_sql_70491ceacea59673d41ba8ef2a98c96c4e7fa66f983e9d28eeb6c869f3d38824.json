@@ -1,0 +1,1 @@
+"```sql\nSELECT CommentCount\nFROM posts\nWHERE ViewCount = 1910;\n```\n\nThis SQL query selects the `CommentCount` from the `posts` table where the `ViewCount` is 1910, which directly answers the question about how many comments the post with 1910 view counts has."

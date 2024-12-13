@@ -1,0 +1,1 @@
+"```sql\nSELECT expense.cost\nFROM event\nINNER JOIN budget ON event.event_id = budget.link_to_event\nINNER JOIN expense ON budget.budget_id = expense.link_to_budget\nWHERE event.event_name = 'September Speaker'\nAND expense.expense_description = 'Posters';\n```"

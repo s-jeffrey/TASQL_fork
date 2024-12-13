@@ -1,0 +1,1 @@
+"`Patient.ID` FROM `Examination` JOIN `Laboratory` ON `Examination.ID` = `Laboratory.ID` WHERE `Examination Date` > '1997-01-01' AND `SC170` IN ('negative', '0');\"\n"

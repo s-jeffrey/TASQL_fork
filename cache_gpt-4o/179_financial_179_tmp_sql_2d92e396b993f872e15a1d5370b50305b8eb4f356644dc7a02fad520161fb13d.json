@@ -1,0 +1,1 @@
+"```sql\nSELECT SUM(trans.amount) \nFROM trans\nINNER JOIN disp ON trans.account_id = disp.account_id\nINNER JOIN client ON disp.client_id = client.client_id\nWHERE client.client_id = 617 \nAND trans.date >= '1998-01-01' \nAND trans.date <= '1998-12-31';\n```"

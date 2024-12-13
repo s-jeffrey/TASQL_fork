@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = SUBTRACT(year(current_timestamp), year(Patient.Birthday)), filter = '> 55')\ndf2 = df1.where(element = Laboratory.PT, filter = '>= 14')\ndf3 = df2.where(element = Patient.SEX, filter = 'F')\nres = df.select(cast(df3.count(), real) * 100 / df2.count())\n```"

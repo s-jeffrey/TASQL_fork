@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = molecule.molecule_id, filter = 'TR124')\nres = df1.select(molecule.label)\n```"

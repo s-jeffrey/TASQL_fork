@@ -1,0 +1,1 @@
+"```sql\nSELECT MAX(duration) AS longest_pit_stop_duration\nFROM pitStops;\n```"

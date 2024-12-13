@@ -1,0 +1,1 @@
+"```sql\nSELECT client.birth_date\nFROM loan\nINNER JOIN disp ON loan.account_id = disp.account_id\nINNER JOIN client ON disp.client_id = client.client_id\nWHERE loan.amount = 98832 AND loan.date = '1996-01-03';\n```"

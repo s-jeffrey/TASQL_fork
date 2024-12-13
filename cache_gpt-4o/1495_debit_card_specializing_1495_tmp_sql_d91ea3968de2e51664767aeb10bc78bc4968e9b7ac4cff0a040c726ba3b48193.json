@@ -1,0 +1,1 @@
+"```sql\nSELECT CustomerID\nFROM yearmonth\nWHERE Date = '201309'\nORDER BY Consumption DESC\nLIMIT 1;\n```"

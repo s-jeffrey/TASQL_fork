@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = substr(Player_Attributes.date, 1, 4), filter = '2010')\naverage_rating = df1.select(Player_Attributes.overall_rating).mean()\ndf2 = df1.where(element = Player_Attributes.overall_rating, filter = '> average_rating')\ndf3 = df2.orderby(by = Player_Attributes.overall_rating, desc).limit(1)\nres = df3.select(Player.player_api_id)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT ps.duration\nFROM circuits c\nJOIN races r ON r.circuitId = c.circuitId\nJOIN lapTimes lt ON lt.raceId = r.raceId\nJOIN pitStops ps ON ps.driverId = lt.driverId AND ps.raceId = lt.raceId\nWHERE c.name = 'Austrian Grand Prix Circuit'\nORDER BY lt.time ASC\nLIMIT 1;\n```"

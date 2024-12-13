@@ -1,0 +1,1 @@
+"```sql\nSELECT manaCost\nFROM cards\nWHERE name = 'Ancestor`s Chosen';\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nJOIN sets ON cards.setCode = sets.code\nWHERE sets.name = 'Coldsnap'\n  AND cards.convertedManaCost > 5\n  AND (cards.power = '*' OR cards.power IS NULL);\n```\nThis SQL query counts the number of cards in the \"Coldsnap\" set that have a converted mana cost greater than 5 and have unknown power, as indicated by a power value of '*' or NULL."

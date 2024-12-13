@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = users.DisplayName, filter = 'Emmett')\ndf2 = df1.orderby(by = badges.Date, desc).limit(1)\nres = df2.select(badges.Name)\n```"

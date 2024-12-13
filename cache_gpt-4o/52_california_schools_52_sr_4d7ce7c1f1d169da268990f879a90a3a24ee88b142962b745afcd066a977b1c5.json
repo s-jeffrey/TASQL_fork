@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.MailCity, filter = 'Lakeport')\ndf2 = df1.where(element = (satscores.AvgScrMath + satscores.AvgScrRead + satscores.AvgScrWrite), filter = '>= 1500')\nres = df2.count()\n```"

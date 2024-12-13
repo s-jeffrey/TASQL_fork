@@ -1,0 +1,1 @@
+"```python\ndf1 = df.orderby(by = hero_attribute.attribute_value, asc).limit(1)\nres = df1.select(hero_attribute.hero_id)\n```"

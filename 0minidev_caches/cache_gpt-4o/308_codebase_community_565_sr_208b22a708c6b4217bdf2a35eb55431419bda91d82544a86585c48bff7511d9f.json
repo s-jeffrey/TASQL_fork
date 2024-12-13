@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.UserId, filter = '23853').where(element = comments.CreationDate, filter = '2013-07-12 09:08:18.0')\ndf2 = df1.join(posts, on = (comments.PostId == posts.Id))\nres = df2.select(posts.ClosedDate.isnull())\n```"

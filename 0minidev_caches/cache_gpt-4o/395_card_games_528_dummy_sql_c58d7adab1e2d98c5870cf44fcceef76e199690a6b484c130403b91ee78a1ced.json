@@ -1,0 +1,1 @@
+"```sql\nSELECT c.name, l.format\nFROM cards c\nJOIN sets s ON c.setCode = s.code\nJOIN legalities l ON c.uuid = l.uuid\nWHERE s.name = 'Hour of Devastation' AND l.status = 'legal';\n```"

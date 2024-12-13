@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM posts\nWHERE ViewCount > 35000 AND CommentCount = 0;\n```"

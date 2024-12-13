@@ -1,0 +1,1 @@
+"```sql\nSELECT Country.name\nFROM Player\nINNER JOIN Match ON Player.player_api_id = Match.home_player_1 OR Player.player_api_id = Match.away_player_1\nINNER JOIN League ON Match.league_id = League.id\nINNER JOIN Country ON League.country_id = Country.id\nGROUP BY Country.id\nORDER BY AVG(Player.weight) DESC\nLIMIT 1;\n```"

@@ -1,0 +1,1 @@
+"`bond_type`, `atom_id`, `atom_id2` FROM `bond` JOIN `connected` ON `bond`.`bond_id` = `connected`.`bond_id` WHERE `bond`.`bond_id` = 'TR001_6_9';\"\n"

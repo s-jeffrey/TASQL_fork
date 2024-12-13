@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(results.points) AS average_points\nFROM results\nINNER JOIN drivers ON results.driverId = drivers.driverId\nINNER JOIN races ON results.raceId = races.raceId\nWHERE drivers.forename = 'Eddie'\n  AND drivers.surname = 'Irvine'\n  AND races.year = 2000;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = atom.element, filter = 's')\nres = df1.select(connected.atom_id2)\n```"

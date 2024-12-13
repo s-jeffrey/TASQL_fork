@@ -1,0 +1,1 @@
+"```sql\nSELECT `Percent (%) Eligible Free (K-12)`\nFROM (\n    SELECT `Percent (%) Eligible Free (K-12)`\n    FROM frpm\n    ORDER BY `Enrollment (K-12)` DESC\n    LIMIT 11\n) AS subquery\nORDER BY `Enrollment (K-12)` ASC\nLIMIT 2;\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT (Laboratory.TP - 8.5) AS TP_deviation\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Patient.SEX = 'F' AND Laboratory.TP > 8.5;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.bond_type, filter = '-')\nres = df1.count()\n```"

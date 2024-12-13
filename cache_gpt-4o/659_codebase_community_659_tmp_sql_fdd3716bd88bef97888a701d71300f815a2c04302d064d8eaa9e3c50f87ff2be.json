@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM tags\nWHERE Count BETWEEN 5000 AND 7000;\n```"

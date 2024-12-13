@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = district.A3, filter = 'Prague')\ndf2 = df1.select(account.account_id).distinct()\ndf3 = df2.join(loan, on = loan.account_id == df2.account_id)\nres = df3.count()\n```"

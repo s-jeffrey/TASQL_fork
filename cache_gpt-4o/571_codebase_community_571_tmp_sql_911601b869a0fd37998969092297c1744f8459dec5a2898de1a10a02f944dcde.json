@@ -1,0 +1,1 @@
+"```sql\nSELECT CAST(COUNT(posts.Id) AS REAL) / COUNT(votes.Id) AS times\nFROM posts\nLEFT JOIN votes ON posts.OwnerUserId = votes.UserId\nWHERE posts.OwnerUserId = '24'\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM races\nWHERE date = (\n  SELECT MIN(date)\n  FROM races\n);\n```\n\nThis SQL query selects the names of all races that occurred in the earliest recorded year and month by finding the minimum date in the `races` table and then retrieving the race names corresponding to that date."

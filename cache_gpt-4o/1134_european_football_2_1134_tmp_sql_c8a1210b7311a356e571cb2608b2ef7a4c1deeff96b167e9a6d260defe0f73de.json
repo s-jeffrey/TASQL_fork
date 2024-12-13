@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (pa1.jumping - pa2.jumping) AS jumping_difference\nFROM \n    Player_Attributes pa1\nJOIN \n    Player ON pa1.player_api_id = Player.player_api_id\nWHERE \n    Player.id = 6\nJOIN \n    Player_Attributes pa2 ON pa2.player_api_id = Player.player_api_id\nWHERE \n    Player.id = 23;\n```"

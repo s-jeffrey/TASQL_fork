@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM attendance\nINNER JOIN member ON attendance.link_to_member = member.member_id\nINNER JOIN event ON attendance.link_to_event = event.event_id\nWHERE member.first_name = 'Sacha'\nAND member.last_name = 'Harrison'\nAND YEAR(event.event_date) = 2019;\n```"

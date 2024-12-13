@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = member.first_name, filter = 'Grant').where(element = member.last_name, filter = 'Gilmour')\ndf2 = df1.join(income, income.link_to_member == member.member_id)\nres = df2.select(income.amount).sum()\n```"

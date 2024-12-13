@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.isForeignOnly, filter = 0)\ndf2 = df1.where(element = sets.isFoilOnly, filter = 1)\ndf3 = df2.where(element = set_translations.language, filter = 'Japanese')\nres = df3.select(sets.code, sets.id)\n```"

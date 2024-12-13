@@ -1,0 +1,1 @@
+"`bond_type` FROM `bond` WHERE `bond_id` = (SELECT `bond_id` FROM `connected` WHERE `atom_id` = 'TR000_1' AND `atom_id2` = 'TR000_2');\""

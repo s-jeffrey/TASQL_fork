@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = cards.power, filter = ['*', None])\ndf2 = df1.where(element = cards.hasFoil, filter = 0)\ndf3 = df2.where(element = cards.duelDeck, filter = 'a')\nres = df3.count()\n```"

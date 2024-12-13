@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = income.date_received, filter = \"BETWEEN '2019-09-01' AND '2019-09-30'\")\ndf2 = df1.groupby(income.source).sum(income.amount)\ndf3 = df2.orderby(by = income.amount, desc).limit(1)\nres = df3.select(income.source)\n```"

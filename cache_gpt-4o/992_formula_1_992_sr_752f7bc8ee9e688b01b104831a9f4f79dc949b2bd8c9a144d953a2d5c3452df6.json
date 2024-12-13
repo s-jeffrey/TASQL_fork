@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = drivers.nationality, filter = 'German')\ndf2 = df1.where(element = year(drivers.dob), filter = '>= 1971').where(element = year(drivers.dob), filter = '<= 1985')\ndf3 = df2.orderby(by = drivers.dob, desc)\nres = df3.select(concat(drivers.forename, ' ', drivers.surname), drivers.url, drivers.dob)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = trans.date, filter = '>= 1995-01-01').where(element = trans.date, filter = '<= 1995-12-31')\ndf2 = df1.orderby(by = trans.date, asc).limit(1)\nres = df2.select(trans.account)\n```"

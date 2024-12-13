@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = income.source, filter = 'Dues').orderby(by = income.date_received, asc).limit(1)\nres = df1.select(member.first_name, member.last_name)\n```"

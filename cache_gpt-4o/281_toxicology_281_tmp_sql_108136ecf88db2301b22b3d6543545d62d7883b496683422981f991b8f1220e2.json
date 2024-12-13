@@ -1,0 +1,1 @@
+"```sql\nSELECT atom.element, COUNT(*) AS tally\nFROM atom\nINNER JOIN molecule ON atom.molecule_id = molecule.molecule_id\nWHERE molecule.label = '+'\nAND SUBSTR(atom.atom_id, 7, 1) = '4'\nGROUP BY atom.element;\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = zip_code.state, filter = 'Maryland')\nres = df1.count()\n```"

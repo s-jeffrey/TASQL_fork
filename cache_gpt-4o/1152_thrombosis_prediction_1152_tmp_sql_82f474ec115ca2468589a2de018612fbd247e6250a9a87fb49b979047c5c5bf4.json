@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT COUNT(ID) FROM Patient WHERE Diagnosis = 'SLE' AND Admission = '-') / \n    (SELECT COUNT(ID) FROM Patient WHERE Diagnosis = 'SLE' AND Admission = '+') AS ratio\n```\n"

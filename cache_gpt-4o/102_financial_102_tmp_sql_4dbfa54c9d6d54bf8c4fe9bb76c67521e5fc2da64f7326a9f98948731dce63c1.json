@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT account.account_id\nFROM account\nINNER JOIN trans ON account.account_id = trans.account_id\nWHERE account.date < '1997-01-01' AND trans.balance > 3000\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT name\nFROM races\nWHERE year = 2005\nORDER BY name DESC;\n```"

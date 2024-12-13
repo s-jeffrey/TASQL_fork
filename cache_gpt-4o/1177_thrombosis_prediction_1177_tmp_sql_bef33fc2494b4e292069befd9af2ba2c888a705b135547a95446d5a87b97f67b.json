@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    CASE \n        WHEN COUNT(*) > 0 THEN 'Yes' \n        ELSE 'No' \n    END AS cholesterol_status\nFROM \n    Laboratory\nWHERE \n    Laboratory.ID = 2927464 \n    AND Laboratory.Date = '1995-09-04' \n    AND Laboratory.T-CHO < 250;\n```"

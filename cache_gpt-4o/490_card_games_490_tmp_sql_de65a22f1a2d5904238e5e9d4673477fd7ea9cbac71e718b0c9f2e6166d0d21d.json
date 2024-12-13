@@ -1,0 +1,1 @@
+"```sql\nSELECT sets.mcmId\nFROM sets\nWHERE sets.code = 'SS2';\n```"

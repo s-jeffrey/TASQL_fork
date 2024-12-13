@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT a.molecule_id\nFROM atom a\nWHERE a.element = 'c';\n```\n\nThis SQL query selects the distinct molecule IDs from the `atom` table where the element is carbon ('c'). The query uses the information from the database schema and the evidence provided to identify the relevant molecules."

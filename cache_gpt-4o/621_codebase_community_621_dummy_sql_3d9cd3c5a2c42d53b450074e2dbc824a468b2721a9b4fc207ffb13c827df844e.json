@@ -1,0 +1,1 @@
+"`Name` FROM `badges` WHERE `UserId` = (SELECT `Id` FROM `users` ORDER BY `Reputation` ASC LIMIT 1);\""

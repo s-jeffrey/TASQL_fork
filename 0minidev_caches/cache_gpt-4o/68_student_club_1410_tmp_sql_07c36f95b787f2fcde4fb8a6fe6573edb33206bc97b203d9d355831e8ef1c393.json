@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    member.first_name || ' ' || member.last_name AS full_name, \n    SUM(expense.cost) AS total_cost\nFROM \n    member\nINNER JOIN \n    expense ON member.member_id = expense.link_to_member\nWHERE \n    member.member_id = 'rec4BLdZHS2Blfp4v'\nGROUP BY \n    member.first_name, member.last_name;\n```"

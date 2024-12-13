@@ -1,0 +1,1 @@
+"```sql\nSELECT posts.Body\nFROM tags\nJOIN posts ON tags.ExcerptPostId = posts.Id\nWHERE tags.TagName = 'bayesian';\n```"

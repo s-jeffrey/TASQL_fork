@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM votes\nJOIN posts ON votes.PostId = posts.Id\nWHERE posts.Title LIKE '%data visualization%';\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = bond.molecule_id, filter = \"BETWEEN 'TR004' AND 'TR010'\")\ndf2 = df1.where(element = bond.bond_type, filter = '-')\nres = df2.count()\n```"

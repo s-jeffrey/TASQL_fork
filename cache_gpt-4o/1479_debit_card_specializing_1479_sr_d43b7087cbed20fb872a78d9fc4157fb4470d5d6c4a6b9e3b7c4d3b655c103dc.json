@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = customers.Currency, filter = 'CZK')\ndf2 = df1.groupby(df1.yearmonth.Date.str[:4]).sum(yearmonth.Consumption)\nres = df2.orderby(by = yearmonth.Consumption, desc).limit(1).select(df2.yearmonth.Date.str[:4])\n```"

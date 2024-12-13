@@ -1,0 +1,1 @@
+"```sql\nSELECT \n    (SELECT SUM(Consumption) \n     FROM yearmonth \n     WHERE CustomerID = 7 AND Date = '201304') \n    - \n    (SELECT SUM(Consumption) \n     FROM yearmonth \n     WHERE CustomerID = 5 AND Date = '201304') AS ConsumptionDifference;\n```"

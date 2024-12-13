@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE artist = 'UDON'\n  AND 'mtgo' = ANY (STRING_TO_ARRAY(availability, ','))\n  AND hand = -1;\n```\n\nThis SQL query counts the number of cards in the `cards` table where the artist is \"UDON\", the card is available in the \"mtgo\" print type, and the starting maximum hand size is -1."

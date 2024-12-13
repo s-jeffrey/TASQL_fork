@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Team_Attributes.buildUpPlaySpeed, filter = 31)\ndf2 = df1.where(element = Team_Attributes.buildUpPlayDribbling, filter = 53)\ndf3 = df2.where(element = Team_Attributes.buildUpPlayPassing, filter = 32)\nres = df3.select(Team.team_short_name)\n```"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Laboratory.RBC, filter = '< 3.5')\nres = df1.select(Patient.Diagnosis, Patient.ID, subtract(year(current_timestamp), year(Patient.Birthday)))\n```"

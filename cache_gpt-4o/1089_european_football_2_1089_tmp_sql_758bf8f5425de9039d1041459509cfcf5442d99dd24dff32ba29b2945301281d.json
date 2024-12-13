@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(Match.id)\nFROM Match\nINNER JOIN Country ON Match.country_id = Country.id\nWHERE Match.season = '2008/2009' AND Country.name = 'Belgium';\n```"

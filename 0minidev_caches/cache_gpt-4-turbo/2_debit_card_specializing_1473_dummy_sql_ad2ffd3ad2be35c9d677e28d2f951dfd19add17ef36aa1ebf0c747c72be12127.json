@@ -1,0 +1,1 @@
+"AVG(Consumption) / 12 AS Average_Monthly_Consumption \\\nFROM yearmonth \\\nJOIN customers ON yearmonth.CustomerID = customers.CustomerID \\\nWHERE customers.Segment = 'SME' AND \\\n      (Date BETWEEN '201301' AND '201312');\"\n\n"

@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = Patient.SEX, filter = 'F')\ndf2 = df1.where(element = year(Patient.Birthday), filter = '> 1930')\nres = df.select(cast(df2.count(), real) * 100 / df1.count())\n```"

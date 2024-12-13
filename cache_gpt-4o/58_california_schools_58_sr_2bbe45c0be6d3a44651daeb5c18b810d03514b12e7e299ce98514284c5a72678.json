@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = schools.Zip, filter = '95203-3704')\nres = df1.select(schools.Phone, schools.Ext, schools.School)\n```"

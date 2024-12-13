@@ -1,0 +1,1 @@
+"`element`, COUNT(`element`) AS element_count FROM `atom` JOIN `molecule` ON `atom`.`molecule_id` = `molecule`.`molecule_id` WHERE `molecule`.`label` = '-' GROUP BY `element` ORDER BY element_count ASC LIMIT 1;\"\n"

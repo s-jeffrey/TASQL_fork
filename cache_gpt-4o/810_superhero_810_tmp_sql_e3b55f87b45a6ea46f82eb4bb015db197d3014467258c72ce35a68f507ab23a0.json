@@ -1,0 +1,1 @@
+"```sql\nSELECT race.race\nFROM hero_attribute\nINNER JOIN superhero ON hero_attribute.hero_id = superhero.id\nINNER JOIN race ON superhero.race_id = race.id\nORDER BY hero_attribute.attribute_value DESC\nLIMIT 1;\n```"

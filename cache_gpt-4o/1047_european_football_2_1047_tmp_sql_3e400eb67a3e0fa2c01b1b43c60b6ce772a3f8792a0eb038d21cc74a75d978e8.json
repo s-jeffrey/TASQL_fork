@@ -1,0 +1,1 @@
+"```sql\nSELECT Player_Attributes.heading_accuracy\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE Player.player_name = 'Francois Affolter'\nAND Player_Attributes.date = '2014-09-18 00:00:00';\n```"

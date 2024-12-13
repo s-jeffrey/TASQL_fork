@@ -1,0 +1,1 @@
+"```python\ndf1 = df.groupby(superhero.id).having(element = count(hero_power.power_id), filter = '> 15')\nres = df1.select(superhero.full_name)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT foreign_data.name\nFROM foreign_data\nINNER JOIN cards ON foreign_data.uuid = cards.uuid\nWHERE foreign_data.language = 'French'\n  AND cards.borderColor = 'black'\n  AND cards.layout = 'normal'\n  AND cards.type LIKE '%Creature%'\n  AND cards.artist = 'Matthew D. Wilson';\n```"

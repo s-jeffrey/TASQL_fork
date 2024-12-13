@@ -1,0 +1,1 @@
+"```sql\nSELECT language\nFROM set_translations\nWHERE setCode = (\n  SELECT code\n  FROM sets\n  WHERE name = 'Battlebond'\n);\n```"

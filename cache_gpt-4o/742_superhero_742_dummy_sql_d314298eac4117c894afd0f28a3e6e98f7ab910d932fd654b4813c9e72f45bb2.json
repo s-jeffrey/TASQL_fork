@@ -1,0 +1,1 @@
+"COUNT(*) FROM superhero WHERE race_id = (SELECT id FROM race WHERE race = 'Vampire');\""

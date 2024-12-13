@@ -1,0 +1,1 @@
+"```sql\nSELECT (COUNT(CASE WHEN member.position = 'Member' AND major.major_name = 'Business' THEN 1 END) * 100.0 / COUNT(member.member_id)) AS percentage\nFROM member\nINNER JOIN major ON member.link_to_major = major.major_id;\n```"

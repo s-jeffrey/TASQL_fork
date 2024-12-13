@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.mcmName, filter = 'Archenemy').where(element = sets.code, filter = 'ARC')\nres = df1.select(set_translations.language)\n```"

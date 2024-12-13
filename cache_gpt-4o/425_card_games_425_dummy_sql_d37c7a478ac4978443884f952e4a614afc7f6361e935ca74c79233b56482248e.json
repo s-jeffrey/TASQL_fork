@@ -1,0 +1,1 @@
+"`number` FROM cards WHERE side IS NULL AND subtypes LIKE '%Angel%' AND subtypes LIKE '%Wizard%';\""

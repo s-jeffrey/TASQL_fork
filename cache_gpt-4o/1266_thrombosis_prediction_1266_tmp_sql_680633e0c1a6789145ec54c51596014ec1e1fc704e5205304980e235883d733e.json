@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Birthday\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.RNP NOT IN ('-', '+-')\nORDER BY Patient.Birthday DESC\nLIMIT 1;\n```"

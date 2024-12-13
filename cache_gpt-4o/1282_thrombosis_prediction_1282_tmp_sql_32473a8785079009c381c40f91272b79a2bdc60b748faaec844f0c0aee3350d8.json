@@ -1,0 +1,1 @@
+"```sql\nSELECT Patient.Birthday\nFROM Laboratory\nINNER JOIN Patient ON Laboratory.ID = Patient.ID\nWHERE Laboratory.GPT < 60\nORDER BY Laboratory.GPT DESC\nLIMIT 3;\n```"

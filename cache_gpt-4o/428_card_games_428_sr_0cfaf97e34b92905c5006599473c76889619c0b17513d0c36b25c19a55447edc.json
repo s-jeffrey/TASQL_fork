@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = sets.id, filter = 5)\nres = df1.select(sets.name, set_translations.translation)\n```"

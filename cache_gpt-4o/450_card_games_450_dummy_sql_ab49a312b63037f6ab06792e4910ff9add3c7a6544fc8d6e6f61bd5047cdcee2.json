@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(*)\nFROM cards\nWHERE artist = 'Aaron Miller'\n  AND cardKingdomFoilId IS NOT NULL\n  AND cardKingdomId IS NOT NULL;\n```"

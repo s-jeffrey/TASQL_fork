@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = results.time, filter = 'is not null')\ndf2 = df1.groupby(results.raceId).count()\nres = df2.orderby(by = 'count', desc).limit(1).select(results.raceId)\n```"

@@ -1,0 +1,1 @@
+"```sql\nSELECT Player.id\nFROM Player\nINNER JOIN Player_Attributes ON Player.player_api_id = Player_Attributes.player_api_id\nWHERE Player_Attributes.preferred_foot = 'right'\nORDER BY Player_Attributes.potential ASC\nLIMIT 5;\n```"

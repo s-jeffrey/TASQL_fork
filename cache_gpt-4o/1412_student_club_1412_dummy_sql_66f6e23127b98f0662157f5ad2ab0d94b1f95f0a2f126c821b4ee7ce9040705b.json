@@ -1,0 +1,1 @@
+"```sql\nSELECT DISTINCT e.expense_description\nFROM expense e\nJOIN member m ON e.link_to_member = m.member_id\nWHERE m.t_shirt_size = 'X-Large';\n```"

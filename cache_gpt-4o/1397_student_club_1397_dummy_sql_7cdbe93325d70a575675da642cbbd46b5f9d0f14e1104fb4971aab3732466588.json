@@ -1,0 +1,1 @@
+"```sql\nSELECT AVG(spent) \nFROM budget \nWHERE category = 'Food' AND event_status = 'Closed';\n```"

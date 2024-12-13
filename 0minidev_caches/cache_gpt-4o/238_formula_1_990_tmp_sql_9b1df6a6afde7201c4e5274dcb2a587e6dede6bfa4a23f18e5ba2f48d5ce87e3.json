@@ -1,0 +1,1 @@
+"```sql\nSELECT constructors.constructorRef, constructors.url\nFROM results\nINNER JOIN races ON results.raceId = races.raceId\nINNER JOIN constructors ON results.constructorId = constructors.constructorId\nWHERE races.year = 2009\n  AND races.name = 'Singapore Grand Prix'\nORDER BY CAST(results.time AS TIME) ASC\nLIMIT 1;\n```"

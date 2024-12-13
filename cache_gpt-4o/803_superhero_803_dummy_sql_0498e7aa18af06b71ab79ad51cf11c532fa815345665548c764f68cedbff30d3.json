@@ -1,0 +1,1 @@
+"`id` FROM `superpower` WHERE `power_name` = 'cryokinesis';\""

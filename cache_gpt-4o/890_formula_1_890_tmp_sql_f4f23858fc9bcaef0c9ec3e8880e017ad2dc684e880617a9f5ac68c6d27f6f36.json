@@ -1,0 +1,1 @@
+"```sql\nSELECT COUNT(DISTINCT seasons.year)\nFROM circuits\nINNER JOIN races ON circuits.circuitId = races.circuitId\nINNER JOIN seasons ON races.year = seasons.year\nWHERE circuits.name = 'Silverstone Circuit' AND races.name = 'British Grand Prix';\n```"

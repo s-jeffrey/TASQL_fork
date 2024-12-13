@@ -1,0 +1,1 @@
+"```python\ndf1 = df.where(element = comments.Text, filter = 'contains(http://)')\nres = df1.select(users.CreationDate, users.Age)\n```"

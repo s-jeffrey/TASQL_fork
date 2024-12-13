@@ -1,0 +1,1 @@
+"`atom_id` FROM `connected` WHERE `atom_id` IN (SELECT `atom_id` FROM `atom` WHERE `molecule_id` = 'TR181') OR `atom_id2` IN (SELECT `atom_id` FROM `atom` WHERE `molecule_id` = 'TR181');\""
