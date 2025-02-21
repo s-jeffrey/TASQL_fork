@@ -3,3 +3,4 @@ outputs/predict_dev.json
 */__pycache__/
 *.py[cod]
 *$py.class
+venv/
